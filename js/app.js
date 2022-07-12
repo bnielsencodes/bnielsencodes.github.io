@@ -1,4 +1,13 @@
-// TODO
+// todo:
 
+// note:
 
-// TODO
+// System.debug
+
+// console.log
+
+// |DEBUG|
+
+// attention:
+
+// debug:
