@@ -1,28 +1,31 @@
-.main-nav {
+body {
+  font: normal 16px/1.5 Roboto,
+    system-ui,
+    sans-serif;
+  /* overflow: hidden; */
+  /* width: 100%; */
+}
+
+#header {
+  height: 100vh;
+}
+
+.hamburger-menu {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+#hidden-sm {
+  display: none;
+}
+
+.about-content-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
 }
 
-.logo-dark-mode-container {
-  display: flex;
-  justify-content: center;
-}
-
-.light-mode-toggle {}
-
-.dark-mode-toggle {}
-
-.main-nav-logo {}
-
-.main-nav-link-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.hidden-sm {
-  display: none;
-}
 
 /* ------------------------------------
 ---------------------------------------
@@ -30,11 +33,45 @@ NAVIGATION
 ---------------------------------------
 ------------------------------------ */
 
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #272727;
+  height: 40px;
+}
+
+.main-nav-logo {
+  font-size: 0.80rem;
+  color: white;
+}
+
+.logo-dark-mode-container {
+  display: flex;
+  justify-content: center;
+}
+
 /* ------------------------------------
 ---------------------------------------
 HEADER
 ---------------------------------------
 ------------------------------------ */
+
+.header-content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.header-links-container {
+  display: flex;
+  flex-direction: column;
+}
 
 /* ------------------------------------
 ---------------------------------------
@@ -47,6 +84,13 @@ BUTTONS
 TYPOGRAPY
 ---------------------------------------
 ------------------------------------ */
+
+
+
+.section-heading,
+.contact-subheading {
+  text-align: center;
+}
 
 /* ------------------------------------
 ---------------------------------------
@@ -74,9 +118,8 @@ LIST STYLING
 
 ul {
   list-style-type: none;
+  padding-left: 0;
 }
-
-li {}
 
 a:link {
   text-decoration: none;
@@ -97,6 +140,88 @@ a:active {
   text-decoration: none;
 }
 
+.main-nav-link-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav-item {
+  padding-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ------------------------------------
 ---------------------------------------
@@ -105,8 +230,13 @@ MEDIUM SCREEN MEDIA QUERIES
 ------------------------------------ */
 
 @media (min-width: 768px) {
-  .hidden-md {
+  #hidden-md {
     display: none;
+  }
+
+  .about-content-container {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -117,7 +247,7 @@ LARGE SCREEN MEDIA QUERIES
 ------------------------------------ */
 
 @media (min-width: 1024px) {
-  .hidden-lg {
+  #hidden-lg {
     display: none;
   }
 }
