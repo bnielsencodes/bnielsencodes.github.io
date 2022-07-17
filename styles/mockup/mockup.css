@@ -143,50 +143,29 @@ HAMBURGER MENU
   position: fixed;
   top: 0;
   right: 0;
-  width: 40px;
-  height: 40px;
 }
 
-.hamburger-button-container {
-  position: relative;
-}
-
-
-
-
-
-
-
-
-
-
-
-.menuToggle input {
-  display: block;
+#menu-toggle input {
+  position: absolute;
+  top: 9px;
+  left: -2px;
   width: 40px;
   height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-
-  cursor: pointer;
-  opacity: 0;
   /* hide this */
-  z-index: 500;
+  opacity: 0;
   /* and place it over the hamburger */
-
+  z-index: 500;
   -webkit-touch-callout: none;
 }
 
 /*
- * Just a quick hamburger
+Just a quick hamburger
  */
-.menuToggle span {
+#menu-toggle span {
+  position: relative;
   display: block;
   width: 26px;
   height: 1.75px;
-  margin-bottom: 5px;
-  position: relative;
   background: #fafafa;
   border-radius: 3px;
   z-index: 400;
@@ -196,28 +175,34 @@ HAMBURGER MENU
     opacity 0.55s ease;
 }
 
-.menuToggle span:first-child {
+#menu-toggle span:first-child {
   transform-origin: 0% 0%;
 }
 
-.menuToggle span:nth-last-child(2) {
+#menu-toggle span:nth-child(2),
+#menu-toggle span:nth-child(3) {
+  margin-bottom: 5px;
+}
+
+
+#menu-toggle span:nth-last-child(2) {
   transform-origin: 0% 100%;
 }
 
 /* 
- * Transform all the slices of hamburger
- * into a crossmark.
+  Transform all the slices of hamburger
+  into a crossmark.
  */
-.menuToggle input:checked~span {
+#menu-toggle input:checked~span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #fafafa;
+  background: mediumpurple;
 }
 
 /*
- * But let's hide the middle one.
+  Hide the middle one.
  */
-.menuToggle input:checked~span:nth-last-child(3) {
+#menu-toggle input:checked~span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
@@ -225,7 +210,7 @@ HAMBURGER MENU
 /*
  * The last one should go the other direction
  */
-.menuToggle input:checked~span:nth-last-child(2) {
+#menu-toggle input:checked~span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 

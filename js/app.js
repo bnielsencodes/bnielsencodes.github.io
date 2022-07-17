@@ -16,7 +16,7 @@
 HAMBURGER MENU ANIMATION
 ------------------------------------ */
 
-var $btn = document.getElementById("show");
+var $btn = document.getElementById("menu-toggle");
 var $nav = document.getElementById("nav");
 
 $btn.addEventListener("click", function () {
