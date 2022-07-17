@@ -25,7 +25,7 @@
     ----------------------------------- -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
   <!-- ----------------------------------
     PAGE TITLE
     ----------------------------------- -->
@@ -33,9 +33,38 @@
 </head>
 
 <body>
+  <header id="header-section">
+    <div class="header-content-container">
+      <!-- HEADER CONTENT -->
+      <div class="header-content">
+        <div class="heading-text-container">
+          <h1 class="header-heading">Hello, I'm <span class="header-heading-span">Brandon</span>,</h1>
+          <h1 class="header-subheading">a front-end web developer.</h1>
+        </div>
+        <div>
+          <a href="#projects-section" class="projects-cta">Check out my work below</a>
+        </div>
+      </div>
+      <!-- HEADER SOCIAL ICON LINKS -->
+      <div id="hidden-sm" class="header-links-container">
+        <a class="header-icon-container">
+          <i id="header-twitter" class="fab fa-brands fa-twitter"></i>
+        </a>
+        <a class="header-icon-container">
+          <i id="header-linkedin" class="fab fa-brands fa-linkedin-in"></i>
+        </a>
+        <a class="header-icon-container">
+          <i id="header-github" class="fab fa-brands fa-github"></i>
+        </a>
+        <a class="header-icon-container">
+          <i id="header-email" class="fas fa-solid fa-paper-plane"></i>
+        </a>
+      </div>
+    </div>
+    <div id="header-arrow" class="jump-arrow"></div>
+  </header>
 
-
-  <header id="header">
+  <section id="about-section">
     <!-- ----------------------------------
     MAIN NAVIGATION
     ----------------------------------- -->
@@ -50,11 +79,42 @@
       HAMBURGER MENU FOR SM SCREEN
       ----------------------------------- -->
       <div class="hamburger-menu">
-        <button id="show">X</button>
-        <div id="nav" class="navigation">
-          <div class="navigation__inner">
-            <!--   Content   -->
-          </div>
+        <div class="hamburger-button-container">
+          <button id="show" class="menuToggle">
+            <!--
+          A fake/hidden checkbox is used as click reciever,
+          so you can use the :checked selector on it.
+          -->
+            <input type="checkbox" />
+            <!--
+          Some spans to act as a hamburger.
+          -->
+            <span></span>
+            <span></span>
+            <span></span>
+            <!-- 
+            Hamburger menu list
+          -->
+            <div id="nav" class="navigation">
+              <div class="navigation__inner">
+                <!--   Content   -->
+                <ul class="main-nav-link-container">
+                  <li class="main-nav-item">
+                    <a href="#header" class="main-nav-link">Home</a>
+                  </li>
+                  <li class="main-nav-item">
+                    <a href="#about-section" class="main-nav-link">About</a>
+                  </li>
+                  <li class="main-nav-item">
+                    <a href="#projects-section" class="main-nav-link">Projects</a>
+                  </li>
+                  <li class="main-nav-item">
+                    <a href="#contact-section" class="main-nav-link main-nav-button">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </button>
         </div>
       </div>
       <!-- ----------------------------------
@@ -78,37 +138,10 @@
 
 
 
-    <div class="header-content-container">
-      <!-- HEADER CONTENT -->
-      <div class="header-content">
-        <div class="heading-text-container">
-          <h1 class="header-heading">Hello, I'm Brandon,</h1>
-          <h4 class="header-subheading">a front-end web developer.</h4>
-        </div>
-        <div>
-          <a href="#projects-section" class="projects-cta">Check out my work below</a>
-        </div>
-      </div>
-      <!-- HEADER SOCIAL ICON LINKS -->
-      <div class="header-links-container">
-        <a class="header-icon-container">
-          <i id="header-twitter" class="fab fa-brands fa-twitter"></i>
-        </a>
-        <a class="header-icon-container">
-          <i id="header-linkedin" class="fab fa-brands fa-linkedin-in"></i>
-        </a>
-        <a class="header-icon-container">
-          <i id="header-github" class="fab fa-brands fa-github"></i>
-        </a>
-        <a class="header-icon-container">
-          <i id="header-email" class="fas fa-solid fa-paper-plane"></i>
-        </a>
-      </div>
-    </div>
-    <div id="header-arrow" class="jump-arrow"></div>
-  </header>
 
-  <section id="about-section">
+
+
+
     <h1 class="section-heading">About</h1>
     <div class="about-content-container">
       <article class="about-text-container">
@@ -333,6 +366,20 @@
     </div>
     <div id="about-arrow" class="jump-arrow"></div>
   </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <section id="projects-section">
     <h1 class="section-heading">Projects</h1>
