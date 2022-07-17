@@ -1,6 +1,5 @@
 body {
-  font: normal 16px/1.5 Roboto,
-    system-ui,
+  font: normal 16px/1.5 'Monteserrat',
     sans-serif;
   /* overflow: hidden; */
 }
@@ -21,6 +20,11 @@ contact-section {
 
 .section-heading {
   margin: 0;
+}
+
+.section-heading,
+.contact-subheading {
+  text-align: center;
 }
 
 /* ------------------------------------
@@ -80,6 +84,18 @@ NAVIGATION
 
 .main-nav-logo {
   font-size: 1rem;
+  color: #fafafa;
+}
+
+.main-nav-link-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+}
+
+.main-nav-link {
+  font-size: 1.65rem;
   color: #fafafa;
 }
 
@@ -209,13 +225,6 @@ TYPOGRAPY
 ---------------------------------------
 ------------------------------------ */
 
-
-
-.section-heading,
-.contact-subheading {
-  text-align: center;
-}
-
 /* ------------------------------------
 ---------------------------------------
 IMAGES
@@ -264,14 +273,7 @@ a:active {
   text-decoration: none;
 }
 
-.main-nav-link-container {
-  display: flex;
-  justify-content: space-between;
-}
 
-.main-nav-item {
-  padding-right: 10px;
-}
 
 
 
@@ -360,6 +362,15 @@ MEDIUM SCREEN MEDIA QUERIES
 @media (min-width: 768px) {
   #hidden-md {
     display: none;
+  }
+
+  .main-nav-link-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav-item {
+    padding-right: 10px;
   }
 
   .about-content-container {
