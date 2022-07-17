@@ -46,10 +46,19 @@ HEADER
   text-align: center;
 }
 
+.header-content {
+  height: 160px;
+}
+
+.heading-text-container {
+  padding-bottom: 20px;
+}
+
 .header-heading,
 .header-subheading {
   font-size: 1.85rem;
   font-weight: 300;
+  line-height: 1.15;
   color: #fafafa;
   margin: 0;
 }
@@ -58,10 +67,22 @@ HEADER
   color: mediumpurple;
 }
 
+.projects-cta {
+  color: mediumpurple;
+  padding: 6px;
+  border: 2px solid mediumpurple;
+}
+
+.fa-arrow-down {
+  font-size: 1rem;
+}
+
 .header-links-container {
   display: flex;
   flex-direction: column;
 }
+
+
 
 
 /* ------------------------------------
