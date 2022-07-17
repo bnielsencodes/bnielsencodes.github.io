@@ -163,7 +163,7 @@ HAMBURGER MENU
 .hamburger-menu {
   position: fixed;
   top: 0;
-  right: 0;
+  right: 8px;
 }
 
 #menu-toggle input {
@@ -349,6 +349,31 @@ FORMS
 
 
 
+
+
+
+
+#portfolio-top-divider,
+#portfolio-bottom-divider {
+  position: relative;
+  height: auto;
+  min-height: 400px;
+  margin-top: -1px;
+}
+
+#portfolio-bottom-divider {
+  transform: rotate(180deg);
+}
+
+.separator {
+  position: absolute;
+  top: 0;
+}
+
+.separator-bottom {
+  position: absolute;
+  bottom: 0;
+}
 
 
 
