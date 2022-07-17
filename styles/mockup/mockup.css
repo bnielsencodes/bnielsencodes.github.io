@@ -51,7 +51,7 @@ HEADER
 }
 
 .heading-text-container {
-  padding-bottom: 20px;
+  padding: 0 20px 20px;
 }
 
 .header-heading,
@@ -96,11 +96,12 @@ NAVIGATION
   top: 0;
   left: 0;
   right: 0;
+  z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #272727;
   height: 50px;
+  background-color: #272727;
 }
 
 .logo-dark-mode-container {
@@ -163,7 +164,7 @@ HAMBURGER MENU
 .hamburger-menu {
   position: fixed;
   top: 0;
-  right: 8px;
+  right: 12px;
 }
 
 #menu-toggle input {
