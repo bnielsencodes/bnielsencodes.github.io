@@ -1,6 +1,7 @@
 body {
   font: normal 16px/1.5 'Monteserrat',
     sans-serif;
+  color: #fafafa;
   /* overflow: hidden; */
 }
 
@@ -14,8 +15,12 @@ body {
 
 #header-section,
 #about-section,
-contact-section {
+#contact-section {
   background-color: #1A1A1A;
+}
+
+#project-section {
+  background-color: #fafafa
 }
 
 .section-heading {
@@ -50,7 +55,7 @@ HEADER
 }
 
 .header-heading-span {
-  color: purple;
+  color: mediumpurple;
 }
 
 .header-links-container {
@@ -91,12 +96,40 @@ NAVIGATION
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   height: 200px;
 }
 
 .main-nav-link {
+  position: relative;
+  z-index: 400;
+  padding: 0 12px;
+  border-bottom: 2px solid mediumpurple;
   font-size: 1.65rem;
+  font-weight: 300;
   color: #fafafa;
+}
+
+.main-nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: bottom center;
+  transition: transform 0.3s;
+  background: mediumpurple;
+}
+
+.main-nav-link:hover::after {
+  transform: scaleY(1);
+}
+
+.main-nav-link:hover {
+  color: #1A1A1A;
 }
 
 
@@ -117,7 +150,6 @@ HAMBURGER MENU
 .hamburger-button-container {
   position: relative;
 }
-
 
 
 
@@ -212,6 +244,35 @@ ABOUT SECTION
   align-items: center;
 }
 
+/* ------------------------------------
+---------------------------------------
+LIST STYLING
+---------------------------------------
+------------------------------------ */
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+
+a:visited {
+  text-decoration: none;
+}
+
+
+a:hover {
+  text-decoration: none;
+}
+
+
+a:active {
+  text-decoration: none;
+}
 
 /* ------------------------------------
 ---------------------------------------
@@ -242,36 +303,6 @@ FLEX
 FORMS
 ---------------------------------------
 ------------------------------------ */
-
-/* ------------------------------------
----------------------------------------
-LIST STYLING
----------------------------------------
------------------------------------- */
-
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-a:link {
-  text-decoration: none;
-}
-
-
-a:visited {
-  text-decoration: none;
-}
-
-
-a:hover {
-  text-decoration: none;
-}
-
-
-a:active {
-  text-decoration: none;
-}
 
 
 
