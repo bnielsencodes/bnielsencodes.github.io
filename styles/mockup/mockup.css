@@ -279,9 +279,21 @@ ABOUT SECTION
 
 .about-text-container {
   padding: 0 30px;
+  margin-bottom: 80px;
   text-align: center;
 }
 
+.about-p-two {
+  margin-bottom: 40px;
+}
+
+.view-resume {
+  padding: 20px 5px 5px;
+  border-bottom: 3px solid mediumpurple;
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fafafa;
 }
 
 .about-skills-container {
