@@ -131,7 +131,7 @@ NAVIGATION
   position: relative;
   z-index: 400;
   padding: 0 12px;
-  border-bottom: 2px solid mediumpurple;
+  border-bottom: 3px solid mediumpurple;
   font-size: 1.65rem;
   font-weight: 300;
   color: #fafafa;
@@ -280,6 +280,188 @@ ABOUT SECTION
 .about-text-container {
   padding: 0 30px;
   text-align: center;
+}
+
+}
+
+.about-skills-container {
+  display: grid;
+  grid-template-columns: repeat(3, 75px);
+  gap: 15px;
+  align-items: center;
+  text-align: center;
+}
+
+.skills-icon {
+  display: flex;
+  justify-content: center;
+  height: 32px;
+}
+
+.projects-fa {
+  font-size: 2rem;
+}
+
+
+
+
+
+
+
+.html-icon:hover,
+.html-icon:hover+.html-icon-p,
+.html-icon-p:hover {
+  color: #f06529;
+}
+
+.html-hover-color {
+  color: #f06529;
+}
+
+.css-icon:hover,
+.css-icon:hover+.css-icon-p,
+.css-icon-p:hover {
+  color: #2965f1;
+}
+
+.css-hover-color {
+  color: #2965f1;
+}
+
+.js-icon:hover,
+.js-icon:hover+.js-icon-p,
+.js-icon-p:hover {
+  color: #F0DB4F;
+}
+
+.js-hover-color {
+  color: #F0DB4F;
+}
+
+.bootstrap-icon:hover,
+.bootstrap-icon:hover+.bootstrap-icon-p,
+.bootstrap-icon-p:hover {
+  color: #722CF8;
+}
+
+.bootstrap-hover-color {
+  color: #722CF8;
+}
+
+.tailwind-p-hover-color {
+  color: #36BDF9
+}
+
+.react-icon:hover,
+.react-icon:hover+.react-icon-p,
+.react-icon-p:hover {
+  color: #62DAFB;
+}
+
+.react-hover-color {
+  color: #62DAFB;
+}
+
+.vscode-p-hover-color {
+  color: #27A5F1;
+}
+
+.figma-icon:hover,
+.figma-icon:hover+.figma-icon-p,
+.figma-icon-p:hover {
+  animation: figmaGradientAnimation 3.75s ease 0s infinite normal none;
+}
+
+.figma-hover-color {
+  animation: figmaGradientAnimation 3.75s ease 0s infinite normal none;
+}
+
+@keyframes figmaGradientAnimation {
+  0% {
+    color: hsla(13, 80%, 51%, 1);
+  }
+
+  20% {
+    color: hsla(6, 85%, 66%, 1);
+  }
+
+  40% {
+    color: hsla(267, 85%, 64%, 1);
+  }
+
+  60% {
+    color: hsla(197, 89%, 52%, 1);
+  }
+
+  80% {
+    color: hsla(156, 86%, 41%, 1);
+  }
+
+  100% {
+    color: hsla(13, 80%, 51%, 1);
+  }
+}
+
+@-webkit-keyframes figmaColorAnimation {
+  0% {
+    color: hsla(13, 80%, 51%, 1);
+  }
+
+  20% {
+    color: hsla(6, 85%, 66%, 1);
+  }
+
+  40% {
+    color: hsla(267, 85%, 64%, 1);
+  }
+
+  60% {
+    color: hsla(197, 89%, 52%, 1);
+  }
+
+  80% {
+    color: hsla(156, 86%, 41%, 1);
+  }
+
+  100% {
+    color: hsla(13, 80%, 51%, 1);
+  }
+}
+
+@-moz-keyframes figmaColorAnimation {
+  0% {
+    color: hsla(13, 80%, 51%, 1);
+  }
+
+  20% {
+    color: hsla(6, 85%, 66%, 1);
+  }
+
+  40% {
+    color: hsla(267, 85%, 64%, 1);
+  }
+
+  60% {
+    color: hsla(197, 89%, 52%, 1);
+  }
+
+  80% {
+    color: hsla(156, 86%, 41%, 1);
+  }
+
+  100% {
+    color: hsla(13, 80%, 51%, 1);
+  }
+}
+
+.git-icon:hover,
+.git-icon:hover+.git-icon-p,
+.git-icon-p:hover {
+  color: #F1512F;
+}
+
+.git-hover-color {
+  color: #F1512F;
 }
 
 /* ------------------------------------
