@@ -251,17 +251,20 @@ ABOUT SECTION
 ------------------------------------ */
 
 #about-section .section-heading {
-  position: relative;
-  z-index: 1;
   padding: 50px 0 30px;
 }
 
-#about-section .section-heading::after {
+.about-heading-span {
+  position: relative;
+  z-index: 1;
+}
+
+.about-heading-span::after {
   content: "";
   position: absolute;
   z-index: -1;
-  bottom: 33px;
-  right: 93px;
+  bottom: -2px;
+  left: 21px;
   width: 90px;
   height: 14px;
   background-color: mediumpurple;
