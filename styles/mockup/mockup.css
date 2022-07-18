@@ -23,6 +23,10 @@ body {
   background-color: #fafafa
 }
 
+.projects-main-heading {
+  color: #272727;
+}
+
 .section-heading {
   margin: 0;
 }
@@ -110,6 +114,7 @@ NAVIGATION
 }
 
 .main-nav-logo {
+  padding-left: 10px;
   font-size: 1rem;
   color: #fafafa;
 }
@@ -245,10 +250,62 @@ ABOUT SECTION
 ---------------------------------------
 ------------------------------------ */
 
+#about-section .section-heading {
+  position: relative;
+  z-index: 1;
+  padding: 50px 0 30px;
+}
+
+#about-section .section-heading::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 33px;
+  right: 93px;
+  width: 90px;
+  height: 14px;
+  background-color: mediumpurple;
+}
+
 .about-content-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 0.9rem;
+}
+
+.about-text-container {
+  padding: 0 30px;
+  text-align: center;
+}
+
+/* ------------------------------------
+---------------------------------------
+PROJECTS SECTION
+---------------------------------------
+------------------------------------ */
+
+
+#projects-top-divider,
+#projects-bottom-divider {
+  position: relative;
+  height: auto;
+  min-height: 170px;
+  margin-top: -1px;
+}
+
+#projects-bottom-divider {
+  transform: rotate(180deg);
+}
+
+.separator {
+  position: absolute;
+  top: 0;
+}
+
+.separator-bottom {
+  position: absolute;
+  bottom: 0;
 }
 
 /* ------------------------------------
@@ -354,27 +411,7 @@ FORMS
 
 
 
-#portfolio-top-divider,
-#portfolio-bottom-divider {
-  position: relative;
-  height: auto;
-  min-height: 400px;
-  margin-top: -1px;
-}
 
-#portfolio-bottom-divider {
-  transform: rotate(180deg);
-}
-
-.separator {
-  position: absolute;
-  top: 0;
-}
-
-.separator-bottom {
-  position: absolute;
-  bottom: 0;
-}
 
 
 
