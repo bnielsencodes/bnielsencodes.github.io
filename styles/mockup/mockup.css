@@ -399,6 +399,20 @@ ABOUT SECTION
   color: #f06529;
 }
 
+.vscode-p-hover-color {
+  color: #27A5F1;
+}
+
+.git-icon:hover,
+.git-icon:hover+.git-icon-p,
+.git-icon-p:hover {
+  color: #F1512F;
+}
+
+.git-hover-color {
+  color: #F1512F;
+}
+
 .css-icon:hover,
 .css-icon:hover+.css-icon-p,
 .css-icon-p:hover {
@@ -409,14 +423,14 @@ ABOUT SECTION
   color: #2965f1;
 }
 
-.js-icon:hover,
-.js-icon:hover+.js-icon-p,
-.js-icon-p:hover {
-  color: #F0DB4F;
+.sass-icon:hover,
+.sass-icon:hover+.sass-icon-p,
+.sass-icon-p:hover {
+  color: #C76494;
 }
 
-.js-hover-color {
-  color: #F0DB4F;
+.sass-hover-color {
+  color: #C76494;
 }
 
 .bootstrap-icon:hover,
@@ -433,6 +447,16 @@ ABOUT SECTION
   color: #36BDF9
 }
 
+.js-icon:hover,
+.js-icon:hover+.js-icon-p,
+.js-icon-p:hover {
+  color: #F0DB4F;
+}
+
+.js-hover-color {
+  color: #F0DB4F;
+}
+
 .react-icon:hover,
 .react-icon:hover+.react-icon-p,
 .react-icon-p:hover {
@@ -441,10 +465,6 @@ ABOUT SECTION
 
 .react-hover-color {
   color: #62DAFB;
-}
-
-.vscode-p-hover-color {
-  color: #27A5F1;
 }
 
 .figma-icon:hover,
@@ -533,16 +553,6 @@ ABOUT SECTION
   100% {
     color: hsla(13, 80%, 51%, 1);
   }
-}
-
-.git-icon:hover,
-.git-icon:hover+.git-icon-p,
-.git-icon-p:hover {
-  color: #F1512F;
-}
-
-.git-hover-color {
-  color: #F1512F;
 }
 
 
