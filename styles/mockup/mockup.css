@@ -32,7 +32,8 @@ body {
 }
 
 .section-heading,
-.contact-subheading {
+.contact-subheading,
+.contact-p {
   text-align: center;
 }
 
@@ -349,11 +350,33 @@ ABOUT SECTION
 }
 
 .about-skills-container {
-  display: grid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+  /* display: grid;
   grid-template-columns: repeat(3, 75px);
   gap: 15px;
   align-items: center;
-  text-align: center;
+  text-align: center; */
+}
+
+.skills-left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-middle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-right-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .skills-icon {
