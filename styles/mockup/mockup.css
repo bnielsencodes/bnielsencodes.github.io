@@ -600,6 +600,71 @@ PROJECTS SECTION
 }
 
 
+/* ------------------------------------
+---------------------------------------
+CONTACT SECTION
+---------------------------------------
+------------------------------------ */
+
+.contact-heading-span {
+  position: relative;
+  z-index: 1;
+  font-size: 1.2rem;
+}
+
+.contact-heading-span::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -2px;
+  left: 19px;
+  width: 208px;
+  height: 9px;
+  background-color: mediumpurple;
+}
+
+.form-fieldset {
+  border: none;
+}
+
+.form-fieldset legend {
+  text-align: center;
+}
+
+.lets-connect {
+  font-size: 1rem;
+}
+
+.contact-p {
+  font-size: 0.70rem;
+  color: mediumpurple;
+}
+
+.lets-connect,
+.contact-p {
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ------------------------------------
 ---------------------------------------
