@@ -12,6 +12,11 @@
 
 // debug:
 
+
+/* ------------------------------------
+VARIABLES
+------------------------------------ */
+
 let $btn = document.getElementById("menu-toggle");
 let $nav = document.getElementById("nav");
 const htmlIcon = document.querySelector(".fa-html5");
@@ -46,9 +51,10 @@ $btn.addEventListener("click", function () {
 });
 
 /* ------------------------------------
-SKILLS ICON MOUSEOVER ANIMATION
+SKILLS ICON MOUSEOVER ANIMATIONS
 ------------------------------------ */
 
+// HTML ICON HOVER ANIMATION
 htmlIconP.addEventListener("mouseover", () => {
   htmlIcon.classList.add("html-hover-color");
 });
@@ -57,6 +63,7 @@ htmlIconP.addEventListener("mouseout", () => {
   htmlIcon.classList.remove("html-hover-color");
 });
 
+// CSS ICON HOVER ANIMATION
 cssIconP.addEventListener("mouseover", () => {
   cssIcon.classList.add("css-hover-color");
 });
@@ -65,6 +72,7 @@ cssIconP.addEventListener("mouseout", () => {
   cssIcon.classList.remove("css-hover-color");
 });
 
+// JAVASCRIPT ICON HOVER ANIMATION
 jsIconP.addEventListener("mouseover", () => {
   jsIcon.classList.add("js-hover-color");
 });
@@ -73,6 +81,7 @@ jsIconP.addEventListener("mouseout", () => {
   jsIcon.classList.remove("js-hover-color");
 });
 
+// BOOTSTRAP ICON HOVER ANIMATION
 bootstrapIconP.addEventListener("mouseover", () => {
   bootstrapIcon.classList.add("bootstrap-hover-color");
 });
@@ -81,6 +90,7 @@ bootstrapIconP.addEventListener("mouseout", () => {
   bootstrapIcon.classList.remove("bootstrap-hover-color");
 });
 
+// TAILWIND SVG HOVER ANIMATION
 tailwindSVG.addEventListener("mouseover", () => {
   tailwindIconP.classList.add("tailwind-p-hover-color");
   tailwindSVGPath.setAttribute("style", "fill: #36BDF9");
@@ -101,6 +111,7 @@ tailwindIconP.addEventListener("mouseout", () => {
   tailwindSVGPath.setAttribute("style", "fill: #fafafa");
 });
 
+// REACT ICON HOVER ANIMATION
 reactIconP.addEventListener("mouseover", () => {
   reactIcon.classList.add("react-hover-color");
 });
@@ -109,6 +120,7 @@ reactIconP.addEventListener("mouseout", () => {
   reactIcon.classList.remove("react-hover-color");
 });
 
+// VS CODE SVG HOVER ANIMATION
 vscodeSVG.addEventListener("mouseover", () => {
   vscodeIconP.classList.add("vscode-p-hover-color");
   vscodePathOne.setAttribute("style", "fill: #0065A9");
@@ -137,6 +149,7 @@ vscodeIconP.addEventListener("mouseout", () => {
   vscodePathThree.setAttribute("style", "fill: #fafafa");
 });
 
+// FIGMA ICON HOVER ANIMATION
 figmaIconP.addEventListener("mouseover", () => {
   figmaIcon.classList.add("figma-hover-color");
 });
@@ -145,6 +158,7 @@ figmaIconP.addEventListener("mouseout", () => {
   figmaIcon.classList.remove("figma-hover-color");
 });
 
+// GIT ICON HOVER ANIMATION
 gitIconP.addEventListener("mouseover", () => {
   gitIcon.classList.add("git-hover-color");
 });
