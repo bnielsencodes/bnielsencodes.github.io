@@ -562,6 +562,21 @@ PROJECTS SECTION
 ---------------------------------------
 ------------------------------------ */
 
+.projects-heading-span {
+  position: relative;
+}
+
+.projects-heading-span::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -2px;
+  left: 21px;
+  width: 126px;
+  height: 14px;
+  background-color: mediumpurple;
+}
+
 #projects-top-divider,
 #projects-bottom-divider {
   position: relative;
