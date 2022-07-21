@@ -30,6 +30,12 @@
 		},
 		{
 			"path": "/Users/Bs/Documents/Documents-iMac/Coding-Folders/Projects/TT-Techdegree-Projects/Web-Style-Guide/scss"
+		},
+		{
+			"path": "/Users/Bs/Documents/Documents-iMac/Coding-Folders/Projects/TT-Techdegree-Projects/Online-Registration-Form"
 		}
-	]
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Brandon-Nielsen-Portfolio"
+	}
 }
