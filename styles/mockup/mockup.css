@@ -346,6 +346,8 @@ ABOUT SECTION
 }
 
 .view-resume:hover {
+  font-size: 0.65rem;
+  letter-spacing: 1.75px;
   color: #1A1A1A;
 }
 
@@ -354,11 +356,6 @@ ABOUT SECTION
   justify-content: space-between;
   align-items: center;
   width: 240px;
-  /* display: grid;
-  grid-template-columns: repeat(3, 75px);
-  gap: 15px;
-  align-items: center;
-  text-align: center; */
 }
 
 .skills-left-container {
@@ -623,21 +620,21 @@ CONTACT SECTION
   background-color: mediumpurple;
 }
 
+/* CONTACT FORM */
+.contact-form {
+  max-width: 475px;
+  margin: 0 auto;
+}
+
 .form-fieldset {
-  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 0;
 }
 
 .form-fieldset legend {
   text-align: center;
-}
-
-.lets-connect {
-  font-size: 1rem;
-}
-
-.contact-p {
-  font-size: 0.70rem;
-  color: mediumpurple;
 }
 
 .lets-connect,
@@ -645,6 +642,32 @@ CONTACT SECTION
   margin: 0;
 }
 
+.lets-connect {
+  font-size: 1rem;
+}
+
+.contact-p {
+  padding-bottom: 10px;
+  font-size: 0.735rem;
+  color: mediumpurple;
+}
+
+.form-item {
+  padding-left: 7px;
+  border: 0;
+  margin-bottom: 6px;
+  background-color: #282828;
+}
+
+.form-item-one,
+.form-item-two {
+  height: 35px;
+}
+
+.form-item-three {
+  height: 105px;
+  padding-top: 10px;
+}
 
 
 
@@ -696,6 +719,72 @@ FORMS
 ---------------------------------------
 ------------------------------------ */
 
+.contact-info-inputs:focus,
+#other-topics:focus {
+  outline: 3px solid #cca43b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .hex {
+  margin-right: -26px;
+  margin-bottom: -50px;
+}
+
+.hex .left {
+  width: 0;
+  border-right: 30px solid #6C6;
+  border-top: 52px solid transparent;
+  border-bottom: 52px solid transparent;
+}
+
+.hex .middle {
+  width: 60px;
+  height: 104px;
+  background: #6C6;
+}
+
+.hex .right {
+  width: 0;
+  border-left: 30px solid #6C6;
+  border-top: 52px solid transparent;
+  border-bottom: 52px solid transparent;
+}
+
+.hex-row {
+  width: 60px;
+  height: 104px;
+  clear: left;
+}
+
+.hex.even {
+  margin-top: 53px;
+} */
 
 
 
@@ -725,15 +814,54 @@ FORMS
 
 
 
+.skills-container {
+  position: relative;
+  z-index: 1;
+}
 
+.hex-flex {
+  position: absolute;
+  top: -7px;
+  left: -24.5px;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+}
 
+.hex-flex-2 {
+  position: absolute;
+  top: -7px;
+  left: -15.5px;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+}
 
+.hex-left {
+  z-index: -1;
+  height: 0;
+  width: 0;
+  border-right: 22.5px solid mediumpurple;
+  border-top: 39px solid transparent;
+  border-bottom: 39px solid transparent;
+}
 
+.hex-middle {
+  z-index: -1;
+  height: 0;
+  width: 45px;
+  height: 78px;
+  background: mediumpurple;
+}
 
-
-
-
-
+.hex-right {
+  z-index: -1;
+  height: 0;
+  width: 0;
+  border-left: 22.5px solid mediumpurple;
+  border-top: 39px solid transparent;
+  border-bottom: 39px solid transparent;
+}
 
 
 
@@ -805,6 +933,10 @@ MEDIUM SCREEN MEDIA QUERIES
     flex-direction: row;
     justify-content: space-between;
   }
+
+  .contact-heading-span {
+    font-size: 1.75rem;
+  }
 }
 
 /* ------------------------------------
@@ -816,5 +948,9 @@ LARGE SCREEN MEDIA QUERIES
 @media (min-width: 1024px) {
   #hidden-lg {
     display: none;
+  }
+
+  .contact-heading-span {
+    font-size: 2rem;
   }
 }
