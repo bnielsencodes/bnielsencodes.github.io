@@ -358,22 +358,23 @@ ABOUT SECTION
   width: 238px;
 }
 
-.skills-left-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.skills-middle-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
+.skills-left-container,
+.skills-middle-container,
 .skills-right-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.skills-left-container,
+.skills-middle-container {
+  width: 68px;
+}
+
+.skills-container {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 11px;
 }
 
 .skills-icon {
@@ -382,7 +383,7 @@ ABOUT SECTION
   height: 32px;
 }
 
-.projects-fa {
+.skills-fa {
   font-size: 2rem;
 }
 
@@ -678,23 +679,6 @@ CONTACT SECTION
   height: 105px;
   padding-top: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
