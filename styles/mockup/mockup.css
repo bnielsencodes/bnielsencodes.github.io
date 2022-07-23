@@ -929,6 +929,10 @@ LARGE SCREEN MEDIA QUERIES
     border-bottom: 2px solid #fafafa;
   }
 
+  .contact-heading {
+    border-top: 1px solid #1A1A1A;
+  }
+
   .contact-heading-span {
     font-size: 2rem;
   }
