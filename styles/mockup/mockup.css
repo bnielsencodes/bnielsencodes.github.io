@@ -559,8 +559,17 @@ PROJECTS SECTION
 ---------------------------------------
 ------------------------------------ */
 
+#projects-section {
+  background-color: #fafafa;
+}
+
+.projects-main-heading {
+  margin: 0px;
+}
+
 .projects-heading-span {
   position: relative;
+  z-index: 1;
 }
 
 .projects-heading-span::after {
@@ -580,6 +589,7 @@ PROJECTS SECTION
   height: auto;
   min-height: 170px;
   margin-top: -1px;
+  background-color: #fafafa;
 }
 
 #projects-bottom-divider {
@@ -862,23 +872,6 @@ FORMS
   border-top: 39px solid transparent;
   border-bottom: 39px solid transparent;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
