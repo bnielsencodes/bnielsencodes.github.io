@@ -304,10 +304,10 @@ ABOUT SECTION
   flex-direction: column;
   align-items: center;
   font-size: 0.9rem;
+  padding: 0 30px;
 }
 
 .about-text-container {
-  padding: 0 30px;
   margin-bottom: 80px;
   text-align: center;
 }
@@ -355,7 +355,7 @@ ABOUT SECTION
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 240px;
+  width: 238px;
 }
 
 .skills-left-container {
@@ -885,23 +885,6 @@ FORMS
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ------------------------------------
 ---------------------------------------
 MEDIUM SCREEN MEDIA QUERIES
@@ -925,6 +908,12 @@ MEDIUM SCREEN MEDIA QUERIES
   .about-content-container {
     flex-direction: row;
     justify-content: space-between;
+    margin: 0 58px;
+    padding: 0;
+  }
+
+  .about-text-container {
+    max-width: 340px;
   }
 
   .contact-heading-span {
@@ -941,6 +930,15 @@ LARGE SCREEN MEDIA QUERIES
 @media (min-width: 1024px) {
   #hidden-lg {
     display: none;
+  }
+
+  .about-content-container {
+    margin: 0 90px;
+  }
+
+  .about-text-container,
+  .about-skills-container {
+    margin: 0 auto;
   }
 
   .contact-heading-span {
