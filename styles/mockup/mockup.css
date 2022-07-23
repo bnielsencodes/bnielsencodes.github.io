@@ -941,6 +941,10 @@ LARGE SCREEN MEDIA QUERIES
     margin: 0 auto;
   }
 
+  #projects-bottom-divider {
+    border-bottom: 2px solid #fafafa;
+  }
+
   .contact-heading-span {
     font-size: 2rem;
   }
