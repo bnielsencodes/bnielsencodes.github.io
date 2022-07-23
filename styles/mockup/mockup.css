@@ -387,6 +387,154 @@ ABOUT SECTION
   font-size: 2rem;
 }
 
+.hex-left,
+.hex-middle,
+.hex-right,
+.hex-left-border,
+.hex-middle-border,
+.hex-right-border {
+  height: 0;
+}
+
+.hex,
+.hex-left,
+.hex-middle,
+.hex-right {
+  z-index: -1;
+}
+
+.hex-left,
+.hex-right,
+.hex-left-border,
+.hex-right-border {
+  width: 0;
+}
+
+.hex-left-border,
+.hex-middle-border,
+.hex-right-border {
+  z-index: -2;
+}
+
+.hex-left {
+  border-right: 26.5px solid #272727;
+  border-top: 43px solid transparent;
+  border-bottom: 43px solid transparent;
+}
+
+.hex-middle {
+  width: 53px;
+  height: 86px;
+  background: #272727;
+}
+
+.hex-right {
+  border-left: 26.5px solid #272727;
+  border-top: 43px solid transparent;
+  border-bottom: 43px solid transparent;
+}
+
+.hex-left-border,
+.hex-right-border {
+  border-top: 45px solid transparent;
+  border-bottom: 45px solid transparent;
+}
+
+.hex-left-border {
+  border-right: 27.5px solid mediumpurple;
+}
+
+.hex-middle-border {
+  width: 55px;
+  height: 90px;
+  background: mediumpurple;
+}
+
+.hex-right-border {
+  border-left: 27.5px solid mediumpurple;
+}
+
+.hex-flex,
+.hex-flex-border {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.hex-flex {
+  top: -9px;
+}
+
+.hex-flex-border {
+  top: -11px;
+}
+
+.hex-flex-html,
+.hex-flex-sass,
+.hex-flex-figma {
+  left: -33.5px;
+}
+
+.hex-flex-html-border,
+.hex-flex-sass-border,
+.hex-flex-figma-border {
+  left: -35.5px;
+}
+
+.hex-flex-vscode,
+.hex-flex-bootstrap-border {
+  left: -24.5px;
+}
+
+.hex-flex-vscode-border {
+  left: -26.5px;
+}
+
+.hex-flex-git {
+  left: -39px;
+}
+
+.hex-flex-git-border {
+  left: -41px;
+}
+
+.hex-flex-css {
+  left: -38.5px;
+}
+
+.hex-flex-css-border {
+  left: -40.5px;
+}
+
+.hex-flex-bootstrap {
+  left: -22.5px;
+}
+
+.hex-flex-tailwind {
+  left: -27px;
+}
+
+.hex-flex-tailwind-border {
+  left: -29px;
+}
+
+.hex-flex-js {
+  left: -19px;
+}
+
+.hex-flex-js-border {
+  left: -21px;
+}
+
+.hex-flex-react {
+  left: -34px;
+}
+
+.hex-flex-react-border {
+  left: -36px;
+}
+
 .html-icon:hover,
 .html-icon:hover+.html-icon-p,
 .html-icon-p:hover {
@@ -744,118 +892,6 @@ FORMS
 
 
 
-
-/* .hex {
-  margin-right: -26px;
-  margin-bottom: -50px;
-}
-
-.hex .left {
-  width: 0;
-  border-right: 30px solid #6C6;
-  border-top: 52px solid transparent;
-  border-bottom: 52px solid transparent;
-}
-
-.hex .middle {
-  width: 60px;
-  height: 104px;
-  background: #6C6;
-}
-
-.hex .right {
-  width: 0;
-  border-left: 30px solid #6C6;
-  border-top: 52px solid transparent;
-  border-bottom: 52px solid transparent;
-}
-
-.hex-row {
-  width: 60px;
-  height: 104px;
-  clear: left;
-}
-
-.hex.even {
-  margin-top: 53px;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.skills-container {
-  position: relative;
-  z-index: 1;
-}
-
-.hex-flex {
-  position: absolute;
-  top: -7px;
-  left: -24.5px;
-  z-index: -1;
-  display: flex;
-  justify-content: center;
-}
-
-.hex-flex-2 {
-  position: absolute;
-  top: -7px;
-  left: -15.5px;
-  z-index: -1;
-  display: flex;
-  justify-content: center;
-}
-
-.hex-left {
-  z-index: -1;
-  height: 0;
-  width: 0;
-  border-right: 22.5px solid mediumpurple;
-  border-top: 39px solid transparent;
-  border-bottom: 39px solid transparent;
-}
-
-.hex-middle {
-  z-index: -1;
-  height: 0;
-  width: 45px;
-  height: 78px;
-  background: mediumpurple;
-}
-
-.hex-right {
-  z-index: -1;
-  height: 0;
-  width: 0;
-  border-left: 22.5px solid mediumpurple;
-  border-top: 39px solid transparent;
-  border-bottom: 39px solid transparent;
-}
 
 
 
