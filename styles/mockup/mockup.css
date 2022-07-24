@@ -263,7 +263,7 @@ NAVIGATION
   color: #fafafa;
 }
 
-.main-nav-link-container {
+.hamburger-nav-link-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -271,7 +271,7 @@ NAVIGATION
   height: 200px;
 }
 
-.main-nav-link {
+.hamburger-nav-link {
   position: relative;
   z-index: 400;
   padding: 0 12px;
@@ -281,7 +281,7 @@ NAVIGATION
   color: #fafafa;
 }
 
-.main-nav-link::after {
+.hamburger-nav-link::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -295,14 +295,27 @@ NAVIGATION
   background: mediumpurple;
 }
 
-.main-nav-link:hover::after {
+.hamburger-nav-link:hover::after {
   transform: scaleY(1);
 }
 
-.main-nav-link:hover {
+.hamburger-nav-link:hover {
   color: #1A1A1A;
 }
 
+.main-nav-link-container {
+  margin-right: 40px;
+}
+
+.main-nav-link {
+  margin-right: 12px;
+  font-size: 1.1rem;
+  color: #fafafa;
+}
+
+.main-nav-link:hover {
+  color: mediumpurple;
+}
 
 /* ------------------------------------
 ---------------------------------------
@@ -1211,6 +1224,10 @@ MEDIUM SCREEN MEDIA QUERIES
   .header-heading,
   .header-subheading {
     font-size: 2.2rem;
+  }
+
+  .main-nav-logo {
+    font-size: 1.15rem;
   }
 
   .main-nav-link-container {
