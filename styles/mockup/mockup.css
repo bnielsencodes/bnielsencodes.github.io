@@ -50,6 +50,7 @@ body {
 
 .section-heading {
   margin: 0 0 10px;
+  font-size: 2.35rem;
 }
 
 .section-heading,
@@ -786,7 +787,7 @@ CONTACT SECTION
 .contact-heading-span {
   position: relative;
   z-index: 1;
-  font-size: 1.2rem;
+  font-size: 1.28rem;
 }
 
 .contact-heading-span::after {
@@ -937,6 +938,15 @@ MEDIUM SCREEN MEDIA QUERIES
     display: none;
   }
 
+  .section-heading {
+    font-size: 2.25rem;
+  }
+
+  .header-heading,
+  .header-subheading {
+    font-size: 2.2rem;
+  }
+
   .main-nav-link-container {
     display: flex;
     justify-content: space-between;
@@ -958,7 +968,9 @@ MEDIUM SCREEN MEDIA QUERIES
   }
 
   .contact-heading-span {
-    font-size: 1.75rem;
+    font-size: 2rem;
+  }
+
   }
 }
 
@@ -971,6 +983,11 @@ LARGE SCREEN MEDIA QUERIES
 @media (min-width: 1024px) {
   #hidden-lg {
     display: none;
+  }
+
+  .header-heading,
+  .header-subheading {
+    font-size: 3rem;
   }
 
   .about-content-container {
@@ -991,6 +1008,14 @@ LARGE SCREEN MEDIA QUERIES
   }
 
   .contact-heading-span {
-    font-size: 2rem;
+    font-size: 2.35rem;
+  }
+
+  .contact-p {
+    font-size: 0.925rem;
+  }
+
+  .lets-connect {
+    font-size: 1.5rem;
   }
 }
