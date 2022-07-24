@@ -1177,8 +1177,15 @@ MEDIUM SCREEN MEDIA QUERIES
     height: 13px;
   }
 
+  .contact-p {
+    font-size: 0.9rem;
+  }
+
+  .lets-connect {
+    font-size: 1.275rem;
   }
 }
+
 
 /* ------------------------------------
 ---------------------------------------
