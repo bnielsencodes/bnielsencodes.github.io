@@ -5,6 +5,16 @@ body {
   /* overflow: hidden; */
 }
 
+/* HIDE SCROLLBAR BUT STILL ALLOW SCROLL (CHROME, SAFARI, OPERA) */
+body::-webkit-scrollbar {
+  width: 0 !important
+}
+
+/* HIDE SCROLLBAR BUT STILL ALLOW SCROLL (FIREFOX) */
+body {
+  overflow: -moz-scrollbars-none;
+}
+
 #hidden-sm {
   display: none;
 }
