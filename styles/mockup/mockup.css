@@ -986,6 +986,12 @@ CONTACT SECTION
   color: #fafafa;
 }
 
+.projects-cta:focus,
+.main-nav-link:focus,
+.view-resume:focus,
+.form-item:focus,
+.form-button:focus {
+  outline: 2px solid mediumpurple;
 }
 
 .form-item-one,
