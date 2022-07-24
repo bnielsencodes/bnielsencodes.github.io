@@ -15,6 +15,17 @@ body {
   overflow: -moz-scrollbars-none;
 }
 
+::selection {
+  color: #1A1A1A;
+  background: mediumpurple;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: #1A1A1A;
+  background: mediumpurple;
+}
+
 #hidden-sm {
   display: none;
 }
