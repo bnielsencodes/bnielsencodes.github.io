@@ -390,6 +390,51 @@ ABOUT SECTION
 .about-text-container {
   margin-bottom: 80px;
   text-align: center;
+  opacity: 0;
+}
+
+.about-left-animation {
+  animation-name: moveInLeft2;
+  animation-duration: 1.4s;
+  animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes moveInLeft2 {
+  0% {
+    opacity: 0;
+    transform: translateX(-25rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.about-skills-container {
+  opacity: 0;
+}
+
+.about-right-animation {
+  animation-name: moveInRight2;
+  animation-duration: 1.4s;
+  animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes moveInRight2 {
+  0% {
+    opacity: 0;
+    transform: translateX(25rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 }
 
 .about-p-two {
