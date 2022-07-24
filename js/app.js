@@ -1,4 +1,13 @@
-// todo:
+/* ----------------------------
+todo: will be both css and js
+add code to show error messages on contact form,
+will also highlight empty input causing error
+
+todo:
+
+
+
+----------------------------- */
 
 // note:
 
@@ -43,6 +52,43 @@ const reactIcon = document.querySelector(".fa-react");
 const reactIconP = document.querySelector(".react-icon-p");
 const figmaIcon = document.querySelector(".fa-figma");
 const figmaIconP = document.querySelector(".figma-icon-p");
+
+
+
+
+
+
+const observer = new IntersectionObserver(entries => {
+  // Loop over the entries
+  entries.forEach(entry => {
+    // If the element is visible
+    if (entry.isIntersecting) {
+      // Add the animation class
+      entry.target.classList.add('about-left-animation');
+    }
+  });
+});
+
+// Tell the observer which elements to track
+observer.observe(document.querySelector('.about-text-container'));
+
+
+
+
+const observer2 = new IntersectionObserver(entries => {
+  // Loop over the entries
+  entries.forEach(entry => {
+    // If the element is visible
+    if (entry.isIntersecting) {
+      // Add the animation class
+      entry.target.classList.add('about-right-animation');
+    }
+  });
+});
+
+// Tell the observer which elements to track
+observer2.observe(document.querySelector('.about-skills-container'));
+
 
 
 /* ------------------------------------
