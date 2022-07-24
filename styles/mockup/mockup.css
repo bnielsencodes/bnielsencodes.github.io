@@ -373,8 +373,8 @@ ABOUT SECTION
   position: absolute;
   z-index: -1;
   bottom: -2px;
-  left: 21px;
-  width: 90px;
+  left: 25px;
+  width: 102px;
   height: 14px;
   background-color: mediumpurple;
 }
@@ -384,7 +384,8 @@ ABOUT SECTION
   flex-direction: column;
   align-items: center;
   font-size: 0.9rem;
-  padding: 0 30px;
+  margin: 35px 0 0;
+  padding: 0 30px 80px;
 }
 
 .about-text-container {
