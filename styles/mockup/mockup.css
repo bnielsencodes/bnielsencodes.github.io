@@ -160,6 +160,28 @@ HEADER SECTION
   color: mediumpurple;
 }
 
+.cta-container {
+  animation-name: moveInBottom;
+  animation-duration: 1.4s;
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .projects-cta {
   color: mediumpurple;
   padding: 6px;
