@@ -628,14 +628,12 @@ ABOUT SECTION
 }
 
 .hex-flex-html,
-.hex-flex-sass,
-.hex-flex-figma {
+.hex-flex-sass {
   left: -33.5px;
 }
 
 .hex-flex-html-border,
-.hex-flex-sass-border,
-.hex-flex-figma-border {
+.hex-flex-sass-border {
   left: -35.5px;
 }
 
@@ -669,11 +667,11 @@ ABOUT SECTION
 }
 
 .hex-flex-tailwind {
-  left: -27px;
+  left: -27.5px;
 }
 
 .hex-flex-tailwind-border {
-  left: -29px;
+  left: -29.5px;
 }
 
 .hex-flex-js {
@@ -690,6 +688,14 @@ ABOUT SECTION
 
 .hex-flex-react-border {
   left: -36px;
+}
+
+.hex-flex-figma {
+  left: -33px;
+}
+
+.hex-flex-figma-border {
+  left: -35px;
 }
 
 .html-icon:hover,
