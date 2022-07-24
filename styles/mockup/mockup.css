@@ -2,7 +2,7 @@ body {
   font: normal 16px/1.5 'Monteserrat',
     sans-serif;
   color: #fafafa;
-  /* overflow: hidden; */
+  width: 100vw;
 }
 
 /* HIDE SCROLLBAR BUT STILL ALLOW SCROLL (CHROME, SAFARI, OPERA) */
