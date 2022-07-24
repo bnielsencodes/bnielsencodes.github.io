@@ -1059,6 +1059,11 @@ MEDIUM SCREEN MEDIA QUERIES
     padding-right: 10px;
   }
 
+  .about-heading-span::after {
+    left: 24px;
+    width: 100px;
+  }
+
   .about-content-container {
     flex-direction: row;
     justify-content: space-between;
@@ -1070,8 +1075,19 @@ MEDIUM SCREEN MEDIA QUERIES
     max-width: 340px;
   }
 
+  .projects-heading-span::after {
+    left: 24px;
+    width: 140px;
+  }
+
   .contact-heading-span {
     font-size: 2rem;
+  }
+
+  .contact-heading-span::after {
+    left: 28px;
+    width: 347px;
+    height: 13px;
   }
 
   }
@@ -1093,6 +1109,12 @@ LARGE SCREEN MEDIA QUERIES
     font-size: 3rem;
   }
 
+  .about-heading-span::after {
+    left: 25px;
+    width: 105px;
+    height: 15px;
+  }
+
   .about-content-container {
     margin: 0 90px;
   }
@@ -1102,8 +1124,10 @@ LARGE SCREEN MEDIA QUERIES
     margin: 0 auto;
   }
 
-  #projects-bottom-divider {
-    border-bottom: 2px solid #fafafa;
+  .projects-heading-span::after {
+    left: 25px;
+    width: 145px;
+    height: 15px;
   }
 
   .contact-heading {
@@ -1112,6 +1136,12 @@ LARGE SCREEN MEDIA QUERIES
 
   .contact-heading-span {
     font-size: 2.35rem;
+  }
+
+  .contact-heading-span::after {
+    left: 36px;
+    width: 400px;
+    height: 15px;
   }
 
   .contact-p {
