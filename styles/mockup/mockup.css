@@ -214,6 +214,8 @@ NAVIGATION
   justify-content: space-between;
   align-items: center;
   height: 50px;
+  border-bottom: 1px solid #1A1A1A;
+  box-shadow: 0 4px 4px rgb(0 0 0 / 30%);
   background-color: #272727;
 }
 
