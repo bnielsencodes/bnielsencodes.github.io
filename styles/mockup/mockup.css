@@ -1044,6 +1044,46 @@ CONTACT SECTION
 }
 
 
+/* ------------------------------------
+---------------------------------------
+FOOTER SECTION
+---------------------------------------
+------------------------------------ */
+
+#footer-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 135px;
+  padding-top: 25px;
+  font-size: 0.75rem;
+  background-color: #272727;
+}
+
+.return-home {
+  position: absolute;
+  top: -20px;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  background-color: mediumpurple;
+}
+
+.footer-links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
