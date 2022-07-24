@@ -161,6 +161,8 @@ HEADER SECTION
 }
 
 .cta-container {
+  width: 115px;
+  margin: 0 auto;
   animation-name: moveInBottom;
   animation-duration: 1.4s;
   animation-delay: 0.5s;
@@ -186,6 +188,42 @@ HEADER SECTION
   color: mediumpurple;
   padding: 6px;
   border: 2px solid mediumpurple;
+  outline-offset: 0px;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.projects-cta::after,
+.projects-cta::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  transition: .5s;
+}
+
+.projects-cta::after {
+  top: -10px;
+  left: -4px;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+}
+
+.projects-cta::before {
+  bottom: -10px;
+  right: -4px;
+  border-bottom: 2px solid transparent;
+  border-right: 2px solid transparent;
+}
+
+.projects-cta:hover {
+  color: mediumpurple;
+}
+
+.projects-cta:hover::after,
+.projects-cta:hover::before {
+  width: calc(100% + 6px);
+  height: calc(100% + 17px);
+  border-color: mediumpurple;
 }
 
 .fa-arrow-down {
