@@ -707,6 +707,10 @@ ABOUT SECTION
   color: #27A5F1;
 }
 
+.git-icon-p {
+  text-align: center;
+}
+
 .git-icon:hover,
 .git-icon:hover+.git-icon-p,
 .git-icon-p:hover {
