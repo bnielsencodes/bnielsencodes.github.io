@@ -980,8 +980,12 @@ CONTACT SECTION
 .form-item {
   padding-left: 7px;
   border: 0;
+  border-radius: 0px;
   margin-bottom: 6px;
   background-color: #282828;
+  color: #fafafa;
+}
+
 }
 
 .form-item-one,
@@ -1072,18 +1076,6 @@ FLEX
 FORMS
 ---------------------------------------
 ------------------------------------ */
-
-.contact-info-inputs:focus,
-#other-topics:focus {
-  outline: 3px solid #cca43b;
-}
-
-
-
-
-
-
-
 
 
 
