@@ -25,6 +25,25 @@ body {
   background: #785af0;
 }
 
+.form-button::selection,
+.email-green::selection,
+.location::selection,
+.main-nav-logo::selection,
+.projects-cta::selection,
+.header-heading-span::selection {
+  color: #1A1A1A;
+  background: #2cb67d;
+}
+
+.form-butotn::-moz-selection,
+.email-green::-moz-selection,
+.location::-moz-selection,
+.main-nav-logo::-moz-selection,
+.projects-cta::-moz-selection,
+.header-heading-span::-moz-selection {
+  /* Code for Firefox */
+  color: #1A1A1A;
+  background: #2cb67d;
 }
 
 #hidden-sm {
