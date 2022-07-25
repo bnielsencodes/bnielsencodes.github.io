@@ -495,23 +495,40 @@ ABOUT SECTION
   width: 165px;
 }
 
-.location-icon {
+.location-icon-container {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   width: 40px;
   height: 40px;
 }
 
+.location-icon-container:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 13px;
+  top: 6px;
+  opacity: 0.8;
+  width: 15px;
+  height: 15px;
+  background-color: #2cb67d;
+  border-radius: 50%;
+}
+
 .fa-map-pin {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
+  padding-top: 12px;
   font-size: 2.2rem;
-  color: mediumpurple;
+  --fa-primary-color: #785af0;
+  --fa-secondary-color: #2cb67d;
 }
 
 .location {
   font-size: 1.4rem;
-  border-bottom: 4px solid mediumpurple;
+  border-bottom: 4px solid #785af0;
   margin: 0;
 }
 
