@@ -1165,6 +1165,40 @@ FOOTER SECTION
   color: #1A1A1A;
 }
 
+.footer-content-container {
+  min-width: 254px;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.footer-links-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2.5rem;
+  color: #785af0;
+}
+
+.fa-twitter:hover {
+  color: #1DA1F2;
+}
+
+.fa-linkedin-in:hover {
+  color: #0966C2;
+}
+
+.fa-github:hover {
+  color: #4183C4;
+}
+
+.fa-paper-plane:hover {
+  color: #FBB612;
+}
+
+.footer-signature {
+  margin-top: 18px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
 }
 
 
