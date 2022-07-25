@@ -637,41 +637,41 @@ ABOUT SECTION
 }
 
 .hex-left {
-  border-right: 26.5px solid #272727;
-  border-top: 43px solid transparent;
-  border-bottom: 43px solid transparent;
+  border-right: 27.5px solid #272727;
+  border-top: 44px solid transparent;
+  border-bottom: 44px solid transparent;
 }
 
 .hex-middle {
-  width: 53px;
-  height: 86px;
+  width: 55px;
+  height: 88px;
   background: #272727;
 }
 
 .hex-right {
-  border-left: 26.5px solid #272727;
-  border-top: 43px solid transparent;
-  border-bottom: 43px solid transparent;
+  border-left: 27.5px solid #272727;
+  border-top: 44px solid transparent;
+  border-bottom: 44px solid transparent;
 }
 
 .hex-left-border,
 .hex-right-border {
-  border-top: 45px solid transparent;
-  border-bottom: 45px solid transparent;
+  border-top: 46px solid transparent;
+  border-bottom: 46px solid transparent;
 }
 
 .hex-left-border {
-  border-right: 27.5px solid mediumpurple;
+  border-right: 28.5px solid #785af0;
 }
 
 .hex-middle-border {
-  width: 55px;
-  height: 90px;
-  background: mediumpurple;
+  width: 57px;
+  height: 92px;
+  background: #785af0;
 }
 
 .hex-right-border {
-  border-left: 27.5px solid mediumpurple;
+  border-left: 28.5px solid #785af0;
 }
 
 .hex-flex,
@@ -763,16 +763,37 @@ ABOUT SECTION
 
 .html-icon:hover,
 .html-icon:hover+.html-icon-p,
-.html-icon-p:hover {
-  color: #f06529;
-}
-
+.html-icon-p:hover,
 .html-hover-color {
   color: #f06529;
 }
 
+.html-hex-bg-color {
+  background-color: #f06529;
+}
+
+.html-hex-border-left {
+  border-right: 28.5px solid #f06529;
+}
+
+.html-hex-border-right {
+  border-left: 28.5px solid #f06529;
+}
+
 .vscode-p-hover-color {
   color: #27A5F1;
+}
+
+.vscode-hex-bg-color {
+  background-color: #27A5F1;
+}
+
+.vscode-hex-border-left {
+  border-right: 28.5px solid #27A5F1;
+}
+
+.vscode-hex-border-right {
+  border-left: 28.5px solid #27A5F1;
 }
 
 .git-icon-p {
@@ -781,74 +802,137 @@ ABOUT SECTION
 
 .git-icon:hover,
 .git-icon:hover+.git-icon-p,
-.git-icon-p:hover {
-  color: #F1512F;
-}
-
+.git-icon-p:hover,
 .git-hover-color {
   color: #F1512F;
 }
 
-.css-icon:hover,
-.css-icon:hover+.css-icon-p,
-.css-icon-p:hover {
-  color: #2965f1;
+.git-hex-bg-color {
+  background-color: #F1512F;
 }
 
+.git-hex-border-left {
+  border-right: 28.5px solid #F1512F;
+}
+
+.git-hex-border-right {
+  border-left: 28.5px solid #F1512F;
+}
+
+.css-icon:hover,
+.css-icon:hover+.css-icon-p,
+.css-icon-p:hover,
 .css-hover-color {
   color: #2965f1;
 }
 
-.sass-icon:hover,
-.sass-icon:hover+.sass-icon-p,
-.sass-icon-p:hover {
-  color: #C76494;
+.css-hex-bg-color {
+  background-color: #2965f1;
 }
 
+.css-hex-border-left {
+  border-right: 28.5px solid #2965f1;
+}
+
+.css-hex-border-right {
+  border-left: 28.5px solid #2965f1;
+}
+
+.sass-icon:hover,
+.sass-icon:hover+.sass-icon-p,
+.sass-icon-p:hover,
 .sass-hover-color {
   color: #C76494;
 }
 
+.sass-hex-bg-color {
+  background-color: #C76494;
+}
+
+.sass-hex-border-left {
+  border-right: 28.5px solid #C76494;
+}
+
+.sass-hex-border-right {
+  border-left: 28.5px solid #C76494;
+}
+
 .bootstrap-icon:hover,
 .bootstrap-icon:hover+.bootstrap-icon-p,
-.bootstrap-icon-p:hover {
+.bootstrap-icon-p:hover,
+.bootstrap-hover-color {
   color: #722CF8;
 }
 
-.bootstrap-hover-color {
-  color: #722CF8;
+.bootstrap-hex-bg-color {
+  background-color: #722CF8;
+}
+
+.bootstrap-hex-border-left {
+  border-right: 28.5px solid #722CF8;
+}
+
+.bootstrap-hex-border-right {
+  border-left: 28.5px solid #722CF8;
 }
 
 .tailwind-p-hover-color {
   color: #36BDF9
 }
 
-.js-icon:hover,
-.js-icon:hover+.js-icon-p,
-.js-icon-p:hover {
-  color: #F0DB4F;
+.tailwind-hex-bg-color {
+  background-color: #36BDF9;
 }
 
+.tailwind-hex-border-left {
+  border-right: 28.5px solid #36BDF9;
+}
+
+.tailwind-hex-border-right {
+  border-left: 28.5px solid #36BDF9;
+}
+
+.js-icon:hover,
+.js-icon:hover+.js-icon-p,
+.js-icon-p:hover,
 .js-hover-color {
   color: #F0DB4F;
 }
 
-.react-icon:hover,
-.react-icon:hover+.react-icon-p,
-.react-icon-p:hover {
-  color: #62DAFB;
+.js-hex-bg-color {
+  background-color: #F0DB4F;
 }
 
+.js-hex-border-left {
+  border-right: 28.5px solid #F0DB4F;
+}
+
+.js-hex-border-right {
+  border-left: 28.5px solid #F0DB4F;
+}
+
+.react-icon:hover,
+.react-icon:hover+.react-icon-p,
+.react-icon-p:hover,
 .react-hover-color {
   color: #62DAFB;
 }
 
-.figma-icon:hover,
-.figma-icon:hover+.figma-icon-p,
-.figma-icon-p:hover {
-  animation: figmaGradientAnimation 3.75s ease 0s infinite normal none;
+.react-hex-bg-color {
+  background-color: #62DAFB;
 }
 
+.react-hex-border-left {
+  border-right: 28.5px solid #62DAFB;
+}
+
+.react-hex-border-right {
+  border-left: 28.5px solid #62DAFB;
+}
+
+.figma-icon:hover,
+.figma-icon:hover+.figma-icon-p,
+.figma-icon-p:hover,
 .figma-hover-color {
   animation: figmaGradientAnimation 3.75s ease 0s infinite normal none;
 }
@@ -928,6 +1012,252 @@ ABOUT SECTION
 
   100% {
     color: hsla(13, 80%, 51%, 1);
+  }
+}
+
+.figma-hex-bg-color {
+  animation: figmaBgGradientAnimation 3.75s ease 0s infinite normal none;
+}
+
+@keyframes figmaBgGradientAnimation {
+  0% {
+    background-color: hsla(13, 80%, 51%, 1);
+  }
+
+  20% {
+    background-color: hsla(6, 85%, 66%, 1);
+  }
+
+  40% {
+    background-color: hsla(267, 85%, 64%, 1);
+  }
+
+  60% {
+    background-color: hsla(197, 89%, 52%, 1);
+  }
+
+  80% {
+    background-color: hsla(156, 86%, 41%, 1);
+  }
+
+  100% {
+    background-color: hsla(13, 80%, 51%, 1);
+  }
+}
+
+@-webkit-keyframes figmaBgColorAnimation {
+  0% {
+    background-color: hsla(13, 80%, 51%, 1);
+  }
+
+  20% {
+    background-color: hsla(6, 85%, 66%, 1);
+  }
+
+  40% {
+    background-color: hsla(267, 85%, 64%, 1);
+  }
+
+  60% {
+    background-color: hsla(197, 89%, 52%, 1);
+  }
+
+  80% {
+    background-color: hsla(156, 86%, 41%, 1);
+  }
+
+  100% {
+    background-color: hsla(13, 80%, 51%, 1);
+  }
+}
+
+@-moz-keyframes figmaBgColorAnimation {
+  0% {
+    background-color: hsla(13, 80%, 51%, 1);
+  }
+
+  20% {
+    background-color: hsla(6, 85%, 66%, 1);
+  }
+
+  40% {
+    background-color: hsla(267, 85%, 64%, 1);
+  }
+
+  60% {
+    background-color: hsla(197, 89%, 52%, 1);
+  }
+
+  80% {
+    background-color: hsla(156, 86%, 41%, 1);
+  }
+
+  100% {
+    background-color: hsla(13, 80%, 51%, 1);
+  }
+}
+
+.figma-hex-border-left {
+  animation: figmaBorderLeftGradientAnimation 3.75s ease 0s infinite normal none;
+}
+
+@keyframes figmaBorderLeftGradientAnimation {
+  0% {
+    border-right: 28.5px solid hsla(13, 80%, 51%, 1);
+  }
+
+  20% {
+    border-right: 28.5px solid hsla(6, 85%, 66%, 1);
+  }
+
+  40% {
+    border-right: 28.5px solid hsla(267, 85%, 64%, 1);
+  }
+
+  60% {
+    border-right: 28.5px solid hsla(197, 89%, 52%, 1);
+  }
+
+  80% {
+    border-right: 28.5px solid hsla(156, 86%, 41%, 1);
+  }
+
+  100% {
+    border-right: 28.5px solid hsla(13, 80%, 51%, 1);
+  }
+}
+
+@-webkit-keyframes figmaBorderLeftColorAnimation {
+  0% {
+    border-right: 28.5px solid hsla(13, 80%, 51%, 1);
+  }
+
+  20% {
+    border-right: 28.5px solid hsla(6, 85%, 66%, 1);
+  }
+
+  40% {
+    border-right: 28.5px solid hsla(267, 85%, 64%, 1);
+  }
+
+  60% {
+    border-right: 28.5px solid hsla(197, 89%, 52%, 1);
+  }
+
+  80% {
+    border-right: 28.5px solid hsla(156, 86%, 41%, 1);
+  }
+
+  100% {
+    border-right: 28.5px solid hsla(13, 80%, 51%, 1);
+  }
+}
+
+@-moz-keyframes figmaBorderLeftColorAnimation {
+  0% {
+    border-right: 28.5px solid hsla(13, 80%, 51%, 1);
+  }
+
+  20% {
+    border-right: 28.5px solid hsla(6, 85%, 66%, 1);
+  }
+
+  40% {
+    border-right: 28.5px solid hsla(267, 85%, 64%, 1);
+  }
+
+  60% {
+    border-right: 28.5px solid hsla(197, 89%, 52%, 1);
+  }
+
+  80% {
+    border-right: 28.5px solid hsla(156, 86%, 41%, 1);
+  }
+
+  100% {
+    border-right: 28.5px solid hsla(13, 80%, 51%, 1);
+  }
+}
+
+.figma-hex-border-right {
+  animation: figmaBorderRightGradientAnimation 3.75s ease 0s infinite normal none;
+}
+
+@keyframes figmaBorderRightGradientAnimation {
+  0% {
+    border-left: 28.5px solid hsla(13, 80%, 51%, 1);
+  }
+
+  20% {
+    border-left: 28.5px solid hsla(6, 85%, 66%, 1);
+  }
+
+  40% {
+    border-left: 28.5px solid hsla(267, 85%, 64%, 1);
+  }
+
+  60% {
+    border-left: 28.5px solid hsla(197, 89%, 52%, 1);
+  }
+
+  80% {
+    border-left: 28.5px solid hsla(156, 86%, 41%, 1);
+  }
+
+  100% {
+    border-left: 28.5px solid hsla(13, 80%, 51%, 1);
+  }
+}
+
+@-webkit-keyframes figmaBorderRightColorAnimation {
+  0% {
+    border-left: 28.5px solid hsla(13, 80%, 51%, 1);
+  }
+
+  20% {
+    border-left: 28.5px solid hsla(6, 85%, 66%, 1);
+  }
+
+  40% {
+    border-left: 28.5px solid hsla(267, 85%, 64%, 1);
+  }
+
+  60% {
+    border-left: 28.5px solid hsla(197, 89%, 52%, 1);
+  }
+
+  80% {
+    border-left: 28.5px solid hsla(156, 86%, 41%, 1);
+  }
+
+  100% {
+    border-left: 28.5px solid hsla(13, 80%, 51%, 1);
+  }
+}
+
+@-moz-keyframes figmaBorderRightColorAnimation {
+  0% {
+    border-left: 28.5px solid hsla(13, 80%, 51%, 1);
+  }
+
+  20% {
+    border-left: 28.5px solid hsla(6, 85%, 66%, 1);
+  }
+
+  40% {
+    border-left: 28.5px solid hsla(267, 85%, 64%, 1);
+  }
+
+  60% {
+    border-left: 28.5px solid hsla(197, 89%, 52%, 1);
+  }
+
+  80% {
+    border-left: 28.5px solid hsla(156, 86%, 41%, 1);
+  }
+
+  100% {
+    border-left: 28.5px solid hsla(13, 80%, 51%, 1);
   }
 }
 
