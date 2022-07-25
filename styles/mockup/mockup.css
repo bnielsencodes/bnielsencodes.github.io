@@ -1144,9 +1144,27 @@ FOOTER SECTION
 }
 
 .footer-links-container {
+.return-home:hover {
+  transform: scale(1.1);
+}
+
+.return-home:hover {
+  background-color: #2cb67d;
+}
+
+.return-home-link {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.fa-chevrons-up {
+  font-size: 2rem;
+  color: #1A1A1A;
+}
+
 }
 
 
