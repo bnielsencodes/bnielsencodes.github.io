@@ -147,15 +147,38 @@ SKILLS ICON MOUSEOVER ANIMATIONS
 // HTML ICON HOVER ANIMATION
 htmlIconP.addEventListener("mouseover", () => {
   htmlIcon.classList.add("html-hover-color");
+  htmlLeftBorder.classList.add("html-hex-border-left");
+  htmlMiddleBorder.classList.add("html-hex-bg-color");
+  htmlRightBorder.classList.add("html-hex-border-right");
 });
 
 htmlIconP.addEventListener("mouseout", () => {
   htmlIcon.classList.remove("html-hover-color");
+  htmlLeftBorder.classList.remove("html-hex-border-left");
+  htmlMiddleBorder.classList.remove("html-hex-bg-color");
+  htmlRightBorder.classList.remove("html-hex-border-right");
+});
+
+htmlIcon.addEventListener("mouseover", () => {
+  htmlIconP.classList.add("html-hover-color");
+  htmlLeftBorder.classList.add("html-hex-border-left");
+  htmlMiddleBorder.classList.add("html-hex-bg-color");
+  htmlRightBorder.classList.add("html-hex-border-right");
+});
+
+htmlIcon.addEventListener("mouseout", () => {
+  htmlIconP.classList.remove("html-hover-color");
+  htmlLeftBorder.classList.remove("html-hex-border-left");
+  htmlMiddleBorder.classList.remove("html-hex-bg-color");
+  htmlRightBorder.classList.remove("html-hex-border-right");
 });
 
 // VS CODE SVG HOVER ANIMATION
 vscodeSVG.addEventListener("mouseover", () => {
   vscodeIconP.classList.add("vscode-p-hover-color");
+  vscodeLeftBorder.classList.add("vscode-hex-border-left");
+  vscodeMiddleBorder.classList.add("vscode-hex-bg-color");
+  vscodeRightBorder.classList.add("vscode-hex-border-right");
   vscodePathOne.setAttribute("style", "fill: #0065A9");
   vscodePathTwo.setAttribute("style", "fill: #007ACC");
   vscodePathThree.setAttribute("style", "fill: #1F9CF0");
@@ -163,6 +186,9 @@ vscodeSVG.addEventListener("mouseover", () => {
 
 vscodeSVG.addEventListener("mouseout", () => {
   vscodeIconP.classList.remove("vscode-p-hover-color");
+  vscodeLeftBorder.classList.remove("vscode-hex-border-left");
+  vscodeMiddleBorder.classList.remove("vscode-hex-bg-color");
+  vscodeRightBorder.classList.remove("vscode-hex-border-right");
   vscodePathOne.setAttribute("style", "fill: #fafafa");
   vscodePathTwo.setAttribute("style", "fill: #fafafa");
   vscodePathThree.setAttribute("style", "fill: #fafafa");
@@ -170,6 +196,9 @@ vscodeSVG.addEventListener("mouseout", () => {
 
 vscodeIconP.addEventListener("mouseover", () => {
   vscodeIconP.classList.add("vscode-p-hover-color");
+  vscodeLeftBorder.classList.add("vscode-hex-border-left");
+  vscodeMiddleBorder.classList.add("vscode-hex-bg-color");
+  vscodeRightBorder.classList.add("vscode-hex-border-right");
   vscodePathOne.setAttribute("style", "fill: #0065A9");
   vscodePathTwo.setAttribute("style", "fill: #007ACC");
   vscodePathThree.setAttribute("style", "fill: #1F9CF0");
@@ -177,6 +206,9 @@ vscodeIconP.addEventListener("mouseover", () => {
 
 vscodeIconP.addEventListener("mouseout", () => {
   vscodeIconP.classList.remove("vscode-p-hover-color");
+  vscodeLeftBorder.classList.remove("vscode-hex-border-left");
+  vscodeMiddleBorder.classList.remove("vscode-hex-bg-color");
+  vscodeRightBorder.classList.remove("vscode-hex-border-right");
   vscodePathOne.setAttribute("style", "fill: #fafafa");
   vscodePathTwo.setAttribute("style", "fill: #fafafa");
   vscodePathThree.setAttribute("style", "fill: #fafafa");
@@ -185,83 +217,241 @@ vscodeIconP.addEventListener("mouseout", () => {
 // GIT ICON HOVER ANIMATION
 gitIconP.addEventListener("mouseover", () => {
   gitIcon.classList.add("git-hover-color");
+  gitLeftBorder.classList.add("git-hex-border-left");
+  gitMiddleBorder.classList.add("git-hex-bg-color");
+  gitRightBorder.classList.add("git-hex-border-right");
 });
 
 gitIconP.addEventListener("mouseout", () => {
   gitIcon.classList.remove("git-hover-color");
+  gitLeftBorder.classList.remove("git-hex-border-left");
+  gitMiddleBorder.classList.remove("git-hex-bg-color");
+  gitRightBorder.classList.remove("git-hex-border-right");
 });
+
+gitIcon.addEventListener("mouseover", () => {
+  gitIconP.classList.add("git-hover-color");
+  gitLeftBorder.classList.add("git-hex-border-left");
+  gitMiddleBorder.classList.add("git-hex-bg-color");
+  gitRightBorder.classList.add("git-hex-border-right");
+});
+
+gitIcon.addEventListener("mouseout", () => {
+  gitIconP.classList.remove("git-hover-color");
+  gitLeftBorder.classList.remove("git-hex-border-left");
+  gitMiddleBorder.classList.remove("git-hex-bg-color");
+  gitRightBorder.classList.remove("git-hex-border-right");
+});
+
 
 // CSS ICON HOVER ANIMATION
 cssIconP.addEventListener("mouseover", () => {
   cssIcon.classList.add("css-hover-color");
+  cssLeftBorder.classList.add("css-hex-border-left");
+  cssMiddleBorder.classList.add("css-hex-bg-color");
+  cssRightBorder.classList.add("css-hex-border-right");
 });
 
 cssIconP.addEventListener("mouseout", () => {
   cssIcon.classList.remove("css-hover-color");
+  cssLeftBorder.classList.remove("css-hex-border-left");
+  cssMiddleBorder.classList.remove("css-hex-bg-color");
+  cssRightBorder.classList.remove("css-hex-border-right");
 });
+
+cssIcon.addEventListener("mouseover", () => {
+  cssIconP.classList.add("css-hover-color");
+  cssLeftBorder.classList.add("css-hex-border-left");
+  cssMiddleBorder.classList.add("css-hex-bg-color");
+  cssRightBorder.classList.add("css-hex-border-right");
+});
+
+cssIcon.addEventListener("mouseout", () => {
+  cssIconP.classList.remove("css-hover-color");
+  cssLeftBorder.classList.remove("css-hex-border-left");
+  cssMiddleBorder.classList.remove("css-hex-bg-color");
+  cssRightBorder.classList.remove("css-hex-border-right");
+});
+
 
 // SASS ICON HOVER ANIMATION
 sassIconP.addEventListener("mouseover", () => {
   sassIcon.classList.add("sass-hover-color");
+  sassLeftBorder.classList.add("sass-hex-border-left");
+  sassMiddleBorder.classList.add("sass-hex-bg-color");
+  sassRightBorder.classList.add("sass-hex-border-right");
 });
 
 sassIconP.addEventListener("mouseout", () => {
   sassIcon.classList.remove("sass-hover-color");
+  sassLeftBorder.classList.remove("sass-hex-border-left");
+  sassMiddleBorder.classList.remove("sass-hex-bg-color");
+  sassRightBorder.classList.remove("sass-hex-border-right");
 });
+
+sassIcon.addEventListener("mouseover", () => {
+  sassIconP.classList.add("sass-hover-color");
+  sassLeftBorder.classList.add("sass-hex-border-left");
+  sassMiddleBorder.classList.add("sass-hex-bg-color");
+  sassRightBorder.classList.add("sass-hex-border-right");
+});
+
+sassIcon.addEventListener("mouseout", () => {
+  sassIconP.classList.remove("sass-hover-color");
+  sassLeftBorder.classList.remove("sass-hex-border-left");
+  sassMiddleBorder.classList.remove("sass-hex-bg-color");
+  sassRightBorder.classList.remove("sass-hex-border-right");
+});
+
 
 // BOOTSTRAP ICON HOVER ANIMATION
 bootstrapIconP.addEventListener("mouseover", () => {
   bootstrapIcon.classList.add("bootstrap-hover-color");
+  bootstrapLeftBorder.classList.add("bootstrap-hex-border-left");
+  bootstrapMiddleBorder.classList.add("bootstrap-hex-bg-color");
+  bootstrapRightBorder.classList.add("bootstrap-hex-border-right");
 });
 
 bootstrapIconP.addEventListener("mouseout", () => {
   bootstrapIcon.classList.remove("bootstrap-hover-color");
+  bootstrapLeftBorder.classList.remove("bootstrap-hex-border-left");
+  bootstrapMiddleBorder.classList.remove("bootstrap-hex-bg-color");
+  bootstrapRightBorder.classList.remove("bootstrap-hex-border-right");
 });
+
+bootstrapIcon.addEventListener("mouseover", () => {
+  bootstrapIconP.classList.add("bootstrap-hover-color");
+  bootstrapLeftBorder.classList.add("bootstrap-hex-border-left");
+  bootstrapMiddleBorder.classList.add("bootstrap-hex-bg-color");
+  bootstrapRightBorder.classList.add("bootstrap-hex-border-right");
+});
+
+bootstrapIcon.addEventListener("mouseout", () => {
+  bootstrapIconP.classList.remove("bootstrap-hover-color");
+  bootstrapLeftBorder.classList.remove("bootstrap-hex-border-left");
+  bootstrapMiddleBorder.classList.remove("bootstrap-hex-bg-color");
+  bootstrapRightBorder.classList.remove("bootstrap-hex-border-right");
+});
+
 
 // TAILWIND SVG HOVER ANIMATION
 tailwindSVG.addEventListener("mouseover", () => {
   tailwindIconP.classList.add("tailwind-p-hover-color");
+  tailwindLeftBorder.classList.add("tailwind-hex-border-left");
+  tailwindMiddleBorder.classList.add("tailwind-hex-bg-color");
+  tailwindRightBorder.classList.add("tailwind-hex-border-right");
   tailwindSVGPath.setAttribute("style", "fill: #36BDF9");
 });
 
 tailwindSVG.addEventListener("mouseout", () => {
   tailwindIconP.classList.remove("tailwind-p-hover-color");
+  tailwindLeftBorder.classList.remove("tailwind-hex-border-left");
+  tailwindMiddleBorder.classList.remove("tailwind-hex-bg-color");
+  tailwindRightBorder.classList.remove("tailwind-hex-border-right");
   tailwindSVGPath.setAttribute("style", "fill: #fafafa");
 });
 
 tailwindIconP.addEventListener("mouseover", () => {
   tailwindIconP.classList.add("tailwind-p-hover-color");
+  tailwindLeftBorder.classList.add("tailwind-hex-border-left");
+  tailwindMiddleBorder.classList.add("tailwind-hex-bg-color");
+  tailwindRightBorder.classList.add("tailwind-hex-border-right");
   tailwindSVGPath.setAttribute("style", "fill: #36BDF9");
 });
 
 tailwindIconP.addEventListener("mouseout", () => {
   tailwindIconP.classList.remove("tailwind-p-hover-color");
+  tailwindLeftBorder.classList.remove("tailwind-hex-border-left");
+  tailwindMiddleBorder.classList.remove("tailwind-hex-bg-color");
+  tailwindRightBorder.classList.remove("tailwind-hex-border-right");
   tailwindSVGPath.setAttribute("style", "fill: #fafafa");
 });
 
 // JAVASCRIPT ICON HOVER ANIMATION
 jsIconP.addEventListener("mouseover", () => {
   jsIcon.classList.add("js-hover-color");
+  jsLeftBorder.classList.add("js-hex-border-left");
+  jsMiddleBorder.classList.add("js-hex-bg-color");
+  jsRightBorder.classList.add("js-hex-border-right");
 });
 
 jsIconP.addEventListener("mouseout", () => {
   jsIcon.classList.remove("js-hover-color");
+  jsLeftBorder.classList.remove("js-hex-border-left");
+  jsMiddleBorder.classList.remove("js-hex-bg-color");
+  jsRightBorder.classList.remove("js-hex-border-right");
 });
+
+jsIcon.addEventListener("mouseover", () => {
+  jsIconP.classList.add("js-hover-color");
+  jsLeftBorder.classList.add("js-hex-border-left");
+  jsMiddleBorder.classList.add("js-hex-bg-color");
+  jsRightBorder.classList.add("js-hex-border-right");
+});
+
+jsIcon.addEventListener("mouseout", () => {
+  jsIconP.classList.remove("js-hover-color");
+  jsLeftBorder.classList.remove("js-hex-border-left");
+  jsMiddleBorder.classList.remove("js-hex-bg-color");
+  jsRightBorder.classList.remove("js-hex-border-right");
+});
+
 
 // REACT ICON HOVER ANIMATION
 reactIconP.addEventListener("mouseover", () => {
   reactIcon.classList.add("react-hover-color");
+  reactLeftBorder.classList.add("react-hex-border-left");
+  reactMiddleBorder.classList.add("react-hex-bg-color");
+  reactRightBorder.classList.add("react-hex-border-right");
 });
 
 reactIconP.addEventListener("mouseout", () => {
   reactIcon.classList.remove("react-hover-color");
+  reactLeftBorder.classList.remove("react-hex-border-left");
+  reactMiddleBorder.classList.remove("react-hex-bg-color");
+  reactRightBorder.classList.remove("react-hex-border-right");
 });
+
+reactIcon.addEventListener("mouseover", () => {
+  reactIconP.classList.add("react-hover-color");
+  reactLeftBorder.classList.add("react-hex-border-left");
+  reactMiddleBorder.classList.add("react-hex-bg-color");
+  reactRightBorder.classList.add("react-hex-border-right");
+});
+
+reactIcon.addEventListener("mouseout", () => {
+  reactIconP.classList.remove("react-hover-color");
+  reactLeftBorder.classList.remove("react-hex-border-left");
+  reactMiddleBorder.classList.remove("react-hex-bg-color");
+  reactRightBorder.classList.remove("react-hex-border-right");
+});
+
 
 // FIGMA ICON HOVER ANIMATION
 figmaIconP.addEventListener("mouseover", () => {
   figmaIcon.classList.add("figma-hover-color");
+  figmaLeftBorder.classList.add("figma-hex-border-left");
+  figmaMiddleBorder.classList.add("figma-hex-bg-color");
+  figmaRightBorder.classList.add("figma-hex-border-right");
 });
 
 figmaIconP.addEventListener("mouseout", () => {
   figmaIcon.classList.remove("figma-hover-color");
+  figmaLeftBorder.classList.remove("figma-hex-border-left");
+  figmaMiddleBorder.classList.remove("figma-hex-bg-color");
+  figmaRightBorder.classList.remove("figma-hex-border-right");
+});
+
+figmaIcon.addEventListener("mouseover", () => {
+  figmaIconP.classList.add("figma-hover-color");
+  figmaLeftBorder.classList.add("figma-hex-border-left");
+  figmaMiddleBorder.classList.add("figma-hex-bg-color");
+  figmaRightBorder.classList.add("figma-hex-border-right");
+});
+
+figmaIcon.addEventListener("mouseout", () => {
+  figmaIconP.classList.remove("figma-hover-color");
+  figmaLeftBorder.classList.remove("figma-hex-border-left");
+  figmaMiddleBorder.classList.remove("figma-hex-bg-color");
+  figmaRightBorder.classList.remove("figma-hex-border-right");
 });
