@@ -594,6 +594,7 @@ ABOUT SECTION
 .skills-container {
   position: relative;
   z-index: 1;
+  height: 90px;
   margin-bottom: 11px;
 }
 
@@ -683,82 +684,82 @@ ABOUT SECTION
 }
 
 .hex-flex {
-  top: -9px;
+  top: -12px;
 }
 
 .hex-flex-border {
-  top: -11px;
+  top: -14px;
 }
 
 .hex-flex-html,
 .hex-flex-sass {
-  left: -33.5px;
+  left: -36.5px;
 }
 
 .hex-flex-html-border,
 .hex-flex-sass-border {
-  left: -35.5px;
+  left: -38.5px;
 }
 
 .hex-flex-vscode,
 .hex-flex-bootstrap-border {
-  left: -24.5px;
-}
-
-.hex-flex-vscode-border {
-  left: -26.5px;
-}
-
-.hex-flex-git {
-  left: -39px;
-}
-
-.hex-flex-git-border {
-  left: -41px;
-}
-
-.hex-flex-css {
-  left: -38.5px;
-}
-
-.hex-flex-css-border {
-  left: -40.5px;
-}
-
-.hex-flex-bootstrap {
-  left: -22.5px;
-}
-
-.hex-flex-tailwind {
   left: -27.5px;
 }
 
-.hex-flex-tailwind-border {
+.hex-flex-vscode-border {
   left: -29.5px;
 }
 
+.hex-flex-git {
+  left: -42px;
+}
+
+.hex-flex-git-border {
+  left: -44px;
+}
+
+.hex-flex-css {
+  left: -41.5px;
+}
+
+.hex-flex-css-border {
+  left: -43.5px;
+}
+
+.hex-flex-bootstrap {
+  left: -25.5px;
+}
+
+.hex-flex-tailwind {
+  left: -30.5px;
+}
+
+.hex-flex-tailwind-border {
+  left: -32.5px;
+}
+
 .hex-flex-js {
-  left: -19px;
+  left: -22px;
 }
 
 .hex-flex-js-border {
-  left: -21px;
+  left: -24px;
 }
 
 .hex-flex-react {
-  left: -34px;
+  left: -37px;
 }
 
 .hex-flex-react-border {
-  left: -36px;
+  left: -39px;
 }
 
 .hex-flex-figma {
-  left: -33px;
+  left: -36px;
 }
 
 .hex-flex-figma-border {
-  left: -35px;
+  left: -38px;
 }
 
 .html-icon:hover,
