@@ -3,7 +3,11 @@ todo: will be both css and js
 add code to show error messages on contact form,
 will also highlight empty input causing error
 
-todo:
+todo: add a headline to skills section
+
+todo: change figma skill to node.js
+
+todo: 
 
 
 
@@ -84,10 +88,13 @@ const figmaMiddleBorder = document.querySelector(".figma-middle-border");
 const figmaRightBorder = document.querySelector(".figma-right-border");
 
 
+/* ------------------------------------
+---------------------------------------
+TRIGGER ABOUT SECTION ANIMATIONS ON SCROLL EVENT
+---------------------------------------
+------------------------------------ */
 
-
-
-
+// ANIMATE .ABOUT-TEXT-CONTAINER
 const observer = new IntersectionObserver(entries => {
   // Loop over the entries
   entries.forEach(entry => {
@@ -103,8 +110,7 @@ const observer = new IntersectionObserver(entries => {
 observer.observe(document.querySelector('.about-text-container'));
 
 
-
-
+// ANIMATE .ABOUT-SKILLS-CONTAINER
 const observer2 = new IntersectionObserver(entries => {
   // Loop over the entries
   entries.forEach(entry => {
@@ -122,15 +128,20 @@ observer2.observe(document.querySelector('.about-skills-container'));
 
 
 /* ------------------------------------
+---------------------------------------
 HAMBURGER MENU ANIMATION
+---------------------------------------
 ------------------------------------ */
 
 $btn.addEventListener("click", function () {
   $nav.classList.toggle("active");
 });
 
+
 /* ------------------------------------
+---------------------------------------
 SKILLS ICON MOUSEOVER ANIMATIONS
+---------------------------------------
 ------------------------------------ */
 
 // HTML ICON HOVER ANIMATION
