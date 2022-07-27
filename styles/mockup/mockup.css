@@ -2,6 +2,7 @@ body {
   font: normal 16px/1.5 'Monteserrat',
     sans-serif;
   color: #fafafa;
+  cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAPCAMAAAAxmgQeAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAD5JREFUGNN1j9EKADAIAnP//9GjFq6w7iU4DNRsB06cb44TJ+UzYUcniqnqoA6ag/62JhjKIU0rxx1lKveuXJ5UAQs/G/2vAAAAAElFTkSuQmCC), auto;
 }
 
 /* HIDE SCROLLBAR BUT STILL ALLOW SCROLL (CHROME, SAFARI, OPERA) */
@@ -1506,11 +1507,8 @@ FOOTER SECTION
 }
 
 .return-home:hover {
-  transform: scale(1.1);
-}
-
-.return-home:hover {
   background-color: #2cb67d;
+  transform: scale(1.1);
 }
 
 .return-home-link {
