@@ -1,4 +1,7 @@
 body {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
   font: normal 16px/1.5 'Monteserrat',
     sans-serif;
   color: #fafafa;
@@ -1410,7 +1413,7 @@ CONTACT SECTION
   border-radius: 0px;
   margin-bottom: 6px;
   color: #fafafa;
-  background-color: #282828;
+  background-color: #272727;
   caret-color: #2cb67d;
 }
 
