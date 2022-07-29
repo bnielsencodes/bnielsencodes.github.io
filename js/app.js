@@ -88,6 +88,11 @@ const figmaMiddleBorder = document.querySelector(".figma-middle-border");
 const figmaRightBorder = document.querySelector(".figma-right-border");
 
 
+
+
+
+
+
 /* ------------------------------------
 ---------------------------------------
 TRIGGER ABOUT SECTION ANIMATIONS ON SCROLL EVENT
