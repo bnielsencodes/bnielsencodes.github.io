@@ -460,8 +460,8 @@ ABOUT SECTION
 }
 
 .about-text-container {
+  min-width: 300px;
   max-width: 340px;
-  min-width: 340px;
   margin-bottom: 80px;
   text-align: center;
   opacity: 0;
@@ -1301,7 +1301,7 @@ PROJECTS SECTION
 }
 
 .projects-main-heading {
-  margin: 0px;
+  margin: 0 0 50px 0;
 }
 
 .projects-heading-span {
@@ -1317,14 +1317,16 @@ PROJECTS SECTION
   left: 25px;
   width: 138px;
   height: 14px;
-  background-color: mediumpurple;
+  background-color: #785af0;
+}
+
 }
 
 #projects-top-divider,
 #projects-bottom-divider {
   position: relative;
   height: auto;
-  min-height: 170px;
+  min-height: 165px;
   margin-top: -1px;
   background-color: #fafafa;
 }
