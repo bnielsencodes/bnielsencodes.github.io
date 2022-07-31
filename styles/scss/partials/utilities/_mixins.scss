@@ -1,0 +1,8 @@
+@mixin center-text {
+  text-align: center;
+}
+
+@mixin absolute-positioned {
+  position: absolute;
+  @content;
+}
