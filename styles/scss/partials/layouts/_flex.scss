@@ -1,0 +1,51 @@
+.logo-dark-mode-container,
+.skills-icon,
+.hex-flex,
+.hex-flex-border,
+.project-title-container,
+.project-icon-container,
+#footer-section {
+  @extend %flex-center-x;
+}
+
+.location-icon-container,
+.project-links {
+  @extend %flex-center-y;
+}
+
+.header-content-container,
+.location-center,
+.return-home-link {
+  @extend %flex-center-xy;
+}
+
+.main-nav,
+.about-skills-container,
+.project-tech-container,
+.form-error-submit,
+.footer-links-container {
+  @extend %flex-between-center;
+}
+
+.about-content-container,
+.skills-left-container,
+.skills-middle-container,
+.skills-right-container {
+  @extend %flex-col-center-x;
+}
+
+.projects-list,
+.project,
+.project-bottom {
+  @extend %flex-col-center-x;
+  justify-content: center;
+}
+
+.hamburger-nav-link-container {
+  @extend %flex-col-center-x;
+  justify-content: space-between;
+}
+
+.form-fieldset {
+  @extend %flex-col-center-y;
+}

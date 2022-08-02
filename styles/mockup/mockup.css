@@ -122,9 +122,6 @@ HEADER SECTION
 ------------------------------------ */
 
 .header-content-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
   text-align: center;
 }
@@ -267,18 +264,10 @@ NAVIGATION
   left: 0;
   right: 0;
   z-index: 100;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 50px;
   border-bottom: 1px solid #1A1A1A;
   box-shadow: 0 4px 4px rgb(0 0 0 / 30%);
   background-color: #272727;
-}
-
-.logo-dark-mode-container {
-  display: flex;
-  justify-content: center;
 }
 
 .main-nav-logo {
@@ -288,10 +277,6 @@ NAVIGATION
 }
 
 .hamburger-nav-link-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   height: 200px;
 }
 
@@ -451,9 +436,6 @@ ABOUT SECTION
 }
 
 .about-content-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   font-size: 0.9rem;
   margin: 35px 0 0;
   padding-bottom: 80px;
@@ -516,17 +498,12 @@ ABOUT SECTION
 }
 
 .location-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 165px;
 }
 
 .location-icon-container {
   position: relative;
   z-index: 1;
-  display: flex;
-  align-items: center;
   width: 40px;
   height: 40px;
 }
@@ -599,18 +576,7 @@ ABOUT SECTION
 }
 
 .about-skills-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   min-width: 255px;
-}
-
-.skills-left-container,
-.skills-middle-container,
-.skills-right-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .skills-left-container,
@@ -626,8 +592,6 @@ ABOUT SECTION
 }
 
 .skills-icon {
-  display: flex;
-  justify-content: center;
   height: 32px;
 }
 
@@ -705,8 +669,6 @@ ABOUT SECTION
 .hex-flex,
 .hex-flex-border {
   position: absolute;
-  display: flex;
-  justify-content: center;
   pointer-events: none;
 }
 
@@ -1320,22 +1282,11 @@ PROJECTS SECTION
   background-color: #785af0;
 }
 
-.projects-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .project-container {
   margin-bottom: 40px;
 }
 
 .project {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   max-width: calc(100vw - 30px);
   border: 8px solid #1a1a1a;
 }
@@ -1352,17 +1303,11 @@ PROJECTS SECTION
 }
 
 .project-bottom {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   background-color: #272727;
 }
 
 .project-title-container {
-  display: flex;
-  justify-content: center;
   width: 100%;
 }
 
@@ -1371,17 +1316,11 @@ PROJECTS SECTION
 }
 
 .project-tech-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 100px;
   margin-bottom: 10px;
 }
 
 .project-icon-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
   width: 100%;
 }
 
@@ -1399,9 +1338,7 @@ PROJECTS SECTION
 }
 
 .project-links {
-  display: flex;
   justify-content: space-around;
-  align-items: center;
   width: 100%;
   max-width: 320px;
   margin: 10px 0;
@@ -1484,9 +1421,6 @@ CONTACT SECTION
 }
 
 .form-fieldset {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   border: 0;
 }
 
@@ -1543,9 +1477,6 @@ CONTACT SECTION
 }
 
 .form-error-submit {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 0 0.85em;
 }
 
@@ -1598,8 +1529,6 @@ FOOTER SECTION
 
 #footer-section {
   position: relative;
-  display: flex;
-  justify-content: center;
   height: 135px;
   padding-top: 25px;
   font-size: 0.75rem;
@@ -1621,9 +1550,6 @@ FOOTER SECTION
 }
 
 .return-home-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 40px;
   height: 40px;
 }
@@ -1640,9 +1566,6 @@ FOOTER SECTION
 }
 
 .footer-links-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   font-size: 2.5rem;
   color: #785af0;
 }
