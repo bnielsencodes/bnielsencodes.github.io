@@ -145,6 +145,147 @@ $btn.addEventListener("click", function () {
 
 /* ------------------------------------
 ---------------------------------------
+tsPARTICALS FOR HERO BACKGROUND ANIMATION
+---------------------------------------
+------------------------------------ */
+
+tsParticles.load("tsparticles", {
+  fps_limit: 60,
+  interactivity: {
+    events: {
+      onclick: {
+        enable: true,
+        mode: "push"
+      },
+      onhover: {
+        enable: true,
+        mode: "repulse",
+        parallax: {
+          enable: false,
+          force: 2,
+          smooth: 10
+        }
+      },
+      resize: true
+    },
+    modes: {
+      bubble: {
+        distance: 100,
+        duration: 2,
+        opacity: 0,
+        size: 0,
+        speed: 3
+      },
+      grab: {
+        distance: 150,
+        line_linked: {
+          opacity: 1
+        }
+      },
+      push: {
+        particles_nb: 24
+      },
+      remove: {
+        particles_nb: 2
+      },
+      repulse: {
+        distance: 80,
+        speed: 0.03,
+        duration: 30
+      }
+    }
+  },
+  particles: {
+    color: {
+      value: ["#785af0",
+        "#2cb67d"
+      ]
+    },
+    move: {
+      size: true,
+      attract: {
+        enable: false,
+        rotateX: 600,
+        rotateY: 600
+      },
+      bounce: false,
+      direction: "none",
+      enable: true,
+      out_mode: "out",
+      random: true,
+      speed: 0.8,
+      straight: false
+    },
+    number: {
+      density: {
+        enable: true,
+        value_area: 200
+      },
+      value: 250
+    },
+    opacity: {
+      anim: {
+        enable: true,
+        opacity_min: 0,
+        speed: 1.1,
+        sync: false
+      },
+      random: true,
+      value: 1
+    },
+    shape: {
+      character: {
+        fill: false,
+        font: "Verdana",
+        style: "",
+        value: "*",
+        weight: "400"
+      },
+      image: {
+        height: 100,
+        replace_color: true,
+        src: "images/github.svg",
+        width: 100
+      },
+      polygon: {
+        nb_sides: 5
+      },
+      stroke: {
+        color: "#000000",
+        width: 0
+      },
+      type: "circle"
+    },
+    size: {
+      anim: {
+        enable: false,
+        size_min: 0.3,
+        speed: 4,
+        sync: false
+      },
+      random: true,
+      value: 3
+    }
+  },
+  polygon: {
+    draw: {
+      enable: false,
+      lineColor: "#ffffff",
+      lineWidth: 0.5
+    },
+    move: {
+      radius: 10
+    },
+    scale: 1,
+    type: "none",
+    url: ""
+  },
+  retina_detect: true
+});
+
+
+/* ------------------------------------
+---------------------------------------
 SKILLS ICON MOUSEOVER ANIMATIONS
 ---------------------------------------
 ------------------------------------ */

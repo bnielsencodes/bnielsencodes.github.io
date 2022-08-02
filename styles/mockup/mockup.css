@@ -215,6 +215,8 @@ HEADER SECTION
 
 .projects-cta::after,
 .projects-cta::before {
+/* tsParticles CONTAINER */
+#tsparticles {
   position: absolute;
   content: "";
   width: 0;
