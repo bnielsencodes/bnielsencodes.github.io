@@ -58,7 +58,8 @@ body {
   display: none;
 }
 
-#header-section,
+.header-content,
+.projects-cta,
 #about-section,
 #contact-section {
   background-color: #1A1A1A;
@@ -132,6 +133,7 @@ HEADER SECTION
 
 .heading-text-container {
   padding: 0 20px 20px;
+  margin-top: 10px;
 }
 
 .header-heading,
@@ -1732,7 +1734,7 @@ MEDIUM SCREEN MEDIA QUERIES
   }
 
   #contact-section {
-    padding-top: 40px;
+    padding-top: 20px;
   }
 
   .contact-heading-span {
@@ -1809,8 +1811,6 @@ LARGE SCREEN MEDIA QUERIES
     height: 15px;
   }
 
-  #contact-section {
-    padding-top: 60px;
   .project {
     max-width: calc(100vw - 460px);
   }
