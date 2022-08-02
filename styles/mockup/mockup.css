@@ -1619,6 +1619,10 @@ MEDIUM SCREEN MEDIA QUERIES
     padding-right: 10px;
   }
 
+  #about-section .section-heading {
+    padding: 100px 0 30px;
+  }
+
   .about-heading-span::after {
     left: 24px;
     width: 100px;
