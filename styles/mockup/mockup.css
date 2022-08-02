@@ -48,6 +48,7 @@ body {
   /* Code for Firefox */
   color: #1A1A1A;
   background: #2cb67d;
+  scrollbar-width: none;
 }
 
 #hidden-sm {
@@ -1466,12 +1467,20 @@ CONTACT SECTION
   caret-color: #2cb67d;
 }
 
-.projects-cta:focus,
 .main-nav-link:focus,
-.view-resume:focus,
 .form-item:focus,
 .form-button:focus {
   outline: 2px solid #785af0;
+  opacity: 0.7;
+}
+
+.view-resume:focus,
+.projects-cta:focus,
+.live-link-button:focus,
+.source-code-button:focus,
+.return-home-link:focus,
+.footer-icon-container:focus {
+  outline: 2px solid #2cb67d;
 }
 
 .form-item-one,
