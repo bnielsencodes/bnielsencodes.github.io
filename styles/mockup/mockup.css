@@ -1691,12 +1691,11 @@ MEDIUM SCREEN MEDIA QUERIES
     width: 140px;
   }
 
-  .project-one,
-  .project-three {
+  .project-left {
     margin: 0 auto 80px 40px;
   }
 
-  .project-two {
+  .project-right {
     margin: 0 40px 80px auto;
   }
 
