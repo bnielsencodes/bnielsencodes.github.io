@@ -131,7 +131,6 @@ const observer2 = new IntersectionObserver(entries => {
 observer2.observe(document.querySelector('.about-skills-container'));
 
 
-
 /* ------------------------------------
 ---------------------------------------
 HAMBURGER MENU ANIMATION
@@ -219,7 +218,7 @@ tsParticles.load("tsparticles", {
     number: {
       density: {
         enable: true,
-        value_area: 200
+        value_area: 400
       },
       value: 250
     },
