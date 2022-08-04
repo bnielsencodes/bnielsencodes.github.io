@@ -1782,8 +1782,9 @@ LARGE SCREEN MEDIA QUERIES
   }
 
   .about-content-container {
-    margin: 60px 115px 0;
+    max-width: 1300px;
     padding-bottom: 80px;
+    margin: 60px 115px 0;
   }
 
   .about-text-container,
