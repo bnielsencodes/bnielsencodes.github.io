@@ -205,6 +205,7 @@ HEADER SECTION
   left: 0;
   top: 0;
   z-index: -1;
+  /* max-width: 1920px; */
   width: 100vw;
   height: 100vh;
   background-color: #1a1a1a;
@@ -1253,12 +1254,17 @@ PROJECTS SECTION
   background-color: #785af0;
 }
 
+.projects-list {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
 .project-container {
   margin-bottom: 40px;
 }
 
 .project {
-  max-width: calc(100vw - 40px);
+  max-width: calc(100vw - 60px);
   border: 8px solid #1a1a1a;
 }
 
@@ -1287,7 +1293,15 @@ PROJECTS SECTION
 }
 
 .project-tech-container {
-  width: 100px;
+  width: 90px;
+  margin-bottom: 10px;
+}
+
+.project-tech-container-wide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 130px;
   margin-bottom: 10px;
 }
 
@@ -1296,7 +1310,8 @@ PROJECTS SECTION
 }
 
 .project-html-icon,
-.project-css-icon {
+.project-css-icon,
+.project-js-icon {
   font-size: 2rem;
 }
 
@@ -1309,16 +1324,20 @@ PROJECTS SECTION
   color: #2965f1;
 }
 
+.project-js-icon {
+  color: #F0DB4F;
+}
+
 .project-links {
   justify-content: space-around;
-  width: 100%;
+  width: 97%;
   max-width: 320px;
   margin: 10px 0;
 }
 
 .live-link,
 .source-code {
-  width: 113px;
+  width: 100px;
   padding: 5px 7px;
   border: 3px solid #785af0;
   text-align: center;
@@ -1700,11 +1719,20 @@ MEDIUM SCREEN MEDIA QUERIES
   }
 
   .project {
-    max-width: calc(100vw - 260px);
+    max-width: calc(100vw - 340px);
   }
 
   .project-title {
     font-size: 1.7rem;
+  }
+
+  .project-links {
+    width: 100%;
+  }
+
+  .live-link,
+  .source-code {
+    width: 113px;
   }
 
   #contact-section {
