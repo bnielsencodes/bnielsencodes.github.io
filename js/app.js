@@ -197,6 +197,15 @@ tsParticles.load("tsparticles", {
   particles: {
     color: {
       value: ["#785af0",
+        "#785af0",
+        "#785af0",
+        "#785af0",
+        "#785af0",
+        "#785af0",
+        "#785af0",
+        "#785af0",
+        "#785af0",
+        "#785af0",
         "#2cb67d"
       ]
     },
