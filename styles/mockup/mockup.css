@@ -1265,7 +1265,7 @@ PROJECTS SECTION
 
 .project {
   max-width: calc(100vw - 60px);
-  border: 8px solid #1a1a1a;
+  border: 5px solid #1a1a1a;
 }
 
 .project-img-container {
@@ -1285,11 +1285,19 @@ PROJECTS SECTION
 
 .project-title-container {
   width: 100%;
+  background-color: #272727;
 }
 
 .project-title {
-  margin: 0 auto 10px;
+  margin: 0 auto 5px;
   color: #2cb67d;
+}
+
+.project-description {
+  padding: 0 8px;
+  margin: 0 0 12px;
+  font-size: 0.85rem;
+  text-align: center;
 }
 
 .project-tech-container {
@@ -1726,6 +1734,10 @@ MEDIUM SCREEN MEDIA QUERIES
     font-size: 1.7rem;
   }
 
+  .project-description {
+    max-width: 770px;
+  }
+
   .project-links {
     width: 100%;
   }
@@ -1822,6 +1834,11 @@ LARGE SCREEN MEDIA QUERIES
     font-size: 2rem;
   }
 
+  .project-description {
+    padding: 0 12px;
+    font-size: 0.985rem;
+  }
+
   .contact-heading-span {
     font-size: 2.35rem;
   }
@@ -1838,5 +1855,16 @@ LARGE SCREEN MEDIA QUERIES
 
   .lets-connect {
     font-size: 1.5rem;
+  }
+/* ------------------------------------
+---------------------------------------
+X-LARGE SCREEN MEDIA QUERIES
+---------------------------------------
+------------------------------------ */
+
+@media (min-width: 1440px) {
+  .project {
+    min-width: 920px;
+    max-width: 966px;
   }
 }
