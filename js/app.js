@@ -128,7 +128,7 @@ const observer2 = new IntersectionObserver(entries => {
 });
 
 // Tell the observer which elements to track
-observer2.observe(document.querySelector('.about-skills-container'));
+observer2.observe(document.querySelector('.about-right'));
 
 
 /* ------------------------------------
