@@ -299,18 +299,6 @@ HAMBURGER MENU
   right: 12px;
 }
 
-.hamburger-menu::after {
-  content: "";
-  position: absolute;
-  z-index: 100;
-  left: -0.75px;
-  top: 5.75px;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  background-color: #272727;
-}
-
 #menu-toggle input {
   position: absolute;
   top: 9px;
