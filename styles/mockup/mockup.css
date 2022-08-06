@@ -1431,7 +1431,7 @@ CONTACT SECTION
 }
 
 .lets-connect,
-.contact-p {
+.contact-text {
   margin: 0;
 }
 
@@ -1439,13 +1439,26 @@ CONTACT SECTION
   font-size: 1rem;
 }
 
-.contact-p {
+.contact-text {
   padding-bottom: 10px;
   font-size: 0.75rem;
   color: #fafafa;
 }
 
-.email-green {
+/* todo: 
+- Make it to where when you copy email to clipboard, it doesn't
+the space in the beginning.
+
+- Make the "Copied!" message show when clicked.
+*/
+
+/* COPY EMAIL ADDRESS TO CLIPBOARD */
+#email-copy-fallback {
+  display: inline;
+}
+
+.click-to-copy,
+.click-to-copy-fallback {
   color: #2cb67d;
 }
 
@@ -1536,6 +1549,10 @@ CONTACT SECTION
 FOOTER SECTION
 ---------------------------------------
 ------------------------------------ */
+
+/* todo: 
+-Add form validation.
+*/
 
 #footer-section {
   position: relative;
@@ -1764,12 +1781,23 @@ MEDIUM SCREEN MEDIA QUERIES
     height: 13px;
   }
 
-  .contact-p {
+  .lets-connect {
+    font-size: 1.275rem;
+  }
+
+  .contact-text {
     font-size: 0.9rem;
   }
 
-  .lets-connect {
-    font-size: 1.275rem;
+  /* COPY EMAIL ADDRESS TO CLIPBOARD */
+  /* Hide mobile fallback version on desktop resolutions */
+  #email-copy-fallback {
+    display: none;
+  }
+
+  /* Show the desktop button */
+  #email-copy {
+    display: inline;
   }
 }
 
@@ -1852,13 +1880,16 @@ LARGE SCREEN MEDIA QUERIES
     height: 15px;
   }
 
-  .contact-p {
+  .contact-text {
     font-size: 0.925rem;
   }
 
   .lets-connect {
     font-size: 1.5rem;
   }
+}
+
+
 /* ------------------------------------
 ---------------------------------------
 X-LARGE SCREEN MEDIA QUERIES
