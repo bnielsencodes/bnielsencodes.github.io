@@ -394,7 +394,7 @@ ABOUT SECTION
 
 .about-content-container {
   font-size: 0.9rem;
-  margin: 35px 0 0;
+  margin: 50px 0 0;
   padding-bottom: 80px;
 }
 
@@ -541,7 +541,7 @@ ABOUT SECTION
 }
 
 .skills-heading-container {
-  margin-bottom: 52px;
+  margin-bottom: 54px;
 }
 
 .skills-heading {
@@ -1814,7 +1814,7 @@ MEDIUM SCREEN MEDIA QUERIES
   }
 
   .section-heading {
-    font-size: 2.25rem;
+    font-size: 2.45rem;
   }
 
   .header-heading,
@@ -1954,6 +1954,10 @@ LARGE SCREEN MEDIA QUERIES
     font-size: 3rem;
   }
 
+  .section-heading {
+    font-size: 2.5rem;
+  }
+
   .about-heading-span::after {
     left: 25px;
     width: 105px;
@@ -1963,7 +1967,7 @@ LARGE SCREEN MEDIA QUERIES
   .about-content-container {
     max-width: 1300px;
     padding-bottom: 80px;
-    margin: 60px auto 0;
+    margin: 80px auto 0;
   }
 
   .about-text-container,
