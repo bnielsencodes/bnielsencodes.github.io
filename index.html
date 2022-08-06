@@ -633,14 +633,26 @@
         <legend>
           <h2 class="contact-subheading lets-connect">Let's connect!</h2>
         </legend>
-        <p class="contact-p">
-          Email me at <strong class="email-green">bnielsencodes</strong><span class="email-green">@</span><strong
-            class="email-green">gmail.com</strong>
+        <div class="contact-text">
+          Email me at
+          <div id="email-copy" class="click-to-copy-container">
+            <button class="click-to-copy" title="Click to copy email address">
+              <strong>
+                bnielsencodes@gmail.com
+              </strong>
+            </button>
+            <span>Copied!</span>
+          </div>
+          <strong>
+            <a href="mailto:bnielsencodes@gmail.com" id="email-copy-fallback" class="click-to-copy-fallback">
+              bnielsencodes@gmail.com
+            </a>
+          </strong>
           <br />
           or send me a quick message here:
-        </p>
-        <input class="form-item form-item-one" type="text" placeholder="Name" aria-label="Enter your name" />
-        <input class="form-item form-item-two" type="text" placeholder="Email" aria-label="Enter your email address" />
+        </div>
+        <input class="form-item form-item-one" type="name" placeholder="Name" aria-label="Enter your name" />
+        <input class="form-item form-item-two" type="email" placeholder="Email" aria-label="Enter your email address" />
         <textarea class="form-item form-item-three" placeholder="Message" aria-label="Enter a message"></textarea>
       </fieldset>
       <div class="form-error-submit">
