@@ -202,7 +202,6 @@ HEADER SECTION
   left: 0;
   top: 0;
   z-index: -1;
-  /* max-width: 1920px; */
   width: 100vw;
   height: 100vh;
   background-color: #1a1a1a;
@@ -394,7 +393,6 @@ ABOUT SECTION
 
 .about-content-container {
   font-size: 0.9rem;
-  min-width: 670px;
   margin: 50px 0 0;
   padding-bottom: 80px;
 }
@@ -1852,6 +1850,7 @@ MEDIUM SCREEN MEDIA QUERIES
   .about-content-container {
     flex-direction: row;
     justify-content: space-between;
+    min-width: 670px;
     margin: 60px 80px 0;
     padding-bottom: 80px;
   }
