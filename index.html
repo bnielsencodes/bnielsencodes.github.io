@@ -1,720 +1,1022 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <!-- ----------------------------------
+  <head>
+    <!-- ************************************
     META TAGS
-    ----------------------------------- -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- ----------------------------------
+    *********************************** -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ***********************************
       CSS RESET
-      ----------------------------------- -->
+      *********************************** -->
 
-  <!-- ----------------------------------
+    <!-- ***********************************
     FONT AWESOME
-    ----------------------------------- -->
-  <script src="https://kit.fontawesome.com/8064f9683f.js" crossorigin="anonymous"></script>
-  <!-- ----------------------------------
+    *********************************** -->
+    <script
+      src="https://kit.fontawesome.com/8064f9683f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ***********************************
     MAIN STYLESHEET
-    ----------------------------------- -->
-  <link rel="stylesheet" href="styles/css/styles.css" />
-  <link rel="stylesheet" href="styles/mockup/mockup.css" />
-  <!-- ----------------------------------
+    *********************************** -->
+    <link rel="stylesheet" href="styles/css/styles.css" />
+    <link rel="stylesheet" href="styles/mockup/mockup.css" />
+    <!-- ***********************************
     GOOGLE FONTS
-    ----------------------------------- -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&display=swap"
-    rel="stylesheet" />
-  <!-- ----------------------------------
+    *********************************** -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ***********************************
     PAGE TITLE
-    ----------------------------------- -->
-  <title>Brandon Nielsen | Web Developer</title>
-</head>
+    *********************************** -->
+    <title>Brandon Nielsen | Web Developer</title>
+  </head>
 
-<body>
-  <header id="header-section">
-    <div class="header-content-container">
-      <!-- HEADER CONTENT -->
-      <div class="header-content">
-        <div class="heading-text-container">
-          <h1 class="header-heading">
-            Hello, I'm <span class="header-heading-span">Brandon</span>,
-          </h1>
-          <h1 class="header-subheading">a front-end web developer.</h1>
-        </div>
-        <div class="cta-container">
-          <a href="#projects-section" class="projects-cta" aria-label="view work">
-            View my work
-            <span>
-              <i class="fas fa-solid fa-arrow-down"></i>
-            </span>
-          </a>
+  <body>
+    <header id="header-section">
+      <div class="header-content-container">
+        <!-- HEADER CONTENT -->
+        <div class="header-content">
+          <div class="heading-text-container">
+            <h1 class="header-heading">
+              Hello, I'm <span class="header-heading-span">Brandon</span>,
+            </h1>
+            <h1 class="header-subheading">a front-end web developer.</h1>
+          </div>
+          <div class="cta-container">
+            <a
+              href="#projects-section"
+              class="projects-cta"
+              aria-label="view work"
+            >
+              View my work
+              <span>
+                <i class="fas fa-solid fa-arrow-down"></i>
+              </span>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- tsParticles CONTAINER -->
-    <div id="tsparticles"></div>
-  </header>
+      <!-- tsParticles CONTAINER -->
+      <div id="tsparticles"></div>
+    </header>
 
-  <!-- ----------------------------------
+    <!-- ***********************************
     MAIN NAVIGATION
-    ----------------------------------- -->
-  <nav class="main-nav">
-    <div class="logo-dark-mode-container">
-      <div class="light-mode-toggle dark-mode-toggle hidden">
-        <!-- to later be implemented -->
+    *********************************** -->
+    <nav class="main-nav">
+      <div class="logo-dark-mode-container">
+        <div class="light-mode-toggle dark-mode-toggle hidden">
+          <!-- to later be implemented -->
+        </div>
       </div>
       <h1 class="main-nav-logo">Brandon Nielsen</h1>
-    </div>
-    <!-- ----------------------------------
+      <!-- ***********************************
       HAMBURGER MENU FOR SM SCREEN
-      ----------------------------------- -->
-    <div class="hamburger-menu hidden-md">
-      <div class="hamburger-button-container">
         <button id="menu-toggle">
-          <!--
+      *********************************** -->
+      <div class="hamburger-menu hidden-md">
+        <div class="hamburger-button-container">
+            <!--
           A fake/hidden checkbox is used as click reciever,
           so you can use the :checked selector on it.
           -->
-          <input type="checkbox" />
-          <!--
+            <input type="checkbox" />
+            <!--
           Some spans to act as a hamburger.
           -->
-          <span></span>
-          <span></span>
-          <span></span>
-          <!-- 
+            <span></span>
+            <span></span>
+            <span></span>
+            <!-- 
             Hamburger menu list
           -->
-          <div id="nav" class="navigation">
-            <div class="navigation__inner">
-              <!--   Content   -->
-              <ul class="hamburger-nav-link-container">
-                <li class="hamburger-nav-item">
-                  <a href="#header-section" class="hamburger-nav-link" aria-label="home">Home</a>
-                </li>
-                <li class="hamburger-nav-item">
-                  <a href="#about-section" class="hamburger-nav-link" aria-label="about">About</a>
-                </li>
-                <li class="hamburger-nav-item">
-                  <a href="#projects-section" class="hamburger-nav-link" aria-label="projects">Projects</a>
-                </li>
-                <li class="hamburger-nav-item">
-                  <a href="#contact-section" class="hamburger-nav-link main-nav-button" aria-label="contact">Contact</a>
-                </li>
-              </ul>
+            <div id="nav" class="navigation">
+              <div class="navigation__inner">
+                <!--   Content   -->
+                <ul class="hamburger-nav-link-container">
+                  <li class="hamburger-nav-item">
+                    <a
+                      href="#header-section"
+                      class="hamburger-nav-link"
+                      aria-label="home"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="hamburger-nav-item">
+                    <a
+                      href="#about-section"
+                      class="hamburger-nav-link"
+                      aria-label="about"
+                      >About</a
+                    >
+                  </li>
+                  <li class="hamburger-nav-item">
+                    <a
+                      href="#projects-section"
+                      class="hamburger-nav-link"
+                      aria-label="projects"
+                      >Projects</a
+                    >
+                  </li>
+                  <li class="hamburger-nav-item">
+                    <a
+                      href="#contact-section"
+                      class="hamburger-nav-link main-nav-button"
+                      aria-label="contact"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </button>
+        </div>
       </div>
-    </div>
-    <!-- ----------------------------------
+      <!-- ***********************************
       MAIN NAVIGATION LINKS ON MD/LG SCREEN
-      ----------------------------------- -->
-    <ul class="main-nav-link-container hidden-sm">
-      <li class="main-nav-item">
-        <a href="#header-section" class="main-nav-link" aria-label="home">Home</a>
-      </li>
-      <li class="main-nav-item">
-        <a href="#about-section" class="main-nav-link" aria-label="about">About</a>
-      </li>
-      <li class="main-nav-item">
-        <a href="#projects-section" class="main-nav-link" aria-label="projects">Projects</a>
-      </li>
-      <li class="main-nav-item">
-        <a href="#contact-section" class="main-nav-link main-nav-button" aria-label="contacts">Contact</a>
-      </li>
-    </ul>
-  </nav>
+      *********************************** -->
+      <ul class="main-nav-link-container hidden-sm">
+        <li class="main-nav-item">
+          <a href="#header-section" class="main-nav-link" aria-label="home"
+            >Home</a
+          >
+        </li>
+        <li class="main-nav-item">
+          <a href="#about-section" class="main-nav-link" aria-label="about"
+            >About</a
+          >
+        </li>
+        <li class="main-nav-item">
+          <a
+            href="#projects-section"
+            class="main-nav-link"
+            aria-label="projects"
+            >Projects</a
+          >
+        </li>
+        <li class="main-nav-item">
+          <a
+            href="#contact-section"
+            class="main-nav-link main-nav-button"
+            aria-label="contacts"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
 
-  <section id="about-section">
     <h1 class="section-heading">
-      <span class="about-heading-span">About</span>
     </h1>
-    <div class="about-content-container">
-      <article class="about-text-container">
-        <div class="location-container">
-          <div class="location-center">
-            <div class="location-icon-container">
-              <i class="fa-duotone fa-map-pin"></i>
-            </div>
-            <h4 class="location">Oregon, US</h4>
-          </div>
-        </div>
-        <p class="about-p-one">
-          Fully committed to the philosophy of life-long learning, I’m a front-end web developer with a deep passion for all things web development.
-        </p>
-        <p class="about-p-two">
-          Coming from a background in behavioral health, I bring an analytical yet creative approach to problem solving that lends itself well to the design and creation of aesthetic and intuitive user experiences.
-        </p>
-        <a href="https://docs.google.com/document/d/1Ltj21zC-fELipR76cs63r38JtIW1VUSEqrQgKAoer0Y/edit?usp=sharing"
-          class="view-resume" aria-label="view resume" target="_blank">View My Resume</a>
-      </article>
-      <aside class="about-right">
-        <div class="skills-heading-container">
-          <h4 class="skills-heading">My Skills</h4>
-        </div>
-        <div class="about-skills-container">
-          <div class="skills-left-container">
-            <div class="skills-container html-skill-container">
-              <div class="skills-icon html-icon">
-                <i class="fab fa-brands fa-html5 skills-fa"></i>
-              </div>
-              <p class="skill-p html-icon-p">HTML</p>
-              <div class="hex-flex hex-flex-html">
-                <div class="hex-left"></div>
-                <div class="hex-middle"></div>
-                <div class="hex-right"></div>
-              </div>
-              <div class="hex-flex-border hex-flex-html-border">
-                <div class="hex-left-border html-left-border"></div>
-                <div class="hex-middle-border html-middle-border"></div>
-                <div class="hex-right-border html-right-border"></div>
-              </div>
-            </div>
-            <div class="skills-container vscode-skill-container">
-              <div class="skills-icon vscode-icon">
-                <svg class="vscode-svg" xmlns="http://www.w3.org/2000/svg" width="35" height="32" viewBox="0 0 100 100"
-                  fill="none">
                   <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M70.9119 99.3171C72.4869 99.9307 74.2828 99.8914 75.8725 99.1264L96.4608 89.2197C98.6242 88.1787 100 85.9892 100 83.5872V16.4133C100 14.0113 98.6243 11.8218 96.4609 10.7808L75.8725 0.873756C73.7862 -0.130129 71.3446 0.11576 69.5135 1.44695C69.252 1.63711 69.0028 1.84943 68.769 2.08341L29.3551 38.0415L12.1872 25.0096C10.589 23.7965 8.35363 23.8959 6.86933 25.2461L1.36303 30.2549C-0.452552 31.9064 -0.454633 34.7627 1.35853 36.417L16.2471 50.0001L1.35853 63.5832C-0.454633 65.2374 -0.452552 68.0938 1.36303 69.7453L6.86933 74.7541C8.35363 76.1043 10.589 76.2037 12.1872 74.9905L29.3551 61.9587L68.769 97.9167C69.3925 98.5406 70.1246 99.0104 70.9119 99.3171ZM75.0152 27.2989L45.1091 50.0001L75.0152 72.7012V27.2989Z"
-                      fill="white" />
-                  </mask>
-                  <g mask="url(#mask0)">
-                    <path class="vscode-path-one"
-                      d="M96.4614 10.7962L75.8569 0.875542C73.4719 -0.272773 70.6217 0.211611 68.75 2.08333L1.29858 63.5832C-0.515693 65.2373 -0.513607 68.0937 1.30308 69.7452L6.81272 74.754C8.29793 76.1042 10.5347 76.2036 12.1338 74.9905L93.3609 13.3699C96.086 11.3026 100 13.2462 100 16.6667V16.4275C100 14.0265 98.6246 11.8378 96.4614 10.7962Z"
-                      fill="#fafafa" />
-                    <g filter="url(#filter0_d)">
-                      <path class="vscode-path-two"
-                        d="M96.4614 89.2038L75.8569 99.1245C73.4719 100.273 70.6217 99.7884 68.75 97.9167L1.29858 36.4169C-0.515693 34.7627 -0.513607 31.9063 1.30308 30.2548L6.81272 25.246C8.29793 23.8958 10.5347 23.7964 12.1338 25.0095L93.3609 86.6301C96.086 88.6974 100 86.7538 100 83.3334V83.5726C100 85.9735 98.6246 88.1622 96.4614 89.2038Z"
-                        fill="#fafafa" />
-                    </g>
-                    <g filter="url(#filter1_d)">
-                      <path class="vscode-path-three"
-                        d="M75.8578 99.1263C73.4721 100.274 70.6219 99.7885 68.75 97.9166C71.0564 100.223 75 98.5895 75 95.3278V4.67213C75 1.41039 71.0564 -0.223106 68.75 2.08329C70.6219 0.211402 73.4721 -0.273666 75.8578 0.873633L96.4587 10.7807C98.6234 11.8217 100 14.0112 100 16.4132V83.5871C100 85.9891 98.6234 88.1786 96.4586 89.2196L75.8578 99.1263Z"
-                        fill="#fafafa" />
-                    </g>
-                    <g style="mix-blend-mode: overlay" opacity="0.25">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M70.8511 99.3171C72.4261 99.9306 74.2221 99.8913 75.8117 99.1264L96.4 89.2197C98.5634 88.1787 99.9392 85.9892 99.9392 83.5871V16.4133C99.9392 14.0112 98.5635 11.8217 96.4001 10.7807L75.8117 0.873695C73.7255 -0.13019 71.2838 0.115699 69.4527 1.44688C69.1912 1.63705 68.942 1.84937 68.7082 2.08335L29.2943 38.0414L12.1264 25.0096C10.5283 23.7964 8.29285 23.8959 6.80855 25.246L1.30225 30.2548C-0.513334 31.9064 -0.515415 34.7627 1.29775 36.4169L16.1863 50L1.29775 63.5832C-0.515415 65.2374 -0.513334 68.0937 1.30225 69.7452L6.80855 74.754C8.29285 76.1042 10.5283 76.2036 12.1264 74.9905L29.2943 61.9586L68.7082 97.9167C69.3317 98.5405 70.0638 99.0104 70.8511 99.3171ZM74.9544 27.2989L45.0483 50L74.9544 72.7012V27.2989Z"
-                        fill="url(#paint0_linear)" />
-                    </g>
-                  </g>
-                  <defs>
-                    <filter id="filter0_d" x="-8.39411" y="15.8291" width="116.727" height="92.2456"
-                      filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                      <feColorMatrix in="SourceAlpha" type="matrix"
-                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-                      <feOffset />
-                      <feGaussianBlur stdDeviation="4.16667" />
-                      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                      <feBlend mode="overlay" in2="BackgroundImageFix" result="effect1_dropShadow" />
-                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-                    </filter>
-                    <filter id="filter1_d" x="60.4167" y="-8.07558" width="47.9167" height="116.151"
-                      filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                      <feColorMatrix in="SourceAlpha" type="matrix"
-                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-                      <feOffset />
-                      <feGaussianBlur stdDeviation="4.16667" />
-                      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                      <feBlend mode="overlay" in2="BackgroundImageFix" result="effect1_dropShadow" />
-                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-                    </filter>
-                    <linearGradient id="paint0_linear" x1="49.9392" y1="0.257812" x2="49.9392" y2="99.7423"
-                      gradientUnits="userSpaceOnUse">
-                      <stop stop-color="white" />
-                      <stop offset="1" stop-color="white" stop-opacity="0" />
-                    </linearGradient>
-                  </defs>
-                </svg>
+    <section id="about-section">
+        <span class="about-heading-span">About</span>
+      <div class="about-content-container">
+        <article class="about-text-container">
+          <div class="location-container">
+            <div class="location-center">
+              <div class="location-icon-container">
+                <i class="fa-duotone fa-map-pin"></i>
               </div>
-              <p class="skill-p vscode-icon-p">VS Code</p>
-              <div class="hex-flex hex-flex-vscode">
-                <div class="hex-left"></div>
-                <div class="hex-middle"></div>
-                <div class="hex-right"></div>
+              <h4 class="location">Oregon, US</h4>
+            </div>
+          </div>
+          <p class="about-p-one">
+            Fully committed to the philosophy of life-long learning, I’m a
+            front-end web developer with a deep passion for all things web
+            development.
+          </p>
+          <p class="about-p-two">
+            Coming from a background in behavioral health, I bring an analytical
+            yet creative approach to problem solving that lends itself well to
+            the design and creation of aesthetic and intuitive user experiences.
+          </p>
+          <a
+            href="https://docs.google.com/document/d/1Ltj21zC-fELipR76cs63r38JtIW1VUSEqrQgKAoer0Y/edit?usp=sharing"
+            class="view-resume"
+            aria-label="view resume"
+            target="_blank"
+            >View My Resume</a
+          >
+        </article>
+        <aside class="about-right">
+          <div class="skills-heading-container">
+            <h4 class="skills-heading">My Skills</h4>
+          </div>
+          <div class="about-skills-container">
+            <div class="skills-left-container">
+              <div class="skills-container html-skill-container">
+                <div class="skills-icon html-icon">
+                  <i class="fab fa-brands fa-html5 skills-fa"></i>
+                </div>
+                <p class="skill-p html-icon-p">HTML</p>
+                <div class="hex-flex hex-flex-html">
+                  <div class="hex-left"></div>
+                  <div class="hex-middle"></div>
+                  <div class="hex-right"></div>
+                </div>
+                <div class="hex-flex-border hex-flex-html-border">
+                  <div class="hex-left-border html-left-border"></div>
+                  <div class="hex-middle-border html-middle-border"></div>
+                  <div class="hex-right-border html-right-border"></div>
+                </div>
               </div>
-              <div class="hex-flex-border hex-flex-vscode-border">
-                <div class="hex-left-border vscode-left-border"></div>
-                <div class="hex-middle-border vscode-middle-border"></div>
-                <div class="hex-right-border vscode-right-border"></div>
+              <div class="skills-container vscode-skill-container">
+                <div class="skills-icon vscode-icon">
+                  <svg
+                    class="vscode-svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="35"
+                    height="32"
+                    viewBox="0 0 100 100"
+                    fill="none"
+                  >
+                    <mask
+                      id="mask0"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="100"
+                      height="100"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M70.9119 99.3171C72.4869 99.9307 74.2828 99.8914 75.8725 99.1264L96.4608 89.2197C98.6242 88.1787 100 85.9892 100 83.5872V16.4133C100 14.0113 98.6243 11.8218 96.4609 10.7808L75.8725 0.873756C73.7862 -0.130129 71.3446 0.11576 69.5135 1.44695C69.252 1.63711 69.0028 1.84943 68.769 2.08341L29.3551 38.0415L12.1872 25.0096C10.589 23.7965 8.35363 23.8959 6.86933 25.2461L1.36303 30.2549C-0.452552 31.9064 -0.454633 34.7627 1.35853 36.417L16.2471 50.0001L1.35853 63.5832C-0.454633 65.2374 -0.452552 68.0938 1.36303 69.7453L6.86933 74.7541C8.35363 76.1043 10.589 76.2037 12.1872 74.9905L29.3551 61.9587L68.769 97.9167C69.3925 98.5406 70.1246 99.0104 70.9119 99.3171ZM75.0152 27.2989L45.1091 50.0001L75.0152 72.7012V27.2989Z"
+                        fill="white"
+                      />
+                    </mask>
+                    <g mask="url(#mask0)">
+                      <path
+                        class="vscode-path-one"
+                        d="M96.4614 10.7962L75.8569 0.875542C73.4719 -0.272773 70.6217 0.211611 68.75 2.08333L1.29858 63.5832C-0.515693 65.2373 -0.513607 68.0937 1.30308 69.7452L6.81272 74.754C8.29793 76.1042 10.5347 76.2036 12.1338 74.9905L93.3609 13.3699C96.086 11.3026 100 13.2462 100 16.6667V16.4275C100 14.0265 98.6246 11.8378 96.4614 10.7962Z"
+                        fill="#fafafa"
+                      />
+                      <g filter="url(#filter0_d)">
+                        <path
+                          class="vscode-path-two"
+                          d="M96.4614 89.2038L75.8569 99.1245C73.4719 100.273 70.6217 99.7884 68.75 97.9167L1.29858 36.4169C-0.515693 34.7627 -0.513607 31.9063 1.30308 30.2548L6.81272 25.246C8.29793 23.8958 10.5347 23.7964 12.1338 25.0095L93.3609 86.6301C96.086 88.6974 100 86.7538 100 83.3334V83.5726C100 85.9735 98.6246 88.1622 96.4614 89.2038Z"
+                          fill="#fafafa"
+                        />
+                      </g>
+                      <g filter="url(#filter1_d)">
+                        <path
+                          class="vscode-path-three"
+                          d="M75.8578 99.1263C73.4721 100.274 70.6219 99.7885 68.75 97.9166C71.0564 100.223 75 98.5895 75 95.3278V4.67213C75 1.41039 71.0564 -0.223106 68.75 2.08329C70.6219 0.211402 73.4721 -0.273666 75.8578 0.873633L96.4587 10.7807C98.6234 11.8217 100 14.0112 100 16.4132V83.5871C100 85.9891 98.6234 88.1786 96.4586 89.2196L75.8578 99.1263Z"
+                          fill="#fafafa"
+                        />
+                      </g>
+                      <g style="mix-blend-mode: overlay" opacity="0.25">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M70.8511 99.3171C72.4261 99.9306 74.2221 99.8913 75.8117 99.1264L96.4 89.2197C98.5634 88.1787 99.9392 85.9892 99.9392 83.5871V16.4133C99.9392 14.0112 98.5635 11.8217 96.4001 10.7807L75.8117 0.873695C73.7255 -0.13019 71.2838 0.115699 69.4527 1.44688C69.1912 1.63705 68.942 1.84937 68.7082 2.08335L29.2943 38.0414L12.1264 25.0096C10.5283 23.7964 8.29285 23.8959 6.80855 25.246L1.30225 30.2548C-0.513334 31.9064 -0.515415 34.7627 1.29775 36.4169L16.1863 50L1.29775 63.5832C-0.515415 65.2374 -0.513334 68.0937 1.30225 69.7452L6.80855 74.754C8.29285 76.1042 10.5283 76.2036 12.1264 74.9905L29.2943 61.9586L68.7082 97.9167C69.3317 98.5405 70.0638 99.0104 70.8511 99.3171ZM74.9544 27.2989L45.0483 50L74.9544 72.7012V27.2989Z"
+                          fill="url(#paint0_linear)"
+                        />
+                      </g>
+                    </g>
+                    <defs>
+                      <filter
+                        id="filter0_d"
+                        x="-8.39411"
+                        y="15.8291"
+                        width="116.727"
+                        height="92.2456"
+                        filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB"
+                      >
+                        <feFlood
+                          flood-opacity="0"
+                          result="BackgroundImageFix"
+                        />
+                        <feColorMatrix
+                          in="SourceAlpha"
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        />
+                        <feOffset />
+                        <feGaussianBlur stdDeviation="4.16667" />
+                        <feColorMatrix
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                        />
+                        <feBlend
+                          mode="overlay"
+                          in2="BackgroundImageFix"
+                          result="effect1_dropShadow"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="effect1_dropShadow"
+                          result="shape"
+                        />
+                      </filter>
+                      <filter
+                        id="filter1_d"
+                        x="60.4167"
+                        y="-8.07558"
+                        width="47.9167"
+                        height="116.151"
+                        filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB"
+                      >
+                        <feFlood
+                          flood-opacity="0"
+                          result="BackgroundImageFix"
+                        />
+                        <feColorMatrix
+                          in="SourceAlpha"
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        />
+                        <feOffset />
+                        <feGaussianBlur stdDeviation="4.16667" />
+                        <feColorMatrix
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                        />
+                        <feBlend
+                          mode="overlay"
+                          in2="BackgroundImageFix"
+                          result="effect1_dropShadow"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="effect1_dropShadow"
+                          result="shape"
+                        />
+                      </filter>
+                      <linearGradient
+                        id="paint0_linear"
+                        x1="49.9392"
+                        y1="0.257812"
+                        x2="49.9392"
+                        y2="99.7423"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="white" offset="" />
+                        <stop offset="1" stop-color="white" stop-opacity="0" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <p class="skill-p vscode-icon-p">VS Code</p>
+                <div class="hex-flex hex-flex-vscode">
+                  <div class="hex-left"></div>
+                  <div class="hex-middle"></div>
+                  <div class="hex-right"></div>
+                </div>
+                <div class="hex-flex-border hex-flex-vscode-border">
+                  <div class="hex-left-border vscode-left-border"></div>
+                  <div class="hex-middle-border vscode-middle-border"></div>
+                  <div class="hex-right-border vscode-right-border"></div>
+                </div>
+              </div>
+              <div class="skills-container git-skill-container">
+                <div class="skills-icon git-icon">
+                  <i class="fab fa-brands fa-git-alt skills-fa"></i>
+                </div>
+                <p class="skill-p git-icon-p">Git</p>
+                <div class="hex-flex hex-flex-git">
+                  <div class="hex-left"></div>
+                  <div class="hex-middle"></div>
+                  <div class="hex-right"></div>
+                </div>
+                <div class="hex-flex-border hex-flex-git-border">
+                  <div class="hex-left-border git-left-border"></div>
+                  <div class="hex-middle-border git-middle-border"></div>
+                  <div class="hex-right-border git-right-border"></div>
+                </div>
               </div>
             </div>
-            <div class="skills-container git-skill-container">
-              <div class="skills-icon git-icon">
-                <i class="fab fa-brands fa-git-alt skills-fa"></i>
+            <div class="skills-middle-container">
+              <div class="skills-container css-skill-container">
+                <div class="skills-icon css-icon">
+                  <i class="fab fa-brands fa-css3-alt skills-fa"></i>
+                </div>
+                <p class="skill-p css-icon-p">CSS</p>
+                <div class="hex-flex hex-flex-css">
+                  <div class="hex-left"></div>
+                  <div class="hex-middle"></div>
+                  <div class="hex-right"></div>
+                </div>
+                <div class="hex-flex-border hex-flex-css-border">
+                  <div class="hex-left-border css-left-border"></div>
+                  <div class="hex-middle-border css-middle-border"></div>
+                  <div class="hex-right-border css-right-border"></div>
+                </div>
               </div>
-              <p class="skill-p git-icon-p">Git</p>
-              <div class="hex-flex hex-flex-git">
-                <div class="hex-left"></div>
-                <div class="hex-middle"></div>
-                <div class="hex-right"></div>
+              <div class="skills-container sass-skill-container">
+                <div class="skills-icon sass-icon">
+                  <i class="fab fa-brands fa-sass skills-fa"></i>
+                </div>
+                <p class="skill-p sass-icon-p">Sass</p>
+                <div class="hex-flex hex-flex-sass">
+                  <div class="hex-left"></div>
+                  <div class="hex-middle"></div>
+                  <div class="hex-right"></div>
+                </div>
+                <div class="hex-flex-border hex-flex-sass-border">
+                  <div class="hex-left-border sass-left-border"></div>
+                  <div class="hex-middle-border sass-middle-border"></div>
+                  <div class="hex-right-border sass-right-border"></div>
+                </div>
               </div>
-              <div class="hex-flex-border hex-flex-git-border">
-                <div class="hex-left-border git-left-border"></div>
-                <div class="hex-middle-border git-middle-border"></div>
-                <div class="hex-right-border git-right-border"></div>
+              <div class="skills-container bootstrap-skill-container">
+                <div class="skills-icon bootstrap-icon">
+                  <i class="fab fa-brands fa-bootstrap skills-fa"></i>
+                </div>
+                <p class="skill-p bootstrap-icon-p">Bootstrap</p>
+                <div class="hex-flex hex-flex-bootstrap">
+                  <div class="hex-left"></div>
+                  <div class="hex-middle"></div>
+                  <div class="hex-right"></div>
+                </div>
+                <div class="hex-flex-border hex-flex-bootstrap-border">
+                  <div class="hex-left-border bootstrap-left-border"></div>
+                  <div class="hex-middle-border bootstrap-middle-border"></div>
+                  <div class="hex-right-border bootstrap-right-border"></div>
+                </div>
+              </div>
+              <div class="skills-container tailwind-skill-container">
+                <div class="skills-icon tailwind-icon">
+                  <svg
+                    class="tailwind-svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="28"
+                    viewBox="0 0 22 22"
+                    width="35"
+                  >
+                    <path
+                      class="tailwind-svg-path"
+                      fill="#fafafa"
+                      d="m12 6c-2.67 0-4.33 1.33-5 4 1-1.33 2.17-1.83 3.5-1.5.76.19 1.31.74 1.91 1.35.98 1 2.09 2.15 4.59 2.15 2.67 0 4.33-1.33 5-4-1 1.33-2.17 1.83-3.5 1.5-.76-.19-1.3-.74-1.91-1.35-.98-1-2.09-2.15-4.59-2.15m-5 6c-2.67 0-4.33 1.33-5 4 1-1.33 2.17-1.83 3.5-1.5.76.19 1.3.74 1.91 1.35.98 1 2.09 2.15 4.59 2.15 2.67 0 4.33-1.33 5-4-1 1.33-2.17 1.83-3.5 1.5-.76-.19-1.3-.74-1.91-1.35-.98-1-2.09-2.15-4.59-2.15z"
+                    />
+                  </svg>
+                </div>
+                <p class="skill-p tailwind-icon-p">Tailwind</p>
+                <div class="hex-flex hex-flex-tailwind">
+                  <div class="hex-left"></div>
+                  <div class="hex-middle"></div>
+                  <div class="hex-right"></div>
+                </div>
+                <div class="hex-flex-border hex-flex-tailwind-border">
+                  <div class="hex-left-border tailwind-left-border"></div>
+                  <div class="hex-middle-border tailwind-middle-border"></div>
+                  <div class="hex-right-border tailwind-right-border"></div>
+                </div>
+              </div>
+            </div>
+            <div class="skills-right-container">
+              <div class="skills-container js-skill-container">
+                <div class="skills-icon js-icon">
+                  <i class="fab fa-brands fa-js skills-fa"></i>
+                </div>
+                <p class="skill-p js-icon-p">JavaScript</p>
+                <div class="hex-flex hex-flex-js">
+                  <div class="hex-left"></div>
+                  <div class="hex-middle"></div>
+                  <div class="hex-right"></div>
+                </div>
+                <div class="hex-flex-border hex-flex-js-border">
+                  <div class="hex-left-border js-left-border"></div>
+                  <div class="hex-middle-border js-middle-border"></div>
+                  <div class="hex-right-border js-right-border"></div>
+                </div>
+              </div>
+              <div class="skills-container react-skill-container">
+                <div class="skills-icon react-icon">
+                  <i class="fab fa-brands fa-react skills-fa"></i>
+                </div>
+                <p class="skill-p react-icon-p">React</p>
+                <div class="hex-flex hex-flex-react">
+                  <div class="hex-left"></div>
+                  <div class="hex-middle"></div>
+                  <div class="hex-right"></div>
+                </div>
+                <div class="hex-flex-border hex-flex-react-border">
+                  <div class="hex-left-border react-left-border"></div>
+                  <div class="hex-middle-border react-middle-border"></div>
+                  <div class="hex-right-border react-right-border"></div>
+                </div>
+              </div>
+              <div class="skills-container figma-skill-container">
+                <div class="skills-icon figma-icon">
+                  <i class="fab fa-brands fa-figma skills-fa"></i>
+                </div>
+                <p class="skill-p figma-icon-p">Figma</p>
+                <div class="hex-flex hex-flex-figma">
+                  <div class="hex-left"></div>
+                  <div class="hex-middle"></div>
+                  <div class="hex-right"></div>
+                </div>
+                <div class="hex-flex-border hex-flex-figma-border">
+                  <div class="hex-left-border figma-left-border"></div>
+                  <div class="hex-middle-border figma-middle-border"></div>
+                  <div class="hex-right-border figma-right-border"></div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="skills-middle-container">
-            <div class="skills-container css-skill-container">
-              <div class="skills-icon css-icon">
-                <i class="fab fa-brands fa-css3-alt skills-fa"></i>
-              </div>
-              <p class="skill-p css-icon-p">CSS</p>
-              <div class="hex-flex hex-flex-css">
-                <div class="hex-left"></div>
-                <div class="hex-middle"></div>
-                <div class="hex-right"></div>
-              </div>
-              <div class="hex-flex-border hex-flex-css-border">
-                <div class="hex-left-border css-left-border"></div>
-                <div class="hex-middle-border css-middle-border"></div>
-                <div class="hex-right-border css-right-border"></div>
-              </div>
-            </div>
-            <div class="skills-container sass-skill-container">
-              <div class="skills-icon sass-icon">
-                <i class="fab fa-brands fa-sass skills-fa"></i>
-              </div>
-              <p class="skill-p sass-icon-p">Sass</p>
-              <div class="hex-flex hex-flex-sass">
-                <div class="hex-left"></div>
-                <div class="hex-middle"></div>
-                <div class="hex-right"></div>
-              </div>
-              <div class="hex-flex-border hex-flex-sass-border">
-                <div class="hex-left-border sass-left-border"></div>
-                <div class="hex-middle-border sass-middle-border"></div>
-                <div class="hex-right-border sass-right-border"></div>
-              </div>
-            </div>
-            <div class="skills-container bootstrap-skill-container">
-              <div class="skills-icon bootstrap-icon">
-                <i class="fab fa-brands fa-bootstrap skills-fa"></i>
-              </div>
-              <p class="skill-p bootstrap-icon-p">Bootstrap</p>
-              <div class="hex-flex hex-flex-bootstrap">
-                <div class="hex-left"></div>
-                <div class="hex-middle"></div>
-                <div class="hex-right"></div>
-              </div>
-              <div class="hex-flex-border hex-flex-bootstrap-border">
-                <div class="hex-left-border bootstrap-left-border"></div>
-                <div class="hex-middle-border bootstrap-middle-border"></div>
-                <div class="hex-right-border bootstrap-right-border"></div>
-              </div>
-            </div>
-            <div class="skills-container tailwind-skill-container">
-              <div class="skills-icon tailwind-icon">
-                <svg class="tailwind-svg" xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 0 22 22" width="35">
-                  <path class="tailwind-svg-path" fill="#fafafa"
-                    d="m12 6c-2.67 0-4.33 1.33-5 4 1-1.33 2.17-1.83 3.5-1.5.76.19 1.31.74 1.91 1.35.98 1 2.09 2.15 4.59 2.15 2.67 0 4.33-1.33 5-4-1 1.33-2.17 1.83-3.5 1.5-.76-.19-1.3-.74-1.91-1.35-.98-1-2.09-2.15-4.59-2.15m-5 6c-2.67 0-4.33 1.33-5 4 1-1.33 2.17-1.83 3.5-1.5.76.19 1.3.74 1.91 1.35.98 1 2.09 2.15 4.59 2.15 2.67 0 4.33-1.33 5-4-1 1.33-2.17 1.83-3.5 1.5-.76-.19-1.3-.74-1.91-1.35-.98-1-2.09-2.15-4.59-2.15z" />
-                </svg>
-              </div>
-              <p class="skill-p tailwind-icon-p">Tailwind</p>
-              <div class="hex-flex hex-flex-tailwind">
-                <div class="hex-left"></div>
-                <div class="hex-middle"></div>
-                <div class="hex-right"></div>
-              </div>
-              <div class="hex-flex-border hex-flex-tailwind-border">
-                <div class="hex-left-border tailwind-left-border"></div>
-                <div class="hex-middle-border tailwind-middle-border"></div>
-                <div class="hex-right-border tailwind-right-border"></div>
-              </div>
-            </div>
-          </div>
-          <div class="skills-right-container">
-            <div class="skills-container js-skill-container">
-              <div class="skills-icon js-icon">
-                <i class="fab fa-brands fa-js skills-fa"></i>
-              </div>
-              <p class="skill-p js-icon-p">JavaScript</p>
-              <div class="hex-flex hex-flex-js">
-                <div class="hex-left"></div>
-                <div class="hex-middle"></div>
-                <div class="hex-right"></div>
-              </div>
-              <div class="hex-flex-border hex-flex-js-border">
-                <div class="hex-left-border js-left-border"></div>
-                <div class="hex-middle-border js-middle-border"></div>
-                <div class="hex-right-border js-right-border"></div>
-              </div>
-            </div>
-            <div class="skills-container react-skill-container">
-              <div class="skills-icon react-icon">
-                <i class="fab fa-brands fa-react skills-fa"></i>
-              </div>
-              <p class="skill-p react-icon-p">React</p>
-              <div class="hex-flex hex-flex-react">
-                <div class="hex-left"></div>
-                <div class="hex-middle"></div>
-                <div class="hex-right"></div>
-              </div>
-              <div class="hex-flex-border hex-flex-react-border">
-                <div class="hex-left-border react-left-border"></div>
-                <div class="hex-middle-border react-middle-border"></div>
-                <div class="hex-right-border react-right-border"></div>
-              </div>
-            </div>
-            <div class="skills-container figma-skill-container">
-              <div class="skills-icon figma-icon">
-                <i class="fab fa-brands fa-figma skills-fa"></i>
-              </div>
-              <p class="skill-p figma-icon-p">Figma</p>
-              <div class="hex-flex hex-flex-figma">
-                <div class="hex-left"></div>
-                <div class="hex-middle"></div>
-                <div class="hex-right"></div>
-              </div>
-              <div class="hex-flex-border hex-flex-figma-border">
-                <div class="hex-left-border figma-left-border"></div>
-                <div class="hex-middle-border figma-middle-border""></div>
-              <div class=" hex-right-border figma-right-border""></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </aside>
-    </div>
-  </section>
+        </aside>
+      </div>
+    </section>
 
   <section id="projects-top-divider">
-    <svg class="separator" xmlns="http://www.w3.org/2000/svg" width="100%" height="166.61502" viewBox="0.4 0.2 200 44"
-      preserveAspectRatio="none">
-      <g class="separator" transform="translate(-9.2218046,-83.494585)">
-        <path style="fill: #785af0"
-          d="M 9.484815,89.716055 H 209.81018 V 126.90507 L 110.46368,93.705147 9.579391,127.39334 Z" />
-        <path style="fill: #1a1a1a"
-          d="M 9.3544335,83.626877 H 209.68181 V 120.29057 L 110.46368,93.705147 9.4490103,120.77195 Z" />
-      </g>
-    </svg>
   </section>
+      <svg
+        class="separator"
+        xmlns="http://www.w3.org/2000/svg"
+        width="100%"
+        height="166.61502"
+        viewBox="0.4 0.2 200 44"
+        preserveAspectRatio="none"
+      >
+        <g class="separator" transform="translate(-9.2218046,-83.494585)">
+          <path
+            style="fill: #785af0"
+            d="M 9.484815,89.716055 H 209.81018 V 126.90507 L 110.46368,93.705147 9.579391,127.39334 Z"
+          />
+          <path
+            style="fill: #1a1a1a"
+            d="M 9.3544335,83.626877 H 209.68181 V 120.29057 L 110.46368,93.705147 9.4490103,120.77195 Z"
+          />
+        </g>
+      </svg>
 
-  <section id="projects-section">
     <h1 class="section-heading projects-main-heading">
-      <span class="projects-heading-span">Projects</span>
     </h1>
-    <div class="projects-list">
-      <article class="project-container project-left">
-        <div class="project">
-          <iframe class="hidden-sm" src="" frameborder="0"></iframe>
-          <div class="project-img-container">
             <img src="img/Screen Shot 2022-07-29 at 6.27.12 PM.png" alt="Responsive Layout site screenshot"
-              class="project-img">
-          </div>
-          <div class="project-bottom">
-            <div class="project-title-container">
-              <h3 class="project-title">Responsive Layout</h3>
+    <section id="projects-section">
+        <span class="projects-heading-span">Projects</span>
+      <div class="projects-list">
+        <article class="project-container project-left">
+          <div class="project">
+            <div class="project-img-container">
+              <img
+                alt="Responsive Layout site screenshot"
+                class="project-img"
+              />
             </div>
-            <p class="project-description">
-              A fully responsive example of a developer portfolio website.
-            </p>
-            <div class="project-tech-container">
-              <div class="project-icon-container">
-                <i class="fab fa-brands fa-html5 project-fa project-html-icon"></i>
+            <div class="project-bottom">
+              <div class="project-title-container">
+                <h3 class="project-title">Responsive Layout</h3>
               </div>
-              <div class="project-icon-container">
-                <i class="fab fa-brands fa-css3-alt project-fa project-css-icon"></i>
+              <p class="project-description">
+                A fully responsive example of a developer portfolio website.
+              </p>
+              <div class="project-tech-container">
+                <div class="project-icon-container">
+                  <i
+                    class="fab fa-brands fa-html5 project-fa project-html-icon"
+                  ></i>
+                </div>
+                <div class="project-icon-container">
+                  <i
+                    class="fab fa-brands fa-css3-alt project-fa project-css-icon"
+                  ></i>
+                </div>
+              </div>
+              <div class="project-links">
+                <div class="live-link">
+                  <a
+                    href="https://bnielsencodes.github.io/Responsive-Layout-Site/"
+                    class="live-link-button"
+                    target="_blank"
+                    >Live Site</a
+                  >
+                </div>
+                <div class="source-code">
+                  <a
+                    href="https://github.com/bnielsencodes/Responsive-Layout-Site"
+                    class="source-code-button"
+                    target="_blank"
+                    >Source Code</a
+                  >
+                </div>
               </div>
             </div>
-            <div class="project-links">
-              <div class="live-link">
-                <a href="https://bnielsencodes.github.io/Responsive-Layout-Site/" class="live-link-button"
-                  target="_blank">Live Site</a>
-              </div>
-              <div class="source-code">
-                <a href="https://github.com/bnielsencodes/Responsive-Layout-Site" class="source-code-button"
-                  target="_blank">Source
-                  Code</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="project-aside hidden-sm">
-
-        </div>
-      </article>
-      <article class="project-container project-right">
-        <div class="project">
           <iframe class="hidden-sm" src="" frameborder="0"></iframe>
-          <div class="project-img-container">
             <img src="img/Screen Shot 2022-07-29 at 6.31.31 PM.png" alt="Game Show App screenshot" class="project-img">
           </div>
-          <div class="project-bottom">
-            <div class="project-title-container">
-              <h3 class="project-title">Fruit of the Sea</h3>
+          <div class="project-aside hidden-sm"></div>
+        </article>
+        <article class="project-container project-right">
+          <div class="project">
+            <div class="project-img-container">
+              <img
+                alt="Game Show App screenshot"
+                class="project-img"
+              />
             </div>
-            <p class="project-description">
-              A fully responsive word guessing game set up to mimic
-              the feel of a game show.
-            </p>
-            <div class="project-tech-container-wide">
-              <div class="project-icon-container">
-                <i class="fab fa-brands fa-html5 skills-fa project-html-icon"></i>
+            <div class="project-bottom">
+              <div class="project-title-container">
+                <h3 class="project-title">Fruit of the Sea</h3>
               </div>
-              <div class="project-icon-container">
-                <i class="fab fa-brands fa-css3-alt skills-fa project-css-icon"></i>
+              <p class="project-description">
+                A fully responsive word guessing game set up to mimic the feel
+                of a game show.
+              </p>
+              <div class="project-tech-container-wide">
+                <div class="project-icon-container">
+                  <i
+                    class="fab fa-brands fa-html5 skills-fa project-html-icon"
+                  ></i>
+                </div>
+                <div class="project-icon-container">
+                  <i
+                    class="fab fa-brands fa-css3-alt skills-fa project-css-icon"
+                  ></i>
+                </div>
+                <div class="project-icon-container">
+                  <i class="fab fa-brands fa-js skills-fa project-js-icon"></i>
+                </div>
               </div>
-              <div class="project-icon-container">
-                <i class="fab fa-brands fa-js skills-fa project-js-icon"></i>
-              </div>
-            </div>
-            <div class="project-links">
-              <div class="live-link">
-                <a href="https://bnielsencodes.github.io/Fruit-of-the-Sea/" class="live-link-button"
-                  target="_blank">Live
-                  Site</a>
-              </div>
-              <div class="source-code">
-                <a href="https://github.com/bnielsencodes/Fruit-of-the-Sea" class="source-code-button"
-                  target="_blank">Source
-                  Code</a>
+              <div class="project-links">
+                <div class="live-link">
+                  <a
+                    href="https://bnielsencodes.github.io/Fruit-of-the-Sea/"
+                    class="live-link-button"
+                    target="_blank"
+                    >Live Site</a
+                  >
+                </div>
+                <div class="source-code">
+                  <a
+                    href="https://github.com/bnielsencodes/Fruit-of-the-Sea"
+                    class="source-code-button"
+                    target="_blank"
+                    >Source Code</a
+                  >
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="project-aside">
-        </div>
-      </article>
+          <div class="project-aside"></div>
+        </article>
 
-      <article class="project-container project-left">
-        <div class="project">
           <iframe class="hidden-sm" src="" frameborder="0"></iframe>
-          <div class="project-img-container">
-            <img src="img/Screen Shot 2022-08-02 at 10.10.15 PM.png" alt="Employee Directory site screenshot"
-              class="project-img">
+        <article class="project-container project-left">
+          <div class="project">
+            <div class="project-img-container">
+              <img
+                alt="Employee Directory site screenshot"
+                class="project-img"
+              />
+            </div>
+            <div class="project-bottom">
+              <div class="project-title-container">
+                <h3 class="project-title">Employee Directory</h3>
+              </div>
+              <p class="project-description">
+                A fully responsive employee directory that allows you to search
+                for specific employees by name. Utilizes Fetch API to access
+                Random User Generator API.
+              </p>
+              <div class="project-tech-container-wide">
+                <div class="project-icon-container">
+                  <i
+                    class="fab fa-brands fa-html5 project-fa project-html-icon"
+                  ></i>
+                </div>
+                <div class="project-icon-container">
+                  <i
+                    class="fab fa-brands fa-css3-alt project-fa project-css-icon"
+                  ></i>
+                </div>
+                <div class="project-icon-container">
+                  <i class="fab fa-brands fa-js skills-fa project-js-icon"></i>
+                </div>
+              </div>
+              <div class="project-links">
+                <div class="live-link">
+                  <a
+                    href="https://bnielsencodes.github.io/Employee-Directory/"
+                    class="live-link-button"
+                    target="_blank"
+                    >Live Site</a
+                  >
+                </div>
+                <div class="source-code">
+                  <a
+                    href="https://github.com/bnielsencodes/Employee-Directory"
+                    class="source-code-button"
+                    target="_blank"
+                    >Source Code</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="project-bottom">
-            <div class="project-title-container">
-              <h3 class="project-title">Employee Directory</h3>
-            </div>
-            <p class="project-description">
-              A fully responsive employee directory that allows you to search
-              for specific employees by name. Utilizes Fetch API to access
-              Random User Generator API.
-            </p>
-            <div class="project-tech-container-wide">
-              <div class="project-icon-container">
-                <i class="fab fa-brands fa-html5 project-fa project-html-icon"></i>
-              </div>
-              <div class="project-icon-container">
-                <i class="fab fa-brands fa-css3-alt project-fa project-css-icon"></i>
-              </div>
-              <div class="project-icon-container">
-                <i class="fab fa-brands fa-js skills-fa project-js-icon"></i>
-              </div>
-            </div>
-            <div class="project-links">
-              <div class="live-link">
-                <a href="https://bnielsencodes.github.io/Employee-Directory/" class="live-link-button"
-                  target="_blank">Live Site</a>
-              </div>
-              <div class="source-code">
-                <a href="https://github.com/bnielsencodes/Employee-Directory" class="source-code-button"
-                  target="_blank">Source
-                  Code</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="project-aside hidden-sm">
+          <div class="project-aside hidden-sm"></div>
+        </article>
 
-        </div>
-      </article>
-
-      <article class="project-container project-right">
-        <div class="project">
           <iframe class="hidden-sm" src="" frameborder="0"></iframe>
-          <div class="project-img-container">
-            <img src="img/Screen Shot 2022-07-29 at 6.33.20 PM.png" alt="Web Style Guide site screenshot"
-              class="project-img">
+        <article class="project-container project-right">
+          <div class="project">
+            <div class="project-img-container">
+              <img
+                alt="Web Style Guide site screenshot"
+                class="project-img"
+              />
+            </div>
+            <div class="project-bottom">
+              <div class="project-title-container">
+                <h3 class="project-title">Web Style Guide</h3>
+              </div>
+              <p class="project-description">
+                A fully responsive web style guide.
+              </p>
+              <div class="project-tech-container">
+                <div class="project-icon-container">
+                  <i
+                    class="fab fa-brands fa-html5 skills-fa project-html-icon"
+                  ></i>
+                </div>
+                <div class="project-icon-container">
+                  <i
+                    class="fab fa-brands fa-css3-alt skills-fa project-css-icon"
+                  ></i>
+                </div>
+              </div>
+              <div class="project-links">
+                <div class="live-link">
+                  <a
+                    href="https://bnielsencodes.github.io/Web-Style-Guide/"
+                    class="live-link-button"
+                    target="_blank"
+                    >Live Site</a
+                  >
+                </div>
+                <div class="source-code">
+                  <a
+                    href="https://github.com/bnielsencodes/Web-Style-Guide"
+                    class="source-code-button"
+                    target="_blank"
+                    >Source Code</a
+                  >
+              </div>
+            </div>
           </div>
-          <div class="project-bottom">
-            <div class="project-title-container">
-              <h3 class="project-title">Web Style Guide</h3>
-            </div>
-            <p class="project-description">
-              A fully responsive web style guide.
-            </p>
-            <div class="project-tech-container">
-              <div class="project-icon-container">
-                <i class="fab fa-brands fa-html5 skills-fa project-html-icon"></i>
-              </div>
-              <div class="project-icon-container">
-                <i class="fab fa-brands fa-css3-alt skills-fa project-css-icon"></i>
-              </div>
-            </div>
-            <div class="project-links">
-              <div class="live-link">
-                <a href="https://bnielsencodes.github.io/Web-Style-Guide/" class="live-link-button" target="_blank">Live
-                  Site</a>
-              </div>
-              <div class="source-code">
-                <a href="https://github.com/bnielsencodes/Web-Style-Guide" class="source-code-button"
-                  target="_blank">Source
-                  Code</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="project-aside">
+          <div class="project-aside"></div>
+        </article>
 
-        </div>
-      </article>
-
-      <article class="project-container project-left">
-        <div class="project">
           <iframe class="hidden-sm" src="" frameborder="0"></iframe>
-          <div class="project-img-container">
-            <img src="img/Screen Shot 2022-08-02 at 10.08.46 PM.png" alt="WebApp site screenshot" class="project-img">
+        <article class="project-container project-left">
+          <div class="project">
+            <div class="project-img-container">
+              <img
+                alt="WebApp site screenshot"
+                class="project-img"
+              />
+            </div>
+            <div class="project-bottom">
+              <div class="project-title-container">
+                <h3 class="project-title">WebApp Dashboard</h3>
+              </div>
+              <p class="project-description">
+                A fully responsive web app dashboard that includes interactable
+                graphs using Chart.js. With this application, I also learned to
+                work with SVGs.
+              </p>
+              <div class="project-tech-container-wide">
+                <div class="project-icon-container">
+                  <i
+                    class="fab fa-brands fa-html5 project-fa project-html-icon"
+                  ></i>
+                </div>
+                <div class="project-icon-container">
+                  <i
+                    class="fab fa-brands fa-css3-alt project-fa project-css-icon"
+                  ></i>
+                </div>
+                <div class="project-icon-container">
+                  <i class="fab fa-brands fa-js skills-fa project-js-icon"></i>
+                </div>
+              </div>
+              <div class="project-links">
+                <div class="live-link">
+                  <a
+                    href="https://bnielsencodes.github.io/WebApp-Dashboard/"
+                    class="live-link-button"
+                    target="_blank"
+                    >Live Site</a
+                  >
+                </div>
+                <div class="source-code">
+                  <a
+                    href="https://github.com/bnielsencodes/WebApp-Dashboard"
+                    class="source-code-button"
+                    target="_blank"
+                    >Source Code</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="project-bottom">
-            <div class="project-title-container">
-              <h3 class="project-title">WebApp Dashboard</h3>
-            </div>
-            <p class="project-description">
-              A fully responsive web app dashboard that includes interactable
-              graphs using Chart.js. With this application, I also learned to
-              work with SVGs.
-            </p>
-            <div class="project-tech-container-wide">
-              <div class="project-icon-container">
-                <i class="fab fa-brands fa-html5 project-fa project-html-icon"></i>
-              </div>
-              <div class="project-icon-container">
-                <i class="fab fa-brands fa-css3-alt project-fa project-css-icon"></i>
-              </div>
-              <div class="project-icon-container">
-                <i class="fab fa-brands fa-js skills-fa project-js-icon"></i>
-              </div>
-            </div>
-            <div class="project-links">
-              <div class="live-link">
-                <a href="https://bnielsencodes.github.io/WebApp-Dashboard/" class="live-link-button"
-                  target="_blank">Live Site</a>
-              </div>
-              <div class="source-code">
-                <a href="https://github.com/bnielsencodes/WebApp-Dashboard" class="source-code-button"
-                  target="_blank">Source
-                  Code</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="project-aside hidden-sm">
+          <div class="project-aside hidden-sm"></div>
+        </article>
+      </div>
+    </section>
 
-        </div>
-      </article>
+      <svg
+        class="separator"
+        xmlns="http://www.w3.org/2000/svg"
+        width="100%"
+        height="166.61502"
+        viewBox="0.4 0.2 200 44"
+        preserveAspectRatio="none"
+      >
+        <g class="separator" transform="translate(-9.2218046,-83.494585)">
+          <path
+            style="fill: #785af0"
+            d="M 9.484815,89.716055 H 209.81018 V 126.90507 L 110.46368,93.705147 9.579391,127.39334 Z"
+          />
+          <path
+            style="fill: #1a1a1a"
+            d="M 9.3544335,83.626877 H 209.68181 V 120.29057 L 110.46368,93.705147 9.4490103,120.77195 Z"
+          />
+        </g>
+      </svg>
     </div>
   </section>
 
   <section id="projects-bottom-divider">
-    <svg class="separator" xmlns="http://www.w3.org/2000/svg" width="100%" height="166.61502" viewBox="0.4 0.2 200 44"
-      preserveAspectRatio="none">
-      <g class="separator" transform="translate(-9.2218046,-83.494585)">
-        <path style="fill: #785af0"
-          d="M 9.484815,89.716055 H 209.81018 V 126.90507 L 110.46368,93.705147 9.579391,127.39334 Z" />
-        <path style="fill: #1a1a1a"
-          d="M 9.3544335,83.626877 H 209.68181 V 120.29057 L 110.46368,93.705147 9.4490103,120.77195 Z" />
-      </g>
-    </svg>
   </section>
-
-  <section id="contact-section">
     <h1 class="section-heading contact-heading">
-      <span class="contact-heading-span">Want to work together?</span>
     </h1>
-    <form id="fs-frm" class="contact-form" name="simple-contact-form" accept-charset="utf-8"
-      action="https://formspree.io/f/mknewaqj" method="POST">
-      <h2 class="contact-subheading lets-connect">Let's connect!</h2>
-      <div class="contact-text">
-        Email me at
-        <div id="email-copy" class="click-to-copy-container">
-          <button class="click-to-copy" title="Click to copy email address">
-            <strong>
+    <section id="contact-section">
+        <span class="contact-heading-span">Want to work together?</span>
+      <form
+        id="fs-frm"
+        class="contact-form"
+        name="simple-contact-form"
+        accept-charset="utf-8"
+        action="https://formspree.io/f/mknewaqj"
+        method="POST"
+      >
+        <h2 class="contact-subheading lets-connect">Let's connect!</h2>
+        <div class="contact-text">
+          Email me at
+          <div id="email-copy" class="click-to-copy-container">
+            <button class="click-to-copy" title="Click to copy email address">
+              <strong> bnielsencodes@gmail.com </strong>
+            </button>
+            <span class="copied">Copied!</span>
+          </div>
+          <strong>
+            <a
+              href="mailto:bnielsencodes@gmail.com"
+              id="email-copy-fallback"
+              class="click-to-copy-fallback"
+            >
               bnielsencodes@gmail.com
-            </strong>
-          </button>
-          <span class="copied">Copied!</span>
+            </a>
+          </strong>
+          <br />
+          or send me a quick message here:
         </div>
-        <strong>
-          <a href="mailto:bnielsencodes@gmail.com" id="email-copy-fallback" class="click-to-copy-fallback">
-            bnielsencodes@gmail.com
-          </a>
-        </strong>
-        <br />
-        or send me a quick message here:
-      </div>
-      <fieldset id="fs-frm-inputs" class="form-fieldset">
-        <input id="form-name" class="form-item form-item-one" type="name" name="name" placeholder="Name"
-          aria-label="Enter your name" required="" />
-        <input id="form-email" class="form-item form-item-two" type="email" name="_replyto" placeholder="Email"
-          aria-label="Enter your email address" required="" />
-        <textarea id="form-message" class="form-item form-item-three" name="message" placeholder="Message"
-          aria-label="Enter a message" rows="7" required=""></textarea>
-        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-      </fieldset>
-      <div class="submit-container">
-        <button class="form-button" type="submit" value="Submit">Submit</button>
-      </div>
-    </form>
-  </section>
+        <fieldset id="fs-frm-inputs" class="form-fieldset">
+          <input
+            id="form-name"
+            class="form-item form-item-one"
+            type="text"
+            name="name"
+            placeholder="Name"
+            aria-label="Enter your name"
+            required=""
+          />
+          <input
+            id="form-email"
+            class="form-item form-item-two"
+            type="email"
+            name="_replyto"
+            placeholder="Email"
+            aria-label="Enter your email address"
+            required=""
+          />
+          <textarea
+            id="form-message"
+            class="form-item form-item-three"
+            name="message"
+            placeholder="Message"
+            aria-label="Enter a message"
+            rows="7"
+            required=""
+          ></textarea>
+          <input
+            type="hidden"
+            name="_subject"
+            id="email-subject"
+            value="Contact Form Submission"
+          />
+        </fieldset>
+        <div class="submit-container">
+          <button class="form-button" type="submit" value="Submit">
+            Submit
+          </button>
+        </div>
+      </form>
+    </section>
 
   <section id="footer-section">
-    <div class="return-home hvr-bob">
-      <a href="#header-section" class="return-home-link" aria-label="return home">
-        <i class="fa-duotone fa-chevrons-up"></i>
-      </a>
-    </div>
-    <!-- FOOTER SOCIAL ICON LINKS -->
-    <div class="footer-content-container">
-      <div class="footer-links-container">
-        <a href="https://twitter.com/bnielsencodes" class="footer-icon-container" aria-label="twitter" target="_blank">
-          <svg class="twitter-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 660">
-            <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-            <path
-              d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
-          </svg>
-        </a>
-        <a href="https://linkedin.com/in/bnielsencodes" class="footer-icon-container" aria-label="linkedin"
-          target="_blank">
-          <svg class="linkedin-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 596 660">
-            <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-            <path
-              d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
-          </svg>
-        </a>
-        <a href="https://github.com/bnielsencodes" class="footer-icon-container" aria-label="github" target="_blank">
-          <svg class="github-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 644 660">
-            <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-            <path
-              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
-          </svg>
-        </a>
-        <a href="mailto:bnielsencodes@gmail.com" class="footer-icon-container" aria-label="email" target="_blank">
-          <svg class="email-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 660">
-            <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-            <path
-              d="M511.6 36.86l-64 415.1c-1.5 9.734-7.375 18.22-15.97 23.05c-4.844 2.719-10.27 4.097-15.68 4.097c-4.188 0-8.319-.8154-12.29-2.472l-122.6-51.1l-50.86 76.29C226.3 508.5 219.8 512 212.8 512C201.3 512 192 502.7 192 491.2v-96.18c0-7.115 2.372-14.03 6.742-19.64L416 96l-293.7 264.3L19.69 317.5C8.438 312.8 .8125 302.2 .0625 289.1s5.469-23.72 16.06-29.77l448-255.1c10.69-6.109 23.88-5.547 34 1.406S513.5 24.72 511.6 36.86z" />
-          </svg>
+      <div class="return-home hvr-bob">
+        <a
+          href="#header-section"
+          class="return-home-link"
+          aria-label="return home"
+        >
+          <i class="fa-duotone fa-chevrons-up"></i>
         </a>
       </div>
-      <p class="footer-signature">Brandon Nielsen - Last updated July, 2022</p>
+      <!-- FOOTER SOCIAL ICON LINKS -->
+      <div class="footer-content-container">
+        <div class="footer-links-container">
+          <a
+            href="https://twitter.com/bnielsencodes"
+            class="footer-icon-container"
+            aria-label="twitter"
+            target="_blank"
+          >
+            <svg
+              class="twitter-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 660 660"
+            >
+              <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://linkedin.com/in/bnielsencodes"
+            class="footer-icon-container"
+            aria-label="linkedin"
+            target="_blank"
+          >
+            <svg
+              class="linkedin-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 596 660"
+            >
+              <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://github.com/bnielsencodes"
+            class="footer-icon-container"
+            aria-label="github"
+            target="_blank"
+          >
+            <svg
+              class="github-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 644 660"
+            >
+              <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+              />
+            </svg>
+          </a>
+          <a
+            href="mailto:bnielsencodes@gmail.com"
+            class="footer-icon-container"
+            aria-label="email"
+            target="_blank"
+          >
+            <svg
+              class="email-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 660 660"
+            >
+              <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M511.6 36.86l-64 415.1c-1.5 9.734-7.375 18.22-15.97 23.05c-4.844 2.719-10.27 4.097-15.68 4.097c-4.188 0-8.319-.8154-12.29-2.472l-122.6-51.1l-50.86 76.29C226.3 508.5 219.8 512 212.8 512C201.3 512 192 502.7 192 491.2v-96.18c0-7.115 2.372-14.03 6.742-19.64L416 96l-293.7 264.3L19.69 317.5C8.438 312.8 .8125 302.2 .0625 289.1s5.469-23.72 16.06-29.77l448-255.1c10.69-6.109 23.88-5.547 34 1.406S513.5 24.72 511.6 36.86z"
+              />
+            </svg>
+          </a>
+        </div>
+        <p class="footer-signature">
+          Brandon Nielsen - Last updated July, 2022
+        </p>
+      </div>
     </div>
   </section>
 
-
-  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.1.4/tsparticles.bundle.min.js"></script>
-  <script src="js/app.js"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.1.4/tsparticles.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>
