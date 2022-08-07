@@ -1229,10 +1229,6 @@ PROJECTS SECTION
 ---------------------------------------
 ------------------------------------ */
 
-#projects-section {
-  background-color: #fafafa;
-}
-
 .projects-main-heading {
   margin: 0 0 90px 0;
 }
@@ -1366,7 +1362,6 @@ PROJECTS SECTION
   height: auto;
   min-height: 165px;
   margin-top: -1px;
-  background-color: #fafafa;
 }
 
 #projects-bottom-divider {
