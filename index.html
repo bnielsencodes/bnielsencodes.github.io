@@ -627,40 +627,35 @@
     <h1 class="section-heading contact-heading">
       <span class="contact-heading-span">Want to work together?</span>
     </h1>
-    <form action="post" class="contact-form">
-      <fieldset class="form-fieldset">
-        <legend>
-          <h2 class="contact-subheading lets-connect">Let's connect!</h2>
-        </legend>
-        <div class="contact-text">
-          Email me at
-          <div id="email-copy" class="click-to-copy-container">
-            <button class="click-to-copy" title="Click to copy email address">
-              <strong>
-                bnielsencodes@gmail.com
-              </strong>
-            </button>
-            <span>Copied!</span>
-          </div>
-          <strong>
-            <a href="mailto:bnielsencodes@gmail.com" id="email-copy-fallback" class="click-to-copy-fallback">
+    <form id="fs-frm" class="contact-form" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mknewaqj" method="POST">
+      <h2 class="contact-subheading lets-connect">Let's connect!</h2>
+      <div class="contact-text">
+        Email me at
+        <div id="email-copy" class="click-to-copy-container">
+          <button class="click-to-copy" title="Click to copy email address">
+            <strong>
               bnielsencodes@gmail.com
             </a>
           </strong>
           <br />
           or send me a quick message here:
         </div>
-        <input class="form-item form-item-one" type="name" placeholder="Name" aria-label="Enter your name" />
-        <input class="form-item form-item-two" type="email" placeholder="Email" aria-label="Enter your email address" />
-        <textarea class="form-item form-item-three" placeholder="Message" aria-label="Enter a message"></textarea>
+        <strong>
+          <a href="mailto:bnielsencodes@gmail.com" id="email-copy-fallback" class="click-to-copy-fallback">
+            bnielsencodes@gmail.com
+          </a>
+        </strong>
+        <br />
+        or send me a quick message here:
+      </div>
+      <fieldset id="fs-frm-inputs" class="form-fieldset">
+        <input id="form-name" class="form-item form-item-one" type="name" name="name" placeholder="Name" aria-label="Enter your name" required="" />
+        <input id="form-email" class="form-item form-item-two" type="email" name="_replyto" placeholder="Email" aria-label="Enter your email address" required="" />
+        <textarea id="form-message" class="form-item form-item-three" name="message" placeholder="Message" aria-label="Enter a message" rows="7" required=""></textarea>
+        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
       </fieldset>
-      <div class="form-error-submit">
-        <div class="form-error">
-          <div class="form-error__name hidden-sm">Please enter your name.</div>
-          <div class="form-error__email hidden-sm">Please enter a valid email.</div>
-          <div class="form-error__msg hidden-sm">Please enter a message.</div>
-        </div>
-        <button class="form-button" type="button">Submit</button>
+      <div class="submit-container">
+        <button class="form-button" type="submit" value="Submit">Submit</button>
       </div>
     </form>
   </section>
