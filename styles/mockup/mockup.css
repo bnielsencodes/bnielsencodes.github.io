@@ -394,6 +394,7 @@ ABOUT SECTION
 
 .about-content-container {
   font-size: 0.9rem;
+  min-width: 670px;
   margin: 50px 0 0;
   padding-bottom: 80px;
 }
@@ -401,7 +402,8 @@ ABOUT SECTION
 .about-text-container {
   min-width: 300px;
   max-width: 340px;
-  margin-bottom: 80px;
+  height: 580px;
+  margin-bottom: 0;
   text-align: center;
   opacity: 0;
 }
@@ -425,32 +427,9 @@ ABOUT SECTION
   }
 }
 
-.about-right {
-  opacity: 0;
-}
-
-.about-right-animation {
-  animation-name: moveInRight2;
-  animation-duration: 1.4s;
-  animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
-  -webkit-animation-fill-mode: forwards;
-}
-
-@keyframes moveInRight2 {
-  0% {
-    opacity: 0;
-    transform: translateX(25rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
 .location-container {
   width: 204px;
-  margin: 0 auto 32px;
+  margin: 0 auto 47px;
   text-align: center;
 }
 
@@ -494,7 +473,7 @@ ABOUT SECTION
 }
 
 .about-p-two {
-  margin-bottom: 60px;
+  margin: 25px 0 60px;
 }
 
 .view-resume {
@@ -533,15 +512,33 @@ ABOUT SECTION
 }
 
 .about-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  height: 580px;
   margin: 0 auto;
+  opacity: 0;
+}
+
+.about-right-animation {
+  animation-name: moveInRight2;
+  animation-duration: 1.4s;
+  animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes moveInRight2 {
+  0% {
+    opacity: 0;
+    transform: translateX(25rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .skills-heading-container {
-  margin-bottom: 54px;
+  width: 96px;
+  margin: 0 auto;
 }
 
 .skills-heading {
@@ -552,6 +549,7 @@ ABOUT SECTION
 
 .about-skills-container {
   min-width: 255px;
+  margin-top: 60px;
 }
 
 .skills-left-container,
@@ -1356,7 +1354,6 @@ PROJECTS SECTION
 
 .live-link-button,
 .source-code-button {
-  width: 113px;
   color: #fafafa;
 }
 
@@ -1851,10 +1848,6 @@ MEDIUM SCREEN MEDIA QUERIES
     padding-bottom: 80px;
   }
 
-  .about-text-container {
-    margin-bottom: 50px;
-  }
-
   .view-resume {
     font-size: 0.65rem;
   }
@@ -1976,7 +1969,7 @@ LARGE SCREEN MEDIA QUERIES
   }
 
   .about-text-container {
-    margin: 0 auto 50px;
+    margin: 0 auto 0;
   }
 
   .view-resume {
