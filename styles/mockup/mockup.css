@@ -1251,6 +1251,7 @@ PROJECTS SECTION
 
 .projects-list {
   max-width: 1800px;
+  padding-bottom: 40px;
   margin: 0 auto;
 }
 
