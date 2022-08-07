@@ -470,7 +470,12 @@ ABOUT SECTION
   margin: 0;
 }
 
-.about-p-one {
+.about-p-one,
+.about-p-two {
+  padding: 0 10px;
+}
+
+.about-p-two {
   margin-bottom: 60px;
 }
 
@@ -1866,7 +1871,8 @@ MEDIUM SCREEN MEDIA QUERIES
     margin: 50px 0 auto;
   }
 
-  .about-p-one {
+  .about-p-one,
+  .about-p-two {
     font-size: 1rem;
   }
 
