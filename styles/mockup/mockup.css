@@ -1262,6 +1262,9 @@ PROJECTS SECTION
 .project {
   max-width: calc(100vw - 60px);
   border: 5px solid #1a1a1a;
+  -webkit-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.35);
 }
 
 .project-img-container {
