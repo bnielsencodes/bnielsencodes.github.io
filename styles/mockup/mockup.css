@@ -295,6 +295,13 @@ HAMBURGER MENU
   right: 12px;
 }
 
+#menu-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #menu-toggle input {
   position: absolute;
   top: 9px;
