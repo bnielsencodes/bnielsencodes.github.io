@@ -394,7 +394,7 @@ ABOUT SECTION
 .about-content-container {
   font-size: 0.9rem;
   margin: 50px 0 0;
-  padding-bottom: 80px;
+  padding-bottom: 25px;
 }
 
 .about-text-container {
@@ -1847,7 +1847,7 @@ MEDIUM SCREEN MEDIA QUERIES
     justify-content: space-between;
     min-width: 670px;
     margin: 60px 80px 0;
-    padding-bottom: 80px;
+    padding-bottom: 25px;
   }
 
   .view-resume {
@@ -1961,7 +1961,7 @@ LARGE SCREEN MEDIA QUERIES
 
   .about-content-container {
     max-width: 1300px;
-    padding-bottom: 80px;
+    padding-bottom: 25px;
     margin: 80px auto 0;
   }
 
