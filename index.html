@@ -74,14 +74,14 @@
         <div class="light-mode-toggle dark-mode-toggle hidden">
           <!-- to later be implemented -->
         </div>
+        <h4 class="main-nav-logo">Brandon Nielsen</h4>
       </div>
-      <h1 class="main-nav-logo">Brandon Nielsen</h1>
       <!-- ***********************************
       HAMBURGER MENU FOR SM SCREEN
-        <button id="menu-toggle">
       *********************************** -->
       <div class="hamburger-menu hidden-md">
         <div class="hamburger-button-container">
+          <div id="menu-toggle">
             <!--
           A fake/hidden checkbox is used as click reciever,
           so you can use the :checked selector on it.
@@ -172,11 +172,10 @@
       </ul>
     </nav>
 
-    <h1 class="section-heading">
-    </h1>
-                  <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
     <section id="about-section">
+      <h2 class="section-heading">
         <span class="about-heading-span">About</span>
+      </h2>
       <div class="about-content-container">
         <article class="about-text-container">
           <div class="location-container">
@@ -530,8 +529,7 @@
       </div>
     </section>
 
-  <section id="projects-top-divider">
-  </section>
+    <div id="projects-top-divider">
       <svg
         class="separator"
         xmlns="http://www.w3.org/2000/svg"
@@ -551,12 +549,13 @@
           />
         </g>
       </svg>
+    </div>
 
-    <h1 class="section-heading projects-main-heading">
-    </h1>
             <img src="img/Screen Shot 2022-07-29 at 6.27.12 PM.png" alt="Responsive Layout site screenshot"
     <section id="projects-section">
+      <h2 class="section-heading projects-main-heading">
         <span class="projects-heading-span">Projects</span>
+      </h2>
       <div class="projects-list">
         <article class="project-container project-left">
           <div class="project">
@@ -604,7 +603,6 @@
                 </div>
               </div>
             </div>
-          <iframe class="hidden-sm" src="" frameborder="0"></iframe>
             <img src="img/Screen Shot 2022-07-29 at 6.31.31 PM.png" alt="Game Show App screenshot" class="project-img">
           </div>
           <div class="project-aside hidden-sm"></div>
@@ -663,7 +661,6 @@
           <div class="project-aside"></div>
         </article>
 
-          <iframe class="hidden-sm" src="" frameborder="0"></iframe>
         <article class="project-container project-left">
           <div class="project">
             <div class="project-img-container">
@@ -719,7 +716,6 @@
           <div class="project-aside hidden-sm"></div>
         </article>
 
-          <iframe class="hidden-sm" src="" frameborder="0"></iframe>
         <article class="project-container project-right">
           <div class="project">
             <div class="project-img-container">
@@ -763,13 +759,13 @@
                     target="_blank"
                     >Source Code</a
                   >
+                </div>
               </div>
             </div>
           </div>
           <div class="project-aside"></div>
         </article>
 
-          <iframe class="hidden-sm" src="" frameborder="0"></iframe>
         <article class="project-container project-left">
           <div class="project">
             <div class="project-img-container">
@@ -827,6 +823,7 @@
       </div>
     </section>
 
+    <div id="projects-bottom-divider">
       <svg
         class="separator"
         xmlns="http://www.w3.org/2000/svg"
@@ -847,14 +844,11 @@
         </g>
       </svg>
     </div>
-  </section>
 
-  <section id="projects-bottom-divider">
-  </section>
-    <h1 class="section-heading contact-heading">
-    </h1>
     <section id="contact-section">
+      <h2 class="section-heading contact-heading">
         <span class="contact-heading-span">Want to work together?</span>
+      </h2>
       <form
         id="fs-frm"
         class="contact-form"
@@ -927,7 +921,7 @@
       </form>
     </section>
 
-  <section id="footer-section">
+    <div id="footer-section">
       <div class="return-home hvr-bob">
         <a
           href="#header-section"
@@ -1014,7 +1008,6 @@
         </p>
       </div>
     </div>
-  </section>
 
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.1.4/tsparticles.bundle.min.js"></script>
     <script src="js/app.js"></script>
