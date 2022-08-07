@@ -400,7 +400,7 @@ ABOUT SECTION
 .about-text-container {
   min-width: 300px;
   max-width: 340px;
-  height: 580px;
+  height: 400px;
   margin-bottom: 0;
   text-align: center;
   opacity: 0;
@@ -470,8 +470,8 @@ ABOUT SECTION
   margin: 0;
 }
 
-.about-p-two {
-  margin: 25px 0 60px;
+.about-p-one {
+  margin-bottom: 60px;
 }
 
 .view-resume {
@@ -1859,6 +1859,14 @@ MEDIUM SCREEN MEDIA QUERIES
     padding-bottom: 25px;
   }
 
+  .about-text-container {
+    margin: 50px 0 auto;
+  }
+
+  .about-p-one {
+    font-size: 1rem;
+  }
+
   .view-resume {
     font-size: 0.65rem;
   }
@@ -1980,7 +1988,7 @@ LARGE SCREEN MEDIA QUERIES
   }
 
   .about-text-container {
-    margin: 0 auto 0;
+    margin: 50px auto auto;
   }
 
   .view-resume {
