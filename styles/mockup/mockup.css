@@ -1733,6 +1733,10 @@ FOOTER SECTION
   color: #785af0;
 }
 
+.footer-icon-container:hover {
+  transform: scale(1.1);
+}
+
 .fa-twitter:hover {
   color: #1DA1F2;
 }
