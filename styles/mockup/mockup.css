@@ -1493,7 +1493,7 @@ button.click-to-copy+span {
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: .4px;
-  font-weight: 600;
+  font-weight: 500;
   color: #666;
 }
 
@@ -1604,7 +1604,7 @@ button.click-to-copy.is-copied+span {
 
 .form-button:hover {
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 1.5px;
   color: #1A1A1A;
   cursor: pointer;
@@ -1889,7 +1889,7 @@ MEDIUM SCREEN MEDIA QUERIES
 
   .view-resume:hover {
     font-size: 0.7rem;
-    font-weight: 600;
+    font-weight: 500;
   }
 
   .skills-right {
