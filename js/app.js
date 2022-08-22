@@ -25,7 +25,6 @@ todo:
 
 // debug:
 
-
 /* ------------------------------------
 VARIABLES
 ------------------------------------ */
@@ -63,7 +62,9 @@ const sassRightBorder = document.querySelector(".sass-right-border");
 const bootstrapIcon = document.querySelector(".fa-bootstrap");
 const bootstrapIconP = document.querySelector(".bootstrap-icon-p");
 const bootstrapLeftBorder = document.querySelector(".bootstrap-left-border");
-const bootstrapMiddleBorder = document.querySelector(".bootstrap-middle-border");
+const bootstrapMiddleBorder = document.querySelector(
+  ".bootstrap-middle-border"
+);
 const bootstrapRightBorder = document.querySelector(".bootstrap-right-border");
 const tailwindSVG = document.querySelector(".tailwind-svg");
 const tailwindSVGPath = document.querySelector(".tailwind-svg-path");
@@ -87,12 +88,6 @@ const figmaLeftBorder = document.querySelector(".figma-left-border");
 const figmaMiddleBorder = document.querySelector(".figma-middle-border");
 const figmaRightBorder = document.querySelector(".figma-right-border");
 
-
-
-
-
-
-
 /* ------------------------------------
 ---------------------------------------
 TRIGGER ABOUT SECTION ANIMATIONS ON SCROLL EVENT
@@ -100,36 +95,34 @@ TRIGGER ABOUT SECTION ANIMATIONS ON SCROLL EVENT
 ------------------------------------ */
 
 // ANIMATE .ABOUT-TEXT-CONTAINER
-const observer = new IntersectionObserver(entries => {
+const observer = new IntersectionObserver((entries) => {
   // Loop over the entries
-  entries.forEach(entry => {
+  entries.forEach((entry) => {
     // If the element is visible
     if (entry.isIntersecting) {
       // Add the animation class
-      entry.target.classList.add('about-left-animation');
+      entry.target.classList.add("about-left-animation");
     }
   });
 });
 
 // Tell the observer which elements to track
-observer.observe(document.querySelector('.about-text-container'));
-
+observer.observe(document.querySelector(".about-text-container"));
 
 // ANIMATE .ABOUT-SKILLS-CONTAINER
-const observer2 = new IntersectionObserver(entries => {
+const observer2 = new IntersectionObserver((entries) => {
   // Loop over the entries
-  entries.forEach(entry => {
+  entries.forEach((entry) => {
     // If the element is visible
     if (entry.isIntersecting) {
       // Add the animation class
-      entry.target.classList.add('about-right-animation');
+      entry.target.classList.add("about-right-animation");
     }
   });
 });
 
 // Tell the observer which elements to track
-observer2.observe(document.querySelector('.about-right'));
-
+observer2.observe(document.querySelector(".about-right"));
 
 /* ------------------------------------
 ---------------------------------------
@@ -140,7 +133,6 @@ HAMBURGER MENU ANIMATION
 $btn.addEventListener("click", function () {
   $nav.classList.toggle("active");
 });
-
 
 /* ------------------------------------
 ---------------------------------------
@@ -154,7 +146,7 @@ tsParticles.load("tsparticles", {
     events: {
       onclick: {
         enable: true,
-        mode: "push"
+        mode: "push",
       },
       onhover: {
         enable: true,
@@ -162,10 +154,10 @@ tsParticles.load("tsparticles", {
         parallax: {
           enable: false,
           force: 2,
-          smooth: 10
-        }
+          smooth: 10,
+        },
       },
-      resize: true
+      resize: true,
     },
     modes: {
       bubble: {
@@ -173,30 +165,30 @@ tsParticles.load("tsparticles", {
         duration: 2,
         opacity: 0,
         size: 0,
-        speed: 3
+        speed: 3,
       },
       grab: {
         distance: 150,
         line_linked: {
-          opacity: 1
-        }
+          opacity: 1,
+        },
       },
       push: {
-        particles_nb: 24
+        particles_nb: 24,
       },
       remove: {
-        particles_nb: 2
+        particles_nb: 2,
       },
       repulse: {
         distance: 80,
         speed: 0.03,
-        duration: 30
-      }
-    }
+        duration: 30,
+      },
+    },
   },
   particles: {
     color: {
-      value: ["#785af0",
+      value: [
         "#785af0",
         "#785af0",
         "#785af0",
@@ -206,15 +198,16 @@ tsParticles.load("tsparticles", {
         "#785af0",
         "#785af0",
         "#785af0",
-        "#2cb67d"
-      ]
+        "#785af0",
+        "#2cb67d",
+      ],
     },
     move: {
       size: true,
       attract: {
         enable: false,
         rotateX: 600,
-        rotateY: 600
+        rotateY: 600,
       },
       bounce: false,
       direction: "none",
@@ -222,24 +215,24 @@ tsParticles.load("tsparticles", {
       out_mode: "out",
       random: true,
       speed: 0.8,
-      straight: false
+      straight: false,
     },
     number: {
       density: {
         enable: true,
-        value_area: 400
+        value_area: 1500,
       },
-      value: 250
+      value: 250,
     },
     opacity: {
       anim: {
         enable: true,
         opacity_min: 0,
         speed: 1.1,
-        sync: false
+        sync: false,
       },
       random: true,
-      value: 1
+      value: 1,
     },
     shape: {
       character: {
@@ -247,50 +240,49 @@ tsParticles.load("tsparticles", {
         font: "Verdana",
         style: "",
         value: "*",
-        weight: "400"
+        weight: "400",
       },
       image: {
         height: 100,
         replace_color: true,
         src: "images/github.svg",
-        width: 100
+        width: 100,
       },
       polygon: {
-        nb_sides: 5
+        nb_sides: 5,
       },
       stroke: {
         color: "#000000",
-        width: 0
+        width: 0,
       },
-      type: "circle"
+      type: "circle",
     },
     size: {
       anim: {
         enable: false,
         size_min: 0.3,
         speed: 4,
-        sync: false
+        sync: false,
       },
       random: true,
-      value: 3
-    }
+      value: 3,
+    },
   },
   polygon: {
     draw: {
       enable: false,
       lineColor: "#ffffff",
-      lineWidth: 0.5
+      lineWidth: 0.5,
     },
     move: {
-      radius: 10
+      radius: 10,
     },
     scale: 1,
     type: "none",
-    url: ""
+    url: "",
   },
-  retina_detect: true
+  retina_detect: true,
 });
-
 
 /* ------------------------------------
 ---------------------------------------
@@ -397,7 +389,6 @@ gitIcon.addEventListener("mouseout", () => {
   gitRightBorder.classList.remove("git-hex-border-right");
 });
 
-
 // CSS ICON HOVER ANIMATION
 cssIconP.addEventListener("mouseover", () => {
   cssIcon.classList.add("css-hover-color");
@@ -426,7 +417,6 @@ cssIcon.addEventListener("mouseout", () => {
   cssMiddleBorder.classList.remove("css-hex-bg-color");
   cssRightBorder.classList.remove("css-hex-border-right");
 });
-
 
 // SASS ICON HOVER ANIMATION
 sassIconP.addEventListener("mouseover", () => {
@@ -457,7 +447,6 @@ sassIcon.addEventListener("mouseout", () => {
   sassRightBorder.classList.remove("sass-hex-border-right");
 });
 
-
 // BOOTSTRAP ICON HOVER ANIMATION
 bootstrapIconP.addEventListener("mouseover", () => {
   bootstrapIcon.classList.add("bootstrap-hover-color");
@@ -486,7 +475,6 @@ bootstrapIcon.addEventListener("mouseout", () => {
   bootstrapMiddleBorder.classList.remove("bootstrap-hex-bg-color");
   bootstrapRightBorder.classList.remove("bootstrap-hex-border-right");
 });
-
 
 // TAILWIND SVG HOVER ANIMATION
 tailwindSVG.addEventListener("mouseover", () => {
@@ -550,7 +538,6 @@ jsIcon.addEventListener("mouseout", () => {
   jsRightBorder.classList.remove("js-hex-border-right");
 });
 
-
 // REACT ICON HOVER ANIMATION
 reactIconP.addEventListener("mouseover", () => {
   reactIcon.classList.add("react-hover-color");
@@ -579,7 +566,6 @@ reactIcon.addEventListener("mouseout", () => {
   reactMiddleBorder.classList.remove("react-hex-bg-color");
   reactRightBorder.classList.remove("react-hex-border-right");
 });
-
 
 // FIGMA ICON HOVER ANIMATION
 figmaIconP.addEventListener("mouseover", () => {
@@ -610,7 +596,6 @@ figmaIcon.addEventListener("mouseout", () => {
   figmaRightBorder.classList.remove("figma-hex-border-right");
 });
 
-
 /* ------------------------------------
 ---------------------------------------
 COPY EMAIL TO CLIPBOARD AND DISABLE MAILTO: LINK
@@ -620,36 +605,35 @@ taken from https://codepen.io/imjuangarcia/pen/xxRaqMZ
 ------------------------------------ */
 
 // Select the button from the markup
-const button = document.querySelector('.click-to-copy');
+const button = document.querySelector(".click-to-copy");
 
-
-// Function that runs on click. It: 
+// Function that runs on click. It:
 // 1) Prevents the default behavior of the button (refresh the page);
 // 2) Runs the copyToClipboard function;
 // 3) Adds and removes some CSS classes, used for styling and notifying the user about the copy event
 const clickToCopy = (e) => {
   e.preventDefault();
   copyToClipboard(e.currentTarget.textContent);
-  e.target.classList.add('is-copied');
+  e.target.classList.add("is-copied");
   setTimeout(() => {
-    e.target.classList.remove('is-copied');
+    e.target.classList.remove("is-copied");
   }, 1200);
 };
 
 // Copy to clipboard function, taken from https://www.30secondsofcode.org/blog/s/copy-text-to-clipboard-with-javascript/
 const copyToClipboard = (str) => {
-  const el = document.createElement('textarea');
+  const el = document.createElement("textarea");
   el.value = str;
-  el.setAttribute('readonly', '');
-  el.style.position = 'absolute';
-  el.style.left = '-9999px';
+  el.setAttribute("readonly", "");
+  el.style.position = "absolute";
+  el.style.left = "-9999px";
   document.body.appendChild(el);
   const selected =
     document.getSelection().rangeCount > 0 ?
     document.getSelection().getRangeAt(0) :
     false;
   el.select();
-  document.execCommand('copy');
+  document.execCommand("copy");
   document.body.removeChild(el);
   if (selected) {
     document.getSelection().removeAllRanges();
@@ -658,4 +642,4 @@ const copyToClipboard = (str) => {
 };
 
 // Fire the event on click
-button.addEventListener('click', clickToCopy);
+button.addEventListener("click", clickToCopy);
