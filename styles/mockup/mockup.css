@@ -1,16 +1,16 @@
 body {
-  overflow-x: hidden;
   margin-left: auto;
   margin-right: auto;
-  font: normal 16px/1.5 'Monteserrat',
-    sans-serif;
+  font: normal 16px/1.5 "Monteserrat", sans-serif;
   color: #fafafa;
-  cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAPCAMAAAAxmgQeAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAD5JREFUGNN1j9EKADAIAnP//9GjFq6w7iU4DNRsB06cb44TJ+UzYUcniqnqoA6ag/62JhjKIU0rxx1lKveuXJ5UAQs/G/2vAAAAAElFTkSuQmCC), auto;
+  cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAPCAMAAAAxmgQeAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAD5JREFUGNN1j9EKADAIAnP//9GjFq6w7iU4DNRsB06cb44TJ+UzYUcniqnqoA6ag/62JhjKIU0rxx1lKveuXJ5UAQs/G/2vAAAAAElFTkSuQmCC),
+    auto;
+  overflow-x: hidden;
 }
 
 /* HIDE SCROLLBAR BUT STILL ALLOW SCROLL (CHROME, SAFARI, OPERA) */
 body::-webkit-scrollbar {
-  width: 0 !important
+  width: 0 !important;
 }
 
 /* HIDE SCROLLBAR BUT STILL ALLOW SCROLL (FIREFOX) */
@@ -31,11 +31,11 @@ body {
 .projects-cta,
 #about-section,
 #contact-section {
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
 }
 
 #project-section {
-  background-color: #fafafa
+  background-color: #fafafa;
 }
 
 .projects-main-heading {
@@ -53,7 +53,6 @@ body {
   text-align: center;
 }
 
-
 /* ------------------------------------
 ---------------------------------------
 LIST STYLING
@@ -69,21 +68,17 @@ a:link {
   text-decoration: none;
 }
 
-
 a:visited {
   text-decoration: none;
 }
-
 
 a:hover {
   text-decoration: none;
 }
 
-
 a:active {
   text-decoration: none;
 }
-
 
 /* ------------------------------------
 ---------------------------------------
@@ -207,7 +202,6 @@ HEADER SECTION
   background-color: #1a1a1a;
 }
 
-
 /* ------------------------------------
 ---------------------------------------
 NAVIGATION
@@ -221,7 +215,7 @@ NAVIGATION
   right: 0;
   z-index: 100;
   height: 50px;
-  border-bottom: 1px solid #1A1A1A;
+  border-bottom: 1px solid #1a1a1a;
   box-shadow: 0 4px 4px rgb(0 0 0 / 30%);
   background-color: #272727;
 }
@@ -265,7 +259,7 @@ NAVIGATION
 }
 
 .hamburger-nav-link:hover {
-  color: #1A1A1A;
+  color: #1a1a1a;
 }
 
 .main-nav-link-container {
@@ -327,9 +321,8 @@ Just a quick hamburger
   border-radius: 3px;
   z-index: 400;
   transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-    opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
 
 #menu-toggle span:first-child {
@@ -341,7 +334,6 @@ Just a quick hamburger
   margin-bottom: 5px;
 }
 
-
 #menu-toggle span:nth-last-child(2) {
   transform-origin: 0% 100%;
 }
@@ -350,7 +342,7 @@ Just a quick hamburger
   Transform all the slices of hamburger
   into a crossmark.
  */
-#menu-toggle input:checked~span {
+#menu-toggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #785af0;
@@ -359,7 +351,7 @@ Just a quick hamburger
 /*
   Hide the middle one.
  */
-#menu-toggle input:checked~span:nth-last-child(3) {
+#menu-toggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
@@ -367,10 +359,9 @@ Just a quick hamburger
 /*
  * The last one should go the other direction
  */
-#menu-toggle input:checked~span:nth-last-child(2) {
+#menu-toggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
-
 
 /* ------------------------------------
 ---------------------------------------
@@ -735,7 +726,7 @@ ABOUT SECTION
 }
 
 .html-icon:hover,
-.html-icon:hover+.html-icon-p,
+.html-icon:hover + .html-icon-p,
 .html-icon-p:hover,
 .html-hover-color {
   color: #f06529;
@@ -754,19 +745,19 @@ ABOUT SECTION
 }
 
 .vscode-p-hover-color {
-  color: #27A5F1;
+  color: #27a5f1;
 }
 
 .vscode-hex-bg-color {
-  background-color: #27A5F1;
+  background-color: #27a5f1;
 }
 
 .vscode-hex-border-left {
-  border-right: 28.5px solid #27A5F1;
+  border-right: 28.5px solid #27a5f1;
 }
 
 .vscode-hex-border-right {
-  border-left: 28.5px solid #27A5F1;
+  border-left: 28.5px solid #27a5f1;
 }
 
 .git-icon-p {
@@ -774,26 +765,26 @@ ABOUT SECTION
 }
 
 .git-icon:hover,
-.git-icon:hover+.git-icon-p,
+.git-icon:hover + .git-icon-p,
 .git-icon-p:hover,
 .git-hover-color {
-  color: #F1512F;
+  color: #f1512f;
 }
 
 .git-hex-bg-color {
-  background-color: #F1512F;
+  background-color: #f1512f;
 }
 
 .git-hex-border-left {
-  border-right: 28.5px solid #F1512F;
+  border-right: 28.5px solid #f1512f;
 }
 
 .git-hex-border-right {
-  border-left: 28.5px solid #F1512F;
+  border-left: 28.5px solid #f1512f;
 }
 
 .css-icon:hover,
-.css-icon:hover+.css-icon-p,
+.css-icon:hover + .css-icon-p,
 .css-icon-p:hover,
 .css-hover-color {
   color: #2965f1;
@@ -812,99 +803,99 @@ ABOUT SECTION
 }
 
 .sass-icon:hover,
-.sass-icon:hover+.sass-icon-p,
+.sass-icon:hover + .sass-icon-p,
 .sass-icon-p:hover,
 .sass-hover-color {
-  color: #C76494;
+  color: #c76494;
 }
 
 .sass-hex-bg-color {
-  background-color: #C76494;
+  background-color: #c76494;
 }
 
 .sass-hex-border-left {
-  border-right: 28.5px solid #C76494;
+  border-right: 28.5px solid #c76494;
 }
 
 .sass-hex-border-right {
-  border-left: 28.5px solid #C76494;
+  border-left: 28.5px solid #c76494;
 }
 
 .bootstrap-icon:hover,
-.bootstrap-icon:hover+.bootstrap-icon-p,
+.bootstrap-icon:hover + .bootstrap-icon-p,
 .bootstrap-icon-p:hover,
 .bootstrap-hover-color {
-  color: #722CF8;
+  color: #722cf8;
 }
 
 .bootstrap-hex-bg-color {
-  background-color: #722CF8;
+  background-color: #722cf8;
 }
 
 .bootstrap-hex-border-left {
-  border-right: 28.5px solid #722CF8;
+  border-right: 28.5px solid #722cf8;
 }
 
 .bootstrap-hex-border-right {
-  border-left: 28.5px solid #722CF8;
+  border-left: 28.5px solid #722cf8;
 }
 
 .tailwind-p-hover-color {
-  color: #36BDF9
+  color: #36bdf9;
 }
 
 .tailwind-hex-bg-color {
-  background-color: #36BDF9;
+  background-color: #36bdf9;
 }
 
 .tailwind-hex-border-left {
-  border-right: 28.5px solid #36BDF9;
+  border-right: 28.5px solid #36bdf9;
 }
 
 .tailwind-hex-border-right {
-  border-left: 28.5px solid #36BDF9;
+  border-left: 28.5px solid #36bdf9;
 }
 
 .js-icon:hover,
-.js-icon:hover+.js-icon-p,
+.js-icon:hover + .js-icon-p,
 .js-icon-p:hover,
 .js-hover-color {
-  color: #F0DB4F;
+  color: #f0db4f;
 }
 
 .js-hex-bg-color {
-  background-color: #F0DB4F;
+  background-color: #f0db4f;
 }
 
 .js-hex-border-left {
-  border-right: 28.5px solid #F0DB4F;
+  border-right: 28.5px solid #f0db4f;
 }
 
 .js-hex-border-right {
-  border-left: 28.5px solid #F0DB4F;
+  border-left: 28.5px solid #f0db4f;
 }
 
 .react-icon:hover,
-.react-icon:hover+.react-icon-p,
+.react-icon:hover + .react-icon-p,
 .react-icon-p:hover,
 .react-hover-color {
-  color: #62DAFB;
+  color: #62dafb;
 }
 
 .react-hex-bg-color {
-  background-color: #62DAFB;
+  background-color: #62dafb;
 }
 
 .react-hex-border-left {
-  border-right: 28.5px solid #62DAFB;
+  border-right: 28.5px solid #62dafb;
 }
 
 .react-hex-border-right {
-  border-left: 28.5px solid #62DAFB;
+  border-left: 28.5px solid #62dafb;
 }
 
 .figma-icon:hover,
-.figma-icon:hover+.figma-icon-p,
+.figma-icon:hover + .figma-icon-p,
 .figma-icon-p:hover,
 .figma-hover-color {
   animation: figmaGradientAnimation 3.75s ease 0s infinite normal none;
@@ -1153,7 +1144,8 @@ ABOUT SECTION
 }
 
 .figma-hex-border-right {
-  animation: figmaBorderRightGradientAnimation 3.75s ease 0s infinite normal none;
+  animation: figmaBorderRightGradientAnimation 3.75s ease 0s infinite normal
+    none;
 }
 
 @keyframes figmaBorderRightGradientAnimation {
@@ -1233,7 +1225,6 @@ ABOUT SECTION
     border-left: 28.5px solid hsla(13, 80%, 51%, 1);
   }
 }
-
 
 /* ------------------------------------
 ---------------------------------------
@@ -1345,11 +1336,11 @@ PROJECTS SECTION
 }
 
 .project-sass-icon {
-  color: #C76494;
+  color: #c76494;
 }
 
 .project-js-icon {
-  color: #F0DB4F;
+  color: #f0db4f;
 }
 
 .project-links {
@@ -1398,7 +1389,6 @@ PROJECTS SECTION
   position: absolute;
   bottom: 0;
 }
-
 
 /* ------------------------------------
 ---------------------------------------
@@ -1482,28 +1472,28 @@ a.click-to-copy-fallback {
 
 button.click-to-copy:hover,
 a.click-to-copy-fallback:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
-button.click-to-copy+span {
+button.click-to-copy + span {
   /* We make the span hidden by default. In this case, using display: none; isn't an issue from an accessibility standpoint, since we don't want screen readers to pick this up unless the user clicks on the button */
   display: none;
   /* From here on, just styling purposes 👇🏻 */
   margin-left: 1rem;
-  background: #DADADA;
-  padding: .5rem;
-  border-radius: .2rem;
+  background: #dadada;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
   position: absolute;
-  top: .75rem;
+  top: 0.75rem;
   font-size: 13px;
   text-transform: uppercase;
-  letter-spacing: .4px;
+  letter-spacing: 0.4px;
   font-weight: 500;
   color: #666;
 }
 
 /* Styles for the tooltip arrow */
-button.click-to-copy+span:after {
+button.click-to-copy + span:after {
   right: 100%;
   top: 50%;
   border: solid transparent;
@@ -1513,13 +1503,13 @@ button.click-to-copy+span:after {
   position: absolute;
   pointer-events: none;
   border-color: rgba(218, 218, 218, 0);
-  border-right-color: #DADADA;
+  border-right-color: #dadada;
   border-width: 6px;
   margin-top: -6px;
 }
 
 /* When the click event is fired, and the .is-copied class is added to the button, show the tooltip */
-button.click-to-copy.is-copied+span {
+.copied {
   display: initial;
 }
 
@@ -1586,7 +1576,7 @@ button.click-to-copy.is-copied+span {
   letter-spacing: 2.25px;
   text-transform: uppercase;
   color: #fafafa;
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
 }
 
 .form-button::after {
@@ -1615,16 +1605,11 @@ button.click-to-copy.is-copied+span {
   cursor: pointer;
 }
 
-
 /* ------------------------------------
 ---------------------------------------
 FOOTER SECTION
 ---------------------------------------
 ------------------------------------ */
-
-/* todo: 
--Add form validation.
-*/
 
 #footer-section {
   position: relative;
@@ -1716,10 +1701,10 @@ FOOTER SECTION
 .hvr-bob:active {
   -webkit-animation-name: hvr-bob-float, hvr-bob;
   animation-name: hvr-bob-float, hvr-bob;
-  -webkit-animation-duration: .3s, 1.5s;
-  animation-duration: .3s, 1.5s;
-  -webkit-animation-delay: 0s, .3s;
-  animation-delay: 0s, .3s;
+  -webkit-animation-duration: 0.3s, 1.5s;
+  animation-duration: 0.3s, 1.5s;
+  -webkit-animation-delay: 0s, 0.3s;
+  animation-delay: 0s, 0.3s;
   -webkit-animation-timing-function: ease-out, ease-in-out;
   animation-timing-function: ease-out, ease-in-out;
   -webkit-animation-iteration-count: 1, infinite;
@@ -1734,7 +1719,7 @@ FOOTER SECTION
 
 .fa-chevrons-up {
   font-size: 2rem;
-  color: #1A1A1A;
+  color: #1a1a1a;
 }
 
 .footer-content-container {
@@ -1764,19 +1749,19 @@ FOOTER SECTION
 }
 
 .twitter-svg:hover {
-  fill: #1DA1F2;
+  fill: #1da1f2;
 }
 
 .linkedin-svg:hover {
-  fill: #0966C2;
+  fill: #0966c2;
 }
 
 .github-svg:hover {
-  fill: #4183C4;
+  fill: #4183c4;
 }
 
 .email-svg:hover {
-  fill: #FBB612;
+  fill: #fbb612;
 }
 
 .footer-signature {
@@ -1784,50 +1769,6 @@ FOOTER SECTION
   font-size: 0.75rem;
   text-transform: uppercase;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ------------------------------------
 ---------------------------------------
@@ -1970,7 +1911,6 @@ MEDIUM SCREEN MEDIA QUERIES
   }
 }
 
-
 /* ------------------------------------
 ---------------------------------------
 LARGE SCREEN MEDIA QUERIES
@@ -2061,7 +2001,6 @@ LARGE SCREEN MEDIA QUERIES
     font-size: 1.5rem;
   }
 }
-
 
 /* ------------------------------------
 ---------------------------------------
