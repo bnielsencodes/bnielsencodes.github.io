@@ -214,7 +214,7 @@ tsParticles.load("tsparticles", {
       enable: true,
       out_mode: "out",
       random: true,
-      speed: 0.8,
+      speed: 0.2,
       straight: false,
     },
     number: {
