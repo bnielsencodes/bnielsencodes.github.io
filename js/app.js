@@ -160,28 +160,12 @@ tsParticles.load("tsparticles", {
       resize: true,
     },
     modes: {
-      bubble: {
-        distance: 100,
-        duration: 2,
-        opacity: 0,
-        size: 0,
-        speed: 3,
-      },
-      grab: {
-        distance: 150,
-        line_linked: {
-          opacity: 1,
-        },
-      },
       push: {
         particles_nb: 24,
       },
-      remove: {
-        particles_nb: 2,
-      },
       repulse: {
-        distance: 80,
-        speed: 0.03,
+        distance: 50,
+        speed: 0.0075,
         duration: 30,
       },
     },
