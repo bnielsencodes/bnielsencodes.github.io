@@ -116,13 +116,14 @@ HEADER SECTION
 
 .header-heading {
   max-width: 425px;
-  padding: 30px 30px 0;
+  padding: 12px 12px 0;
   margin: 0;
   animation-name: moveInLeft;
 }
 
 .header-subheading {
-  padding: 0 30px 15px;
+  width: 220px;
+  padding: 0 0 15px;
   margin: 0;
 }
 
@@ -1305,20 +1306,25 @@ PROJECTS SECTION
 }
 
 .project-tech-container {
-  width: 125px;
-  margin-bottom: 10px;
+  width: 215px;
 }
 
 .project-tech-container-wide {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 130px;
-  margin-bottom: 10px;
+  width: 215px;
 }
 
 .project-icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
+}
+
+.project-icon-container p {
+  font-size: 0.85rem;
 }
 
 .project-html-icon,
@@ -1337,6 +1343,10 @@ PROJECTS SECTION
   color: #2965f1;
 }
 
+.tailwind-svg {
+  margin-bottom: 5px;
+}
+
 .project-sass-icon {
   color: #c76494;
 }
@@ -1349,7 +1359,7 @@ PROJECTS SECTION
   justify-content: space-around;
   width: 97%;
   max-width: 320px;
-  margin: 10px 0;
+  margin: 0 0 10px;
 }
 
 .live-link,
@@ -1357,6 +1367,7 @@ PROJECTS SECTION
   width: 100px;
   padding: 5px 7px;
   border: 3px solid #785af0;
+  font-size: 1.09rem;
   text-align: center;
 }
 
@@ -1790,6 +1801,14 @@ MEDIUM SCREEN MEDIA QUERIES
   .header-heading,
   .header-subheading {
     font-size: 2.2rem;
+  }
+
+  .header-heading {
+    padding: 30px 30px 0;
+  }
+
+  .header-subheading {
+    padding: 0 30px 15px;
   }
 
   .main-nav-logo {
