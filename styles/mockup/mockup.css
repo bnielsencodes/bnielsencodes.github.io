@@ -1273,21 +1273,13 @@ PROJECTS SECTION
   box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.35);
 }
 
-.project-img-container {
-  width: 100%;
-  background-color: #272727;
-}
-
 .project-img {
   width: 100%;
   border-bottom: 8px solid #1a1a1a;
 }
 
-.project-bottom {
-  width: 100%;
-  background-color: #272727;
-}
-
+.project-img-container,
+.project-bottom,
 .project-title-container {
   width: 100%;
   background-color: #272727;
@@ -1807,6 +1799,7 @@ MEDIUM SCREEN MEDIA QUERIES
   }
 
   .header-subheading {
+    min-width: 483px;
     padding: 0 30px 15px;
   }
 
@@ -1945,6 +1938,10 @@ LARGE SCREEN MEDIA QUERIES
   .header-heading,
   .header-subheading {
     font-size: 3rem;
+  }
+
+  .header-subheading {
+    min-width: 577px;
   }
 
   .section-heading {
