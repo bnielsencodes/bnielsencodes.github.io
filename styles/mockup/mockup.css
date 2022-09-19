@@ -224,7 +224,7 @@ NAVIGATION
 }
 
 .main-nav-logo {
-  padding-left: 10px;
+  padding-left: 17px;
   font-size: 1rem;
   color: #2cb67d;
 }
@@ -265,14 +265,13 @@ NAVIGATION
   color: #1a1a1a;
 }
 
-.main-nav-link-container {
-  margin-right: 40px;
-}
-
 .main-nav-link {
-  margin-right: 12px;
   font-size: 1.1rem;
   color: #fafafa;
+}
+
+.main-nav-link:not(:last-of-type) {
+  margin-right: 12px;
 }
 
 .main-nav-link:hover {
@@ -1257,7 +1256,6 @@ PROJECTS SECTION
 
 .projects-list {
   max-width: 1800px;
-  padding-bottom: 40px;
   margin: 0 auto;
 }
 
@@ -1355,11 +1353,16 @@ PROJECTS SECTION
 }
 
 .live-link,
-.source-code {
-  width: 100px;
-  padding: 5px 7px;
-  border: 3px solid #785af0;
+.source-code,
+.view-more {
+  padding: 8px 8px;
   text-align: center;
+}
+
+.live-link,
+.souce-code {
+  width: 100px;
+  border: 3px solid #785af0;
 }
 
 .live-link-button,
@@ -1728,7 +1731,7 @@ FOOTER SECTION
 
 .footer-content-container {
   min-width: 254px;
-  margin-top: 15px;
+  margin-top: 24px;
   text-align: center;
 }
 
@@ -1804,15 +1807,22 @@ MEDIUM SCREEN MEDIA QUERIES
   }
 
   .main-nav-logo {
+    padding-left: 40px;
     font-size: 1.15rem;
+  }
+
+  .main-nav-logo {
+    padding-left: 40px;
   }
 
   .main-nav-link-container {
     display: flex;
     justify-content: space-between;
+    margin-right: 40px;
   }
 
-  .main-nav-item {
+
+  .main-nav-item:not(:last-of-type) {
     padding-right: 10px;
   }
 
