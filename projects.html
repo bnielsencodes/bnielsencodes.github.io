@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/8064f9683f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- MAIN STYLESHEET -->
+    <link rel="stylesheet" href="styles/css/styles.css" />
+    <link rel="stylesheet" href="styles/mockup/mockup.css" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- PAGE TITLE -->
+    <title>Brandon Nielsen | Projects</title>
+  </head>
+
+  <body style="background-color: #fafafa">
+    <!-- ***********************************
+      **************************************
+      MAIN NAVIGATION
+      **************************************
+    *********************************** -->
+    <nav class="main-nav">
+      <h4 class="main-nav-logo main-nav-logo--projects-page">
+        Brandon Nielsen
+      </h4>
+      <!-- ***********************************
+      HAMBURGER MENU FOR SM SCREEN
+      *********************************** -->
+      <div class="hamburger-menu hidden-md">
+        <div>
+          <div id="menu-toggle">
+            <!--
+            A fake/hidden checkbox is used as click reciever,
+            so you can use the :checked selector on it.
+            -->
+            <input type="checkbox" />
+            <!--
+            Some spans to act as a hamburger.
+            -->
+            <span></span>
+            <span></span>
+            <span></span>
+            <!-- 
+            Hamburger menu list
+            -->
+            <div id="nav" class="navigation">
+              <div class="navigation__inner">
+                <!--   Content   -->
+                <ul class="hamburger-nav-link-container">
+                  <li class="hamburger-nav-item">
+                    <a
+                      href="index.html"
+                      class="hamburger-nav-link"
+                      aria-label="home"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="hamburger-nav-item">
+                    <a
+                      href="index.html#about-section"
+                      class="hamburger-nav-link"
+                      aria-label="about"
+                      >About</a
+                    >
+                  </li>
+                  <li class="hamburger-nav-item">
+                    <a
+                      href="index.html#projects-section"
+                      class="hamburger-nav-link"
+                      aria-label="projects"
+                      >Projects</a
+                    >
+                  </li>
+                  <li class="hamburger-nav-item">
+                    <a
+                      href="index.html#contact-section"
+                      class="hamburger-nav-link main-nav-button"
+                      aria-label="contact"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ***********************************
+        **************************************
+        MAIN NAVIGATION LINKS ON MD/LG SCREEN
+        **************************************
+      *********************************** -->
+      <ul
+        class="main-nav-link-container main-nav-link-container--projects-page hidden-sm"
+      >
+        <li class="main-nav-item main-nav-item--projects-page">
+          <a href="index.html" class="main-nav-link" aria-label="home">Home</a>
+        </li>
+        <li class="main-nav-item main-nav-item--projects-page">
+          <a
+            href="index.html#about-section"
+            class="main-nav-link"
+            aria-label="about"
+            >About</a
+          >
+        </li>
+        <li class="main-nav-item main-nav-item--projects-page">
+          <a
+            href="index.html#projects-section"
+            class="main-nav-link"
+            aria-label="projects"
+            >Projects</a
+          >
+        </li>
+        <li class="main-nav-item main-nav-item--projects-page">
+          <a
+            href="index.html#contact-section"
+            class="main-nav-link main-nav-button"
+            aria-label="contacts"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- PAGE TOP DIVIDER -->
+    <div class="projects-page-top"></div>
+
+    <!-- ***********************************
+      **************************************
+      PROJECTS SECTION
+      **************************************
+    *********************************** -->
+    <section id="projects-section">
+      <h2 class="section-heading projects-main-heading">
+        <span class="projects-heading-span">Projects</span>
+      </h2>
+      <div class="projects-list--project-page">
+        <!-- ***********************************
+          **************************************
+          AUDIOPHILE PROJECT
+          **************************************
+        *********************************** -->
+        <article class="project-container--project-page project-mb">
+          <div id="project--project-page" class="project">
+            <div class="project-img-container">
+              <video width="100%" autoplay muted loop>
+                <source src="assets/videos/Audiophile.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="project-bottom">
+              <div class="project-title-container">
+                <h3 class="project-title project-title--projects-page">
+                  Audiophile
+                </h3>
+              </div>
+              <p class="project-description project-hide-md">
+                An e-commerce site for a fictitious audio equipment company.
+              </p>
+              <div class="project-tech-container-wide">
+                <div class="project-icon-container">
+                  <i
+                    class="fab fa-brands fa-html5 project-fa project-html-icon"
+                  ></i>
+                  <p>HTML</p>
+                </div>
+                <div class="project-icon-container">
+                  <i
+                    class="fab fa-brands fa-css3-alt project-fa project-css-icon"
+                  ></i>
+                  <p>CSS</p>
+                </div>
+                <div class="project-icon-container">
+                  <i class="fab fa-brands fa-js skills-fa project-js-icon"></i>
+                  <p>JavaScript</p>
+                </div>
+              </div>
+              <div class="project-links project-links--projects-page">
+                <div class="live-link">
+                  <a
+                    href="https://bnielsencodes.github.io/Audiophile/"
+                    class="live-link-button"
+                    target="_blank"
+                    >Live Site</a
+                  >
+                </div>
+                <div class="source-code">
+                  <a
+                    href="https://github.com/bnielsencodes/Audiophile"
+                    class="source-code-button"
+                    target="_blank"
+                    >Source Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ***********************************
+          **************************************
+          HUDDLE ROJECT
+          **************************************
+        *********************************** -->
+        <article class="project-container--project-page">
+          <div id="project--project-page" class="project">
+            <div class="project-img-container">
+              <video width="100%" autoplay muted loop>
+                <source src="assets/videos/Huddle.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="project-bottom">
+              <div class="project-title-container">
+                <h3 class="project-title project-title--projects-page">
+                  Huddle
+                </h3>
+              </div>
+              <p class="project-description">
+                Huddle re-imagines the way we build communities. Create
+                connections with your users as you engage in genuine discussion.
+              </p>
+              <div class="project-tech-container-wide">
+                <div class="project-icon-container">
+                  <i
+                    class="fab fa-brands fa-html5 project-fa project-html-icon"
+                  ></i>
+                  <p>HTML</p>
+                </div>
+                <div class="project-icon-container">
+                  <svg
+                    class="tailwind-svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="28"
+                    viewBox="0 0 22 22"
+                    width="35"
+                  >
+                    <path
+                      class="tailwind-svg-path"
+                      fill="#36bdf9"
+                      d="m12 6c-2.67 0-4.33 1.33-5 4 1-1.33 2.17-1.83 3.5-1.5.76.19 1.31.74 1.91 1.35.98 1 2.09 2.15 4.59 2.15 2.67 0 4.33-1.33 5-4-1 1.33-2.17 1.83-3.5 1.5-.76-.19-1.3-.74-1.91-1.35-.98-1-2.09-2.15-4.59-2.15m-5 6c-2.67 0-4.33 1.33-5 4 1-1.33 2.17-1.83 3.5-1.5.76.19 1.3.74 1.91 1.35.98 1 2.09 2.15 4.59 2.15 2.67 0 4.33-1.33 5-4-1 1.33-2.17 1.83-3.5 1.5-.76-.19-1.3-.74-1.91-1.35-.98-1-2.09-2.15-4.59-2.15z"
+                    />
+                  </svg>
+                  <p>Tailwind</p>
+                </div>
+                <div class="project-icon-container">
+                  <i class="fab fa-brands fa-js skills-fa project-js-icon"></i>
+                  <p>JavaScript</p>
+                </div>
+              </div>
+              <div class="project-links project-links--projects-page">
+                <div class="live-link">
+                  <a
+                    href="https://bnielsencodes.github.io/Huddle/"
+                    class="live-link-button"
+                    target="_blank"
+                    >Live Site</a
+                  >
+                </div>
+                <div class="source-code">
+                  <a
+                    href="https://github.com/bnielsencodes/Huddle"
+                    class="source-code-button"
+                    target="_blank"
+                    >Source Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ***********************************
+          **************************************
+          PLANET FACTS PROJECT
+          **************************************
+        *********************************** -->
+        <article
+          class="project-container--project-page planet-facts project-mb"
+        >
+          <div id="project--project-page" class="project">
+            <div class="project-img-container">
+              <video width="100%" autoplay muted loop>
+                <source src="assets/videos/Planet_Facts.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="project-bottom">
+              <div class="project-title-container">
+                <h3 class="project-title project-title--projects-page">
+                  Planet Facts
+                </h3>
+              </div>
+              <p class="project-description">
+                A fully responsive website that allows you to explore facts
+                about all of the planets in our solar system.
+              </p>
+              <div class="project-tech-container">
+                <div class="project-icon-container">
+                  <i
+                    class="fab fa-brands fa-html5 skills-fa project-html-icon"
+                  ></i>
+                  <p>HTML</p>
+                </div>
+                <div class="project-icon-container">
+                  <i
+                    class="fab fa-brands fa-css3-alt skills-fa project-css-icon"
+                  ></i>
+                  <p>CSS</p>
+                </div>
+                <div class="project-icon-container">
+                  <i class="fab fa-brands fa-js skills-fa project-js-icon"></i>
+                  <p>JavaScript</p>
+                </div>
+              </div>
+              <div class="project-links project-links--projects-page">
+                <div class="live-link">
+                  <a
+                    href="https://bnielsencodes.github.io/Planet-Facts/"
+                    class="live-link-button"
+                    target="_blank"
+                    >Live Site</a
+                  >
+                </div>
+                <div class="source-code">
+                  <a
+                    href="https://github.com/bnielsencodes/Planet-Facts"
+                    class="source-code-button"
+                    target="_blank"
+                    >Source Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ***********************************
+          **************************************
+          FRUIT OF THE SEA PROJECT
+          **************************************
+        *********************************** -->
+        <article class="project-container--project-page project-mb">
+          <div id="project--project-page" class="project">
+            <div class="project-img-container">
+              <video width="100%" autoplay muted loop>
+                <source
+                  src="assets/videos/Fruit_of_the_Sea.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div class="project-bottom">
+              <div class="project-title-container">
+                <h3 class="project-title project-title--projects-page">
+                  Fruit of the Sea
+                </h3>
+              </div>
+              <p class="project-description">
+                A fully responsive word guessing game set up to mimic the feel
+                of a game show.
+              </p>
+              <div class="project-tech-container-wide">
+                <div class="project-icon-container">
+                  <i
+                    class="fab fa-brands fa-html5 skills-fa project-html-icon"
+                  ></i>
+                  <p>HTML</p>
+                </div>
+                <div class="project-icon-container">
+                  <i
+                    class="fab fa-brands fa-css3-alt skills-fa project-css-icon"
+                  ></i>
+                  <p>CSS</p>
+                </div>
+                <div class="project-icon-container">
+                  <i class="fab fa-brands fa-js skills-fa project-js-icon"></i>
+                  <p>JavaScript</p>
+                </div>
+              </div>
+              <div class="project-links project-links--projects-page">
+                <div class="live-link">
+                  <a
+                    href="https://bnielsencodes.github.io/Fruit-of-the-Sea/"
+                    class="live-link-button"
+                    target="_blank"
+                    >Live Site</a
+                  >
+                </div>
+                <div class="source-code">
+                  <a
+                    href="https://github.com/bnielsencodes/Fruit-of-the-Sea"
+                    class="source-code-button"
+                    target="_blank"
+                    >Source Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ***********************************
+          **************************************
+          EMPLOYEE DIRECTORY PROJECT
+          **************************************
+        *********************************** -->
+        <article class="project-container--project-page">
+          <div id="project--project-page" class="project">
+            <div class="project-img-container">
+              <video width="100%" autoplay muted loop>
+                <source
+                  src="assets/videos/Employee_Directory.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div class="project-bottom">
+              <div class="project-title-container">
+                <h3 class="project-title project-title--projects-page">
+                  Employee Directory
+                </h3>
+              </div>
+              <p class="project-description">
+                A fully responsive employee directory that allows you to search
+                for specific employees by name. Utilizes Fetch API to access
+                Random User Generator API.
+              </p>
+              <div class="project-tech-container-wide">
+                <div class="project-icon-container">
+                  <i
+                    class="fab fa-brands fa-html5 project-fa project-html-icon"
+                  ></i>
+                  <p>HTML</p>
+                </div>
+                <div class="project-icon-container">
+                  <i
+                    class="fab fa-brands fa-css3-alt project-fa project-css-icon"
+                  ></i>
+                  <p>CSS</p>
+                </div>
+                <div class="project-icon-container">
+                  <i class="fab fa-brands fa-js skills-fa project-js-icon"></i>
+                  <p>JavaScript</p>
+                </div>
+              </div>
+              <div class="project-links project-links--projects-page">
+                <div class="live-link">
+                  <a
+                    href="https://bnielsencodes.github.io/Employee-Directory/"
+                    class="live-link-button"
+                    target="_blank"
+                    >Live Site</a
+                  >
+                </div>
+                <div class="source-code">
+                  <a
+                    href="https://github.com/bnielsencodes/Employee-Directory"
+                    class="source-code-button"
+                    target="_blank"
+                    >Source Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ***********************************
+          **************************************
+          EMPLOYEE DIRECTORY PROJECT
+          **************************************
+        *********************************** -->
+        <article class="project-container--project-page">
+          <div id="project--project-page" class="project">
+            <div class="project-img-container">
+              <video width="100%" autoplay muted loop>
+                <source
+                  src="assets/videos/Employee_Directory.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div class="project-bottom">
+              <div class="project-title-container">
+                <h3 class="project-title project-title--projects-page">
+                  Employee Directory
+                </h3>
+              </div>
+              <p class="project-description">
+                A fully responsive employee directory that allows you to search
+                for specific employees by name. Utilizes Fetch API to access
+                Random User Generator API.
+              </p>
+              <div class="project-tech-container-wide">
+                <div class="project-icon-container">
+                  <i
+                    class="fab fa-brands fa-html5 project-fa project-html-icon"
+                  ></i>
+                  <p>HTML</p>
+                </div>
+                <div class="project-icon-container">
+                  <i
+                    class="fab fa-brands fa-css3-alt project-fa project-css-icon"
+                  ></i>
+                  <p>CSS</p>
+                </div>
+                <div class="project-icon-container">
+                  <i class="fab fa-brands fa-js skills-fa project-js-icon"></i>
+                  <p>JavaScript</p>
+                </div>
+              </div>
+              <div class="project-links project-links--projects-page">
+                <div class="live-link">
+                  <a
+                    href="https://bnielsencodes.github.io/Employee-Directory/"
+                    class="live-link-button"
+                    target="_blank"
+                    >Live Site</a
+                  >
+                </div>
+                <div class="source-code">
+                  <a
+                    href="https://github.com/bnielsencodes/Employee-Directory"
+                    class="source-code-button"
+                    target="_blank"
+                    >Source Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ***********************************
+      **************************************
+      CONTACT SECTION
+      **************************************
+    *********************************** -->
+    <section id="contact-section">
+      <h2
+        class="section-heading contact-heading contact-section--projects-page"
+      >
+        <span class="contact-heading-span">Want to work together?</span>
+      </h2>
+      <form
+        id="fs-frm"
+        class="contact-form"
+        name="simple-contact-form"
+        accept-charset="utf-8"
+        action="https://formspree.io/f/mknewaqj"
+        method="POST"
+      >
+        <h2 class="contact-subheading lets-connect">Let's connect!</h2>
+        <div class="contact-text">
+          Email me at
+          <div id="email-copy" class="click-to-copy-container">
+            <button class="click-to-copy" title="Click to copy email address">
+              <strong> bnielsencodes@gmail.com </strong>
+            </button>
+            <span class="copied">Copied!</span>
+          </div>
+          <strong>
+            <a
+              href="mailto:bnielsencodes@gmail.com"
+              id="email-copy-fallback"
+              class="click-to-copy-fallback"
+            >
+              bnielsencodes@gmail.com
+            </a>
+          </strong>
+          <br />
+          or send me a quick message here:
+        </div>
+        <fieldset id="fs-frm-inputs" class="form-fieldset">
+          <input
+            id="form-name"
+            class="form-item form-item-one"
+            type="text"
+            name="name"
+            placeholder="Name"
+            aria-label="Enter your name"
+            required=""
+          />
+          <input
+            id="form-email"
+            class="form-item form-item-two"
+            type="email"
+            name="_replyto"
+            placeholder="Email"
+            aria-label="Enter your email address"
+            required=""
+          />
+          <textarea
+            id="form-message"
+            class="form-item form-item-three"
+            name="message"
+            placeholder="Message"
+            aria-label="Enter a message"
+            rows="7"
+            required=""
+          ></textarea>
+          <input
+            type="hidden"
+            name="_subject"
+            id="email-subject"
+            value="Contact Form Submission"
+          />
+        </fieldset>
+        <div class="submit-container">
+          <button class="form-button" type="submit" value="Submit">
+            Submit
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- ***********************************
+      **************************************
+      FOOTER SECTION
+      **************************************
+    *********************************** -->
+    <div id="footer-section">
+      <div class="return-home hvr-bob">
+        <a
+          href="#header-section"
+          class="return-home-link"
+          aria-label="return home"
+        >
+          <i class="fa-duotone fa-chevrons-up"></i>
+        </a>
+      </div>
+      <!-- FOOTER SOCIAL ICON LINKS -->
+      <div class="footer-content-container">
+        <div class="footer-links-container">
+          <a
+            href="https://twitter.com/bnielsencodes"
+            class="footer-icon-container"
+            aria-label="twitter"
+            target="_blank"
+          >
+            <svg
+              class="twitter-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 660 660"
+            >
+              <path
+                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://linkedin.com/in/bnielsencodes"
+            class="footer-icon-container"
+            aria-label="linkedin"
+            target="_blank"
+          >
+            <svg
+              class="linkedin-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 596 660"
+            >
+              <path
+                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://github.com/bnielsencodes"
+            class="footer-icon-container"
+            aria-label="github"
+            target="_blank"
+          >
+            <svg
+              class="github-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 644 660"
+            >
+              <path
+                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+              />
+            </svg>
+          </a>
+          <a
+            href="mailto:bnielsencodes@gmail.com"
+            class="footer-icon-container"
+            aria-label="email"
+            target="_blank"
+          >
+            <svg
+              class="email-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 660 660"
+            >
+              <path
+                d="M511.6 36.86l-64 415.1c-1.5 9.734-7.375 18.22-15.97 23.05c-4.844 2.719-10.27 4.097-15.68 4.097c-4.188 0-8.319-.8154-12.29-2.472l-122.6-51.1l-50.86 76.29C226.3 508.5 219.8 512 212.8 512C201.3 512 192 502.7 192 491.2v-96.18c0-7.115 2.372-14.03 6.742-19.64L416 96l-293.7 264.3L19.69 317.5C8.438 312.8 .8125 302.2 .0625 289.1s5.469-23.72 16.06-29.77l448-255.1c10.69-6.109 23.88-5.547 34 1.406S513.5 24.72 511.6 36.86z"
+              />
+            </svg>
+          </a>
+        </div>
+        <p class="footer-signature">Brandon Nielsen - Last updated Sep, 2022</p>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
