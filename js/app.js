@@ -144,11 +144,7 @@ tsParticles.load("tsparticles", {
   fps_limit: 60,
   interactivity: {
     events: {
-      onclick: {
-        enable: false,
-        mode: "push",
-      },
-      onhover: {
+      onHover: {
         enable: true,
         mode: "repulse",
         parallax: {
@@ -160,9 +156,6 @@ tsParticles.load("tsparticles", {
       resize: true,
     },
     modes: {
-      push: {
-        particles_nb: 24,
-      },
       repulse: {
         distance: 50,
         speed: 0.0075,
