@@ -145,7 +145,7 @@ tsParticles.load("tsparticles", {
   interactivity: {
     events: {
       onclick: {
-        enable: true,
+        enable: false,
         mode: "push",
       },
       onhover: {
