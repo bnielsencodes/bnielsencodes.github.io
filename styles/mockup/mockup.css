@@ -161,7 +161,7 @@ HEADER SECTION
 
 .cta-container {
   width: 136px;
-  margin: 0 auto;
+  margin-inline: auto;
   animation-name: moveInBottom;
   animation-duration: 1.4s;
   animation-delay: 0.5s;
@@ -506,7 +506,7 @@ ABOUT SECTION
 
 .about-right {
   height: 580px;
-  margin: 0 auto;
+  margin-inline: auto;
   opacity: 0;
 }
 
@@ -531,7 +531,7 @@ ABOUT SECTION
 
 .skills-heading-container {
   width: 96px;
-  margin: 0 auto;
+  margin-inline: auto;
 }
 
 .skills-heading {
@@ -1246,7 +1246,7 @@ PROJECTS SECTION
 
 .projects-list {
   max-width: 1800px;
-  margin: 0 auto;
+  margin-inline: auto;
 }
 
 .project-container {
@@ -1372,7 +1372,7 @@ PROJECTS SECTION
 .view-more {
   width: 220px;
   border: 4px solid #785af0;
-  margin: 0 auto;
+  margin-inline: auto;
   background-color: #1a1a1a;
   -webkit-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.35);
@@ -1482,7 +1482,7 @@ CONTACT SECTION
 /* CONTACT FORM */
 .contact-form {
   max-width: 475px;
-  margin: 0 auto;
+  margin-inline: auto;
 }
 
 .form-fieldset {
@@ -1686,7 +1686,7 @@ FOOTER SECTION
   top: -20px;
   width: 40px;
   height: 40px;
-  margin: 0 auto;
+  margin-inline: auto;
   background-color: #785af0;
 }
 
@@ -1808,6 +1808,7 @@ FOOTER SECTION
 .twitter-svg {
   display: block;
   margin: 0 auto;
+  margin-inline: auto;
 }
 
 .twitter-svg:hover {
@@ -2076,7 +2077,7 @@ LARGE SCREEN MEDIA QUERIES
   }
 
   .skills-right {
-    margin: 0 auto;
+    margin-inline: auto;
   }
 
   .projects-heading-span::after {
