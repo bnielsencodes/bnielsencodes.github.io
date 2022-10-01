@@ -160,7 +160,8 @@ HEADER SECTION
 }
 
 .cta-container {
-  width: 136px;
+  width: 145px;
+  margin-top: 8px;
   margin-inline: auto;
   animation-name: moveInBottom;
   animation-duration: 1.4s;
@@ -1807,7 +1808,6 @@ FOOTER SECTION
 
 .twitter-svg {
   display: block;
-  margin: 0 auto;
   margin-inline: auto;
 }
 
