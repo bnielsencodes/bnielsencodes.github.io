@@ -29,7 +29,7 @@ todo:
 VARIABLES
 ------------------------------------ */
 
-let $nav = document.getElementById("nav");
+let $nav = document.getElementById("hamburger-nav");
 const htmlIcon = document.querySelector(".fa-html5");
 const htmlIconP = document.querySelector(".html-icon-p");
 const htmlLeftBorder = document.querySelector(".html-left-border");
@@ -129,6 +129,9 @@ HAMBURGER MENU ANIMATION
 ---------------------------------------
 ------------------------------------ */
 
+const hamburgerMenu = document.querySelector(".hamburger-menu");
+hamburgerMenu.addEventListener("click", () => {
+  hamburgerMenu.classList.toggle("active");
   $nav.classList.toggle("active");
 });
 
@@ -604,6 +607,9 @@ const copyToClipboard = (str) => {
   el.style.left = "-9999px";
   document.body.appendChild(el);
   const selected =
+    document.getSelection().rangeCount > 0
+      ? document.getSelection().getRangeAt(0)
+      : false;
   el.select();
   document.execCommand("copy");
   document.body.removeChild(el);
@@ -614,3 +620,4 @@ const copyToClipboard = (str) => {
 };
 
 // Fire the event on click
+button.addEventListener("click", clickToCopy);
