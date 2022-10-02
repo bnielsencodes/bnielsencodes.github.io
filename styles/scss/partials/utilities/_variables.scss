@@ -1,6 +1,5 @@
 // FONT VARIABLES
-$font-primary: normal 16px/1.5 'Monteserrat',
-sans-serif;
+$font-primary: normal 16px/1.5 "Monteserrat", sans-serif;
 
 // COLOR VARIABLES
 $color-background: #1a1a1a;
@@ -8,179 +7,19 @@ $color-primary: #785af0;
 $color-secondary: #2cb67d;
 $color-off-white: #fafafa;
 $color-off-black: #272727;
-$color-html: #F1512F;
+$color-html: #f1512f;
 $color-vscode: #2965f1;
-$color-sass: #C76494;
-$color-bootstrap: #722CF8;
-$color-tailwind: #36BDF9;
-$color-js: #F0DB4F;
-$color-react: #62DAFB;
-$color-node: #F1512F;
-$color-twitter: #1DA1F2;
-$color-linkedin: #0966C2;
-$color-github: #4183C4;
-$color-email: #FBB612;
+$color-sass: #c76494;
+$color-bootstrap: #722cf8;
+$color-tailwind: #36bdf9;
+$color-js: #f0db4f;
+$color-react: #62dafb;
+$color-node: #f1512f;
+$color-twitter: #1da1f2;
+$color-linkedin: #0966c2;
+$color-github: #4183c4;
+$color-email: #fbb612;
 
 // BREAKPOINT VARIABLES
 $break-md: 768px;
 $break-lg: 1024px;
-
-
-
-/* -----------------------------------
---------------------------------------
-HAMBURGER MENU ANIMATION
---------------------------------------
------------------------------------ */
-
-// position: left or right
-// width: unit px
-// backgroundColor
-// duration: unit ms
-$elastic: (position: right,
-  backgroundColor: #272727,
-  duration: 300,
-);
-
-// get key
-$position: map-get($elastic, 'position');
-$backgroundColor: map-get($elastic, 'backgroundColor');
-$duration: map-get($elastic, 'duration');
-
-// css button
-#menu-toggle {
-  background-color: inherit;
-  border: 0;
-  outline: none;
-  width: 40px;
-  height: 50px;
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-// Start
-.navigation {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  overflow-x: hidden;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 100;
-  transition-delay: $duration*1ms;
-
-  @if ($position==right) {
-    right: 0;
-  }
-
-  @else if ($position==left) {
-    left: 0;
-  }
-
-  &.active {
-    opacity: 1;
-    visibility: visible;
-    transition-delay: 0s;
-
-    .navigation__inner {
-      background-color: $backgroundColor;
-      transform: translate(0, 0);
-      transition: transform $duration*1ms linear, background-color 0s linear ($duration*2-1)*1ms;
-
-      &:after {
-        width: 300%;
-        border-radius: 50%;
-        animation: elastic calc(($duration/2)*1ms) ease ($duration+0.5)*1ms both;
-      }
-    }
-  }
-}
-
-.navigation__inner {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  z-index: 200;
-
-  @if ($position==right) {
-    transform: translate(100%, 0);
-  }
-
-  @else if ($position==left) {
-    transform: translate(-100%, 0);
-  }
-
-  transition: transform $duration*1ms linear,
-  background-color 0s linear $duration*1ms;
-
-  &:after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 100%;
-    top: 0;
-
-    @if ($position==right) {
-      left: 0;
-    }
-
-    @else if ($position==left) {
-      right: 0;
-    }
-
-    background-color: $backgroundColor;
-    border-radius: 50%;
-    z-index: -1;
-    transition: all $duration*1ms linear;
-
-  }
-}
-
-@keyframes elastic {
-  0% {
-    border-radius: 50%;
-  }
-
-  45% {
-    border-radius: 0;
-  }
-
-  65% {
-    @if ($position==right) {
-      border-top-left-radius: 40px 50%;
-      border-bottom-left-radius: 40px 50%;
-    }
-
-    @else if ($position==left) {
-      border-top-right-radius: 40px 50%;
-      border-bottom-right-radius: 40px 50%;
-    }
-  }
-
-  80% {
-    border-radius: 0;
-  }
-
-  90% {
-    @if ($position==right) {
-      border-top-left-radius: 20px 50%;
-      border-bottom-left-radius: 20px 50%;
-    }
-
-    @else if ($position==left) {
-      border-top-right-radius: 20px 50%;
-      border-bottom-right-radius: 20px 50%;
-    }
-  }
-
-  100% {
-    border-radius: 0;
-  }
-}
