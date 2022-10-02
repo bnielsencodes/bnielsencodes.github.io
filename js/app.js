@@ -29,7 +29,6 @@ todo:
 VARIABLES
 ------------------------------------ */
 
-let $btn = document.getElementById("menu-toggle");
 let $nav = document.getElementById("nav");
 const htmlIcon = document.querySelector(".fa-html5");
 const htmlIconP = document.querySelector(".html-icon-p");
@@ -130,7 +129,6 @@ HAMBURGER MENU ANIMATION
 ---------------------------------------
 ------------------------------------ */
 
-$btn.addEventListener("click", function () {
   $nav.classList.toggle("active");
 });
 
@@ -606,9 +604,6 @@ const copyToClipboard = (str) => {
   el.style.left = "-9999px";
   document.body.appendChild(el);
   const selected =
-    document.getSelection().rangeCount > 0 ?
-    document.getSelection().getRangeAt(0) :
-    false;
   el.select();
   document.execCommand("copy");
   document.body.removeChild(el);
@@ -619,4 +614,3 @@ const copyToClipboard = (str) => {
 };
 
 // Fire the event on click
-button.addEventListener("click", clickToCopy);

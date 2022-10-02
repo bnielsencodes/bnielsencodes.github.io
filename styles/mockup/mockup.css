@@ -243,81 +243,24 @@ HAMBURGER MENU
 .hamburger-menu {
   position: fixed;
   top: 0;
-  right: 12px;
 }
 
-#menu-toggle {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
-#menu-toggle input {
-  position: absolute;
-  top: 9px;
-  left: -2px;
-  width: 40px;
-  height: 32px;
-  /* hide this */
-  opacity: 0;
-  /* and place it over the hamburger */
-  z-index: 500;
-  -webkit-touch-callout: none;
 }
 
-/*
-Just a quick hamburger
- */
-#menu-toggle span {
-  position: relative;
-  display: block;
-  width: 26px;
-  height: 1.75px;
-  background: #2cb67d;
-  border-radius: 3px;
-  z-index: 400;
-  transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
 
-#menu-toggle span:first-child {
-  transform-origin: 0% 0%;
 }
 
-#menu-toggle span:nth-child(2),
-#menu-toggle span:nth-child(3) {
-  margin-bottom: 5px;
 }
 
-#menu-toggle span:nth-last-child(2) {
-  transform-origin: 0% 100%;
 }
 
-/* 
-  Transform all the slices of hamburger
-  into a crossmark.
- */
-#menu-toggle input:checked ~ span {
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #785af0;
 }
 
-/*
-  Hide the middle one.
- */
-#menu-toggle input:checked ~ span:nth-last-child(3) {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-/*
- * The last one should go the other direction
- */
-#menu-toggle input:checked ~ span:nth-last-child(2) {
-  transform: rotate(-45deg) translate(0, -1px);
 }
 
 .hamburger-nav-link-container {
@@ -326,7 +269,6 @@ Just a quick hamburger
 
 .hamburger-nav-link {
   position: relative;
-  z-index: 400;
   padding: 0 12px;
   border-bottom: 3px solid #785af0;
   font-size: 1.65rem;
