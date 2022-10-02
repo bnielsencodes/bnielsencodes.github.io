@@ -1,35 +1,7 @@
-/* ----------------------------
-todo: will be both css and js
-add code to show error messages on contact form,
-will also highlight empty input causing error
-
-todo: add a headline to skills section
-
-todo: change figma skill to node.js
-
-todo: 
-
-
-
------------------------------ */
-
-// note:
-
-// System.debug
-
-// console.log
-
-// |DEBUG|
-
-// attention:
-
-// debug:
-
 /* ------------------------------------
 VARIABLES
 ------------------------------------ */
 
-let $nav = document.getElementById("hamburger-nav");
 const htmlIcon = document.querySelector(".fa-html5");
 const htmlIconP = document.querySelector(".html-icon-p");
 const htmlLeftBorder = document.querySelector(".html-left-border");
@@ -86,54 +58,6 @@ const figmaIconP = document.querySelector(".figma-icon-p");
 const figmaLeftBorder = document.querySelector(".figma-left-border");
 const figmaMiddleBorder = document.querySelector(".figma-middle-border");
 const figmaRightBorder = document.querySelector(".figma-right-border");
-
-/* ------------------------------------
----------------------------------------
-TRIGGER ABOUT SECTION ANIMATIONS ON SCROLL EVENT
----------------------------------------
------------------------------------- */
-
-// ANIMATE .ABOUT-TEXT-CONTAINER
-const observer = new IntersectionObserver((entries) => {
-  // Loop over the entries
-  entries.forEach((entry) => {
-    // If the element is visible
-    if (entry.isIntersecting) {
-      // Add the animation class
-      entry.target.classList.add("about-left-animation");
-    }
-  });
-});
-
-// Tell the observer which elements to track
-observer.observe(document.querySelector(".about-text-container"));
-
-// ANIMATE .ABOUT-SKILLS-CONTAINER
-const observer2 = new IntersectionObserver((entries) => {
-  // Loop over the entries
-  entries.forEach((entry) => {
-    // If the element is visible
-    if (entry.isIntersecting) {
-      // Add the animation class
-      entry.target.classList.add("about-right-animation");
-    }
-  });
-});
-
-// Tell the observer which elements to track
-observer2.observe(document.querySelector(".about-right"));
-
-/* ------------------------------------
----------------------------------------
-HAMBURGER MENU ANIMATION
----------------------------------------
------------------------------------- */
-
-const hamburgerMenu = document.querySelector(".hamburger-menu");
-hamburgerMenu.addEventListener("click", () => {
-  hamburgerMenu.classList.toggle("active");
-  $nav.classList.toggle("active");
-});
 
 /* ------------------------------------
 ---------------------------------------
@@ -261,6 +185,42 @@ tsParticles.load("tsparticles", {
   },
   retina_detect: true,
 });
+
+/* ------------------------------------
+---------------------------------------
+TRIGGER ABOUT SECTION ANIMATIONS ON SCROLL EVENT
+---------------------------------------
+------------------------------------ */
+
+// ANIMATE .ABOUT-TEXT-CONTAINER
+const observer = new IntersectionObserver((entries) => {
+  // Loop over the entries
+  entries.forEach((entry) => {
+    // If the element is visible
+    if (entry.isIntersecting) {
+      // Add the animation class
+      entry.target.classList.add("about-left-animation");
+    }
+  });
+});
+
+// Tell the observer which elements to track
+observer.observe(document.querySelector(".about-text-container"));
+
+// ANIMATE .ABOUT-SKILLS-CONTAINER
+const observer2 = new IntersectionObserver((entries) => {
+  // Loop over the entries
+  entries.forEach((entry) => {
+    // If the element is visible
+    if (entry.isIntersecting) {
+      // Add the animation class
+      entry.target.classList.add("about-right-animation");
+    }
+  });
+});
+
+// Tell the observer which elements to track
+observer2.observe(document.querySelector(".about-right"));
 
 /* ------------------------------------
 ---------------------------------------
@@ -573,51 +533,3 @@ figmaIcon.addEventListener("mouseout", () => {
   figmaMiddleBorder.classList.remove("figma-hex-bg-color");
   figmaRightBorder.classList.remove("figma-hex-border-right");
 });
-
-/* ------------------------------------
----------------------------------------
-COPY EMAIL TO CLIPBOARD AND DISABLE MAILTO: LINK
-
-taken from https://codepen.io/imjuangarcia/pen/xxRaqMZ
----------------------------------------
------------------------------------- */
-
-// Select the button from the markup
-const button = document.querySelector(".click-to-copy");
-
-// Function that runs on click. It:
-// 1) Prevents the default behavior of the button (refresh the page);
-// 2) Runs the copyToClipboard function;
-// 3) Adds and removes some CSS classes, used for styling and notifying the user about the copy event
-const clickToCopy = (e) => {
-  e.preventDefault();
-  copyToClipboard(e.currentTarget.textContent);
-  e.target.classList.add("is-copied");
-  setTimeout(() => {
-    e.target.classList.remove("is-copied");
-  }, 1200);
-};
-
-// Copy to clipboard function, taken from https://www.30secondsofcode.org/blog/s/copy-text-to-clipboard-with-javascript/
-const copyToClipboard = (str) => {
-  const el = document.createElement("textarea");
-  el.value = str;
-  el.setAttribute("readonly", "");
-  el.style.position = "absolute";
-  el.style.left = "-9999px";
-  document.body.appendChild(el);
-  const selected =
-    document.getSelection().rangeCount > 0
-      ? document.getSelection().getRangeAt(0)
-      : false;
-  el.select();
-  document.execCommand("copy");
-  document.body.removeChild(el);
-  if (selected) {
-    document.getSelection().removeAllRanges();
-    document.getSelection().addRange(selected);
-  }
-};
-
-// Fire the event on click
-button.addEventListener("click", clickToCopy);
