@@ -2134,8 +2134,7 @@ X-LARGE SCREEN MEDIA QUERIES
 
 @media (min-width: 1440px) {
   .project {
-    min-width: 920px;
-    max-width: 966px;
+    max-width: 850px;
   }
 
   #project--project-page {
@@ -2145,5 +2144,18 @@ X-LARGE SCREEN MEDIA QUERIES
   .project-links {
     gap: 45px;
     width: 100%;
+  }
+}
+
+/* ------------------------------------
+---------------------------------------
+2XL SCREEN MEDIA QUERIES
+---------------------------------------
+------------------------------------ */
+
+@media (min-width: 1920px) {
+  .project {
+    min-width: 920px;
+    max-width: 966px;
   }
 }
