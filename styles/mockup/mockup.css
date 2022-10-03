@@ -1541,7 +1541,7 @@ button.click-to-copy:hover {
 .copied {
   position: absolute;
   top: -16px;
-  right: -50px;
+  right: -56px;
   margin-left: 1rem;
   padding: 0.5rem;
   border-radius: 0.2rem;
