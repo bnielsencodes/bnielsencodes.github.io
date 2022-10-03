@@ -1499,20 +1499,24 @@ CONTACT SECTION
   color: #fafafa;
 }
 
-/* todo: 
-- Make it to where when you copy email to clipboard, it doesn't
-the space in the beginning.
+.fa-arrow-right {
+  padding-left: 1px;
+  color: #785af0;
+  font-size: 0.85rem;
+}
 
-- Make the "Copied!" message show when clicked.
-*/
-
-/* COPY EMAIL ADDRESS TO CLIPBOARD */
-#email-copy-fallback {
-  display: inline;
+/* ------------------------------------
+COPY EMAIL ADDRESS TO CLIPBOARD 
+------------------------------------ */
+/* Hide the desktop button */
+#email-copy {
+  position: relative;
+  display: none;
 }
 
 .click-to-copy,
 .click-to-copy-fallback {
+  padding: 0;
   color: #2cb67d;
 }
 
@@ -1522,57 +1526,35 @@ a.click-to-copy-fallback {
   background-color: #1a1a1a;
 }
 
-button.click-to-copy:hover,
-a.click-to-copy-fallback:hover {
+button.click-to-copy:hover {
+  cursor: pointer;
   opacity: 0.8;
 }
 
-button.click-to-copy + span {
-  /* We make the span hidden by default. In this case, using display: none; isn't an issue from an accessibility standpoint, since we don't want screen readers to pick this up unless the user clicks on the button */
+/* We make the span hidden by default. In this case, using display: none; isn't an issue from an accessibility standpoint, since we don't want screen readers to pick this up unless the user clicks on the button */
+.copied.hidden {
   display: none;
-  /* From here on, just styling purposes 👇🏻 */
+}
+
+.copied {
+  position: absolute;
+  top: -16px;
+  right: -50px;
   margin-left: 1rem;
-  background: #dadada;
   padding: 0.5rem;
   border-radius: 0.2rem;
-  position: absolute;
-  top: 0.75rem;
+  background: transparent;
+  color: #785af0;
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.4px;
   font-weight: 500;
-  color: #666;
-}
-
-/* Styles for the tooltip arrow */
-button.click-to-copy + span:after {
-  right: 100%;
-  top: 50%;
-  border: solid transparent;
-  content: "";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border-color: rgba(218, 218, 218, 0);
-  border-right-color: #dadada;
-  border-width: 6px;
-  margin-top: -6px;
-}
-
-/* When the click event is fired, and the .is-copied class is added to the button, show the tooltip */
-.copied {
-  display: initial;
+  transform: rotate(29deg);
 }
 
 /* Fallback version for mobile, where the native email apps are way more used and mailto: link becomes way more relevant. */
 #email-copy-fallback {
   display: inline;
-}
-
-/* Hide the desktop button */
-#email-copy {
-  display: none;
 }
 
 .form-item {

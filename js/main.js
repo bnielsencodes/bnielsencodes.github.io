@@ -25,48 +25,49 @@ hamburgerMenu.addEventListener("click", () => {
 
 /* ------------------------------------
 ---------------------------------------
-COPY EMAIL TO CLIPBOARD AND DISABLE MAILTO: LINK
-
-taken from https://codepen.io/imjuangarcia/pen/xxRaqMZ
+Copy Password
 ---------------------------------------
 ------------------------------------ */
 
-// Select the button from the markup
-const button = document.querySelector(".click-to-copy");
+const emailAddress = document.getElementById("email-address");
+const copyBtn = document.querySelector(".click-to-copy");
+const copyText = document.querySelector(".copied");
 
-// Function that runs on click. It:
-// 1) Prevents the default behavior of the button (refresh the page);
-// 2) Runs the copyToClipboard function;
-// 3) Adds and removes some CSS classes, used for styling and notifying the user about the copy event
-const clickToCopy = (e) => {
+copyBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  copyToClipboard(e.currentTarget.textContent);
-  e.target.classList.add("is-copied");
-  setTimeout(() => {
-    e.target.classList.remove("is-copied");
-  }, 1200);
-};
+  const textArea = document.createElement("textarea");
+  const emailToCopy = emailAddress.innerHTML;
 
-// Copy to clipboard function, taken from https://www.30secondsofcode.org/blog/s/copy-text-to-clipboard-with-javascript/
-const copyToClipboard = (str) => {
-  const el = document.createElement("textarea");
-  el.value = str;
-  el.setAttribute("readonly", "");
-  el.style.position = "absolute";
-  el.style.left = "-9999px";
-  document.body.appendChild(el);
-  const selected =
-    document.getSelection().rangeCount > 0
-      ? document.getSelection().getRangeAt(0)
-      : false;
-  el.select();
+  // Edge Case when Password is Empty
+  if (!emailToCopy) return;
+
+  // Copy Functionality
+  textArea.value = emailToCopy;
+  document.body.appendChild(textArea);
+  textArea.select();
   document.execCommand("copy");
-  document.body.removeChild(el);
-  if (selected) {
-    document.getSelection().removeAllRanges();
-    document.getSelection().addRange(selected);
-  }
-};
+  textArea.remove();
+  copyText.classList.remove("hidden");
 
-// Fire the event on click
-button.addEventListener("click", clickToCopy);
+  /* ------------------------------------
+MAKE COPIED TEXT DISAPPEAR AFTER  SECONDS
+------------------------------------ */
+
+  setTimeout(() => {
+    const copied = document.querySelector(".copied");
+
+    // 👇️ removes element from DOM
+    copied.classList.add("hidden");
+
+    // 👇️ hides element (still takes up space on page)
+    // box.style.visibility = 'hidden';
+  }, 2000); // 👈️ time in milliseconds
+});
+
+//
+//
+//
+//
+//
+//
+//
