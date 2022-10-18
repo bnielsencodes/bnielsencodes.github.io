@@ -224,8 +224,15 @@ NAVIGATION
   background-color: #272727;
 }
 
-.main-nav-heading {
+.logo-container {
+  display: flex;
+  align-items: center;
   padding-left: 17px;
+}
+
+.main-nav-heading {
+  margin: 0;
+  padding-left: 4px;
   font-size: 1rem;
 }
 
@@ -1835,8 +1842,12 @@ MEDIUM SCREEN MEDIA QUERIES
     padding: 0 30px 15px;
   }
 
-  .main-nav-heading {
+  .logo-container {
     padding-left: 40px;
+  }
+
+  .main-nav-heading {
+    padding-left: 4px;
     font-size: 1.15rem;
   }
 
