@@ -232,7 +232,6 @@ NAVIGATION
 
 .main-nav-heading {
   margin: 0;
-  padding-left: 4px;
   font-size: 1rem;
 }
 
@@ -1847,7 +1846,6 @@ MEDIUM SCREEN MEDIA QUERIES
   }
 
   .main-nav-heading {
-    padding-left: 4px;
     font-size: 1.15rem;
   }
 
