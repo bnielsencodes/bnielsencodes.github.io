@@ -227,7 +227,7 @@ NAVIGATION
 .logo-container {
   display: flex;
   align-items: center;
-  padding-left: 17px;
+  padding-left: 18px;
 }
 
 .main-nav-heading {
@@ -1842,7 +1842,7 @@ MEDIUM SCREEN MEDIA QUERIES
   }
 
   .logo-container {
-    padding-left: 40px;
+    padding-left: 34px;
   }
 
   .main-nav-heading {
