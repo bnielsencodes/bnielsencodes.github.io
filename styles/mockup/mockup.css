@@ -1439,7 +1439,6 @@ PROJECTS PAGE
 .projects-list--project-page {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 40px;
   margin-bottom: 100px;
 }
