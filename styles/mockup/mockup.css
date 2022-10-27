@@ -1259,7 +1259,6 @@ PROJECTS SECTION
 
 .project-img {
   width: 100%;
-  border-bottom: 8px solid #1a1a1a;
 }
 
 .project-img-container,
@@ -1307,7 +1306,8 @@ PROJECTS SECTION
 .project-html-icon,
 .project-css-icon,
 .project-sass-icon,
-.project-js-icon {
+.project-js-icon,
+.project-react-icon {
   font-size: 2rem;
 }
 
@@ -1330,6 +1330,10 @@ PROJECTS SECTION
 
 .project-js-icon {
   color: #f0db4f;
+}
+
+.project-react-icon {
+  color: #62dafb;
 }
 
 .project-links {
