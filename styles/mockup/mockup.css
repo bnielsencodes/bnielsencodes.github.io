@@ -1258,15 +1258,15 @@ PROJECTS SECTION
   box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.35);
 }
 
-.project-img {
-  width: 100%;
-}
-
 .project-img-container,
 .project-bottom,
 .project-title-container {
   width: 100%;
   background-color: #272727;
+}
+
+.project-img {
+  width: 100%;
 }
 
 .project-title {
@@ -2076,6 +2076,36 @@ LARGE SCREEN MEDIA QUERIES
     max-width: calc(100vw - 460px);
   }
 
+  .project-img-container:hover .overlay {
+    opacity: 1;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    height: calc(100% - 6px);
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgba(39, 39, 39, 0.85);
+  }
+
+  .overlay-text {
+    color: #fafafa;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
   .project-title {
     font-size: 2rem;
   }
@@ -2140,6 +2170,10 @@ X-LARGE SCREEN MEDIA QUERIES
 
   #project--project-page {
     min-width: 0;
+  }
+
+  .overlay-text {
+    font-size: 20px;
   }
 
   .project-links {
