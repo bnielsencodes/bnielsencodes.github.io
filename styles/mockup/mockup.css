@@ -1938,6 +1938,9 @@ MEDIUM SCREEN MEDIA QUERIES
     max-width: calc(100vw - 340px);
   }
 
+  .project-img-container {
+    position: relative;
+  }
   .project-title {
     font-size: 1.7rem;
   }
