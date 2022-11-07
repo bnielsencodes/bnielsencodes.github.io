@@ -1940,6 +1940,7 @@ MEDIUM SCREEN MEDIA QUERIES
 
   .project-img-container {
     position: relative;
+    perspective: 600px;
   }
   .project-title {
     font-size: 1.7rem;
