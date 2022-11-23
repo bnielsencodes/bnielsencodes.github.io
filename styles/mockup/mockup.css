@@ -224,7 +224,8 @@ NAVIGATION
   background-color: #272727;
 }
 
-.logo-container {
+.logo-container,
+.projects-page-logo-container {
   display: flex;
   align-items: center;
   padding-left: 18px;
@@ -1847,6 +1848,10 @@ MEDIUM SCREEN MEDIA QUERIES
 
   .logo-container {
     padding-left: 34px;
+  }
+
+  .projects-page-logo-container {
+    padding-left: 22px;
   }
 
   .main-nav-heading {
