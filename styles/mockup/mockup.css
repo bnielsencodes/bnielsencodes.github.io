@@ -1274,6 +1274,7 @@ PROJECTS SECTION
   margin: 0 auto 5px;
   color: #2cb67d;
   font-size: 1.35rem;
+  text-align: center;
 }
 
 .project-description {
@@ -1947,6 +1948,37 @@ MEDIUM SCREEN MEDIA QUERIES
     position: relative;
     perspective: 600px;
   }
+
+  .project-img-container:hover .overlay {
+    opacity: 1;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgba(39, 39, 39, 0.85);
+  }
+
+
+  .overlay-text {
+    color: #fafafa;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
   .project-title {
     font-size: 1.7rem;
   }
@@ -1957,10 +1989,6 @@ MEDIUM SCREEN MEDIA QUERIES
 
   .project-description {
     max-width: 770px;
-  }
-
-  .project-description.extra-mb {
-    margin-bottom: 33px;
   }
 
   .project-links {
@@ -2083,36 +2111,6 @@ LARGE SCREEN MEDIA QUERIES
 
   .project {
     max-width: calc(100vw - 460px);
-  }
-
-  .project-img-container:hover .overlay {
-    opacity: 1;
-  }
-
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: block;
-    height: calc(100% - 6px);
-    width: 100%;
-    opacity: 0;
-    transition: 0.5s ease;
-    background-color: rgba(39, 39, 39, 0.85);
-  }
-
-  .overlay-text {
-    color: #fafafa;
-    font-size: 14px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
   }
 
   .project-title {
