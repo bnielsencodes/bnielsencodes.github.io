@@ -3,8 +3,6 @@ body {
   margin-right: auto;
   font: normal 16px/1.5 "Monteserrat", sans-serif;
   color: #fafafa;
-  /* cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAPCAMAAAAxmgQeAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAD5JREFUGNN1j9EKADAIAnP//9GjFq6w7iU4DNRsB06cb44TJ+UzYUcniqnqoA6ag/62JhjKIU0rxx1lKveuXJ5UAQs/G/2vAAAAAElFTkSuQmCC),
-    auto; */
   overflow-x: hidden;
 }
 
@@ -92,6 +90,25 @@ HEADER SECTION
   cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAPCAMAAAAxmgQeAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAD5JREFUGNN1j9EKADAIAnP//9GjFq6w7iU4DNRsB06cb44TJ+UzYUcniqnqoA6ag/62JhjKIU0rxx1lKveuXJ5UAQs/G/2vAAAAAElFTkSuQmCC),
     auto;
 }
+
+/* .header-content-container::after {
+  content: "Open for Hire";
+  position: absolute;
+  top: 40px;
+  left: -85px;
+  width: 400px;
+  height: 35px;
+  padding-top: 9px;
+  background-color: #785af0;
+  color: #1a1a1a;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transform: rotate(-32deg);
+  border-top: 1px solid #6543ee;
+  border-bottom: 1px solid #6543ee;
+  box-shadow: 0 -3px 4px rgb(101 67 238 / 30%), 0 3px 4px rgb(101 67 238 / 30%);
+} */
 
 .header-content {
   height: 160px;
@@ -1263,7 +1280,12 @@ PROJECTS SECTION
 .project-bottom,
 .project-title-container {
   width: 100%;
-  background-color: #272727;
+  background-color: #1a1a1a;
+}
+
+#airbnb-experiences-clone-img {
+  width: auto;
+  height: 100%;
 }
 
 .project-img {
@@ -1349,6 +1371,7 @@ PROJECTS SECTION
 .source-code,
 .view-more {
   padding: 8px 8px;
+  background-color: #272727;
   text-align: center;
 }
 
@@ -1356,15 +1379,12 @@ PROJECTS SECTION
 .source-code {
   width: 100px;
   border: 3px solid #785af0;
-}
-
-.live-link-button,
-.source-code-button {
   color: #fafafa;
 }
 
-.live-link-button:hover,
-.source-code-button:hover {
+.live-link:hover,
+.source-code:hover {
+  transform: scale(1.025);
   color: #2cb67d;
 }
 
@@ -1590,8 +1610,8 @@ button.click-to-copy:hover {
 
 .view-resume:focus,
 .projects-cta:focus,
-.live-link-button:focus,
-.source-code-button:focus,
+.live-link:focus,
+.source-code:focus,
 .return-home-link:focus,
 .footer-icon-container:focus {
   outline: 2px solid #2cb67d;
