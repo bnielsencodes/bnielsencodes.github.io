@@ -533,3 +533,17 @@ figmaIcon.addEventListener("mouseout", () => {
   figmaMiddleBorder.classList.remove("figma-hex-bg-color");
   figmaRightBorder.classList.remove("figma-hex-border-right");
 });
+
+/* ------------------------------------
+SMOOTH SCROLL ON ANCHOR CLICK
+------------------------------------ */
+// code taken from https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});
