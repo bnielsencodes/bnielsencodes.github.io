@@ -1560,7 +1560,7 @@ PROJECTS PAGE
 ------------------------------------ */
 
 .projects-page-top {
-  height: 60px;
+  height: 75px;
   background-color: #fafafa;
 }
 
@@ -1571,10 +1571,6 @@ PROJECTS PAGE
   margin-bottom: 100px;
 }
 
-.contact-section--projects-page {
-  padding-top: 50px;
-}
-
 /* ------------------------------------
 ---------------------------------------
 CONTACT SECTION
@@ -1583,6 +1579,10 @@ CONTACT SECTION
 
 #contact-section {
   padding-bottom: 125px;
+}
+
+.contact-section--projects-page {
+  padding-top: 75px;
 }
 
 .contact-heading-span {
@@ -2081,7 +2081,7 @@ MEDIUM SCREEN MEDIA QUERIES
   .overlay {
     position: absolute;
     top: 0;
-    bottom: 0;
+    bottom: 7px;
     left: 0;
     right: 0;
     display: block;
@@ -2090,7 +2090,6 @@ MEDIUM SCREEN MEDIA QUERIES
     transition: 0.5s ease;
     background-color: rgba(39, 39, 39, 0.85);
   }
-
 
   .overlay-text {
     color: #fafafa;
@@ -2179,6 +2178,10 @@ LARGE SCREEN MEDIA QUERIES
 
 @media (min-width: 1024px) {
   #hidden-lg {
+    display: none;
+  }
+
+  .hidden-lg {
     display: none;
   }
 
