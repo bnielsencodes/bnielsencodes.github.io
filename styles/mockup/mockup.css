@@ -176,6 +176,10 @@ HEADER SECTION
   color: #785af0;
 }
 
+.header-heading-span:last-of-type {
+  color: #2cb67d;
+}
+
 .cta-container {
   width: 145px;
   margin-top: 8px;
