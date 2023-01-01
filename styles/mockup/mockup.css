@@ -530,7 +530,7 @@ ABOUT SECTION
 
 .location-container {
   width: 204px;
-  margin: 17px auto 3px;
+  margin: 17px auto 10px;
   text-align: center;
 }
 
@@ -573,13 +573,12 @@ ABOUT SECTION
   margin: 0;
 }
 
-.about-p-one,
-.about-p-two {
+.about-p {
   padding: 0 10px;
 }
 
-.about-p-two {
-  margin-bottom: 60px;
+.about-p {
+  margin-bottom: 30px;
 }
 
 .view-resume {
@@ -643,7 +642,7 @@ ABOUT SECTION
 }
 
 .skills-heading-container {
-  width: 96px;
+  width: 117px;
   margin-inline: auto;
 }
 
