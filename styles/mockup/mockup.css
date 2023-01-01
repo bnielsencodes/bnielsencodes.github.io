@@ -1283,9 +1283,15 @@ PROJECTS SECTION
   background-color: #1a1a1a;
 }
 
-#airbnb-experiences-clone-img {
-  width: auto;
+.airbnb-project-img-container {
+  display: flex;
+  justify-content: center;
   height: 100%;
+  padding-bottom: 8px;
+}
+
+#airbnb-experiences-clone-img {
+  width: 30%;
 }
 
 .project-img {
