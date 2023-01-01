@@ -1953,6 +1953,10 @@ MEDIUM SCREEN MEDIA QUERIES
     padding-left: 30px;
   }
 
+  .airbnb-project-container {
+    display: none;
+  }
+
   .projects-heading-span::after {
     left: 24px;
     width: 140px;
