@@ -25,7 +25,7 @@ hamburgerMenu.addEventListener("click", () => {
 
 /* ------------------------------------
 ---------------------------------------
-Copy Password
+COPY EMAIL
 ---------------------------------------
 ------------------------------------ */
 
@@ -50,7 +50,7 @@ copyBtn.addEventListener("click", (e) => {
   copyText.classList.remove("hidden");
 
   /* ------------------------------------
-MAKE COPIED TEXT DISAPPEAR AFTER  SECONDS
+MAKE COPIED TEXT DISAPPEAR AFTER TWO SECONDS
 ------------------------------------ */
 
   setTimeout(() => {
@@ -64,10 +64,3 @@ MAKE COPIED TEXT DISAPPEAR AFTER  SECONDS
   }, 2000); // 👈️ time in milliseconds
 });
 
-//
-//
-//
-//
-//
-//
-//
