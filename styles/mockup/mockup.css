@@ -1362,11 +1362,12 @@ PROJECTS SECTION
 }
 
 .projects-list {
-  max-width: 1800px;
+  max-width: 980px;
   margin-inline: auto;
 }
 
 .project-container {
+  max-width: 850px;
   margin-bottom: 40px;
 }
 
@@ -1402,7 +1403,7 @@ PROJECTS SECTION
 }
 
 .project-title {
-  margin: 0 auto 5px;
+  margin: 0 auto;
   color: #2cb67d;
   font-size: 1.35rem;
   text-align: center;
