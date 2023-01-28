@@ -216,6 +216,11 @@ HEADER SECTION
   }
 }
 
+.fa-arrow-down {
+  color: #2cb67d;
+  margin-top: 8px;
+}
+
 /* tsParticles CONTAINER */
 #tsparticles {
   position: absolute;
