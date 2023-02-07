@@ -132,7 +132,7 @@ HEADER SECTION
 }
 
 .header-heading {
-  max-width: 425px;
+  max-width: 584px;
   padding: 12px 12px 0;
   margin: 0;
   animation-name: moveInLeft;
@@ -173,11 +173,11 @@ HEADER SECTION
 }
 
 .header-heading-span {
-  color: #785af0;
+  color: #2cb67d;
 }
 
 .header-heading-span:last-of-type {
-  color: #2cb67d;
+  color: #785af0;
 }
 
 .cta-container {
