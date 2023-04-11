@@ -15,6 +15,11 @@
       src="https://kit.fontawesome.com/8064f9683f.js"
       crossorigin="anonymous"
     ></script>
+    <!-- DEV ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="styles/css/styles.css" />
     <link rel="stylesheet" href="styles/mockup/mockup.css" />
@@ -35,34 +40,27 @@
       HEADER SECTION
       **************************************
     *********************************** -->
-    <header id="header-section">
-      <div class="header-content-container">
-        <!-- HEADER CONTENT -->
-        <div class="header-content">
-          <div class="heading-text-container">
-            <!-- <h1 class="header-heading">
-              <span class="header-heading-span">Brandon </span
-              ><span class="header-heading-span">Nielsen</span>,
-            </h1> -->
-            <h1 class="header-heading">
-              Hi, I'm <span class="header-heading-span">Brandon</span
-              ><span class="header-heading-span"> Nielsen</span>,
-            </h1>
-            <h1 class="header-subheading">a front-end web developer.</h1>
-          </div>
-          <div class="cta-container">
-            <a
-              href="#projects-top-divider"
-              class="projects-cta"
-              aria-label="view work"
-            >
-              View my work
-              <span>
-                <i class="fas fa-solid fa-arrow-down"></i>
-              </span>
-            </a>
-          </div>
+    <header id="header">
+      <div class="header__content">
+        <div class="header__text-container">
+          <h2 class="header__heading">
+            Hi, I'm <span class="header__heading-span">Brandon</span
+            ><span class="header__heading-span"> Nielsen</span>,
+          </h2>
+          <h2 class="header__subheading">a front-end web developer.</h2>
         </div>
+        <button class="header__cta">
+          <a
+            href="#top-divider"
+            class="header__cta-link"
+            aria-label="view work"
+          >
+            View my work
+            <span>
+              <i class="fas fa-solid fa-arrow-down"></i>
+            </span>
+          </a>
+        </button>
       </div>
       <!-- tsParticles CONTAINER -->
       <div id="tsparticles"></div>
@@ -72,8 +70,8 @@
       MAIN NAVIGATION
       **************************************
     *********************************** -->
-    <nav class="main-nav">
-      <div class="logo-container">
+    <nav class="nav">
+      <div class="nav__logo">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="-0.013577461242675781 0.004145622253417969 86.6033706665039 86.63381958007812"
@@ -91,52 +89,77 @@
             />
           </g>
         </svg>
-        <h4 class="main-nav-heading">
+        <h1 class="nav__name">
           <a href="index.html">Brandon Nielsen</a>
-        </h4>
+        </h1>
       </div>
       <!-- ***********************************
-      HAMBURGER MENU FOR SM SCREEN
+        **************************************
+        MAIN NAVIGATION LINKS ON MD/LG SCREEN
+        **************************************
       *********************************** -->
-      <div class="hamburger-menu hidden-md">
-        <div class="hamburger-bar bar-top"></div>
-        <div class="hamburger-bar bar-mid"></div>
-        <div class="hamburger-bar bar-bottom"></div>
-        <!-- 
-            Hamburger menu list
-            -->
-        <div id="hamburger-nav" class="hamburger-navigation">
-          <div class="navigation__inner">
-            <!--   Content   -->
-            <ul class="hamburger-nav-link-container">
-              <li class="hamburger-nav-item">
+      <ul class="nav-list hidden--sm">
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#header" aria-label="home">Home</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#about-section" aria-label="about"
+            >About</a
+          >
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#top-divider" aria-label="projects"
+            >Projects</a
+          >
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#bottom-divider" aria-label="contacts"
+            >Contact</a
+          >
+        </li>
+      </ul>
+
+      <!-- ***********************************
+        **************************************
+        MOBILE NAVIGATION ICON AND LINKS
+        **************************************
+      *********************************** -->
+      <div class="hamburger-menu hidden--md">
+        <div class="hamburger-menu__bar hamburger-menu__bar--top"></div>
+        <div class="hamburger-menu__bar hamburger-menu__bar--mid"></div>
+        <div class="hamburger-menu__bar hamburger-menu__bar--bottom"></div>
+        <!-- Hamburger menu list -->
+        <div id="mobile-nav">
+          <div class="mobile-nav__inner">
+            <ul class="mobile-nav-list">
+              <li>
                 <a
-                  href="#header-section"
-                  class="hamburger-nav-link"
+                  class="mobile-nav-list__link"
+                  href="#header"
                   aria-label="home"
                   >Home</a
                 >
               </li>
-              <li class="hamburger-nav-item">
+              <li>
                 <a
+                  class="mobile-nav-list__link"
                   href="#about-section"
-                  class="hamburger-nav-link"
                   aria-label="about"
                   >About</a
                 >
               </li>
-              <li class="hamburger-nav-item">
+              <li>
                 <a
-                  href="#projects-top-divider"
-                  class="hamburger-nav-link"
+                  class="mobile-nav-list__link"
+                  href="#top-divider"
                   aria-label="projects"
                   >Projects</a
                 >
               </li>
-              <li class="hamburger-nav-item">
+              <li>
                 <a
-                  href="#projects-bottom-divider"
-                  class="hamburger-nav-link main-nav-button"
+                  class="mobile-nav-list__link"
+                  href="#bottom-divider"
                   aria-label="contact"
                   >Contact</a
                 >
@@ -145,40 +168,6 @@
           </div>
         </div>
       </div>
-
-      <!-- ***********************************
-        **************************************
-        MAIN NAVIGATION LINKS ON MD/LG SCREEN
-        **************************************
-      *********************************** -->
-      <ul class="main-nav-link-container hidden-sm">
-        <li class="main-nav-item">
-          <a href="#header-section" class="main-nav-link" aria-label="home"
-            >Home</a
-          >
-        </li>
-        <li class="main-nav-item">
-          <a href="#about-section" class="main-nav-link" aria-label="about"
-            >About</a
-          >
-        </li>
-        <li class="main-nav-item">
-          <a
-            href="#projects-top-divider"
-            class="main-nav-link"
-            aria-label="projects"
-            >Projects</a
-          >
-        </li>
-        <li class="main-nav-item">
-          <a
-            href="#projects-bottom-divider"
-            class="main-nav-link main-nav-button"
-            aria-label="contacts"
-            >Contact</a
-          >
-        </li>
-      </ul>
     </nav>
 
     <!-- ***********************************
@@ -188,31 +177,33 @@
       *********************************** -->
     <section id="about-section">
       <h2 class="section-heading">
-        <span class="about-heading-span">About</span>
+        <span class="section-heading__span">About</span>
       </h2>
       <div class="about-content-container">
-        <article class="about-text-container">
-          <div class="about-img">
-            <div class="about-img-border">
-              <div class="about-img-border-outer about-img-hex-1">
-                <div class="about-img-border-inner">
-                  <div class="about-img-border-inner-2"></div>
+        <article class="bio">
+          <div class="bio__img-container">
+            <div class="bio__img-border-container">
+              <div class="bio__img-border-outer">
+                <div class="bio__img-border-inner">
+                  <div class="bio__img-border-inner-2"></div>
                 </div>
               </div>
             </div>
-            <div class="hexagon hexagon1">
-              <div class="hexagon-in1"><div class="hexagon-in2"></div></div>
+            <div class="bio-hex">
+              <div class="bio-hex__inner1">
+                <div class="bio-hex__inner2"></div>
+              </div>
             </div>
           </div>
-          <div class="location-container">
-            <div class="location-center">
-              <div class="location-icon-container">
+          <div class="bio__location-container">
+            <div class="bio__location-container-inner">
+              <div class="bio__location-icon">
                 <i class="fa-duotone fa-map-pin"></i>
               </div>
-              <h4 class="location">Oregon, US</h4>
+              <h4 class="bio__location">Oregon, US</h4>
             </div>
           </div>
-          <p class="about-p">
+          <p class="bio__text">
             Brandon Nielsen is an expert web developer, combining an impressive
             range of technical acumen and creative flair. His background
             involves working directly with people, inspiring him to always
@@ -221,7 +212,7 @@
           </p>
           <a
             href="https://drive.google.com/file/d/1pJRoHl7UbfoqWO87wGbVoFV1ib-B3G5C/view?usp=sharing"
-            class="view-resume"
+            class="resume"
             aria-label="view resume"
             target="_blank"
             >View My Resume</a
@@ -232,32 +223,200 @@
           SKILLS SECTION
           **************************************
         *********************************** -->
-        <aside class="about-right">
-          <div class="skills-heading-container">
-            <h4 class="skills-heading">Tech Skills</h4>
-          </div>
-          <div class="about-skills-container">
-            <div class="skills-left-container">
-              <!-- HTML SKILL -->
-              <div class="skills-container html-skill-container">
-                <div class="skills-icon html-icon">
-                  <i class="fab fa-brands fa-html5 skills-fa"></i>
+        <aside class="skills">
+          <h4 class="skills-heading">Top Skills</h4>
+          <div class="skills-container">
+            <div class="hex-group--left">
+              <!-- REACT SKILL -->
+              <div class="skill">
+                <div class="skill__icon skill__icon--react">
+                  <i class="fab fa-brands fa-react skill-fa"></i>
                 </div>
-                <p class="skill-p html-icon-p">HTML</p>
-                <div class="hex-flex hex-flex-html">
-                  <div class="hex-left"></div>
-                  <div class="hex-middle"></div>
-                  <div class="hex-right"></div>
+                <p class="skill__p skill__p--react">React</p>
+                <div class="hex hex--react">
+                  <div class="hex__left"></div>
+                  <div class="hex__middle"></div>
+                  <div class="hex__right"></div>
                 </div>
-                <div class="hex-flex-border hex-flex-html-border">
-                  <div class="hex-left-border html-left-border"></div>
-                  <div class="hex-middle-border html-middle-border"></div>
-                  <div class="hex-right-border html-right-border"></div>
+                <div class="hex-border hex-border--react">
+                  <div class="hex-border__left hex-border__left--react"></div>
+                  <div
+                    class="hex-border__middle hex-border__middle--react"
+                  ></div>
+                  <div class="hex-border__right hex-border__right--react"></div>
+                </div>
+              </div>
+              <!-- NEXTJS SKILL -->
+              <div class="skill">
+                <div class="skill__icon skill__icon--nextjs">
+                  <i class="devicon-nextjs-original skill-fa"></i>
+                </div>
+                <p class="skill__p skill__p--nextjs">nextjs</p>
+                <div class="hex hex--nextjs">
+                  <div class="hex__left"></div>
+                  <div class="hex__middle"></div>
+                  <div class="hex__right"></div>
+                </div>
+                <div class="hex-border hex-border--nextjs">
+                  <div class="hex-border__left hex-border__left--nextjs"></div>
+                  <div
+                    class="hex-border__middle hex-border__middle--nextjs"
+                  ></div>
+                  <div
+                    class="hex-border__right hex-border__right--nextjs"
+                  ></div>
+                </div>
+              </div>
+              <!-- TAILWIND SKILL -->
+              <div class="skill">
+                <div class="skill__icon skill__icon--tailwind">
+                  <svg
+                    class="tailwind-svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="28"
+                    viewBox="0 0 22 22"
+                    width="35"
+                  >
+                    <path
+                      class="tailwind-svg-path"
+                      fill="#fafafa"
+                      d="m12 6c-2.67 0-4.33 1.33-5 4 1-1.33 2.17-1.83 3.5-1.5.76.19 1.31.74 1.91 1.35.98 1 2.09 2.15 4.59 2.15 2.67 0 4.33-1.33 5-4-1 1.33-2.17 1.83-3.5 1.5-.76-.19-1.3-.74-1.91-1.35-.98-1-2.09-2.15-4.59-2.15m-5 6c-2.67 0-4.33 1.33-5 4 1-1.33 2.17-1.83 3.5-1.5.76.19 1.3.74 1.91 1.35.98 1 2.09 2.15 4.59 2.15 2.67 0 4.33-1.33 5-4-1 1.33-2.17 1.83-3.5 1.5-.76-.19-1.3-.74-1.91-1.35-.98-1-2.09-2.15-4.59-2.15z"
+                    />
+                  </svg>
+                </div>
+                <p class="skill__p skill__p--tailwind">Tailwind</p>
+                <div class="hex hex--tailwind">
+                  <div class="hex__left"></div>
+                  <div class="hex__middle"></div>
+                  <div class="hex__right"></div>
+                </div>
+                <div class="hex-border hex-border--tailwind">
+                  <div
+                    class="hex-border__left hex-border__left--tailwind"
+                  ></div>
+                  <div
+                    class="hex-border__middle hex-border__middle--tailwind"
+                  ></div>
+                  <div
+                    class="hex-border__right hex-border__right--tailwind"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="hex-group--middle">
+              <!-- JAVASCRIPT SKILL -->
+              <div class="skill">
+                <div class="skill__icon skill__icon--js">
+                  <i class="fab fa-brands fa-js skill-fa skill-fa--js"></i>
+                </div>
+                <p class="skill__p skill__p--js" l>JavaScript</p>
+                <div class="hex hex--js">
+                  <div class="hex__left"></div>
+                  <div class="hex__middle"></div>
+                  <div class="hex__right"></div>
+                </div>
+                <div class="hex-border hex-border--js">
+                  <div class="hex-border__left hex-border__left--js"></div>
+                  <div class="hex-border__middle hex-border__middle--js"></div>
+                  <div class="hex-border__right hex-border__right--js"></div>
+                </div>
+              </div>
+              <!-- VITE SKILL -->
+              <div class="skill">
+                <div class="skill__icon skill__icon--vite">
+                  <svg
+                    class="vite-svg"
+                    width="35px"
+                    height="32px"
+                    viewBox="0 0 32 32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                  >
+                    <title>file_type_vite</title>
+                    <path
+                      d="M29.8836 6.146L16.7418 29.6457c-.2714.4851-.9684.488-1.2439.0052L2.0956 6.1482c-.3-.5262.1498-1.1635.746-1.057l13.156 2.3516a.7144.7144 0 00.2537-.0004l12.8808-2.3478c.5942-.1083 1.0463.5241.7515 1.0513z"
+                      fill="url(#paint0_linear)"
+                    />
+                    <path
+                      class="vite-stroke"
+                      d="M22.2644 2.0069l-9.7253 1.9056a.3571.3571 0 00-.2879.3294l-.5982 10.1038c-.014.238.2045.4227.4367.3691l2.7077-.6248c.2534-.0585.4823.1647.4302.4194l-.8044 3.9393c-.0542.265.1947.4918.4536.4132l1.6724-.5082c.2593-.0787.5084.1487.4536.414l-1.2784 6.1877c-.08.387.4348.598.6495.2662L16.5173 25 24.442 9.1848c.1327-.2648-.096-.5667-.387-.5106l-2.787.5379c-.262.0505-.4848-.1934-.4109-.4497l1.8191-6.306c.074-.2568-.1496-.5009-.4118-.4495z"
+                      fill="url(#paint1_linear)"
+                      stroke="#272727"
+                    />
+                    <defs id="defs50">
+                      <linearGradient
+                        id="paint0_linear"
+                        x1="6.0002"
+                        y1="32.9999"
+                        x2="235"
+                        y2="344"
+                        gradientUnits="userSpaceOnUse"
+                        gradientTransform="matrix(.07142 0 0 .07142 1.3398 1.8944)"
+                      >
+                        <stop
+                          class="vite-color1"
+                          stop-color="#fafafa"
+                          id="stop38"
+                        />
+                        <stop
+                          class="vite-color2"
+                          offset="1"
+                          stop-color="#fafafa"
+                          id="stop40"
+                        />
+                        <!-- <stop stop-color="#41D1FF" id="stop38" />
+                        <stop offset="1" stop-color="#BD34FE" id="stop40" /> -->
+                      </linearGradient>
+                      <linearGradient
+                        id="paint1_linear"
+                        x1="194.651"
+                        y1="8.8182"
+                        x2="236.076"
+                        y2="292.989"
+                        gradientUnits="userSpaceOnUse"
+                        gradientTransform="matrix(.07142 0 0 .07142 1.3398 1.8944)"
+                      >
+                        <stop
+                          class="vite-color3"
+                          stop-color="#fafafa"
+                          id="stop43"
+                        />
+                        <stop
+                          class="vite-color4"
+                          offset=".0833"
+                          stop-color="#fafafa"
+                          id="stop45"
+                        />
+                        <stop
+                          class="vite-color5"
+                          offset="1"
+                          stop-color="#fafafa"
+                          id="stop47"
+                        />
+                        <!-- <stop stop-color="#FFEA83" id="stop43" />
+                        <stop offset=".0833" stop-color="#FFDD35" id="stop45" />
+                        <stop offset="1" stop-color="#FFA800" id="stop47" /> -->
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <p class="skill__p skill__p--vite">Vite</p>
+                <div class="hex hex--vite">
+                  <div class="hex__left"></div>
+                  <div class="hex__middle"></div>
+                  <div class="hex__right"></div>
+                </div>
+                <div class="hex-border hex-border--vite">
+                  <div class="hex-border__left hex-border__left--vite"></div>
+                  <div
+                    class="hex-border__middle hex-border__middle--vite"
+                  ></div>
+                  <div class="hex-border__right hex-border__right--vite"></div>
                 </div>
               </div>
               <!-- VS CODE SKILL -->
-              <div class="skills-container vscode-skill-container">
-                <div class="skills-icon vscode-icon">
+              <!-- <div class="skill">
+                <div class="skill__icon skill__icon--vscode">
                   <svg
                     class="vscode-svg"
                     xmlns="http://www.w3.org/2000/svg"
@@ -397,168 +556,113 @@
                     </defs>
                   </svg>
                 </div>
-                <p class="skill-p vscode-icon-p">VS Code</p>
-                <div class="hex-flex hex-flex-vscode">
-                  <div class="hex-left"></div>
-                  <div class="hex-middle"></div>
-                  <div class="hex-right"></div>
+                <p class="skill__p skill__p--vscode">VS Code</p>
+                <div class="hex hex--vscode">
+                  <div class="hex__left"></div>
+                  <div class="hex__middle"></div>
+                  <div class="hex__right"></div>
                 </div>
-                <div class="hex-flex-border hex-flex-vscode-border">
-                  <div class="hex-left-border vscode-left-border"></div>
-                  <div class="hex-middle-border vscode-middle-border"></div>
-                  <div class="hex-right-border vscode-right-border"></div>
+                <div class="hex-border hex-border--vscode">
+                  <div class="hex-border__left hex-border__left--vscode"></div>
+                  <div
+                    class="hex-border__middle hex-border__middle--vscode"
+                  ></div>
+                  <div
+                    class="hex-border__right hex-border__right--vscode"
+                  ></div>
                 </div>
-              </div>
-              <!-- GIT SKILL -->
-              <div class="skills-container git-skill-container">
-                <div class="skills-icon git-icon">
-                  <i class="fab fa-brands fa-git-alt skills-fa"></i>
-                </div>
-                <p class="skill-p git-icon-p">Git</p>
-                <div class="hex-flex hex-flex-git">
-                  <div class="hex-left"></div>
-                  <div class="hex-middle"></div>
-                  <div class="hex-right"></div>
-                </div>
-                <div class="hex-flex-border hex-flex-git-border">
-                  <div class="hex-left-border git-left-border"></div>
-                  <div class="hex-middle-border git-middle-border"></div>
-                  <div class="hex-right-border git-right-border"></div>
-                </div>
-              </div>
-            </div>
-            <div class="skills-middle-container">
-              <!-- CSS SKILL -->
-              <div class="skills-container css-skill-container">
-                <div class="skills-icon css-icon">
-                  <i class="fab fa-brands fa-css3-alt skills-fa"></i>
-                </div>
-                <p class="skill-p css-icon-p">CSS</p>
-                <div class="hex-flex hex-flex-css">
-                  <div class="hex-left"></div>
-                  <div class="hex-middle"></div>
-                  <div class="hex-right"></div>
-                </div>
-                <div class="hex-flex-border hex-flex-css-border">
-                  <div class="hex-left-border css-left-border"></div>
-                  <div class="hex-middle-border css-middle-border"></div>
-                  <div class="hex-right-border css-right-border"></div>
-                </div>
-              </div>
+              </div> -->
               <!-- SASS SKILL -->
-              <div class="skills-container sass-skill-container">
-                <div class="skills-icon sass-icon">
-                  <i class="fab fa-brands fa-sass skills-fa"></i>
+              <div class="skill">
+                <div class="skill__icon skill__icon--sass">
+                  <i class="fab fa-brands fa-sass skill-fa"></i>
                 </div>
-                <p class="skill-p sass-icon-p">Sass</p>
-                <div class="hex-flex hex-flex-sass">
-                  <div class="hex-left"></div>
-                  <div class="hex-middle"></div>
-                  <div class="hex-right"></div>
+                <p class="skill__p skill__p--sass">Sass</p>
+                <div class="hex hex--sass">
+                  <div class="hex__left"></div>
+                  <div class="hex__middle"></div>
+                  <div class="hex__right"></div>
                 </div>
-                <div class="hex-flex-border hex-flex-sass-border">
-                  <div class="hex-left-border sass-left-border"></div>
-                  <div class="hex-middle-border sass-middle-border"></div>
-                  <div class="hex-right-border sass-right-border"></div>
-                </div>
-              </div>
-              <!-- BOOTSTRAP SKILL -->
-              <div class="skills-container bootstrap-skill-container">
-                <div class="skills-icon bootstrap-icon">
-                  <i class="fab fa-brands fa-bootstrap skills-fa"></i>
-                </div>
-                <p class="skill-p bootstrap-icon-p">Bootstrap</p>
-                <div class="hex-flex hex-flex-bootstrap">
-                  <div class="hex-left"></div>
-                  <div class="hex-middle"></div>
-                  <div class="hex-right"></div>
-                </div>
-                <div class="hex-flex-border hex-flex-bootstrap-border">
-                  <div class="hex-left-border bootstrap-left-border"></div>
-                  <div class="hex-middle-border bootstrap-middle-border"></div>
-                  <div class="hex-right-border bootstrap-right-border"></div>
-                </div>
-              </div>
-              <!-- TAILWIND SKILL -->
-              <div class="skills-container tailwind-skill-container">
-                <div class="skills-icon tailwind-icon">
-                  <svg
-                    class="tailwind-svg"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="28"
-                    viewBox="0 0 22 22"
-                    width="35"
-                  >
-                    <path
-                      class="tailwind-svg-path"
-                      fill="#fafafa"
-                      d="m12 6c-2.67 0-4.33 1.33-5 4 1-1.33 2.17-1.83 3.5-1.5.76.19 1.31.74 1.91 1.35.98 1 2.09 2.15 4.59 2.15 2.67 0 4.33-1.33 5-4-1 1.33-2.17 1.83-3.5 1.5-.76-.19-1.3-.74-1.91-1.35-.98-1-2.09-2.15-4.59-2.15m-5 6c-2.67 0-4.33 1.33-5 4 1-1.33 2.17-1.83 3.5-1.5.76.19 1.3.74 1.91 1.35.98 1 2.09 2.15 4.59 2.15 2.67 0 4.33-1.33 5-4-1 1.33-2.17 1.83-3.5 1.5-.76-.19-1.3-.74-1.91-1.35-.98-1-2.09-2.15-4.59-2.15z"
-                    />
-                  </svg>
-                </div>
-                <p class="skill-p tailwind-icon-p">Tailwind</p>
-                <div class="hex-flex hex-flex-tailwind">
-                  <div class="hex-left"></div>
-                  <div class="hex-middle"></div>
-                  <div class="hex-right"></div>
-                </div>
-                <div class="hex-flex-border hex-flex-tailwind-border">
-                  <div class="hex-left-border tailwind-left-border"></div>
-                  <div class="hex-middle-border tailwind-middle-border"></div>
-                  <div class="hex-right-border tailwind-right-border"></div>
-                </div>
-              </div>
-            </div>
-            <div class="skills-right-container">
-              <!-- JAVASCRIPT SKILL -->
-              <div class="skills-container js-skill-container">
-                <div class="skills-icon js-icon">
-                  <i class="fab fa-brands fa-js skills-fa"></i>
-                </div>
-                <p class="skill-p js-icon-p">JavaScript</p>
-                <div class="hex-flex hex-flex-js">
-                  <div class="hex-left"></div>
-                  <div class="hex-middle"></div>
-                  <div class="hex-right"></div>
-                </div>
-                <div class="hex-flex-border hex-flex-js-border">
-                  <div class="hex-left-border js-left-border"></div>
-                  <div class="hex-middle-border js-middle-border"></div>
-                  <div class="hex-right-border js-right-border"></div>
-                </div>
-              </div>
-              <!-- REACT SKILL -->
-              <div class="skills-container react-skill-container">
-                <div class="skills-icon react-icon">
-                  <i class="fab fa-brands fa-react skills-fa"></i>
-                </div>
-                <p class="skill-p react-icon-p">React</p>
-                <div class="hex-flex hex-flex-react">
-                  <div class="hex-left"></div>
-                  <div class="hex-middle"></div>
-                  <div class="hex-right"></div>
-                </div>
-                <div class="hex-flex-border hex-flex-react-border">
-                  <div class="hex-left-border react-left-border"></div>
-                  <div class="hex-middle-border react-middle-border"></div>
-                  <div class="hex-right-border react-right-border"></div>
+                <div class="hex-border hex-border--sass">
+                  <div class="hex-border__left hex-border__left--sass"></div>
+                  <div
+                    class="hex-border__middle hex-border__middle--sass"
+                  ></div>
+                  <div class="hex-border__right hex-border__right--sass"></div>
                 </div>
               </div>
               <!-- FIGMA SKILL -->
-              <div class="skills-container figma-skill-container">
-                <div class="skills-icon figma-icon">
-                  <i class="fab fa-brands fa-figma skills-fa"></i>
+              <div class="skill">
+                <div class="skill__icon skill__icon--figma">
+                  <i class="fab fa-brands fa-figma skill-fa"></i>
                 </div>
-                <p class="skill-p figma-icon-p">Figma</p>
-                <div class="hex-flex hex-flex-figma">
-                  <div class="hex-left"></div>
-                  <div class="hex-middle"></div>
-                  <div class="hex-right"></div>
+                <p class="skill__p skill__p--figma">Figma</p>
+                <div class="hex hex--figma">
+                  <div class="hex__left"></div>
+                  <div class="hex__middle"></div>
+                  <div class="hex__right"></div>
                 </div>
-                <div class="hex-flex-border hex-flex-figma-border">
-                  <div class="hex-left-border figma-left-border"></div>
-                  <div class="hex-middle-border figma-middle-border"></div>
-                  <div class="hex-right-border figma-right-border"></div>
+                <div class="hex-border hex-border--figma">
+                  <div class="hex-border__left hex-border__left--figma"></div>
+                  <div
+                    class="hex-border__middle hex-border__middle--figma"
+                  ></div>
+                  <div class="hex-border__right hex-border__right--figma"></div>
+                </div>
+              </div>
+            </div>
+            <div class="hex-group--right">
+              <!-- HTML SKILL -->
+              <div class="skill">
+                <div class="skill__icon skill__icon--html">
+                  <i class="fab fa-brands fa-html5 skill-fa"></i>
+                </div>
+                <p class="skill__p skill__p--html">HTML</p>
+                <div class="hex hex--html">
+                  <div class="hex__left"></div>
+                  <div class="hex__middle"></div>
+                  <div class="hex__right"></div>
+                </div>
+                <div class="hex-border hex-border--html">
+                  <div class="hex-border__left hex-border__left--html"></div>
+                  <div
+                    class="hex-border__middle hex-border__middle--html"
+                  ></div>
+                  <div class="hex-border__right hex-border__right--html"></div>
+                </div>
+              </div>
+              <!-- CSS SKILL -->
+              <div class="skill">
+                <div class="skill__icon skill__icon--css">
+                  <i class="fab fa-brands fa-css3-alt skill-fa"></i>
+                </div>
+                <p class="skill__p skill__p--css">CSS</p>
+                <div class="hex hex--css">
+                  <div class="hex__left"></div>
+                  <div class="hex__middle"></div>
+                  <div class="hex__right"></div>
+                </div>
+                <div class="hex-border hex-border--css">
+                  <div class="hex-border__left hex-border__left--css"></div>
+                  <div class="hex-border__middle hex-border__middle--css"></div>
+                  <div class="hex-border__right hex-border__right--css"></div>
+                </div>
+              </div>
+              <!-- GIT SKILL -->
+              <div class="skill">
+                <div class="skill__icon skill__icon--git">
+                  <i class="fab fa-brands fa-git-alt skill-fa"></i>
+                </div>
+                <p class="skill__p skill__p--git">Git</p>
+                <div class="hex hex--git">
+                  <div class="hex__left"></div>
+                  <div class="hex__middle"></div>
+                  <div class="hex__right"></div>
+                </div>
+                <div class="hex-border hex-border--git">
+                  <div class="hex-border__left hex-border__left--git"></div>
+                  <div class="hex-border__middle hex-border__middle--git"></div>
+                  <div class="hex-border__right hex-border__right--git"></div>
                 </div>
               </div>
             </div>
@@ -569,19 +673,19 @@
 
     <!-- ***********************************
       **************************************
-      PROJECTS TOP DIVIDER
+      PROJECTS SECTION TOP DIVIDER
       **************************************
     *********************************** -->
-    <div id="projects-top-divider">
+    <div id="top-divider">
       <svg
-        class="separator"
+        class="divider"
         xmlns="http://www.w3.org/2000/svg"
         width="100%"
         height="166.61502"
         viewBox="0.4 0.2 200 44"
         preserveAspectRatio="none"
       >
-        <g class="separator" transform="translate(-9.2218046,-83.494585)">
+        <g class="divider" transform="translate(-9.2218046,-83.494585)">
           <path
             style="fill: #785af0"
             d="M 9.484815,89.716055 H 209.81018 V 126.90507 L 110.46368,93.705147 9.579391,127.39334 Z"
@@ -600,8 +704,8 @@
       **************************************
     *********************************** -->
     <section id="projects-section">
-      <h2 class="section-heading projects-main-heading">
-        <span class="projects-heading-span">Projects</span>
+      <h2 class="section-heading">
+        <span class="section-heading__span">Projects</span>
       </h2>
       <div class="projects-list">
         <!-- ***********************************
@@ -611,26 +715,20 @@
         *********************************** -->
         <article class="project-container project-left">
           <div class="project">
-            <div class="project-img-container">
-              <video width="100%" autoplay muted loop>
-                <source src="assets/videos/SecurePass.mp4" type="video/mp4" />
-              </video>
-            </div>
-            <div class="project-bottom">
-              <div class="project-title-container">
-                <h3 class="project-title">SecurePass</h3>
-              </div>
-              <p class="project-description">
+            <video class="project__video" width="100%" autoplay muted loop>
+              <source src="assets/videos/SecurePass.mp4" type="video/mp4" />
+            </video>
+            <div class="project-bottom-container">
+              <h3 class="project__heading">SecurePass</h3>
+              <p class="project__description">
                 A strong random password generator.
               </p>
-              <div class="project-tech-container-wide">
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-html5 project-fa project-html-icon"
-                  ></i>
+              <div class="project__tech--wide">
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-html5 project__icon--html"></i>
                   <p>HTML</p>
                 </div>
-                <div class="project-icon-container">
+                <div class="project__icon-container">
                   <svg
                     class="tailwind-svg"
                     xmlns="http://www.w3.org/2000/svg"
@@ -646,12 +744,12 @@
                   </svg>
                   <p>Tailwind</p>
                 </div>
-                <div class="project-icon-container">
-                  <i class="fab fa-brands fa-js skills-fa project-js-icon"></i>
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-js project__icon--js"></i>
                   <p>JavaScript</p>
                 </div>
               </div>
-              <div class="project-links">
+              <div class="project__links">
                 <a
                   href="https://bnielsencodes.github.io/securepass/"
                   class="live-link"
@@ -676,37 +774,29 @@
         *********************************** -->
         <article class="project-container project-right">
           <div class="project">
-            <div class="project-img-container">
-              <video width="100%" autoplay muted loop>
-                <source src="assets/videos/quizzical.mp4" type="video/mp4" />
-              </video>
-            </div>
-            <div class="project-bottom">
-              <div class="project-title-container">
-                <h3 class="project-title">Quizzical</h3>
-              </div>
-              <p class="project-description">
+            <video class="project__video" width="100%" autoplay muted loop>
+              <source src="assets/videos/quizzical.mp4" type="video/mp4" />
+            </video>
+            <div class="project-bottom-container">
+              <h3 class="project__heading">Quizzical</h3>
+              <p class="project__description">
                 A quiz app that gets data from The Open Trivia Database API.
               </p>
-              <div class="project-tech-container-wide">
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-react skills-fa project-react-icon"
-                  ></i>
+              <div class="project__tech--wide">
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-react project__icon--react"></i>
                   <p>React</p>
                 </div>
-                <div class="project-icon-container">
-                  <i class="fab fa-brands fa-js skills-fa project-js-icon"></i>
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-js project__icon--js"></i>
                   <p>JavaScript</p>
                 </div>
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-css3-alt skills-fa project-css-icon"
-                  ></i>
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-css3-alt project__icon--css"></i>
                   <p>CSS</p>
                 </div>
               </div>
-              <div class="project-links">
+              <div class="project__links">
                 <a
                   href="https://bnielsencodes.github.io/quizzical/"
                   class="live-link"
@@ -731,41 +821,33 @@
         *********************************** -->
         <article class="project-container project-left">
           <div class="project">
-            <div class="project-img-container">
-              <video width="100%" autoplay muted loop>
-                <source
-                  src="assets/videos/dictionary-web-app.mp4"
-                  type="video/mp4"
-                />
-              </video>
-            </div>
-            <div class="project-bottom">
-              <div class="project-title-container">
-                <h3 class="project-title">Dictionary Web App</h3>
-              </div>
-              <p class="project-description">
+            <video class="project__video" width="100%" autoplay muted loop>
+              <source
+                src="assets/videos/dictionary-web-app.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <div class="project-bottom-container">
+              <h3 class="project__heading">Dictionary Web App</h3>
+              <p class="project__description">
                 A dictionary web app that pulls data from the Free Dictionary
                 API.
               </p>
-              <div class="project-tech-container-wide">
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-react skills-fa project-react-icon"
-                  ></i>
+              <div class="project__tech--wide">
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-react project__icon--react"></i>
                   <p>React</p>
                 </div>
-                <div class="project-icon-container">
-                  <i class="fab fa-brands fa-js skills-fa project-js-icon"></i>
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-js project__icon--js"></i>
                   <p>JavaScript</p>
                 </div>
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-css3-alt skills-fa project-css-icon"
-                  ></i>
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-css3-alt project__icon--css"></i>
                   <p>CSS</p>
                 </div>
               </div>
-              <div class="project-links">
+              <div class="project__links">
                 <a
                   href="https://bnielsencodes.github.io/dictionary-web-app/"
                   class="live-link"
@@ -790,37 +872,29 @@
         *********************************** -->
         <article class="project-container project-right">
           <div class="project">
-            <div class="project-img-container">
-              <video width="100%" autoplay muted loop>
-                <source src="assets/videos/tenzies.mp4" type="video/mp4" />
-              </video>
-            </div>
-            <div class="project-bottom">
-              <div class="project-title-container">
-                <h3 class="project-title">Tenzies</h3>
-              </div>
-              <p class="project-description">
+            <video class="project__video" width="100%" autoplay muted loop>
+              <source src="assets/videos/tenzies.mp4" type="video/mp4" />
+            </video>
+            <div class="project-bottom-container">
+              <h3 class="project__heading">Tenzies</h3>
+              <p class="project__description">
                 Easy to learn dice game that players of all ages will enjoy.
               </p>
-              <div class="project-tech-container-wide">
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-react skills-fa project-react-icon"
-                  ></i>
+              <div class="project__tech--wide">
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-react project__icon--react"></i>
                   <p>React</p>
                 </div>
-                <div class="project-icon-container">
-                  <i class="fab fa-brands fa-js skills-fa project-js-icon"></i>
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-js project__icon--js"></i>
                   <p>JavaScript</p>
                 </div>
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-css3-alt skills-fa project-css-icon"
-                  ></i>
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-css3-alt project__icon--css"></i>
                   <p>CSS</p>
                 </div>
               </div>
-              <div class="project-links">
+              <div class="project__links">
                 <a
                   href="https://bnielsencodes.github.io/tenzies/"
                   class="live-link"
@@ -837,87 +911,30 @@
             </div>
           </div>
         </article>
-
-        <!-- ***********************************
-          **************************************
-          AUDIOPHILE PROJECT
-          **************************************
-        *********************************** -->
-        <!-- <article class="project-container project-right">
-          <div class="project">
-            <div class="project-img-container">
-              <video width="100%" autoplay muted loop>
-                <source src="assets/videos/Audiophile.mp4" type="video/mp4" />
-              </video>
-            </div>
-            <div class="project-bottom">
-              <div class="project-title-container">
-                <h3 class="project-title">Audiophile</h3>
-              </div>
-              <p class="project-description">
-                An e-commerce site for a fictitious audio equipment company.
-              </p>
-              <div class="project-tech-container-wide">
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-html5 project-fa project-html-icon"
-                  ></i>
-                  <p>HTML</p>
-                </div>
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-css3-alt project-fa project-css-icon"
-                  ></i>
-                  <p>CSS</p>
-                </div>
-                <div class="project-icon-container">
-                  <i class="fab fa-brands fa-js skills-fa project-js-icon"></i>
-                  <p>JavaScript</p>
-                </div>
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://bnielsencodes.github.io/audiophile/"
-                  class="live-link"
-                  target="_blank"
-                  >Live Site</a
-                >
-                <a
-                  href="https://github.com/bnielsencodes/audiophile"
-                  class="source-code"
-                  target="_blank"
-                  >Source Code</a
-                >
-              </div>
-            </div>
-          </div>
-        </article> -->
       </div>
 
-      <div class="view-more-btn-container">
-        <div class="view-more">
-          <a href="projects.html" class="view-more-btn" target="_blank"
-            >View More Projects</a
-          >
-        </div>
+      <div class="view-more">
+        <a class="view-more__btn" href="projects.html" target="_blank"
+          >View More Projects</a
+        >
       </div>
     </section>
 
     <!-- ***********************************
       **************************************
-      PROJECTS BOTTOM DIVIDER
+      PROJECTS SECTION BOTTOM DIVIDER
       **************************************
     *********************************** -->
-    <div id="projects-bottom-divider">
+    <div id="bottom-divider">
       <svg
-        class="separator"
+        class="divider"
         xmlns="http://www.w3.org/2000/svg"
         width="100%"
         height="166.61502"
         viewBox="0.4 0.2 200 44"
         preserveAspectRatio="none"
       >
-        <g class="separator" transform="translate(-9.2218046,-83.494585)">
+        <g class="divider" transform="translate(-9.2218046,-83.494585)">
           <path
             style="fill: #785af0"
             d="M 9.484815,89.716055 H 209.81018 V 126.90507 L 110.46368,93.705147 9.579391,127.39334 Z"
@@ -936,46 +953,42 @@
       **************************************
     *********************************** -->
     <section id="contact-section">
-      <h2 class="section-heading contact-heading">
-        <span class="contact-heading-span">Want to work together?</span>
+      <h2 class="section-heading">
+        <span class="section-heading__span">Want to work together?</span>
       </h2>
       <form
         id="fs-frm"
-        class="contact-form"
+        class="form"
         name="simple-contact-form"
         accept-charset="utf-8"
         action="https://formspree.io/f/mknewaqj"
         method="POST"
       >
-        <h2 class="contact-subheading lets-connect">Let's connect!</h2>
-        <div class="contact-text">
+        <h2 class="form__heading">Let's connect!</h2>
+        <div class="form__text">
           Email me at
           <i class="fa-sharp fa-solid fa-arrow-right"></i>
-          <div id="email-copy" class="click-to-copy-container">
-            <button class="click-to-copy" title="Click to copy email address">
-              <strong id="email-address">bnielsencodes@gmail.com</strong>
+          <div id="copy-email">
+            <button class="copy-email__btn" title="Click to copy email address">
+              <strong id="email">bnielsencodes@gmail.com</strong>
             </button>
-            <span class="copied hidden"
+            <span class="copied-msg hidden"
               >Copied!
               <i class="fa-sharp fa-solid fa-thumbs-up"></i>
             </span>
           </div>
           <strong>
-            <a
-              href="mailto:bnielsencodes@gmail.com"
-              id="email-copy-fallback"
-              class="click-to-copy-fallback"
-            >
+            <a id="copy-email--mobile" href="mailto:bnielsencodes@gmail.com">
               bnielsencodes@gmail.com
             </a>
           </strong>
           <br />
           or send me a quick message here:
         </div>
-        <fieldset id="fs-frm-inputs" class="form-fieldset">
+        <fieldset id="fs-frm-inputs" class="form-inputs">
           <input
-            id="form-name"
-            class="form-item form-item-one"
+            id="form__name"
+            class="form__item"
             type="text"
             name="name"
             placeholder="Name"
@@ -983,8 +996,8 @@
             required=""
           />
           <input
-            id="form-email"
-            class="form-item form-item-two"
+            id="form__email"
+            class="form__item"
             type="email"
             name="_replyto"
             placeholder="Email"
@@ -992,8 +1005,8 @@
             required=""
           />
           <textarea
-            id="form-message"
-            class="form-item form-item-three"
+            id="form__message"
+            class="form__item"
             name="message"
             placeholder="Message"
             aria-label="Enter a message"
@@ -1001,14 +1014,14 @@
             required=""
           ></textarea>
           <input
+            id="email-subject"
             type="hidden"
             name="_subject"
-            id="email-subject"
             value="Contact Form Submission"
           />
         </fieldset>
-        <div class="submit-container">
-          <button class="form-button" type="submit" value="Submit">
+        <div class="form__submit">
+          <button class="form__submit-btn" type="submit" value="Submit">
             Submit
           </button>
         </div>
@@ -1020,38 +1033,18 @@
       FOOTER SECTION
       **************************************
     *********************************** -->
-    <div id="footer-section">
+    <section id="footer-section">
       <div class="return-home hvr-bob">
-        <a
-          href="#header-section"
-          class="return-home-link"
-          aria-label="return home"
-        >
+        <a href="#header" class="return-home-link" aria-label="return home">
           <i class="fa-duotone fa-chevrons-up"></i>
         </a>
       </div>
-      <div class="footer-content-container">
+      <div class="footer">
         <!-- FOOTER SOCIAL ICON LINKS -->
-        <div class="footer-links-container">
-          <!-- <a
-            href="https://twitter.com/bnielsencodes"
-            class="footer-icon-container"
-            aria-label="twitter"
-            target="_blank"
-          >
-            <svg
-              class="twitter-svg"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 660 660"
-            >
-              <path
-                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
-              />
-            </svg>
-          </a> -->
+        <div class="footer__links">
           <a
             href="https://linkedin.com/in/bnielsencodes"
-            class="footer-icon-container"
+            class="footer__icon"
             aria-label="linkedin"
             target="_blank"
           >
@@ -1067,7 +1060,7 @@
           </a>
           <a
             href="https://github.com/bnielsencodes"
-            class="footer-icon-container"
+            class="footer__icon"
             aria-label="github"
             target="_blank"
           >
@@ -1083,7 +1076,7 @@
           </a>
           <a
             href="mailto:bnielsencodes@gmail.com"
-            class="footer-icon-container"
+            class="footer__icon"
             aria-label="email"
             target="_blank"
           >
@@ -1098,9 +1091,10 @@
             </svg>
           </a>
         </div>
-        <p class="footer-signature">Brandon Nielsen - 2023</p>
+        <!-- FOOTER SIGNATURE -->
+        <p class="footer__signature">Brandon Nielsen - 2023</p>
       </div>
-    </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.1.4/tsparticles.bundle.min.js"></script>
     <script src="js/main.js"></script>
