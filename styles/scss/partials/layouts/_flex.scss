@@ -1,51 +1,52 @@
 .logo-dark-mode-container,
-.skills-icon,
-.hex-flex,
-.hex-flex-border,
-.project-title-container,
-.project-icon-container,
+.skill_icon,
+.hex,
+.hex-border,
+.project__heading,
+.project__icon-container,
 #footer-section {
   @extend %flex-center-x;
 }
 
-.location-icon-container,
-.project-links {
+.bio__location-icon,
+.project__links {
   @extend %flex-center-y;
 }
 
-.header-content-container,
-.location-center,
+#header,
+.bio__location-container-inner,
 .return-home-link {
   @extend %flex-center-xy;
 }
 
-.main-nav,
-.about-skills-container,
+.nav,
+.skills-container,
 .project-tech-container,
+.project__tech--wide,
 .form-error-submit,
-.footer-links-container {
+.footer__links {
   @extend %flex-between-center;
 }
 
 .about-content-container,
-.skills-left-container,
-.skills-middle-container,
-.skills-right-container {
+.hex-group--left,
+.hex-group--middle,
+.hex-group--right {
   @extend %flex-col-center-x;
 }
 
 .projects-list,
 .project,
-.project-bottom {
+.project-bottom-container {
   @extend %flex-col-center-x;
   justify-content: center;
 }
 
-.hamburger-nav-link-container {
+.mobile-nav-list {
   @extend %flex-col-center-x;
   justify-content: space-between;
 }
 
-.form-fieldset {
+.form-inputs {
   @extend %flex-col-center-y;
 }
