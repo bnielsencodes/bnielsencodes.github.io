@@ -2,62 +2,92 @@
 VARIABLES
 ------------------------------------ */
 
+// HTML
+const htmlLeftBorder = document.querySelector(".hex-border__left--html");
+const htmlMiddleBorder = document.querySelector(".hex-border__middle--html");
+const htmlRightBorder = document.querySelector(".hex-border__right--html");
 const htmlIcon = document.querySelector(".fa-html5");
-const htmlIconP = document.querySelector(".html-icon-p");
-const htmlLeftBorder = document.querySelector(".html-left-border");
-const htmlMiddleBorder = document.querySelector(".html-middle-border");
-const htmlRightBorder = document.querySelector(".html-right-border");
-const vscodeSVG = document.querySelector(".vscode-svg");
-const vscodePathOne = document.querySelector(".vscode-path-one");
-const vscodePathTwo = document.querySelector(".vscode-path-two");
-const vscodePathThree = document.querySelector(".vscode-path-three");
-const vscodeIconP = document.querySelector(".vscode-icon-p");
-const vscodeLeftBorder = document.querySelector(".vscode-left-border");
-const vscodeMiddleBorder = document.querySelector(".vscode-middle-border");
-const vscodeRightBorder = document.querySelector(".vscode-right-border");
+const htmlIconP = document.querySelector(".skill__p--html");
+// VITE
+const viteLeftBorder = document.querySelector(".hex-border__left--vite");
+const viteMiddleBorder = document.querySelector(".hex-border__middle--vite");
+const viteRightBorder = document.querySelector(".hex-border__right--vite");
+const viteSVG = document.querySelector(".vite-svg");
+const viteStroke = document.querySelector(".vite-stroke");
+const viteColor1 = document.querySelector(".vite-color1");
+const viteColor2 = document.querySelector(".vite-color2");
+const viteColor3 = document.querySelector(".vite-color3");
+const viteColor4 = document.querySelector(".vite-color4");
+const viteColor5 = document.querySelector(".vite-color5");
+const viteIconP = document.querySelector(".skill__p--vite");
+// VS CODE
+// const vscodeLeftBorder = document.querySelector(".hex-border__left--vscode");
+// const vscodeMiddleBorder = document.querySelector(
+//   ".hex-border__middle--vscode"
+// );
+// const vscodeRightBorder = document.querySelector(".hex-border__right--vscode");
+// const vscodeSVG = document.querySelector(".vscode-svg");
+// const vscodePathOne = document.querySelector(".vscode-path-one");
+// const vscodePathTwo = document.querySelector(".vscode-path-two");
+// const vscodePathThree = document.querySelector(".vscode-path-three");
+// const vscodeIconP = document.querySelector(".skill__p--vscode");
+// GIT
+const gitLeftBorder = document.querySelector(".hex-border__left--git");
+const gitMiddleBorder = document.querySelector(".hex-border__middle--git");
+const gitRightBorder = document.querySelector(".hex-border__right--git");
 const gitIcon = document.querySelector(".fa-git-alt");
-const gitIconP = document.querySelector(".git-icon-p");
-const gitLeftBorder = document.querySelector(".git-left-border");
-const gitMiddleBorder = document.querySelector(".git-middle-border");
-const gitRightBorder = document.querySelector(".git-right-border");
-const cssLeftBorder = document.querySelector(".css-left-border");
-const cssMiddleBorder = document.querySelector(".css-middle-border");
-const cssRightBorder = document.querySelector(".css-right-border");
+const gitIconP = document.querySelector(".skill__p--git");
+// CSS
+const cssLeftBorder = document.querySelector(".hex-border__left--css");
+const cssMiddleBorder = document.querySelector(".hex-border__middle--css");
+const cssRightBorder = document.querySelector(".hex-border__right--css");
 const cssIcon = document.querySelector(".fa-css3-alt");
-const cssIconP = document.querySelector(".css-icon-p");
+const cssIconP = document.querySelector(".skill__p--css");
+// SASS
+const sassLeftBorder = document.querySelector(".hex-border__left--sass");
+const sassMiddleBorder = document.querySelector(".hex-border__middle--sass");
+const sassRightBorder = document.querySelector(".hex-border__right--sass");
 const sassIcon = document.querySelector(".fa-sass");
-const sassIconP = document.querySelector(".sass-icon-p");
-const sassLeftBorder = document.querySelector(".sass-left-border");
-const sassMiddleBorder = document.querySelector(".sass-middle-border");
-const sassRightBorder = document.querySelector(".sass-right-border");
-const bootstrapIcon = document.querySelector(".fa-bootstrap");
-const bootstrapIconP = document.querySelector(".bootstrap-icon-p");
-const bootstrapLeftBorder = document.querySelector(".bootstrap-left-border");
-const bootstrapMiddleBorder = document.querySelector(
-  ".bootstrap-middle-border"
+const sassIconP = document.querySelector(".skill__p--sass");
+// NEXTJS
+const nextjsLeftBorder = document.querySelector(".hex-border__left--nextjs");
+const nextjsMiddleBorder = document.querySelector(
+  ".hex-border__middle--nextjs"
 );
-const bootstrapRightBorder = document.querySelector(".bootstrap-right-border");
+const nextjsRightBorder = document.querySelector(".hex-border__right--nextjs");
+const nextjsIcon = document.querySelector(".devicon-nextjs-original");
+const nextjsIconP = document.querySelector(".skill__p--nextjs");
+// TAILWIND
+const tailwindLeftBorder = document.querySelector(
+  ".hex-border__left--tailwind"
+);
+const tailwindMiddleBorder = document.querySelector(
+  ".hex-border__middle--tailwind"
+);
+const tailwindRightBorder = document.querySelector(
+  ".hex-border__right--tailwind"
+);
+const tailwindIconP = document.querySelector(".skill__p--tailwind");
 const tailwindSVG = document.querySelector(".tailwind-svg");
 const tailwindSVGPath = document.querySelector(".tailwind-svg-path");
-const tailwindIconP = document.querySelector(".tailwind-icon-p");
-const tailwindLeftBorder = document.querySelector(".tailwind-left-border");
-const tailwindMiddleBorder = document.querySelector(".tailwind-middle-border");
-const tailwindRightBorder = document.querySelector(".tailwind-right-border");
-const jsIcon = document.querySelector(".fa-js");
-const jsIconP = document.querySelector(".js-icon-p");
-const jsLeftBorder = document.querySelector(".js-left-border");
-const jsMiddleBorder = document.querySelector(".js-middle-border");
-const jsRightBorder = document.querySelector(".js-right-border");
+// JAVASCRIPT
+const jsLeftBorder = document.querySelector(".hex-border__left--js");
+const jsMiddleBorder = document.querySelector(".hex-border__middle--js");
+const jsRightBorder = document.querySelector(".hex-border__right--js");
+const jsIcon = document.querySelector(".skill-fa--js");
+const jsIconP = document.querySelector(".skill__p--js");
+// REACT
+const reactLeftBorder = document.querySelector(".hex-border__left--react");
+const reactMiddleBorder = document.querySelector(".hex-border__middle--react");
+const reactRightBorder = document.querySelector(".hex-border__right--react");
 const reactIcon = document.querySelector(".fa-react");
-const reactIconP = document.querySelector(".react-icon-p");
-const reactLeftBorder = document.querySelector(".react-left-border");
-const reactMiddleBorder = document.querySelector(".react-middle-border");
-const reactRightBorder = document.querySelector(".react-right-border");
+const reactIconP = document.querySelector(".skill__p--react");
+// FIGMA
+const figmaLeftBorder = document.querySelector(".hex-border__left--figma");
+const figmaMiddleBorder = document.querySelector(".hex-border__middle--figma");
+const figmaRightBorder = document.querySelector(".hex-border__right--figma");
 const figmaIcon = document.querySelector(".fa-figma");
-const figmaIconP = document.querySelector(".figma-icon-p");
-const figmaLeftBorder = document.querySelector(".figma-left-border");
-const figmaMiddleBorder = document.querySelector(".figma-middle-border");
-const figmaRightBorder = document.querySelector(".figma-right-border");
+const figmaIconP = document.querySelector(".skill__p--figma");
 
 /* ------------------------------------
 ---------------------------------------
@@ -199,13 +229,13 @@ const observer = new IntersectionObserver((entries) => {
     // If the element is visible
     if (entry.isIntersecting) {
       // Add the animation class
-      entry.target.classList.add("about-left-animation");
+      entry.target.classList.add("bio-animation");
     }
   });
 });
 
 // Tell the observer which elements to track
-observer.observe(document.querySelector(".about-text-container"));
+observer.observe(document.querySelector(".bio"));
 
 // ANIMATE .ABOUT-SKILLS-CONTAINER
 const observer2 = new IntersectionObserver((entries) => {
@@ -214,13 +244,13 @@ const observer2 = new IntersectionObserver((entries) => {
     // If the element is visible
     if (entry.isIntersecting) {
       // Add the animation class
-      entry.target.classList.add("about-right-animation");
+      entry.target.classList.add("skills-animation");
     }
   });
 });
 
 // Tell the observer which elements to track
-observer2.observe(document.querySelector(".about-right"));
+observer2.observe(document.querySelector(".skills"));
 
 /* ------------------------------------
 ---------------------------------------
@@ -230,308 +260,361 @@ SKILLS ICON MOUSEOVER ANIMATIONS
 
 // HTML ICON HOVER ANIMATION
 htmlIconP.addEventListener("mouseover", () => {
-  htmlIcon.classList.add("html-hover-color");
-  htmlLeftBorder.classList.add("html-hex-border-left");
-  htmlMiddleBorder.classList.add("html-hex-bg-color");
-  htmlRightBorder.classList.add("html-hex-border-right");
+  htmlLeftBorder.classList.add("hex-border__left-hover--html");
+  htmlMiddleBorder.classList.add("hex-bg-color--html");
+  htmlRightBorder.classList.add("hex-border__right-hover--html");
+  htmlIcon.classList.add("hover-color--html");
 });
 
 htmlIconP.addEventListener("mouseout", () => {
-  htmlIcon.classList.remove("html-hover-color");
-  htmlLeftBorder.classList.remove("html-hex-border-left");
-  htmlMiddleBorder.classList.remove("html-hex-bg-color");
-  htmlRightBorder.classList.remove("html-hex-border-right");
+  htmlLeftBorder.classList.remove("hex-border__left-hover--html");
+  htmlMiddleBorder.classList.remove("hex-bg-color--html");
+  htmlRightBorder.classList.remove("hex-border__right-hover--html");
+  htmlIcon.classList.remove("hover-color--html");
 });
 
 htmlIcon.addEventListener("mouseover", () => {
-  htmlIconP.classList.add("html-hover-color");
-  htmlLeftBorder.classList.add("html-hex-border-left");
-  htmlMiddleBorder.classList.add("html-hex-bg-color");
-  htmlRightBorder.classList.add("html-hex-border-right");
+  htmlLeftBorder.classList.add("hex-border__left-hover--html");
+  htmlMiddleBorder.classList.add("hex-bg-color--html");
+  htmlRightBorder.classList.add("hex-border__right-hover--html");
+  htmlIconP.classList.add("hover-color--html");
 });
 
 htmlIcon.addEventListener("mouseout", () => {
-  htmlIconP.classList.remove("html-hover-color");
-  htmlLeftBorder.classList.remove("html-hex-border-left");
-  htmlMiddleBorder.classList.remove("html-hex-bg-color");
-  htmlRightBorder.classList.remove("html-hex-border-right");
+  htmlLeftBorder.classList.remove("hex-border__left-hover--html");
+  htmlMiddleBorder.classList.remove("hex-bg-color--html");
+  htmlRightBorder.classList.remove("hex-border__right-hover--html");
+  htmlIconP.classList.remove("hover-color--html");
+});
+
+// VITE SVG HOVER ANIMATION
+viteSVG.addEventListener("mouseover", () => {
+  viteLeftBorder.classList.add("hex-border__left-hover--vite");
+  viteMiddleBorder.classList.add("hex-bg-color--vite");
+  viteRightBorder.classList.add("hex-border__right-hover--vite");
+  viteIconP.classList.add("hover-color--vite");
+  viteStroke.setAttribute("style", "stroke: none");
+  viteColor1.setAttribute("style", "stop-color: #41D1FF");
+  viteColor2.setAttribute("style", "stop-color: #BD34FE");
+  viteColor3.setAttribute("style", "stop-color: #FFEA83");
+  viteColor4.setAttribute("style", "stop-color: #FFDD35");
+  viteColor5.setAttribute("style", "stop-color: #FFA800");
+});
+
+viteSVG.addEventListener("mouseout", () => {
+  viteLeftBorder.classList.remove("hex-border__left-hover--vite");
+  viteMiddleBorder.classList.remove("hex-bg-color--vite");
+  viteRightBorder.classList.remove("hex-border__right-hover--vite");
+  viteIconP.classList.remove("hover-color--vite");
+  viteStroke.setAttribute("style", "stroke: #272727");
+  viteColor1.setAttribute("style", "stop-color: #fafafa");
+  viteColor2.setAttribute("style", "stop-color: #fafafa");
+  viteColor3.setAttribute("style", "stop-color: #fafafa");
+  viteColor4.setAttribute("style", "stop-color: #fafafa");
+  viteColor5.setAttribute("style", "stop-color: #fafafa");
+});
+
+viteIconP.addEventListener("mouseover", () => {
+  viteLeftBorder.classList.add("hex-border__left-hover--vite");
+  viteMiddleBorder.classList.add("hex-bg-color--vite");
+  viteRightBorder.classList.add("hex-border__right-hover--vite");
+  viteIconP.classList.add("hover-color--vite");
+  viteStroke.setAttribute("style", "stroke: none");
+  viteColor1.setAttribute("style", "stop-color: #41D1FF");
+  viteColor2.setAttribute("style", "stop-color: #BD34FE");
+  viteColor3.setAttribute("style", "stop-color: #FFEA83");
+  viteColor4.setAttribute("style", "stop-color: #FFDD35");
+  viteColor5.setAttribute("style", "stop-color: #FFA800");
+});
+
+viteIconP.addEventListener("mouseout", () => {
+  viteLeftBorder.classList.remove("hex-border__left-hover--vite");
+  viteMiddleBorder.classList.remove("hex-bg-color--vite");
+  viteRightBorder.classList.remove("hex-border__right-hover--vite");
+  viteIconP.classList.remove("hover-color--vite");
+  viteStroke.setAttribute("style", "stroke: #272727");
+  viteColor1.setAttribute("style", "stop-color: #fafafa");
+  viteColor2.setAttribute("style", "stop-color: #fafafa");
+  viteColor3.setAttribute("style", "stop-color: #fafafa");
+  viteColor4.setAttribute("style", "stop-color: #fafafa");
+  viteColor5.setAttribute("style", "stop-color: #fafafa");
 });
 
 // VS CODE SVG HOVER ANIMATION
-vscodeSVG.addEventListener("mouseover", () => {
-  vscodeIconP.classList.add("vscode-p-hover-color");
-  vscodeLeftBorder.classList.add("vscode-hex-border-left");
-  vscodeMiddleBorder.classList.add("vscode-hex-bg-color");
-  vscodeRightBorder.classList.add("vscode-hex-border-right");
-  vscodePathOne.setAttribute("style", "fill: #0065A9");
-  vscodePathTwo.setAttribute("style", "fill: #007ACC");
-  vscodePathThree.setAttribute("style", "fill: #1F9CF0");
-});
+// vscodeSVG.addEventListener("mouseover", () => {
+//   vscodeLeftBorder.classList.add("hex-border__left-hover--vscode");
+//   vscodeMiddleBorder.classList.add("hex-bg-color--vscode");
+//   vscodeRightBorder.classList.add("hex-border__right-hover--vscode");
+//   vscodeIconP.classList.add("hover-color--vscode");
+//   vscodePathOne.setAttribute("style", "fill: #0065A9");
+//   vscodePathTwo.setAttribute("style", "fill: #007ACC");
+//   vscodePathThree.setAttribute("style", "fill: #1F9CF0");
+// });
 
-vscodeSVG.addEventListener("mouseout", () => {
-  vscodeIconP.classList.remove("vscode-p-hover-color");
-  vscodeLeftBorder.classList.remove("vscode-hex-border-left");
-  vscodeMiddleBorder.classList.remove("vscode-hex-bg-color");
-  vscodeRightBorder.classList.remove("vscode-hex-border-right");
-  vscodePathOne.setAttribute("style", "fill: #fafafa");
-  vscodePathTwo.setAttribute("style", "fill: #fafafa");
-  vscodePathThree.setAttribute("style", "fill: #fafafa");
-});
+// vscodeSVG.addEventListener("mouseout", () => {
+//   vscodeLeftBorder.classList.remove("hex-border__left-hover--vscode");
+//   vscodeMiddleBorder.classList.remove("hex-bg-color--vscode");
+//   vscodeRightBorder.classList.remove("hex-border__right-hover--vscode");
+//   vscodeIconP.classList.remove("hover-color--vscode");
+//   vscodePathOne.setAttribute("style", "fill: #fafafa");
+//   vscodePathTwo.setAttribute("style", "fill: #fafafa");
+//   vscodePathThree.setAttribute("style", "fill: #fafafa");
+// });
 
-vscodeIconP.addEventListener("mouseover", () => {
-  vscodeIconP.classList.add("vscode-p-hover-color");
-  vscodeLeftBorder.classList.add("vscode-hex-border-left");
-  vscodeMiddleBorder.classList.add("vscode-hex-bg-color");
-  vscodeRightBorder.classList.add("vscode-hex-border-right");
-  vscodePathOne.setAttribute("style", "fill: #0065A9");
-  vscodePathTwo.setAttribute("style", "fill: #007ACC");
-  vscodePathThree.setAttribute("style", "fill: #1F9CF0");
-});
+// vscodeIconP.addEventListener("mouseover", () => {
+//   vscodeLeftBorder.classList.add("hex-border__left-hover--vscode");
+//   vscodeMiddleBorder.classList.add("hex-bg-color--vscode");
+//   vscodeRightBorder.classList.add("hex-border__right-hover--vscode");
+//   vscodeIconP.classList.add("hover-color--vscode");
+//   vscodePathOne.setAttribute("style", "fill: #0065A9");
+//   vscodePathTwo.setAttribute("style", "fill: #007ACC");
+//   vscodePathThree.setAttribute("style", "fill: #1F9CF0");
+// });
 
-vscodeIconP.addEventListener("mouseout", () => {
-  vscodeIconP.classList.remove("vscode-p-hover-color");
-  vscodeLeftBorder.classList.remove("vscode-hex-border-left");
-  vscodeMiddleBorder.classList.remove("vscode-hex-bg-color");
-  vscodeRightBorder.classList.remove("vscode-hex-border-right");
-  vscodePathOne.setAttribute("style", "fill: #fafafa");
-  vscodePathTwo.setAttribute("style", "fill: #fafafa");
-  vscodePathThree.setAttribute("style", "fill: #fafafa");
-});
+// vscodeIconP.addEventListener("mouseout", () => {
+//   vscodeLeftBorder.classList.remove("hex-border__left-hover--vscode");
+//   vscodeMiddleBorder.classList.remove("hex-bg-color--vscode");
+//   vscodeRightBorder.classList.remove("hex-border__right-hover--vscode");
+//   vscodeIconP.classList.remove("hover-color--vscode");
+//   vscodePathOne.setAttribute("style", "fill: #fafafa");
+//   vscodePathTwo.setAttribute("style", "fill: #fafafa");
+//   vscodePathThree.setAttribute("style", "fill: #fafafa");
+// });
 
 // GIT ICON HOVER ANIMATION
 gitIconP.addEventListener("mouseover", () => {
-  gitIcon.classList.add("git-hover-color");
-  gitLeftBorder.classList.add("git-hex-border-left");
-  gitMiddleBorder.classList.add("git-hex-bg-color");
-  gitRightBorder.classList.add("git-hex-border-right");
+  gitLeftBorder.classList.add("hex-border__left-hover--git");
+  gitMiddleBorder.classList.add("hex-bg-color--git");
+  gitRightBorder.classList.add("hex-border__right-hover--git");
+  gitIcon.classList.add("hover-color--git");
 });
 
 gitIconP.addEventListener("mouseout", () => {
-  gitIcon.classList.remove("git-hover-color");
-  gitLeftBorder.classList.remove("git-hex-border-left");
-  gitMiddleBorder.classList.remove("git-hex-bg-color");
-  gitRightBorder.classList.remove("git-hex-border-right");
+  gitLeftBorder.classList.remove("hex-border__left-hover--git");
+  gitMiddleBorder.classList.remove("hex-bg-color--git");
+  gitRightBorder.classList.remove("hex-border__right-hover--git");
+  gitIcon.classList.remove("hover-color--git");
 });
 
 gitIcon.addEventListener("mouseover", () => {
-  gitIconP.classList.add("git-hover-color");
-  gitLeftBorder.classList.add("git-hex-border-left");
-  gitMiddleBorder.classList.add("git-hex-bg-color");
-  gitRightBorder.classList.add("git-hex-border-right");
+  gitLeftBorder.classList.add("hex-border__left-hover--git");
+  gitMiddleBorder.classList.add("hex-bg-color--git");
+  gitRightBorder.classList.add("hex-border__right-hover--git");
+  gitIconP.classList.add("hover-color--git");
 });
 
 gitIcon.addEventListener("mouseout", () => {
-  gitIconP.classList.remove("git-hover-color");
-  gitLeftBorder.classList.remove("git-hex-border-left");
-  gitMiddleBorder.classList.remove("git-hex-bg-color");
-  gitRightBorder.classList.remove("git-hex-border-right");
+  gitLeftBorder.classList.remove("hex-border__left-hover--git");
+  gitMiddleBorder.classList.remove("hex-bg-color--git");
+  gitRightBorder.classList.remove("hex-border__right-hover--git");
+  gitIconP.classList.remove("hover-color--git");
 });
 
 // CSS ICON HOVER ANIMATION
 cssIconP.addEventListener("mouseover", () => {
-  cssIcon.classList.add("css-hover-color");
-  cssLeftBorder.classList.add("css-hex-border-left");
-  cssMiddleBorder.classList.add("css-hex-bg-color");
-  cssRightBorder.classList.add("css-hex-border-right");
+  cssLeftBorder.classList.add("hex-border__left-hover--css");
+  cssMiddleBorder.classList.add("hex-bg-color--css");
+  cssRightBorder.classList.add("hex-border__right-hover--css");
+  cssIcon.classList.add("hover-color--css");
 });
 
 cssIconP.addEventListener("mouseout", () => {
-  cssIcon.classList.remove("css-hover-color");
-  cssLeftBorder.classList.remove("css-hex-border-left");
-  cssMiddleBorder.classList.remove("css-hex-bg-color");
-  cssRightBorder.classList.remove("css-hex-border-right");
+  cssLeftBorder.classList.remove("hex-border__left-hover--css");
+  cssMiddleBorder.classList.remove("hex-bg-color--css");
+  cssRightBorder.classList.remove("hex-border__right-hover--css");
+  cssIcon.classList.remove("hover-color--css");
 });
 
 cssIcon.addEventListener("mouseover", () => {
-  cssIconP.classList.add("css-hover-color");
-  cssLeftBorder.classList.add("css-hex-border-left");
-  cssMiddleBorder.classList.add("css-hex-bg-color");
-  cssRightBorder.classList.add("css-hex-border-right");
+  cssLeftBorder.classList.add("hex-border__left-hover--css");
+  cssMiddleBorder.classList.add("hex-bg-color--css");
+  cssRightBorder.classList.add("hex-border__right-hover--css");
+  cssIconP.classList.add("hover-color--css");
 });
 
 cssIcon.addEventListener("mouseout", () => {
-  cssIconP.classList.remove("css-hover-color");
-  cssLeftBorder.classList.remove("css-hex-border-left");
-  cssMiddleBorder.classList.remove("css-hex-bg-color");
-  cssRightBorder.classList.remove("css-hex-border-right");
+  cssLeftBorder.classList.remove("hex-border__left-hover--css");
+  cssMiddleBorder.classList.remove("hex-bg-color--css");
+  cssRightBorder.classList.remove("hex-border__right-hover--css");
+  cssIconP.classList.remove("hover-color--css");
 });
 
 // SASS ICON HOVER ANIMATION
 sassIconP.addEventListener("mouseover", () => {
-  sassIcon.classList.add("sass-hover-color");
-  sassLeftBorder.classList.add("sass-hex-border-left");
-  sassMiddleBorder.classList.add("sass-hex-bg-color");
-  sassRightBorder.classList.add("sass-hex-border-right");
+  sassLeftBorder.classList.add("hex-border__left-hover--sass");
+  sassMiddleBorder.classList.add("hex-bg-color--sass");
+  sassRightBorder.classList.add("hex-border__right-hover--sass");
+  sassIcon.classList.add("hover-color--sass");
 });
 
 sassIconP.addEventListener("mouseout", () => {
-  sassIcon.classList.remove("sass-hover-color");
-  sassLeftBorder.classList.remove("sass-hex-border-left");
-  sassMiddleBorder.classList.remove("sass-hex-bg-color");
-  sassRightBorder.classList.remove("sass-hex-border-right");
+  sassLeftBorder.classList.remove("hex-border__left-hover--sass");
+  sassMiddleBorder.classList.remove("hex-bg-color--sass");
+  sassRightBorder.classList.remove("hex-border__right-hover--sass");
+  sassIcon.classList.remove("hover-color--sass");
 });
 
 sassIcon.addEventListener("mouseover", () => {
-  sassIconP.classList.add("sass-hover-color");
-  sassLeftBorder.classList.add("sass-hex-border-left");
-  sassMiddleBorder.classList.add("sass-hex-bg-color");
-  sassRightBorder.classList.add("sass-hex-border-right");
+  sassLeftBorder.classList.add("hex-border__left-hover--sass");
+  sassMiddleBorder.classList.add("hex-bg-color--sass");
+  sassRightBorder.classList.add("hex-border__right-hover--sass");
+  sassIconP.classList.add("hover-color--sass");
 });
 
 sassIcon.addEventListener("mouseout", () => {
-  sassIconP.classList.remove("sass-hover-color");
-  sassLeftBorder.classList.remove("sass-hex-border-left");
-  sassMiddleBorder.classList.remove("sass-hex-bg-color");
-  sassRightBorder.classList.remove("sass-hex-border-right");
+  sassLeftBorder.classList.remove("hex-border__left-hover--sass");
+  sassMiddleBorder.classList.remove("hex-bg-color--sass");
+  sassRightBorder.classList.remove("hex-border__right-hover--sass");
+  sassIconP.classList.remove("hover-color--sass");
 });
 
-// BOOTSTRAP ICON HOVER ANIMATION
-bootstrapIconP.addEventListener("mouseover", () => {
-  bootstrapIcon.classList.add("bootstrap-hover-color");
-  bootstrapLeftBorder.classList.add("bootstrap-hex-border-left");
-  bootstrapMiddleBorder.classList.add("bootstrap-hex-bg-color");
-  bootstrapRightBorder.classList.add("bootstrap-hex-border-right");
+// NEXTJS ICON HOVER ANIMATION
+nextjsIconP.addEventListener("mouseover", () => {
+  nextjsLeftBorder.classList.add("hex-border__left-hover--nextjs");
+  nextjsMiddleBorder.classList.add("hex-bg-color--nextjs");
+  nextjsRightBorder.classList.add("hex-border__right-hover--nextjs");
+  nextjsIcon.classList.add("hover-color--nextjs");
 });
 
-bootstrapIconP.addEventListener("mouseout", () => {
-  bootstrapIcon.classList.remove("bootstrap-hover-color");
-  bootstrapLeftBorder.classList.remove("bootstrap-hex-border-left");
-  bootstrapMiddleBorder.classList.remove("bootstrap-hex-bg-color");
-  bootstrapRightBorder.classList.remove("bootstrap-hex-border-right");
+nextjsIconP.addEventListener("mouseout", () => {
+  nextjsLeftBorder.classList.remove("hex-border__left-hover--nextjs");
+  nextjsMiddleBorder.classList.remove("hex-bg-color--nextjs");
+  nextjsRightBorder.classList.remove("hex-border__right-hover--nextjs");
+  nextjsIcon.classList.remove("hover-color--nextjs");
 });
 
-bootstrapIcon.addEventListener("mouseover", () => {
-  bootstrapIconP.classList.add("bootstrap-hover-color");
-  bootstrapLeftBorder.classList.add("bootstrap-hex-border-left");
-  bootstrapMiddleBorder.classList.add("bootstrap-hex-bg-color");
-  bootstrapRightBorder.classList.add("bootstrap-hex-border-right");
+nextjsIcon.addEventListener("mouseover", () => {
+  nextjsLeftBorder.classList.add("hex-border__left-hover--nextjs");
+  nextjsMiddleBorder.classList.add("hex-bg-color--nextjs");
+  nextjsRightBorder.classList.add("hex-border__right-hover--nextjs");
+  nextjsIconP.classList.add("hover-color--nextjs");
 });
 
-bootstrapIcon.addEventListener("mouseout", () => {
-  bootstrapIconP.classList.remove("bootstrap-hover-color");
-  bootstrapLeftBorder.classList.remove("bootstrap-hex-border-left");
-  bootstrapMiddleBorder.classList.remove("bootstrap-hex-bg-color");
-  bootstrapRightBorder.classList.remove("bootstrap-hex-border-right");
+nextjsIcon.addEventListener("mouseout", () => {
+  nextjsLeftBorder.classList.remove("hex-border__left-hover--nextjs");
+  nextjsMiddleBorder.classList.remove("hex-bg-color--nextjs");
+  nextjsRightBorder.classList.remove("hex-border__right-hover--nextjs");
+  nextjsIconP.classList.remove("hover-color--nextjs");
 });
 
 // TAILWIND SVG HOVER ANIMATION
 tailwindSVG.addEventListener("mouseover", () => {
-  tailwindIconP.classList.add("tailwind-p-hover-color");
-  tailwindLeftBorder.classList.add("tailwind-hex-border-left");
-  tailwindMiddleBorder.classList.add("tailwind-hex-bg-color");
-  tailwindRightBorder.classList.add("tailwind-hex-border-right");
+  tailwindLeftBorder.classList.add("hex-border__left-hover--tailwind");
+  tailwindMiddleBorder.classList.add("hex-bg-color--tailwind");
+  tailwindRightBorder.classList.add("hex-border__right-hover--tailwind");
+  tailwindIconP.classList.add("hover-color--tailwind");
   tailwindSVGPath.setAttribute("style", "fill: #36BDF9");
 });
 
 tailwindSVG.addEventListener("mouseout", () => {
-  tailwindIconP.classList.remove("tailwind-p-hover-color");
-  tailwindLeftBorder.classList.remove("tailwind-hex-border-left");
-  tailwindMiddleBorder.classList.remove("tailwind-hex-bg-color");
-  tailwindRightBorder.classList.remove("tailwind-hex-border-right");
+  tailwindLeftBorder.classList.remove("hex-border__left-hover--tailwind");
+  tailwindMiddleBorder.classList.remove("hex-bg-color--tailwind");
+  tailwindRightBorder.classList.remove("hex-border__right-hover--tailwind");
+  tailwindIconP.classList.remove("hover-color--tailwind");
   tailwindSVGPath.setAttribute("style", "fill: #fafafa");
 });
 
 tailwindIconP.addEventListener("mouseover", () => {
-  tailwindIconP.classList.add("tailwind-p-hover-color");
-  tailwindLeftBorder.classList.add("tailwind-hex-border-left");
-  tailwindMiddleBorder.classList.add("tailwind-hex-bg-color");
-  tailwindRightBorder.classList.add("tailwind-hex-border-right");
+  tailwindLeftBorder.classList.add("hex-border__left-hover--tailwind");
+  tailwindMiddleBorder.classList.add("hex-bg-color--tailwind");
+  tailwindRightBorder.classList.add("hex-border__right-hover--tailwind");
+  tailwindIconP.classList.add("hover-color--tailwind");
   tailwindSVGPath.setAttribute("style", "fill: #36BDF9");
 });
 
 tailwindIconP.addEventListener("mouseout", () => {
-  tailwindIconP.classList.remove("tailwind-p-hover-color");
-  tailwindLeftBorder.classList.remove("tailwind-hex-border-left");
-  tailwindMiddleBorder.classList.remove("tailwind-hex-bg-color");
-  tailwindRightBorder.classList.remove("tailwind-hex-border-right");
+  tailwindLeftBorder.classList.remove("hex-border__left-hover--tailwind");
+  tailwindMiddleBorder.classList.remove("hex-bg-color--tailwind");
+  tailwindRightBorder.classList.remove("hex-border__right-hover--tailwind");
+  tailwindIconP.classList.remove("hover-color--tailwind");
   tailwindSVGPath.setAttribute("style", "fill: #fafafa");
 });
 
 // JAVASCRIPT ICON HOVER ANIMATION
 jsIconP.addEventListener("mouseover", () => {
-  jsIcon.classList.add("js-hover-color");
-  jsLeftBorder.classList.add("js-hex-border-left");
-  jsMiddleBorder.classList.add("js-hex-bg-color");
-  jsRightBorder.classList.add("js-hex-border-right");
+  jsLeftBorder.classList.add("hex-border__left-hover--js");
+  jsMiddleBorder.classList.add("hex-bg-color--js");
+  jsRightBorder.classList.add("hex-border__right-hover--js");
+  jsIcon.classList.add("hover-color--js");
 });
 
 jsIconP.addEventListener("mouseout", () => {
-  jsIcon.classList.remove("js-hover-color");
-  jsLeftBorder.classList.remove("js-hex-border-left");
-  jsMiddleBorder.classList.remove("js-hex-bg-color");
-  jsRightBorder.classList.remove("js-hex-border-right");
+  jsLeftBorder.classList.remove("hex-border__left-hover--js");
+  jsMiddleBorder.classList.remove("hex-bg-color--js");
+  jsRightBorder.classList.remove("hex-border__right-hover--js");
+  jsIcon.classList.remove("hover-color--js");
 });
 
 jsIcon.addEventListener("mouseover", () => {
-  jsIconP.classList.add("js-hover-color");
-  jsLeftBorder.classList.add("js-hex-border-left");
-  jsMiddleBorder.classList.add("js-hex-bg-color");
-  jsRightBorder.classList.add("js-hex-border-right");
+  jsLeftBorder.classList.add("hex-border__left-hover--js");
+  jsMiddleBorder.classList.add("hex-bg-color--js");
+  jsRightBorder.classList.add("hex-border__right-hover--js");
+  jsIconP.classList.add("hover-color--js");
 });
 
 jsIcon.addEventListener("mouseout", () => {
-  jsIconP.classList.remove("js-hover-color");
-  jsLeftBorder.classList.remove("js-hex-border-left");
-  jsMiddleBorder.classList.remove("js-hex-bg-color");
-  jsRightBorder.classList.remove("js-hex-border-right");
+  jsLeftBorder.classList.remove("hex-border__left-hover--js");
+  jsMiddleBorder.classList.remove("hex-bg-color--js");
+  jsRightBorder.classList.remove("hex-border__right-hover--js");
+  jsIconP.classList.remove("hover-color--js");
 });
 
 // REACT ICON HOVER ANIMATION
 reactIconP.addEventListener("mouseover", () => {
-  reactIcon.classList.add("react-hover-color");
-  reactLeftBorder.classList.add("react-hex-border-left");
-  reactMiddleBorder.classList.add("react-hex-bg-color");
-  reactRightBorder.classList.add("react-hex-border-right");
+  reactLeftBorder.classList.add("hex-border__left-hover--react");
+  reactMiddleBorder.classList.add("hex-bg-color--react");
+  reactRightBorder.classList.add("hex-border__right-hover--react");
+  reactIcon.classList.add("hover-color--react");
 });
 
 reactIconP.addEventListener("mouseout", () => {
-  reactIcon.classList.remove("react-hover-color");
-  reactLeftBorder.classList.remove("react-hex-border-left");
-  reactMiddleBorder.classList.remove("react-hex-bg-color");
-  reactRightBorder.classList.remove("react-hex-border-right");
+  reactLeftBorder.classList.remove("hex-border__left-hover--react");
+  reactMiddleBorder.classList.remove("hex-bg-color--react");
+  reactRightBorder.classList.remove("hex-border__right-hover--react");
+  reactIcon.classList.remove("hover-color--react");
 });
 
 reactIcon.addEventListener("mouseover", () => {
-  reactIconP.classList.add("react-hover-color");
-  reactLeftBorder.classList.add("react-hex-border-left");
-  reactMiddleBorder.classList.add("react-hex-bg-color");
-  reactRightBorder.classList.add("react-hex-border-right");
+  reactLeftBorder.classList.add("hex-border__left-hover--react");
+  reactMiddleBorder.classList.add("hex-bg-color--react");
+  reactRightBorder.classList.add("hex-border__right-hover--react");
+  reactIconP.classList.add("hover-color--react");
 });
 
 reactIcon.addEventListener("mouseout", () => {
-  reactIconP.classList.remove("react-hover-color");
-  reactLeftBorder.classList.remove("react-hex-border-left");
-  reactMiddleBorder.classList.remove("react-hex-bg-color");
-  reactRightBorder.classList.remove("react-hex-border-right");
+  reactLeftBorder.classList.remove("hex-border__left-hover--react");
+  reactMiddleBorder.classList.remove("hex-bg-color--react");
+  reactRightBorder.classList.remove("hex-border__right-hover--react");
+  reactIconP.classList.remove("hover-color--react");
 });
 
 // FIGMA ICON HOVER ANIMATION
 figmaIconP.addEventListener("mouseover", () => {
-  figmaIcon.classList.add("figma-hover-color");
-  figmaLeftBorder.classList.add("figma-hex-border-left");
-  figmaMiddleBorder.classList.add("figma-hex-bg-color");
-  figmaRightBorder.classList.add("figma-hex-border-right");
+  figmaLeftBorder.classList.add("hex-border__left-hover--figma");
+  figmaMiddleBorder.classList.add("hex-bg-color--figma");
+  figmaRightBorder.classList.add("hex-border__right-hover--figma");
+  figmaIcon.classList.add("hover-color--figma");
 });
 
 figmaIconP.addEventListener("mouseout", () => {
-  figmaIcon.classList.remove("figma-hover-color");
-  figmaLeftBorder.classList.remove("figma-hex-border-left");
-  figmaMiddleBorder.classList.remove("figma-hex-bg-color");
-  figmaRightBorder.classList.remove("figma-hex-border-right");
+  figmaLeftBorder.classList.remove("hex-border__left-hover--figma");
+  figmaMiddleBorder.classList.remove("hex-bg-color--figma");
+  figmaRightBorder.classList.remove("hex-border__right-hover--figma");
+  figmaIcon.classList.remove("hover-color--figma");
 });
 
 figmaIcon.addEventListener("mouseover", () => {
-  figmaIconP.classList.add("figma-hover-color");
-  figmaLeftBorder.classList.add("figma-hex-border-left");
-  figmaMiddleBorder.classList.add("figma-hex-bg-color");
-  figmaRightBorder.classList.add("figma-hex-border-right");
+  figmaLeftBorder.classList.add("hex-border__left-hover--figma");
+  figmaMiddleBorder.classList.add("hex-bg-color--figma");
+  figmaRightBorder.classList.add("hex-border__right-hover--figma");
+  figmaIconP.classList.add("hover-color--figma");
 });
 
 figmaIcon.addEventListener("mouseout", () => {
-  figmaIconP.classList.remove("figma-hover-color");
-  figmaLeftBorder.classList.remove("figma-hex-border-left");
-  figmaMiddleBorder.classList.remove("figma-hex-bg-color");
-  figmaRightBorder.classList.remove("figma-hex-border-right");
+  figmaLeftBorder.classList.remove("hex-border__left-hover--figma");
+  figmaMiddleBorder.classList.remove("hex-bg-color--figma");
+  figmaRightBorder.classList.remove("hex-border__right-hover--figma");
+  figmaIconP.classList.remove("hover-color--figma");
 });
 
 /* ------------------------------------
