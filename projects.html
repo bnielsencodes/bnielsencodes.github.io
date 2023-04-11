@@ -35,8 +35,8 @@
       MAIN NAVIGATION
       **************************************
     *********************************** -->
-    <nav class="main-nav">
-      <div class="projects-page-logo-container">
+    <nav class="nav">
+      <div class="nav__logo">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="-0.013577461242675781 0.004145622253417969 86.6033706665039 86.63381958007812"
@@ -54,52 +54,88 @@
             />
           </g>
         </svg>
-        <h4 class="main-nav-heading">
+        <h1 class="nav__name">
           <a href="index.html">Brandon Nielsen</a>
-        </h4>
+        </h1>
       </div>
       <!-- ***********************************
-      HAMBURGER MENU FOR SM SCREEN
+        **************************************
+        MAIN NAVIGATION LINKS ON MD/LG SCREEN
+        **************************************
       *********************************** -->
-      <div class="hamburger-menu hidden-md">
-        <div class="hamburger-bar bar-top"></div>
-        <div class="hamburger-bar bar-mid"></div>
-        <div class="hamburger-bar bar-bottom"></div>
-        <!-- 
-            Hamburger menu list
-            -->
-        <div id="hamburger-nav" class="hamburger-navigation">
-          <div class="navigation__inner">
-            <!--   Content   -->
-            <ul class="hamburger-nav-link-container">
-              <li class="hamburger-nav-item">
+      <ul class="nav-list hidden--sm">
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="index.html#header" aria-label="home"
+            >Home</a
+          >
+        </li>
+        <li class="nav-list__item">
+          <a
+            class="nav-list__link"
+            href="index.html#about-section"
+            aria-label="about"
+            >About</a
+          >
+        </li>
+        <li class="nav-list__item">
+          <a
+            class="nav-list__link"
+            href="index.html#top-divider"
+            aria-label="projects"
+            >Projects</a
+          >
+        </li>
+        <li class="nav-list__item">
+          <a
+            class="nav-list__link"
+            href="#contact-section"
+            aria-label="contacts"
+            >Contact</a
+          >
+        </li>
+      </ul>
+
+      <!-- ***********************************
+        **************************************
+        MOBILE NAVIGATION ICON AND LINKS
+        **************************************
+      *********************************** -->
+      <div class="hamburger-menu hidden--md">
+        <div class="hamburger-menu__bar hamburger-menu__bar--top"></div>
+        <div class="hamburger-menu__bar hamburger-menu__bar--mid"></div>
+        <div class="hamburger-menu__bar hamburger-menu__bar--bottom"></div>
+        <!-- Hamburger menu list -->
+        <div id="mobile-nav">
+          <div class="mobile-nav__inner">
+            <ul class="mobile-nav-list">
+              <li>
                 <a
-                  href="index.html#header-section"
-                  class="hamburger-nav-link"
+                  class="mobile-nav-list__link"
+                  href="index.html#header"
                   aria-label="home"
                   >Home</a
                 >
               </li>
-              <li class="hamburger-nav-item">
+              <li>
                 <a
+                  class="mobile-nav-list__link"
                   href="index.html#about-section"
-                  class="hamburger-nav-link"
                   aria-label="about"
                   >About</a
                 >
               </li>
-              <li class="hamburger-nav-item">
+              <li>
                 <a
-                  href="index.html#projects-top-divider"
-                  class="hamburger-nav-link"
+                  class="mobile-nav-list__link"
+                  href="index.html#top-divider"
                   aria-label="projects"
                   >Projects</a
                 >
               </li>
-              <li class="hamburger-nav-item">
+              <li>
                 <a
-                  href="index.html#projects-bottom-divider"
-                  class="hamburger-nav-link main-nav-button"
+                  class="mobile-nav-list__link"
+                  href="#contact-section"
                   aria-label="contact"
                   >Contact</a
                 >
@@ -108,42 +144,6 @@
           </div>
         </div>
       </div>
-      <!-- ***********************************
-        **************************************
-        MAIN NAVIGATION LINKS ON MD/LG SCREEN
-        **************************************
-      *********************************** -->
-      <ul
-        class="main-nav-link-container main-nav-link-container--projects-page hidden-sm"
-      >
-        <li class="main-nav-item main-nav-item--projects-page">
-          <a href="index.html" class="main-nav-link" aria-label="home">Home</a>
-        </li>
-        <li class="main-nav-item main-nav-item--projects-page">
-          <a
-            href="index.html#about-section"
-            class="main-nav-link"
-            aria-label="about"
-            >About</a
-          >
-        </li>
-        <li class="main-nav-item main-nav-item--projects-page">
-          <a
-            href="index.html#projects-top-divider"
-            class="main-nav-link"
-            aria-label="projects"
-            >Projects</a
-          >
-        </li>
-        <li class="main-nav-item main-nav-item--projects-page">
-          <a
-            href="index.html#projects-bottom-divider"
-            class="main-nav-link main-nav-button"
-            aria-label="contacts"
-            >Contact</a
-          >
-        </li>
-      </ul>
     </nav>
 
     <!-- PAGE TOP DIVIDER -->
@@ -155,8 +155,8 @@
       **************************************
     *********************************** -->
     <section id="projects-section">
-      <h2 class="section-heading projects-main-heading">
-        <span class="projects-heading-span">Projects</span>
+      <h2 class="section-heading">
+        <span class="section-heading__span">Projects</span>
       </h2>
       <div class="projects-list--project-page">
         <!-- ***********************************
@@ -164,37 +164,33 @@
           SECUREPASS PROJECT
           **************************************
         *********************************** -->
-        <article class="project-container--project-page project-mb">
-          <div id="project--project-page" class="project">
-            <div class="project-img-container">
+        <article class="project-mb">
+          <div class="project">
+            <div class="project__img-container">
               <img
-                class="project-img"
+                class="project__img"
                 src="assets/images/securepass.png"
                 alt="SecurePass web app screenshot"
               />
-              <div class="overlay hidden-sm">
-                <div class="overlay-text">
+              <div class="overlay hidden--sm">
+                <div class="overlay__text">
                   A strong random password generator.
                 </div>
               </div>
             </div>
-            <div class="project-bottom">
-              <div class="project-title-container">
-                <h3 class="project-title project-title--projects-page">
-                  SecurePass
-                </h3>
-              </div>
-              <p class="project-description hidden-md">
+            <div class="project-bottom-container">
+              <h3 class="project__heading project__heading--projects-page">
+                SecurePass
+              </h3>
+              <p class="project__description hidden--md">
                 A strong random password generator.
               </p>
-              <div class="project-tech-container-wide">
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-html5 project-fa project-html-icon"
-                  ></i>
+              <div class="project__tech--wide">
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-html5 project__icon--html"></i>
                   <p>HTML</p>
                 </div>
-                <div class="project-icon-container">
+                <div class="project__icon-container">
                   <svg
                     class="tailwind-svg"
                     xmlns="http://www.w3.org/2000/svg"
@@ -210,12 +206,12 @@
                   </svg>
                   <p>Tailwind</p>
                 </div>
-                <div class="project-icon-container">
-                  <i class="fab fa-brands fa-js skills-fa project-js-icon"></i>
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-js project__icon--js"></i>
                   <p>JavaScript</p>
                 </div>
               </div>
-              <div class="project-links project-links--projects-page">
+              <div class="project__links project__links--projects-page">
                 <a
                   href="https://bnielsencodes.github.io/securepass/"
                   class="live-link"
@@ -238,48 +234,42 @@
           QUIZZICAL PROJECT
           **************************************
         *********************************** -->
-        <article class="project-container--project-page project-mb">
-          <div id="project--project-page" class="project">
-            <div class="project-img-container">
+        <article class="project-mb">
+          <div class="project">
+            <div class="project__img-container">
               <img
-                class="project-img"
+                class="project__img"
                 src="assets/images/quizzical.png"
                 alt="Quizzical app screenshot"
               />
-              <div class="overlay hidden-sm">
-                <div class="overlay-text">
+              <div class="overlay hidden--sm">
+                <div class="overlay__text">
                   A quiz app that gets data from The Open Trivia Database API.
                 </div>
               </div>
             </div>
-            <div class="project-bottom">
-              <div class="project-title-container">
-                <h3 class="project-title project-title--projects-page">
-                  Quizzical
-                </h3>
-              </div>
-              <p class="project-description hidden-md">
+            <div class="project-bottom-container">
+              <h3 class="project__heading project__heading--projects-page">
+                Quizzical
+              </h3>
+              <p class="project__description hidden--md">
                 A quiz app that gets data from The Open Trivia Database API.
               </p>
-              <div class="project-tech-container-wide">
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-react skills-fa project-react-icon"
-                  ></i>
+              <div class="project__tech--wide">
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-react project__icon--react"></i>
                   <p>React</p>
                 </div>
-                <div class="project-icon-container">
-                  <i class="fab fa-brands fa-js skills-fa project-js-icon"></i>
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-js project__icon--js"></i>
                   <p>JavaScript</p>
                 </div>
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-css3-alt skills-fa project-css-icon"
-                  ></i>
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-css3-alt project__icon--css"></i>
                   <p>CSS</p>
                 </div>
               </div>
-              <div class="project-links project-links--projects-page">
+              <div class="project__links project__links--projects-page">
                 <a
                   href="https://bnielsencodes.github.io/quizzical/"
                   class="live-link"
@@ -302,50 +292,44 @@
           QUIZZICAL PROJECT
           **************************************
         *********************************** -->
-        <article class="project-container--project-page project-mb">
-          <div id="project--project-page" class="project">
-            <div class="project-img-container">
+        <article class="project-mb">
+          <div class="project">
+            <div class="project__img-container">
               <img
-                class="project-img"
+                class="project__img"
                 src="assets/images/dictionary-web-app.png"
                 alt="Dictionary Web App app screenshot"
               />
-              <div class="overlay hidden-sm">
-                <div class="overlay-text">
+              <div class="overlay hidden--sm">
+                <div class="overlay__text">
                   A dictionary web app that pulls data from the Free Dictionary
                   API.
                 </div>
               </div>
             </div>
-            <div class="project-bottom">
-              <div class="project-title-container">
-                <h3 class="project-title project-title--projects-page">
-                  Dictionary Web App
-                </h3>
-              </div>
-              <p class="project-description hidden-md">
+            <div class="project-bottom-container">
+              <h3 class="project__heading project__heading--projects-page">
+                Dictionary Web App
+              </h3>
+              <p class="project__description hidden--md">
                 A dictionary web app that pulls data from the Free Dictionary
                 API.
               </p>
-              <div class="project-tech-container-wide">
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-react skills-fa project-react-icon"
-                  ></i>
+              <div class="project__tech--wide">
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-react project__icon--react"></i>
                   <p>React</p>
                 </div>
-                <div class="project-icon-container">
-                  <i class="fab fa-brands fa-js skills-fa project-js-icon"></i>
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-js project__icon--js"></i>
                   <p>JavaScript</p>
                 </div>
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-css3-alt skills-fa project-css-icon"
-                  ></i>
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-css3-alt project__icon--css"></i>
                   <p>CSS</p>
                 </div>
               </div>
-              <div class="project-links project-links--projects-page">
+              <div class="project__links project__links--projects-page">
                 <a
                   href="https://bnielsencodes.github.io/dictionary-web-app/"
                   class="live-link"
@@ -368,48 +352,42 @@
           TENZIES PROJECT
           **************************************
         *********************************** -->
-        <article class="project-container--project-page project-mb">
-          <div id="project--project-page" class="project">
-            <div class="project-img-container">
+        <article class="project-mb">
+          <div class="project">
+            <div class="project__img-container">
               <img
-                class="project-img"
+                class="project__img"
                 src="assets/images/tenzies.png"
                 alt="Tenzies app screenshot"
               />
-              <div class="overlay hidden-sm">
-                <div class="overlay-text">
+              <div class="overlay hidden--sm">
+                <div class="overlay__text">
                   Easy to learn dice game that players of all ages will enjoy.
                 </div>
               </div>
             </div>
-            <div class="project-bottom">
-              <div class="project-title-container">
-                <h3 class="project-title project-title--projects-page">
-                  Tenzies
-                </h3>
-              </div>
-              <p class="project-description hidden-md">
+            <div class="project-bottom-container">
+              <h3 class="project__heading project__heading--projects-page">
+                Tenzies
+              </h3>
+              <p class="project__description hidden--md">
                 Easy to learn dice game that players of all ages will enjoy.
               </p>
-              <div class="project-tech-container-wide">
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-react skills-fa project-react-icon"
-                  ></i>
+              <div class="project__tech--wide">
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-react project__icon--react"></i>
                   <p>React</p>
                 </div>
-                <div class="project-icon-container">
-                  <i class="fab fa-brands fa-js skills-fa project-js-icon"></i>
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-js project__icon--js"></i>
                   <p>JavaScript</p>
                 </div>
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-css3-alt skills-fa project-css-icon"
-                  ></i>
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-css3-alt project__icon--css"></i>
                   <p>CSS</p>
                 </div>
               </div>
-              <div class="project-links project-links--projects-page">
+              <div class="project__links project__links--projects-page">
                 <a
                   href="https://bnielsencodes.github.io/tenzies/"
                   class="live-link"
@@ -432,49 +410,43 @@
           AUDIOPHILE PROJECT
           **************************************
         *********************************** -->
-        <article class="project-container--project-page project-mb">
-          <div id="project--project-page" class="project">
-            <div class="project-img-container" onclick="flipCard()">
+        <article class="project-mb">
+          <div class="project">
+            <div class="project__img-container" onclick="flipCard()">
               <img
                 id="project-img-id"
-                class="project-img md-flip"
+                class="project__img md-flip"
                 src="assets/images/audiophile.png"
                 alt="Audiophile website screenshot"
               />
-              <div class="overlay hidden-sm">
-                <div class="overlay-text">
+              <div class="overlay hidden--sm">
+                <div class="overlay__text">
                   An e-commerce site for a fictitious audio equipment company.
                 </div>
               </div>
             </div>
-            <div class="project-bottom">
-              <div class="project-title-container">
-                <h3 class="project-title project-title--projects-page">
-                  Audiophile
-                </h3>
-              </div>
-              <p class="project-description hidden-md project-hide-md">
+            <div class="project-bottom-container">
+              <h3 class="project__heading project__heading--projects-page">
+                Audiophile
+              </h3>
+              <p class="project__description hidden--md project-hide-md">
                 An e-commerce site for a fictitious audio equipment company.
               </p>
-              <div class="project-tech-container-wide">
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-html5 project-fa project-html-icon"
-                  ></i>
+              <div class="project__tech--wide">
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-html5 project__icon--html"></i>
                   <p>HTML</p>
                 </div>
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-css3-alt project-fa project-css-icon"
-                  ></i>
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-css3-alt project__icon--css"></i>
                   <p>CSS</p>
                 </div>
-                <div class="project-icon-container">
-                  <i class="fab fa-brands fa-js skills-fa project-js-icon"></i>
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-js project__icon--js"></i>
                   <p>JavaScript</p>
                 </div>
               </div>
-              <div class="project-links project-links--projects-page">
+              <div class="project__links project__links--projects-page">
                 <a
                   href="https://bnielsencodes.github.io/audiophile/"
                   class="live-link"
@@ -497,39 +469,35 @@
           SPLITTER PROJECT
           **************************************
         *********************************** -->
-        <article class="project-container--project-page project-mb">
-          <div id="project--project-page" class="project">
-            <div class="project-img-container">
+        <article class="project-mb">
+          <div class="project">
+            <div class="project__img-container">
               <img
-                class="project-img"
+                class="project__img"
                 src="assets/images/splitter.png"
                 alt="Splitter web app screenshot"
               />
-              <div class="overlay hidden-sm">
-                <div class="overlay-text">
+              <div class="overlay hidden--sm">
+                <div class="overlay__text">
                   An app built for the purpose of splitting bills/tips with
                   others.
                 </div>
               </div>
             </div>
-            <div class="project-bottom">
-              <div class="project-title-container">
-                <h3 class="project-title project-title--projects-page">
-                  Splitter
-                </h3>
-              </div>
-              <p class="project-description hidden-md">
+            <div class="project-bottom-container">
+              <h3 class="project__heading project__heading--projects-page">
+                Splitter
+              </h3>
+              <p class="project__description hidden--md">
                 An app built for the purpose of splitting bills/tips with
                 others.
               </p>
-              <div class="project-tech-container-wide">
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-html5 project-fa project-html-icon"
-                  ></i>
+              <div class="project__tech--wide">
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-html5 project__icon--html"></i>
                   <p>HTML</p>
                 </div>
-                <div class="project-icon-container">
+                <div class="project__icon-container">
                   <svg
                     class="tailwind-svg"
                     xmlns="http://www.w3.org/2000/svg"
@@ -545,12 +513,12 @@
                   </svg>
                   <p>Tailwind</p>
                 </div>
-                <div class="project-icon-container">
-                  <i class="fab fa-brands fa-js skills-fa project-js-icon"></i>
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-js project__icon--js"></i>
                   <p>JavaScript</p>
                 </div>
               </div>
-              <div class="project-links project-links--projects-page">
+              <div class="project__links project__links--projects-page">
                 <a
                   href="https://bnielsencodes.github.io/splitter/"
                   class="live-link"
@@ -573,50 +541,44 @@
           PLANET FACTS PROJECT
           **************************************
         *********************************** -->
-        <article class="project-container--project-page project-mb">
-          <div id="project--project-page" class="project">
-            <div class="project-img-container">
+        <article class="project-mb">
+          <div class="project">
+            <div class="project__img-container">
               <img
-                class="project-img"
+                class="project__img"
                 src="assets/images/planet-facts.png"
                 alt="Planet-Facts website screenshot"
               />
-              <div class="overlay hidden-sm">
-                <div class="overlay-text">
+              <div class="overlay hidden--sm">
+                <div class="overlay__text">
                   A fully responsive website that allows you to explore facts
                   about all of the planets in our solar system.
                 </div>
               </div>
             </div>
-            <div class="project-bottom">
-              <div class="project-title-container">
-                <h3 class="project-title project-title--projects-page">
-                  Planet Facts
-                </h3>
-              </div>
-              <p class="project-description hidden-md">
+            <div class="project-bottom-container">
+              <h3 class="project__heading project__heading--projects-page">
+                Planet Facts
+              </h3>
+              <p class="project__description hidden--md">
                 A fully responsive website that allows you to explore facts
                 about all of the planets in our solar system.
               </p>
-              <div class="project-tech-container-wide">
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-html5 skills-fa project-html-icon"
-                  ></i>
+              <div class="project__tech--wide">
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-html5 project__icon--html"></i>
                   <p>HTML</p>
                 </div>
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-css3-alt skills-fa project-css-icon"
-                  ></i>
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-css3-alt project__icon--css"></i>
                   <p>CSS</p>
                 </div>
-                <div class="project-icon-container">
-                  <i class="fab fa-brands fa-js skills-fa project-js-icon"></i>
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-js project__icon--js"></i>
                   <p>JavaScript</p>
                 </div>
               </div>
-              <div class="project-links project-links--projects-page">
+              <div class="project__links project__links--projects-page">
                 <a
                   href="https://bnielsencodes.github.io/planet-facts/"
                   class="live-link"
@@ -639,50 +601,44 @@
           MEME GENERATOR PROJECT
           **************************************
         *********************************** -->
-        <article class="project-container--project-page project-mb">
-          <div id="project--project-page" class="project">
-            <div class="project-img-container">
+        <article class="project-mb">
+          <div class="project">
+            <div class="project__img-container">
               <img
-                class="project-img"
+                class="project__img"
                 src="assets/images/meme-generator.png"
                 alt="meme-generator website screenshot"
               />
-              <div class="overlay hidden-sm">
-                <div class="overlay-text">
+              <div class="overlay hidden--sm">
+                <div class="overlay__text">
                   Generates random meme images using the Imgflip API. You can
                   add text to the generated image.
                 </div>
               </div>
             </div>
-            <div class="project-bottom">
-              <div class="project-title-container">
-                <h3 class="project-title project-title--projects-page">
-                  Meme Generator
-                </h3>
-              </div>
-              <p class="project-description hidden-md">
+            <div class="project-bottom-container">
+              <h3 class="project__heading project__heading--projects-page">
+                Meme Generator
+              </h3>
+              <p class="project__description hidden--md">
                 Generates random meme images using the Imgflip API. You can add
                 text to the generated image.
               </p>
-              <div class="project-tech-container-wide">
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-react skills-fa project-react-icon"
-                  ></i>
+              <div class="project__tech--wide">
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-react project__icon--react"></i>
                   <p>React</p>
                 </div>
-                <div class="project-icon-container">
-                  <i class="fab fa-brands fa-js skills-fa project-js-icon"></i>
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-js project__icon--js"></i>
                   <p>JavaScript</p>
                 </div>
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-css3-alt skills-fa project-css-icon"
-                  ></i>
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-css3-alt project__icon--css"></i>
                   <p>CSS</p>
                 </div>
               </div>
-              <div class="project-links project-links--projects-page">
+              <div class="project__links project__links--projects-page">
                 <a
                   href="https://bnielsencodes.github.io/meme-generator/"
                   class="live-link"
@@ -705,48 +661,42 @@
           NOTIFICATIONS PAGE PROJECT
           **************************************
         *********************************** -->
-        <article class="project-container--project-page project-mb">
-          <div id="project--project-page" class="project">
-            <div class="project-img-container">
+        <article class="project-mb">
+          <div class="project">
+            <div class="project__img-container">
               <img
-                class="project-img"
+                class="project__img"
                 src="assets/images/notifications-page.png"
                 alt="Notifications Page website screenshot"
               />
-              <div class="overlay hidden-sm">
-                <div class="overlay-text">
+              <div class="overlay hidden--sm">
+                <div class="overlay__text">
                   A notifications page challenge from frontendmentor.io.
                 </div>
               </div>
             </div>
-            <div class="project-bottom">
-              <div class="project-title-container">
-                <h3 class="project-title project-title--projects-page">
-                  Notifications Page
-                </h3>
-              </div>
-              <p class="project-description hidden-md">
+            <div class="project-bottom-container">
+              <h3 class="project__heading project__heading--projects-page">
+                Notifications Page
+              </h3>
+              <p class="project__description hidden--md">
                 A notifications page challenge from frontendmentor.io.
               </p>
-              <div class="project-tech-container-wide">
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-react skills-fa project-react-icon"
-                  ></i>
+              <div class="project__tech--wide">
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-react project__icon--react"></i>
                   <p>React</p>
                 </div>
-                <div class="project-icon-container">
-                  <i class="fab fa-brands fa-js skills-fa project-js-icon"></i>
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-js project__icon--js"></i>
                   <p>JavaScript</p>
                 </div>
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-css3-alt skills-fa project-css-icon"
-                  ></i>
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-css3-alt project__icon--css"></i>
                   <p>CSS</p>
                 </div>
               </div>
-              <div class="project-links project-links--projects-page">
+              <div class="project__links project__links--projects-page">
                 <a
                   href="https://bnielsencodes.github.io/notifications-page"
                   class="live-link"
@@ -769,40 +719,36 @@
           HUDDLE ROJECT
           **************************************
         *********************************** -->
-        <article class="project-container--project-page">
-          <div id="project--project-page" class="project">
-            <div class="project-img-container">
+        <article class="">
+          <div class="project">
+            <div class="project__img-container">
               <img
-                class="project-img"
+                class="project__img"
                 src="assets/images/huddle.png"
                 alt="Huddle website screenshot"
               />
-              <div class="overlay hidden-sm">
-                <div class="overlay-text">
+              <div class="overlay hidden--sm">
+                <div class="overlay__text">
                   Huddle re-imagines the way we build communities. Create
                   connections with your users as you engage in genuine
                   discussion.
                 </div>
               </div>
             </div>
-            <div class="project-bottom">
-              <div class="project-title-container">
-                <h3 class="project-title project-title--projects-page">
-                  Huddle
-                </h3>
-              </div>
-              <p class="project-description hidden-md">
+            <div class="project-bottom-container">
+              <h3 class="project__heading project__heading--projects-page">
+                Huddle
+              </h3>
+              <p class="project__description hidden--md">
                 Huddle re-imagines the way we build communities. Create
                 connections with your users as you engage in genuine discussion.
               </p>
-              <div class="project-tech-container-wide">
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-html5 project-fa project-html-icon"
-                  ></i>
+              <div class="project__tech--wide">
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-html5 project__icon--html"></i>
                   <p>HTML</p>
                 </div>
-                <div class="project-icon-container">
+                <div class="project__icon-container">
                   <svg
                     class="tailwind-svg"
                     xmlns="http://www.w3.org/2000/svg"
@@ -818,12 +764,12 @@
                   </svg>
                   <p>Tailwind</p>
                 </div>
-                <div class="project-icon-container">
-                  <i class="fab fa-brands fa-js skills-fa project-js-icon"></i>
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-js project__icon--js"></i>
                   <p>JavaScript</p>
                 </div>
               </div>
-              <div class="project-links project-links--projects-page">
+              <div class="project__links project__links--projects-page">
                 <a
                   href="https://bnielsencodes.github.io/huddle/"
                   class="live-link"
@@ -846,50 +792,44 @@
           FRUIT OF THE SEA PROJECT
           **************************************
         *********************************** -->
-        <article class="project-container--project-page project-mb">
-          <div id="project--project-page" class="project">
-            <div class="project-img-container">
+        <article class="project-mb">
+          <div class="project">
+            <div class="project__img-container">
               <img
-                class="project-img"
+                class="project__img"
                 src="assets/images/fruit-of-the-sea.png"
                 alt="Fruit of the Sea web app screenshot"
               />
-              <div class="overlay hidden-sm">
-                <div class="overlay-text">
+              <div class="overlay hidden--sm">
+                <div class="overlay__text">
                   A fully responsive word guessing game set up to mimic the feel
                   of a game show.
                 </div>
               </div>
             </div>
-            <div class="project-bottom">
-              <div class="project-title-container">
-                <h3 class="project-title project-title--projects-page">
-                  Fruit of the Sea
-                </h3>
-              </div>
-              <p class="project-description hidden-md">
+            <div class="project-bottom-container">
+              <h3 class="project__heading project__heading--projects-page">
+                Fruit of the Sea
+              </h3>
+              <p class="project__description hidden--md">
                 A fully responsive word guessing game set up to mimic the feel
                 of a game show.
               </p>
-              <div class="project-tech-container-wide">
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-html5 skills-fa project-html-icon"
-                  ></i>
+              <div class="project__tech--wide">
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-html5 project__icon--html"></i>
                   <p>HTML</p>
                 </div>
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-css3-alt skills-fa project-css-icon"
-                  ></i>
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-css3-alt project__icon--css"></i>
                   <p>CSS</p>
                 </div>
-                <div class="project-icon-container">
-                  <i class="fab fa-brands fa-js skills-fa project-js-icon"></i>
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-js project__icon--js"></i>
                   <p>JavaScript</p>
                 </div>
               </div>
-              <div class="project-links project-links--projects-page">
+              <div class="project__links project__links--projects-page">
                 <a
                   href="https://bnielsencodes.github.io/fruit-of-the-sea/"
                   class="live-link"
@@ -912,52 +852,46 @@
           EMPLOYEE DIRECTORY PROJECT
           **************************************
         *********************************** -->
-        <article class="project-container--project-page">
-          <div id="project--project-page" class="project">
-            <div class="project-img-container">
+        <article class="">
+          <div class="project">
+            <div class="project__img-container">
               <img
-                class="project-img"
+                class="project__img"
                 src="assets/images/employee-directory.png"
                 alt="Employee Directory website screenshot"
               />
-              <div class="overlay hidden-sm">
-                <div class="overlay-text">
+              <div class="overlay hidden--sm">
+                <div class="overlay__text">
                   A fully responsive employee directory that allows you to
                   search for specific employees by name. Utilizes Fetch API to
                   access Random User Generator API.
                 </div>
               </div>
             </div>
-            <div class="project-bottom">
-              <div class="project-title-container">
-                <h3 class="project-title project-title--projects-page">
-                  Employee Directory
-                </h3>
-              </div>
-              <p class="project-description hidden-md">
+            <div class="project-bottom-container">
+              <h3 class="project__heading project__heading--projects-page">
+                Employee Directory
+              </h3>
+              <p class="project__description hidden--md">
                 A fully responsive employee directory that allows you to search
                 for specific employees by name. Utilizes Fetch API to access
                 Random User Generator API.
               </p>
-              <div class="project-tech-container-wide">
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-html5 project-fa project-html-icon"
-                  ></i>
+              <div class="project__tech--wide">
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-html5 project__icon--html"></i>
                   <p>HTML</p>
                 </div>
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-css3-alt project-fa project-css-icon"
-                  ></i>
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-css3-alt project__icon--css"></i>
                   <p>CSS</p>
                 </div>
-                <div class="project-icon-container">
-                  <i class="fab fa-brands fa-js skills-fa project-js-icon"></i>
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-js project__icon--js"></i>
                   <p>JavaScript</p>
                 </div>
               </div>
-              <div class="project-links project-links--projects-page">
+              <div class="project__links project__links--projects-page">
                 <a
                   href="https://bnielsencodes.github.io/employee-directory"
                   class="live-link"
@@ -980,44 +914,38 @@
           REACT FACTS PROJECT
           **************************************
         *********************************** -->
-        <article class="project-container--project-page project-mb">
-          <div id="project--project-page" class="project">
-            <div class="project-img-container">
+        <article class="project-mb">
+          <div class="project">
+            <div class="project__img-container">
               <img
-                class="project-img"
+                class="project__img"
                 src="assets/images/react-facts.png"
                 alt="React Facts website screenshot"
               />
-              <div class="overlay hidden-sm">
-                <div class="overlay-text">
+              <div class="overlay hidden--sm">
+                <div class="overlay__text">
                   Light/dark mode toggle with React state.
                 </div>
               </div>
             </div>
-            <div class="project-bottom">
-              <div class="project-title-container">
-                <h3 class="project-title project-title--projects-page">
-                  ReactFacts
-                </h3>
-              </div>
-              <p class="project-description hidden-md">
+            <div class="project-bottom-container">
+              <h3 class="project__heading project__heading--projects-page">
+                ReactFacts
+              </h3>
+              <p class="project__description hidden--md">
                 Light/dark mode toggle with React state.
               </p>
               <div class="project-tech-container">
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-react skills-fa project-react-icon"
-                  ></i>
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-react project__icon--react"></i>
                   <p>React</p>
                 </div>
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-css3-alt skills-fa project-css-icon"
-                  ></i>
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-css3-alt project__icon--css"></i>
                   <p>CSS</p>
                 </div>
               </div>
-              <div class="project-links project-links--projects-page">
+              <div class="project__links project__links--projects-page">
                 <a
                   href="https://bnielsencodes.github.io/react-facts"
                   class="live-link"
@@ -1040,45 +968,39 @@
           DIGITAL BUSINESS CARD PROJECT
           **************************************
         *********************************** -->
-        <article class="project-container--project-page">
-          <div id="project--project-page" class="project">
-            <div class="project-img-container">
+        <article class="">
+          <div class="project">
+            <div class="project__img-container">
               <img
-                class="project-img"
+                class="project__img"
                 src="assets/images/digital_business_card_updated.png"
                 alt="digital business card screenshot"
               />
-              <div class="overlay hidden-sm">
-                <div class="overlay-text">
+              <div class="overlay hidden--sm">
+                <div class="overlay__text">
                   My personal digital business card.
                 </div>
               </div>
             </div>
-            <div class="project-bottom">
-              <div class="project-title-container">
-                <h3 class="project-title project-title--projects-page">
-                  Digital Business Card
-                </h3>
-              </div>
-              <p class="project-description hidden-md">
+            <div class="project-bottom-container">
+              <h3 class="project__heading project__heading--projects-page">
+                Digital Business Card
+              </h3>
+              <p class="project__description hidden--md">
                 A personal digital business card. This was my first React
                 project.
               </p>
               <div class="project-tech-container">
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-react skills-fa project-react-icon"
-                  ></i>
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-react project__icon--react"></i>
                   <p>React</p>
                 </div>
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-css3-alt skills-fa project-css-icon"
-                  ></i>
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-css3-alt project__icon--css"></i>
                   <p>CSS</p>
                 </div>
               </div>
-              <div class="project-links project-links--projects-page">
+              <div class="project__links project__links--projects-page">
                 <a
                   href="https://bnielsencodes.github.io/digital-business-card/"
                   class="live-link"
@@ -1101,43 +1023,37 @@
           MY TRAVEL JOURNAL PROJECT
           **************************************
         *********************************** -->
-        <article class="project-container--project-page">
-          <div id="project--project-page" class="project">
-            <div class="project-img-container">
+        <article class="">
+          <div class="project">
+            <div class="project__img-container">
               <img
-                class="project-img"
+                class="project__img"
                 src="assets/images/my-travel-journal.png"
                 alt="my travel journal website screenshot"
               />
-              <div class="overlay hidden-sm">
-                <div class="overlay-text">A fictional travel journal.</div>
+              <div class="overlay hidden--sm">
+                <div class="overlay__text">A fictional travel journal.</div>
               </div>
             </div>
-            <div class="project-bottom">
-              <div class="project-title-container">
-                <h3 class="project-title project-title--projects-page">
-                  My Travel Journal
-                </h3>
-              </div>
-              <p class="project-description hidden-md">
+            <div class="project-bottom-container">
+              <h3 class="project__heading project__heading--projects-page">
+                My Travel Journal
+              </h3>
+              <p class="project__description hidden--md">
                 A website displaying my personal fictional travel journal. This
                 was a Scrimba React course project.
               </p>
               <div class="project-tech-container">
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-react skills-fa project-react-icon"
-                  ></i>
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-react project__icon--react"></i>
                   <p>React</p>
                 </div>
-                <div class="project-icon-container">
-                  <i
-                    class="fab fa-brands fa-css3-alt skills-fa project-css-icon"
-                  ></i>
+                <div class="project__icon-container">
+                  <i class="fab fa-brands fa-css3-alt project__icon--css"></i>
                   <p>CSS</p>
                 </div>
               </div>
-              <div class="project-links project-links--projects-page">
+              <div class="project__links project__links--projects-page">
                 <a
                   href="https://bnielsencodes.github.io/my-travel-journal/"
                   class="live-link"
@@ -1163,48 +1079,42 @@
       **************************************
     *********************************** -->
     <section id="contact-section">
-      <h2
-        class="section-heading contact-heading contact-section--projects-page"
-      >
-        <span class="contact-heading-span">Want to work together?</span>
+      <h2 class="section-heading">
+        <span class="section-heading__span">Want to work together?</span>
       </h2>
       <form
         id="fs-frm"
-        class="contact-form"
+        class="form"
         name="simple-contact-form"
         accept-charset="utf-8"
         action="https://formspree.io/f/mknewaqj"
         method="POST"
       >
-        <h2 class="contact-subheading lets-connect">Let's connect!</h2>
-        <div class="contact-text">
+        <h2 class="form__heading">Let's connect!</h2>
+        <div class="form__text">
           Email me at
           <i class="fa-sharp fa-solid fa-arrow-right"></i>
-          <div id="email-copy" class="click-to-copy-container">
-            <button class="click-to-copy" title="Click to copy email address">
-              <strong id="email-address">bnielsencodes@gmail.com</strong>
+          <div id="copy-email">
+            <button class="copy-email__btn" title="Click to copy email address">
+              <strong id="email">bnielsencodes@gmail.com</strong>
             </button>
-            <span class="copied hidden"
+            <span class="copied-msg hidden"
               >Copied!
               <i class="fa-sharp fa-solid fa-thumbs-up"></i>
             </span>
           </div>
           <strong>
-            <a
-              href="mailto:bnielsencodes@gmail.com"
-              id="email-copy-fallback"
-              class="click-to-copy-fallback"
-            >
+            <a id="copy-email--mobile" href="mailto:bnielsencodes@gmail.com">
               bnielsencodes@gmail.com
             </a>
           </strong>
           <br />
           or send me a quick message here:
         </div>
-        <fieldset id="fs-frm-inputs" class="form-fieldset">
+        <fieldset id="fs-frm-inputs" class="form-inputs">
           <input
-            id="form-name"
-            class="form-item form-item-one"
+            id="form__name"
+            class="form__item"
             type="text"
             name="name"
             placeholder="Name"
@@ -1212,8 +1122,8 @@
             required=""
           />
           <input
-            id="form-email"
-            class="form-item form-item-two"
+            id="form__email"
+            class="form__item"
             type="email"
             name="_replyto"
             placeholder="Email"
@@ -1221,8 +1131,8 @@
             required=""
           />
           <textarea
-            id="form-message"
-            class="form-item form-item-three"
+            id="form__message"
+            class="form__item"
             name="message"
             placeholder="Message"
             aria-label="Enter a message"
@@ -1230,14 +1140,14 @@
             required=""
           ></textarea>
           <input
+            id="email-subject"
             type="hidden"
             name="_subject"
-            id="email-subject"
             value="Contact Form Submission"
           />
         </fieldset>
-        <div class="submit-container">
-          <button class="form-button" type="submit" value="Submit">
+        <div class="form__submit">
+          <button class="form__submit-btn" type="submit" value="Submit">
             Submit
           </button>
         </div>
@@ -1249,38 +1159,18 @@
       FOOTER SECTION
       **************************************
     *********************************** -->
-    <div id="footer-section">
+    <section id="footer-section">
       <div class="return-home hvr-bob">
-        <a
-          href="#header-section"
-          class="return-home-link"
-          aria-label="return home"
-        >
+        <a href="#header" class="return-home-link" aria-label="return home">
           <i class="fa-duotone fa-chevrons-up"></i>
         </a>
       </div>
-      <div class="footer-content-container">
+      <div class="footer">
         <!-- FOOTER SOCIAL ICON LINKS -->
-        <div class="footer-links-container">
-          <!-- <a
-            href="https://twitter.com/bnielsencodes"
-            class="footer-icon-container"
-            aria-label="twitter"
-            target="_blank"
-          >
-            <svg
-              class="twitter-svg"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 660 660"
-            >
-              <path
-                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
-              />
-            </svg>
-          </a> -->
+        <div class="footer__links">
           <a
             href="https://linkedin.com/in/bnielsencodes"
-            class="footer-icon-container"
+            class="footer__icon"
             aria-label="linkedin"
             target="_blank"
           >
@@ -1296,7 +1186,7 @@
           </a>
           <a
             href="https://github.com/bnielsencodes"
-            class="footer-icon-container"
+            class="footer__icon"
             aria-label="github"
             target="_blank"
           >
@@ -1312,7 +1202,7 @@
           </a>
           <a
             href="mailto:bnielsencodes@gmail.com"
-            class="footer-icon-container"
+            class="footer__icon"
             aria-label="email"
             target="_blank"
           >
@@ -1327,9 +1217,10 @@
             </svg>
           </a>
         </div>
-        <p class="footer-signature">Brandon Nielsen - 2023</p>
+        <!-- FOOTER SIGNATURE -->
+        <p class="footer__signature">Brandon Nielsen - 2023</p>
       </div>
-    </div>
+    </section>
 
     <script src="js/main.js"></script>
   </body>
