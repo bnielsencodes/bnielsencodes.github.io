@@ -1,43 +1,32 @@
 ::selection {
-  color: #1A1A1A;
+  color: #1a1a1a;
   background: #785af0;
 }
 
 ::-moz-selection {
   /* Code for Firefox */
-  color: #1A1A1A;
+  color: #1a1a1a;
   background: #785af0;
 }
 
 .form-button::selection,
 .email-green::selection,
-.location::selection,
-.main-nav-logo::selection,
-.projects-cta::selection,
-.header-heading-span::selection {
-  color: #1A1A1A;
+.bio__location::selection,
+.header__cta-link::selection,
+.header__heading-span::selection {
+  color: #1a1a1a;
   background: #2cb67d;
 }
 
 .form-button::-moz-selection,
 .email-green::-moz-selection,
-.location::-moz-selection,
-.main-nav-logo::-moz-selection,
-.projects-cta::-moz-selection,
-.header-heading-span::-moz-selection {
+.bio__location::-moz-selection,
+.header__cta-link::-moz-selection,
+.header__heading-span::-moz-selection {
   /* Code for Firefox */
-  color: #1A1A1A;
+  color: #1a1a1a;
   background: #2cb67d;
 }
-
-
-
-
-
-
-
-
-
 
 .mailto-link {
   position: relative;
@@ -61,7 +50,7 @@
 
   &:after,
   &:before {
-    content: '';
+    content: "";
   }
 
   &:before {
