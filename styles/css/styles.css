@@ -308,34 +308,32 @@ template {
 }
 
 ::selection {
-  color: #1A1A1A;
+  color: #1a1a1a;
   background: #785af0;
 }
 
 ::-moz-selection {
   /* Code for Firefox */
-  color: #1A1A1A;
+  color: #1a1a1a;
   background: #785af0;
 }
 
 .form-button::selection,
 .email-green::selection,
-.location::selection,
-.main-nav-logo::selection,
-.projects-cta::selection,
-.header-heading-span::selection {
-  color: #1A1A1A;
+.bio__location::selection,
+.header__cta-link::selection,
+.header__heading-span::selection {
+  color: #1a1a1a;
   background: #2cb67d;
 }
 
 .form-button::-moz-selection,
 .email-green::-moz-selection,
-.location::-moz-selection,
-.main-nav-logo::-moz-selection,
-.projects-cta::-moz-selection,
-.header-heading-span::-moz-selection {
+.bio__location::-moz-selection,
+.header__cta-link::-moz-selection,
+.header__heading-span::-moz-selection {
   /* Code for Firefox */
-  color: #1A1A1A;
+  color: #1a1a1a;
   background: #2cb67d;
 }
 
@@ -382,7 +380,7 @@ template {
   display: block;
 }
 
-.projects-cta {
+.header__cta-link {
   color: #785af0;
   padding: 10px;
   border: 2px solid #785af0;
@@ -390,8 +388,8 @@ template {
   transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.projects-cta::after,
-.projects-cta::before {
+.header__cta-link::before,
+.header__cta-link::after {
   position: absolute;
   content: "";
   width: 0;
@@ -399,89 +397,90 @@ template {
   transition: 0.5s;
 }
 
-.projects-cta::after {
-  top: -11px;
-  left: -3px;
-  border-top: 2px solid transparent;
-  border-left: 2px solid transparent;
-}
-
-.projects-cta::before {
+.header__cta-link::before {
   bottom: -15px;
-  right: -3px;
+  right: 2px;
   border-bottom: 2px solid transparent;
   border-right: 2px solid transparent;
 }
 
-.projects-cta:hover {
+.header__cta-link::after {
+  top: -11px;
+  left: 2px;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+}
+
+.header__cta-link:hover {
   color: #2cb67d;
 }
 
-.projects-cta:hover::after,
-.projects-cta:hover::before {
-  width: calc(100% + 4px);
-  height: calc(100% + 23px);
+.header__cta-link:hover::before,
+.header__cta-link:hover::after {
+  width: calc(100% - 7px);
+  height: calc(100% + 19px);
   border-color: #2cb67d;
 }
 
 @-moz-document url-prefix() {
-  .projects-cta:hover::after,
-.projects-cta:hover::before {
-    height: calc(100% + 21px);
+  .header__cta-link:hover::after,
+.header__cta-link:hover::before {
+    height: calc(100% + 19px);
   }
 }
 @-moz-document url-prefix() {
-  .projects-cta::after {
-    top: -9px;
+  .header__cta-link::after {
+    top: -6px;
   }
 }
 .logo-dark-mode-container,
-.skills-icon,
-.hex-flex,
-.hex-flex-border,
-.project-title-container,
-.project-icon-container,
+.skill_icon,
+.hex,
+.hex-border,
+.project__heading,
+.project__icon-container,
 #footer-section {
   display: flex;
   justify-content: center;
 }
 
-.location-icon-container,
-.project-links {
+.bio__location-icon,
+.project__links {
   display: flex;
   align-items: center;
 }
 
-.header-content-container,
-.location-center,
+#header,
+.bio__location-container-inner,
 .return-home-link {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.main-nav,
-.about-skills-container,
+.nav,
+.skills-container,
 .project-tech-container,
+.project__tech--wide,
 .form-error-submit,
-.footer-links-container {
+.footer__links {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.hamburger-nav-link-container, .projects-list,
+.mobile-nav-list, .projects-list,
 .project,
-.project-bottom, .about-content-container,
-.skills-left-container,
-.skills-middle-container,
-.skills-right-container {
+.project-bottom-container, .about-content-container,
+.hex-group--left,
+.hex-group--middle,
+.hex-group--right {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.form-fieldset {
+.form-inputs {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -489,11 +488,11 @@ template {
 
 .projects-list,
 .project,
-.project-bottom {
+.project-bottom-container {
   justify-content: center;
 }
 
-.hamburger-nav-link-container {
+.mobile-nav-list {
   justify-content: space-between;
 }
 
