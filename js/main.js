@@ -9,7 +9,7 @@ TODO: change figma skill to node.js
 VARIABLES
 ------------------------------------ */
 
-let $nav = document.getElementById("hamburger-nav");
+let $nav = document.getElementById("mobile-nav");
 
 /* ------------------------------------
 ---------------------------------------
@@ -29,9 +29,9 @@ COPY EMAIL
 ---------------------------------------
 ------------------------------------ */
 
-const emailAddress = document.getElementById("email-address");
-const copyBtn = document.querySelector(".click-to-copy");
-const copyText = document.querySelector(".copied");
+const emailAddress = document.getElementById("email");
+const copyBtn = document.querySelector(".copy-email__btn");
+const copyText = document.querySelector(".copied-msg");
 
 copyBtn.addEventListener("click", (e) => {
   e.preventDefault();
@@ -54,7 +54,7 @@ MAKE COPIED TEXT DISAPPEAR AFTER TWO SECONDS
 ------------------------------------ */
 
   setTimeout(() => {
-    const copied = document.querySelector(".copied");
+    const copied = document.querySelector(".copied-msg");
 
     // 👇️ removes element from DOM
     copied.classList.add("hidden");
@@ -64,3 +64,16 @@ MAKE COPIED TEXT DISAPPEAR AFTER TWO SECONDS
   }, 2000); // 👈️ time in milliseconds
 });
 
+// PROJECT TEXT OVERLAY
+const projectOverlay = document.querySelector(".overlay");
+
+function flipCard() {
+  const projectImgId = document.getElementById("project-img-id");
+  console.log(projectImgId.classList);
+  const projectImgContainer = document.querySelector(".project-img-container");
+  console.log(projectImgContainer.classList);
+  const mdDesc = document.querySelector(".md-description");
+  console.log(mdDesc.classList);
+  const projectImg = document.querySelectorAll(".project-img");
+  console.log(projectImg.classList);
+}
