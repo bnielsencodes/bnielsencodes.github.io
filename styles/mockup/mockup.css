@@ -181,7 +181,7 @@ HEADER SECTION
 }
 
 .header__cta {
-  width: 161px;
+  width: 145px;
   margin-top: 8px;
   margin-inline: auto;
   animation-name: moveInBottom;

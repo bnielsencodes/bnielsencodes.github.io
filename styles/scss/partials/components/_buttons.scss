@@ -17,14 +17,14 @@
 
 .header__cta-link::before {
   bottom: -15px;
-  right: 4.5px;
+  right: -3px;
   border-bottom: 2px solid transparent;
   border-right: 2px solid transparent;
 }
 
 .header__cta-link::after {
   top: -11px;
-  left: 4.5px;
+  left: -3px;
   border-top: 2px solid transparent;
   border-left: 2px solid transparent;
 }
@@ -35,8 +35,8 @@
 
 .header__cta-link:hover::before,
 .header__cta-link:hover::after {
-  width: calc(100% + -11px);
-  height: calc(100% + 19px);
+  width: calc(100% + 4px);
+  height: calc(100% + 23px);
   border-color: #2cb67d;
 }
 
@@ -44,12 +44,12 @@
 @-moz-document url-prefix() {
   .header__cta-link:hover::after,
   .header__cta-link:hover::before {
-    height: calc(100% + 19px);
+    height: calc(100% + 21px);
   }
 }
 
 @-moz-document url-prefix() {
   .header__cta-link::after {
-    top: -6px;
+    top: -9px;
   }
 }
