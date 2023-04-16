@@ -2,7 +2,51 @@
   text-align: center;
 }
 
-@mixin absolute-positioned {
-  position: absolute;
-  @content;
+// PSEUDO, BEFORE AND AFTER
+@mixin pseudo($content: "", $pos: absolute) {
+  content: $content;
+  position: $pos;
+}
+
+// ADD VENDOR PREFIXES TO ANY CSS PROPERTY
+@mixin vendor-prefixs($prop, $value) {
+  -webkit-#{$prop}: #{$value};
+  -moz-#{$prop}: #{$value};
+  -ms-#{$prop}: #{$value};
+  -o-#{$prop}: #{$value};
+  #{$prop}: #{$value};
+}
+
+// KEYFRAME ANIMATIONS
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+// MEDIA QUERIES
+@mixin breakpoint($point) {
+  @if $point == xl {
+    @media only screen and (min-width: 1920px) {
+      @content;
+    }
+  } @else if $point == large {
+    @media only screen and (min-width: 1440px) {
+      @content;
+    }
+  } @else if $point == desktop {
+    @media only screen and (min-width: 1024px) {
+      @content;
+    }
+  } @else if $point == tablet {
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  }
 }
