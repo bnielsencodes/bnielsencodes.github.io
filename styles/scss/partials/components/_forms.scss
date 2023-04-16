@@ -1,0 +1,40 @@
+// CONTACT FORM --------------------------
+.form {
+  max-width: 475px;
+  margin-inline: auto;
+  &__heading,
+  &__text {
+    margin: 0;
+  }
+  &__text {
+    padding: 6px 0 4px;
+  }
+  &__item {
+    padding-left: 7px;
+    border: 0;
+    border-radius: 0px;
+    margin-bottom: 6px;
+    background: $color-neutral-200;
+    caret-color: $color-secondary;
+    &:focus {
+      outline: 2px solid $color-primary;
+      opacity: 0.7;
+    }
+    &:first-child,
+    &:nth-child(2) {
+      height: 35px;
+    }
+    &:nth-child(3) {
+      padding-top: 10px;
+      resize: none;
+    }
+  }
+}
+
+.form-inputs {
+  border: 0;
+}
+
+.fa-arrow-right {
+  padding-left: 1px;
+}
