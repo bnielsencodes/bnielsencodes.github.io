@@ -1,0 +1,362 @@
+/* ------------------------------------
+---------------------------------------
+768px MEDIA QUERIES
+---------------------------------------
+------------------------------------ */
+@include breakpoint(tablet) {
+  .hidden--md {
+    display: none;
+  }
+
+  .section-heading {
+    font-size: 2.45rem;
+  }
+
+  .header {
+    &__heading,
+    &__subheading {
+      font-size: 2.2rem;
+    }
+    &__heading {
+      padding: 30px 30px 0;
+    }
+    &__subheading {
+      min-width: 483px;
+      padding: 0 30px 15px;
+    }
+  }
+
+  .nav {
+    &__logo {
+      padding-left: 34px;
+    }
+    &__name {
+      font-size: 1.15rem;
+      &--projects-page {
+        padding-left: 28px;
+      }
+    }
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+    &__item {
+      &:not(:last-of-type) {
+        padding-right: 22px;
+      }
+    }
+    &__link {
+      color: $color-neutral-300;
+      font-size: 1.1rem;
+      &:hover {
+        border-bottom: 2px solid $color-primary;
+        color: $color-secondary;
+      }
+    }
+  }
+
+  #about-section {
+    & .section-heading {
+      padding: 100px 0 30px;
+    }
+  }
+
+  .about-heading-span {
+    &::after {
+      left: 24px;
+      width: 100px;
+    }
+  }
+
+  .about-content-container {
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 670px;
+    padding-bottom: 25px;
+    margin: 60px 80px 0;
+  }
+
+  .bio {
+    margin: 15px 0 auto;
+  }
+
+  .resume {
+    font-size: 0.65rem;
+    &:hover {
+      font-size: 0.7rem;
+      font-weight: 500;
+    }
+  }
+
+  #projects-section {
+    .section-heading__span {
+      &::after {
+        width: 140px;
+        left: 24px;
+      }
+    }
+  }
+
+  .projects-list {
+    &--project-page {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 20px;
+      grid-row-gap: 50px;
+      padding: 0 28px;
+    }
+  }
+
+  .project {
+    max-width: calc(100vw - 340px);
+    &--left {
+      margin: 0 auto 80px 40px;
+    }
+    &--right {
+      margin: 0 40px 80px auto;
+    }
+    &__img-container,
+    &__video {
+      position: relative;
+      /* for rotate project image overlay on hover */
+      perspective: 600px;
+    }
+    &__img-container {
+      &:hover .overlay {
+        opacity: 1;
+      }
+    }
+    &__heading {
+      font-size: 1.7rem;
+      &--projects-page {
+        font-size: 1.6rem;
+      }
+    }
+    &__description {
+      max-width: 770px;
+    }
+    &__links {
+      gap: 25px;
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 7px;
+    left: 0;
+    display: block;
+    width: 100%;
+    background: rgb(39 39 39 / 0.85);
+    opacity: 0;
+    transition: 0.5s ease;
+    &__text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: $color-neutral-300;
+      font-size: 15px;
+      text-align: center;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .live-site,
+  .source-code {
+    width: 113px;
+  }
+
+  .project-mb {
+    margin-bottom: auto;
+  }
+
+  #contact-section {
+    padding-top: 70px;
+    & .section-heading__span {
+      font-size: 2rem;
+      &::after {
+        left: 28px;
+        width: 347px;
+        height: 13px;
+      }
+    }
+  }
+
+  .form {
+    &__heading {
+      font-size: 1.275rem;
+    }
+    &__text {
+      font-size: 0.9rem;
+    }
+  }
+
+  // COPY EMAIL ADDRESS TO CLIPBOARD
+  // Show the desktop button
+  #copy-email {
+    display: inline;
+    // Hide mobile fallback version on desktop resolutions
+    &--mobile {
+      display: none;
+    }
+  }
+}
+
+/* ------------------------------------
+---------------------------------------
+1024px MEDIA QUERIES
+---------------------------------------
+------------------------------------ */
+@include breakpoint(desktop) {
+  #hidden--lg {
+    display: none;
+  }
+
+  .hidden--lg {
+    display: none;
+  }
+
+  .section-heading {
+    font-size: 2.5rem;
+  }
+
+  .header {
+    &__heading,
+    &__subheading {
+      font-size: 3rem;
+    }
+    &__subheading {
+      min-width: 577px;
+    }
+  }
+
+  .about-heading-span {
+    &::after {
+      left: 25px;
+      width: 105px;
+      height: 15px;
+    }
+  }
+
+  .about-content-container {
+    max-width: 1300px;
+    padding-bottom: 25px;
+    margin: 80px auto 0;
+  }
+
+  .bio,
+  .skills-right {
+    padding: 0;
+  }
+
+  .bio {
+    margin: 10px auto auto;
+  }
+
+  .resume {
+    font-size: 0.7rem;
+    &:hover {
+      font-size: 0.725rem;
+    }
+  }
+
+  #projects-section {
+    .section-heading__span {
+      &::after {
+        left: 25px;
+        width: 145px;
+        height: 15px;
+      }
+    }
+  }
+
+  .projects-list {
+    &--project-page {
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 20px;
+      grid-row-gap: 50px;
+    }
+  }
+
+  .project {
+    max-width: calc(100vw - 460px);
+    &__heading {
+      font-size: 2rem;
+      &--projects-page {
+        font-size: 1.55rem;
+      }
+    }
+    &__description {
+      padding: 0 12px;
+      font-size: 0.985rem;
+    }
+    &__links {
+      gap: 30px;
+      &--projects-page {
+        gap: 18px;
+      }
+    }
+  }
+
+  .live-site,
+  .source-code {
+    font-size: 1.09rem;
+  }
+
+  #contact-section {
+    .section-heading__span {
+      font-size: 2.35rem;
+      &::after {
+        left: 36px;
+        width: 400px;
+        height: 15px;
+      }
+    }
+  }
+
+  .form {
+    &__text {
+      font-size: 0.925rem;
+    }
+    &__heading {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+/* ------------------------------------
+---------------------------------------
+1440px MEDIA QUERIES
+---------------------------------------
+------------------------------------ */
+@include breakpoint(large) {
+  .project {
+    max-width: 850px;
+  }
+
+  .overlay__text {
+    font-size: 20px;
+  }
+
+  .project__links {
+    gap: 45px;
+    width: 100%;
+  }
+}
+
+/* ------------------------------------
+---------------------------------------
+1920px MEDIA QUERIES
+---------------------------------------
+------------------------------------ */
+@include breakpoint(xl) {
+  .project {
+    min-width: 920px;
+    max-width: 966px;
+  }
+}
