@@ -1,0 +1,23 @@
+// HIDE SCROLLBAR BUT STILL ALLOW SCROLL (CHROME, SAFARI, OPERA)
+body {
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden;
+  // HIDE SCROLLBAR BUT STILL ALLOW SCROLL (FIREFOX)
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    width: 0 !important;
+  }
+}
+
+#hidden--sm {
+  display: none;
+}
+
+.hidden--sm {
+  display: none;
+}
+
+.section-heading {
+  margin: 0 0 10px;
+}
