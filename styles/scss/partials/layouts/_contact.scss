@@ -1,0 +1,57 @@
+#contact-section {
+  padding-bottom: 125px;
+  background: $color-neutral-100;
+  & .section-heading__span {
+    position: relative;
+    z-index: 1;
+    &::after {
+      @include pseudo;
+      bottom: -2px;
+      left: 19px;
+      z-index: -1;
+      width: 220px;
+      height: 9px;
+      background: $color-primary;
+    }
+  }
+}
+
+// COPY EMAIL ADDRESS TO CLIPBOARD ----------------------
+#copy-email {
+  position: relative;
+  display: none;
+  &--mobile {
+    display: inline;
+    padding: 0;
+  }
+}
+
+.copy-email {
+  &--mobile {
+    border: 0;
+    background: $color-neutral-100;
+  }
+  &__btn {
+    padding: 0;
+    border: 0;
+    background: $color-neutral-100;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+}
+
+.copied-msg {
+  position: absolute;
+  top: -16px;
+  right: -56px;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  margin-left: 1rem;
+  background: transparent;
+  transform: rotate(29deg);
+  &.hidden {
+    display: none;
+  }
+}
