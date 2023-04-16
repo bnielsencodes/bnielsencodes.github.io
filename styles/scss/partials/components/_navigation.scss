@@ -1,0 +1,138 @@
+// NAVIGATION ------------------------------------
+
+.nav {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  height: 50px;
+  border-bottom: 1px solid $color-neutral-100;
+  @include vendor-prefixs(box-shadow, 0 4px 4px rgb(0 0 0 / 30%));
+  background: $color-neutral-200;
+  &__logo {
+    padding-left: 18px;
+  }
+  &__name {
+    margin: 1px 0 0 8px;
+    &--projects-page {
+      padding-left: 15px;
+    }
+  }
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+a {
+  &:link {
+    text-decoration: none;
+  }
+  &:visited {
+    text-decoration: none;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+  &:active {
+    text-decoration: none;
+  }
+}
+
+.nav-list {
+  &__link {
+    &:focus {
+      outline: 2px solid $color-primary;
+      opacity: 0.7;
+    }
+  }
+}
+
+// HAMBURGER MENU ---------------------------------------
+
+.hamburger-menu {
+  position: fixed;
+  top: 0;
+  right: 8px;
+  width: 40px;
+  height: 40px;
+  padding: 0.3rem;
+  cursor: pointer;
+  &__bar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 200;
+    width: 70%;
+    height: 4px;
+    border-radius: 25px;
+    background: $color-secondary;
+    transform: translate(-50%, -50%);
+    transition: transform 0.6s, opacity 0.8s, top 0.6s;
+  }
+  &__bar--top {
+    top: 25%;
+  }
+  &__bar--bottom {
+    top: 75%;
+  }
+  &.active .hamburger-menu__bar--top {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-315deg);
+  }
+  &.active .hamburger-menu__bar--mid {
+    opacity: 0;
+  }
+  &.active .hamburger-menu__bar--bottom {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-225deg);
+  }
+  &.active #mobile-nav {
+    display: block;
+  }
+}
+
+#mobile-nav {
+  display: none;
+  z-index: 200;
+}
+
+.mobile-nav__inner {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  background: $color-neutral-200;
+}
+
+.mobile-nav-list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 200px;
+  transform: translate(-50%, -50%);
+  &__link {
+    position: relative;
+    z-index: 1;
+    padding: 9px 12px 0;
+    border-bottom: 3px solid $color-primary;
+    &::after {
+      @include pseudo;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      background: $color-primary;
+      transform: scaleY(0);
+      transform-origin: bottom center;
+      transition: transform 0.3s;
+    }
+    &:hover::after {
+      transform: scaleY(1);
+    }
+  }
+}
