@@ -39,6 +39,7 @@
 - SASS
 - Flexbox
 - CSS animations
+- BEM methodology
 - SVGs
 - Mobile-first workflow
 
