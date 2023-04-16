@@ -1,0 +1,47 @@
+#footer-section {
+  position: relative;
+  height: 135px;
+  padding-top: 25px;
+  background: $color-neutral-200;
+}
+
+.footer {
+  min-width: 211px;
+  margin-top: 24px;
+  &__links {
+    padding-left: 10px;
+  }
+  &__icon {
+    width: 50px;
+    height: 50px;
+    fill: $color-primary;
+    &:hover {
+      transform: scale(1.1);
+    }
+    &:focus {
+      outline: 2px solid $color-secondary;
+    }
+  }
+  &__signature {
+    margin-top: 18px;
+  }
+}
+
+.svg {
+  // &--twitter {
+  //   display: block;
+  //   margin-inline: auto;
+  //   &:hover {
+  //     fill: $color-social-twitter;
+  //   }
+  // }
+  &--email:hover {
+    fill: $color-social-email;
+  }
+  &--github:hover {
+    fill: $color-social-github;
+  }
+  &--linkedin:hover {
+    fill: $color-social-linkedin;
+  }
+}
