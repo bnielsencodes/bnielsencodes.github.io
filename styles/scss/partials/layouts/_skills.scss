@@ -1,0 +1,438 @@
+.skills {
+  height: 580px;
+  margin-inline: auto;
+  opacity: 0;
+  &-animation {
+    animation-name: moveInRight2;
+    animation-duration: 1.4s;
+    animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  &__heading {
+    width: 105px;
+    border-bottom: 4px solid $color-primary;
+    margin: 0 auto;
+  }
+  &-container {
+    min-width: 255px;
+    margin-top: 60px;
+  }
+}
+
+.hex-group {
+  &--left,
+  &--middle,
+  &--right {
+    width: 68px;
+  }
+}
+
+.hex {
+  position: absolute;
+  top: -12px;
+  z-index: -1;
+  pointer-events: none;
+  &--html,
+  &--nextjs,
+  &--sass {
+    left: -36.5px;
+  }
+  &--css {
+    left: -38.5px;
+  }
+  &--figma {
+    left: -36px;
+  }
+  &--git {
+    left: -42px;
+  }
+  &--js {
+    left: -22px;
+  }
+  &--react {
+    left: -37px;
+  }
+  &--tailwind {
+    left: -30.5px;
+  }
+  &--vite {
+    left: -38.5px;
+  }
+  // &--vscode {
+  //   left: -27.5px;
+  // }
+  &__left,
+  &__middle,
+  &__right {
+    z-index: -1;
+    height: 0;
+  }
+  &__left,
+  &__right {
+    width: 0;
+  }
+  &__left {
+    border-top: 44px solid transparent;
+    border-right: 27.5px solid $color-neutral-200;
+    border-bottom: 44px solid transparent;
+  }
+  &__middle {
+    width: 55px;
+    height: 88px;
+    background: $color-neutral-200;
+  }
+  &__right {
+    border-top: 44px solid transparent;
+    border-bottom: 44px solid transparent;
+    border-left: 27.5px solid $color-neutral-200;
+  }
+}
+
+.hex-border {
+  position: absolute;
+  top: -14px;
+  pointer-events: none;
+  &--html,
+  &--sass,
+  &--nextjs {
+    left: -38.5px;
+  }
+  &--css {
+    left: -40.5px;
+  }
+  &--figma {
+    left: -38px;
+  }
+  &--git {
+    left: -44px;
+  }
+  &--js {
+    left: -24px;
+  }
+  &--react {
+    left: -39px;
+  }
+  &--tailwind {
+    left: -32.5px;
+  }
+  &--vite {
+    left: -40.5px;
+  }
+  //   &--vscode {
+  //   left: -29.5px;
+  // }
+  &__left,
+  &__middle,
+  &__right {
+    z-index: -2;
+    height: 0;
+  }
+  &__left,
+  &__right {
+    width: 0;
+    border-top: 46px solid transparent;
+    border-bottom: 46px solid transparent;
+  }
+  &__left {
+    border-right: 28.5px solid $color-primary;
+    &-hover {
+      &--css {
+        border-right: 28.5px solid $color-css;
+      }
+      &--figma {
+        animation: figmaBorderLeftGradientAnimation 3.75s ease 0s infinite
+          normal none;
+      }
+      &--git {
+        border-right: 28.5px solid $color-git;
+      }
+      &--html {
+        border-right: 28.5px solid $color-html;
+      }
+      &--js {
+        border-right: 28.5px solid $color-js;
+      }
+      &--nextjs {
+        border-right: 28.5px solid $color-nextjs;
+      }
+      &--react {
+        border-right: 28.5px solid $color-react;
+      }
+      &--sass {
+        border-right: 28.5px solid $color-sass;
+      }
+      &--tailwind {
+        border-right: 28.5px solid $color-tailwind;
+      }
+      &--vite {
+        animation: viteBorderLeftGradientAnimation 3.75s ease 0s infinite normal
+          none;
+      }
+      // &--vscode {
+      //   border-right: 28.5px solid $color-vscode;
+      // }
+    }
+  }
+  &__middle {
+    width: 57px;
+    height: 92px;
+    background: $color-primary;
+  }
+  &__right {
+    border-left: 28.5px solid $color-primary;
+    &-hover {
+      &--css {
+        border-left: 28.5px solid $color-css;
+      }
+      &--figma {
+        animation: figmaBorderRightGradientAnimation 3.75s ease 0s infinite
+          normal none;
+      }
+      &--git {
+        border-left: 28.5px solid $color-git;
+      }
+      &--html {
+        border-left: 28.5px solid $color-html;
+      }
+      &--js {
+        border-left: 28.5px solid $color-js;
+      }
+      &--nextjs {
+        border-left: 28.5px solid $color-nextjs;
+      }
+      &--react {
+        border-left: 28.5px solid $color-react;
+      }
+      &--sass {
+        border-left: 28.5px solid $color-sass;
+      }
+      &--tailwind {
+        border-left: 28.5px solid $color-tailwind;
+      }
+      &--vite {
+        animation: viteBorderRightGradientAnimation 3.75s ease 0s infinite
+          normal none;
+      }
+      // &--vscode {
+      //   border-left: 28.5px solid $color-vscode;
+      // }
+    }
+  }
+}
+
+.skill {
+  position: relative;
+  z-index: 1;
+  height: 90px;
+  margin-bottom: 11px;
+  &__icon {
+    height: 32px;
+  }
+}
+
+// SKILL HOVER EFFECTS
+
+.hex-bg-color {
+  &--css {
+    background: $color-css;
+  }
+  &--figma {
+    animation: figmaBgGradientAnimation 3.75s ease 0s infinite normal none;
+  }
+  &--git {
+    background: $color-git;
+  }
+  &--html {
+    background: $color-html;
+  }
+  &--js {
+    background: $color-js;
+  }
+  &--nextjs {
+    background: $color-nextjs;
+  }
+  &--react {
+    background: $color-react;
+  }
+  &--sass {
+    background: $color-sass;
+  }
+  &--tailwind {
+    background: $color-tailwind;
+  }
+  &--vite {
+    animation: viteBgGradientAnimation 3.75s ease 0s infinite normal none;
+  }
+  //   &--vscode {
+  //   background: $color-vscode;
+  // }
+}
+
+@include keyframes(moveInRight2) {
+  0% {
+    opacity: 0;
+    transform: translateX(25rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@include keyframes(viteBgGradientAnimation) {
+  0% {
+    background: hsla(195, 100%, 63%, 1);
+  }
+
+  20% {
+    background: hsla(281, 99%, 60%, 1);
+  }
+
+  40% {
+    background: hsla(50, 100%, 76%, 1);
+  }
+
+  60% {
+    background: hsla(50, 100%, 60%, 1);
+  }
+
+  80% {
+    background: hsla(40, 100%, 50%, 1);
+  }
+
+  100% {
+    background: hsla(195, 100%, 63%, 1);
+  }
+}
+
+@include keyframes(viteBorderLeftGradientAnimation) {
+  0% {
+    border-right: 28.5px solid hsla(195, 100%, 63%, 1);
+  }
+
+  20% {
+    border-right: 28.5px solid hsla(281, 99%, 60%, 1);
+  }
+
+  40% {
+    border-right: 28.5px solid hsla(50, 100%, 76%, 1);
+  }
+
+  60% {
+    border-right: 28.5px solid hsla(50, 100%, 60%, 1);
+  }
+
+  80% {
+    border-right: 28.5px solid hsla(40, 100%, 50%, 1);
+  }
+
+  100% {
+    border-right: 28.5px solid hsla(195, 100%, 63%, 1);
+  }
+}
+
+@include keyframes(viteBorderRightGradientAnimation) {
+  0% {
+    border-left: 28.5px solid hsla(195, 100%, 63%, 1);
+  }
+
+  20% {
+    border-left: 28.5px solid hsla(281, 99%, 60%, 1);
+  }
+
+  40% {
+    border-left: 28.5px solid hsla(50, 100%, 76%, 1);
+  }
+
+  60% {
+    border-left: 28.5px solid hsla(50, 100%, 60%, 1);
+  }
+
+  80% {
+    border-left: 28.5px solid hsla(40, 100%, 50%, 1);
+  }
+
+  100% {
+    border-left: 28.5px solid hsla(195, 100%, 63%, 1);
+  }
+}
+
+@include keyframes(figmaBgGradientAnimation) {
+  0% {
+    background: hsla(13, 80%, 51%, 1);
+  }
+
+  20% {
+    background: hsla(6, 85%, 66%, 1);
+  }
+
+  40% {
+    background: hsla(267, 85%, 64%, 1);
+  }
+
+  60% {
+    background: hsla(197, 89%, 52%, 1);
+  }
+
+  80% {
+    background: hsla(156, 86%, 41%, 1);
+  }
+
+  100% {
+    background: hsla(13, 80%, 51%, 1);
+  }
+}
+
+@include keyframes(figmaBorderLeftGradientAnimation) {
+  0% {
+    border-right: 28.5px solid hsla(13, 80%, 51%, 1);
+  }
+
+  20% {
+    border-right: 28.5px solid hsla(6, 85%, 66%, 1);
+  }
+
+  40% {
+    border-right: 28.5px solid hsla(267, 85%, 64%, 1);
+  }
+
+  60% {
+    border-right: 28.5px solid hsla(197, 89%, 52%, 1);
+  }
+
+  80% {
+    border-right: 28.5px solid hsla(156, 86%, 41%, 1);
+  }
+
+  100% {
+    border-right: 28.5px solid hsla(13, 80%, 51%, 1);
+  }
+}
+
+@include keyframes(figmaBorderRightGradientAnimation) {
+  0% {
+    border-left: 28.5px solid hsla(13, 80%, 51%, 1);
+  }
+
+  20% {
+    border-left: 28.5px solid hsla(6, 85%, 66%, 1);
+  }
+
+  40% {
+    border-left: 28.5px solid hsla(267, 85%, 64%, 1);
+  }
+
+  60% {
+    border-left: 28.5px solid hsla(197, 89%, 52%, 1);
+  }
+
+  80% {
+    border-left: 28.5px solid hsla(156, 86%, 41%, 1);
+  }
+
+  100% {
+    border-left: 28.5px solid hsla(13, 80%, 51%, 1);
+  }
+}
