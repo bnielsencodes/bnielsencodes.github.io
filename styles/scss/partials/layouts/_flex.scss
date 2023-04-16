@@ -1,5 +1,3 @@
-.logo-dark-mode-container,
-.skill_icon,
 .hex,
 .hex-border,
 .project__heading,
@@ -8,6 +6,17 @@
   @extend %flex-center-x;
 }
 
+.project__links {
+  @extend %flex-center-x;
+  gap: 20px;
+}
+
+.projects-list--project-page {
+  @extend %flex-center-x;
+  gap: 40px;
+}
+
+.nav__logo,
 .bio__location-icon,
 .project__links {
   @extend %flex-center-y;
@@ -15,26 +24,31 @@
 
 #header,
 .bio__location-container-inner,
-.return-home-link {
-  @extend %flex-center-xy;
+.return-home__link {
+  @extend %flex-center;
 }
 
 .nav,
 .skills-container,
-.project-tech-container,
+.project__tech,
 .project__tech--wide,
 .form-error-submit,
 .footer__links {
-  @extend %flex-between-center;
+  @extend %flex-center-y;
+  justify-content: space-between;
 }
 
+.bio,
 .about-content-container,
+.skills,
 .hex-group--left,
 .hex-group--middle,
-.hex-group--right {
+.hex-group--right,
+.project__icon-container {
   @extend %flex-col-center-x;
 }
 
+.header__text-container,
 .projects-list,
 .project,
 .project-bottom-container {
