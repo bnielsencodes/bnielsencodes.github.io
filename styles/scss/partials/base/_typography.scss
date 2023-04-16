@@ -1,75 +1,382 @@
-::selection {
-  background: #785af0;
-  color: #1a1a1a;
-}
-
-/* Code for Firefox */
+::selection,
 ::-moz-selection {
-  background: #785af0;
-  color: #1a1a1a;
+  background: $color-primary;
+  color: $color-neutral-100;
 }
 
-.form-button::selection,
-.email-green::selection,
 .bio__location::selection,
 .header__cta-link::selection,
 .header__heading-span::selection {
-  background: #2cb67d;
-  color: #1a1a1a;
+  background: $color-secondary;
+  color: $color-neutral-100;
 }
 
-/* Code for Firefox */
-.form-button::-moz-selection,
-.email-green::-moz-selection,
+/* Firefox */
 .bio__location::-moz-selection,
 .header__cta-link::-moz-selection,
 .header__heading-span::-moz-selection {
-  background: #2cb67d;
-  color: #1a1a1a;
+  background: $color-secondary;
+  color: $color-neutral-100;
 }
 
-.mailto-link {
-  position: relative;
-  padding: 8px 0;
+body {
+  color: $color-neutral-300;
+  font: normal 16px/1.5 "Monteserrat", sans-serif;
 }
 
-.mailto-message {
-  position: absolute;
-  top: 1px;
-  left: 50%;
-  display: none;
-  width: auto;
-  padding: 2px 6px;
-  border-radius: 2px;
-  margin-bottom: -5px;
-  background-color: black;
-  color: white;
-  font-size: 12px;
-  transform: translate(-50%, -100%);
-  white-space: nowrap;
+.section-heading {
+  font-size: 2.35rem;
+}
 
-  &:after,
-  &:before {
-    content: "";
+.section-heading,
+.form__heading,
+.form__text {
+  text-align: center;
+}
+
+#header {
+  text-align: center;
+}
+
+.header {
+  &__heading,
+  &__subheading {
+    color: $color-neutral-300;
+    font-size: 1.85rem;
+    font-weight: $font-light;
+    line-height: 1.15;
   }
-
-  &:before {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    height: 0;
-    width: 0;
-    border: solid transparent;
-    border-width: 4px;
-    border-color: rgba(0, 0, 0, 0);
-    border-top-color: #000000;
-    margin-left: -4px;
-    pointer-events: none;
+  &__heading-span {
+    color: $color-secondary;
+    &:last-of-type {
+      color: $color-primary;
+    }
   }
 }
 
-.mailto-link:hover .mailto-message,
-.mailto-link:focus .mailto-message,
-.mailto-link:focus-within .mailto-message {
-  display: block;
+.nav__name {
+  font-size: 1rem;
+  a {
+    color: $color-secondary;
+  }
+}
+
+.mobile-nav-list__link {
+  color: $color-neutral-300;
+  font-size: 1.65rem;
+  font-weight: $font-light;
+  &:hover {
+    color: $color-neutral-100;
+  }
+}
+
+.about-content-container {
+  padding-bottom: 25px;
+  margin: 50px 0 0;
+  font-size: 0.9rem;
+}
+
+.bio {
+  text-align: center;
+  &__location-container {
+    width: 204px;
+    margin: 17px auto 10px;
+    text-align: center;
+  }
+  &__location {
+    font-size: 1.4rem;
+  }
+}
+
+.fa-map-pin {
+  font-size: 2.2rem;
+}
+
+.skills__heading {
+  font-size: 1.4rem;
+}
+
+.skill-fa {
+  font-size: 2rem;
+  &--sass {
+    font-size: 2.4rem;
+  }
+}
+
+.skill {
+  text-align: center;
+  &__icon {
+    &--css:hover {
+      color: $color-css;
+      & + .skill__p--css {
+        color: $color-css;
+      }
+    }
+    &--figma:hover {
+      animation: figmaGradientAnimation 3.75s ease 0s infinite normal none;
+      & + .skill__p--figma {
+        animation: figmaGradientAnimation 3.75s ease 0s infinite normal none;
+      }
+    }
+    &--git:hover {
+      color: $color-git;
+      & + .skill__p--git {
+        color: $color-git;
+      }
+    }
+    &--html:hover {
+      color: $color-html;
+      & + .skill__p--html {
+        color: $color-html;
+      }
+    }
+    &--nextjs:hover {
+      color: $color-nextjs;
+      & + .skill__p--nextjs {
+        color: $color-nextjs;
+      }
+    }
+    &--js:hover {
+      color: $color-js;
+      & + .skill__p--js {
+        color: $color-js;
+      }
+    }
+    &--react:hover {
+      color: $color-react;
+      & + .skill__p--react {
+        color: $color-react;
+      }
+    }
+    &--sass:hover {
+      color: $color-sass;
+      & + .skill__p--sass {
+        color: $color-sass;
+      }
+    }
+    &--vite:hover {
+      animation: viteGradientAnimation 3.75s ease 0s infinite normal none;
+      & + .skill__p--vite {
+        animation: viteGradientAnimation 3.75s ease 0s infinite normal none;
+      }
+    }
+  }
+  &__p {
+    &--css:hover {
+      color: $color-css;
+    }
+    &--figma:hover {
+      animation: figmaGradientAnimation 3.75s ease 0s infinite normal none;
+    }
+    &--git:hover {
+      color: $color-git;
+    }
+    &--html:hover {
+      color: $color-html;
+    }
+    &--nextjs:hover {
+      color: $color-nextjs;
+    }
+    &--js:hover {
+      color: $color-js;
+    }
+    &--react:hover {
+      color: $color-react;
+    }
+    &--sass:hover {
+      color: $color-sass;
+    }
+    &--vite:hover {
+      animation: viteGradientAnimation 3.75s ease 0s infinite normal none;
+    }
+  }
+}
+
+.hover-color {
+  &--css {
+    color: $color-css;
+  }
+  &--figma {
+    animation: figmaGradientAnimation 3.75s ease 0s infinite normal none;
+  }
+  &--git {
+    color: $color-git;
+  }
+  &--html {
+    color: $color-html;
+  }
+  &--js {
+    color: $color-js;
+  }
+  &--nextjs {
+    color: $color-nextjs;
+  }
+  &--react {
+    color: $color-react;
+  }
+  &--sass {
+    color: $color-sass;
+  }
+  &--tailwind {
+    color: $color-tailwind;
+  }
+  &--vite {
+    animation: viteGradientAnimation 3.75s ease 0s infinite normal none;
+  }
+}
+
+#projects-section .section-heading__span {
+  color: $color-neutral-100;
+}
+
+.project {
+  &__heading {
+    margin: 0 auto;
+    color: $color-secondary;
+    font-size: 1.35rem;
+    text-align: center;
+  }
+  &__description {
+    padding: 0 8px;
+    margin: 0 0 12px;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  &__icon-container {
+    i {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
+  &__icon--html {
+    color: $color-html;
+  }
+  &__icon--css {
+    color: $color-css;
+  }
+  &__icon--sass {
+    color: $color-sass;
+  }
+  &__icon--js {
+    color: $color-js;
+  }
+  &__icon--react {
+    color: $color-react;
+  }
+}
+
+#contact-section .section-heading__span {
+  font-size: 1.28rem;
+}
+
+.form-inputs legend {
+  text-align: center;
+}
+
+.form {
+  &__heading {
+    font-size: 1rem;
+  }
+  &__text {
+    color: $color-neutral-300;
+    font-size: 0.85rem;
+  }
+  &__item {
+    color: $color-neutral-300;
+  }
+  &__submit {
+    text-align: end;
+  }
+}
+
+.fa-arrow-right {
+  color: $color-primary;
+  font-size: 0.85rem;
+}
+
+.copy-email__btn,
+#copy-email--mobile {
+  color: $color-secondary;
+}
+
+.copied-msg {
+  color: $color-primary;
+  font-size: 13px;
+  font-weight: $font-medium;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+#footer-section {
+  font-size: 0.75rem;
+}
+
+.fa-chevrons-up {
+  color: $color-neutral-100;
+  font-size: 2rem;
+}
+
+.footer {
+  text-align: center;
+  &__links {
+    font-size: 2.5rem;
+  }
+  &__signature {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+  }
+}
+
+@include keyframes(figmaGradientAnimation) {
+  0% {
+    color: hsla(13, 80%, 51%, 1);
+  }
+
+  20% {
+    color: hsla(6, 85%, 66%, 1);
+  }
+
+  40% {
+    color: hsla(267, 85%, 64%, 1);
+  }
+
+  60% {
+    color: hsla(197, 89%, 52%, 1);
+  }
+
+  80% {
+    color: hsla(156, 86%, 41%, 1);
+  }
+
+  100% {
+    color: hsla(13, 80%, 51%, 1);
+  }
+}
+
+@include keyframes(viteGradientAnimation) {
+  0% {
+    color: hsla(195, 100%, 63%, 1);
+  }
+
+  20% {
+    color: hsla(281, 99%, 60%, 1);
+  }
+
+  40% {
+    color: hsla(50, 100%, 76%, 1);
+  }
+
+  60% {
+    color: hsla(50, 100%, 60%, 1);
+  }
+
+  80% {
+    color: hsla(40, 100%, 50%, 1);
+  }
+
+  100% {
+    color: hsla(195, 100%, 63%, 1);
+  }
 }
