@@ -8,16 +8,9 @@
   align-items: center;
 }
 
-%flex-center-xy {
-  display: flex;
+%flex-center {
+  @extend %flex-center-y;
   justify-content: center;
-  align-items: center;
-}
-
-%flex-between-center {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 %flex-col-center-x {
