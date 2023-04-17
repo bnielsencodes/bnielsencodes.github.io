@@ -102,8 +102,8 @@ const figmaIconP = document.querySelector(".skill__p--figma");
 // const vscodeIconP = document.querySelector(".skill__p--vscode");
 
 /* ------------------------------------
-    ---------------------------------------
-    tsPARTICLES FOR HERO BACKGROUND ANIMATION
+---------------------------------------
+tsPARTICLES FOR HERO BACKGROUND ANIMATION
 ---------------------------------------
 ------------------------------------ */
 
