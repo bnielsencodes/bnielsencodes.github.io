@@ -3,29 +3,29 @@
 .project__heading,
 .project__icon-container,
 #footer-section {
-  @extend %flex-center-x;
+  @include flex-center-x;
 }
 
 .project__links {
-  @extend %flex-center-x;
+  @include flex-center-x;
   gap: 20px;
 }
 
 .projects-list--project-page {
-  @extend %flex-center-x;
+  @include flex-center-x;
   gap: 40px;
 }
 
 .nav__logo,
 .bio__location-icon,
 .project__links {
-  @extend %flex-center-y;
+  @include flex-center-y;
 }
 
 #header,
 .bio__location-container-inner,
 .return-home__link {
-  @extend %flex-center;
+  @include flex-center;
 }
 
 .nav,
@@ -34,7 +34,7 @@
 .project__tech--wide,
 .form-error-submit,
 .footer__links {
-  @extend %flex-center-y;
+  @include flex-center-y;
   justify-content: space-between;
 }
 
@@ -45,22 +45,22 @@
 .hex-group--middle,
 .hex-group--right,
 .project__icon-container {
-  @extend %flex-col-center-x;
+  @include flex-col-center-x;
 }
 
 .header__text-container,
 .projects-list,
 .project,
 .project-bottom-container {
-  @extend %flex-col-center-x;
+  @include flex-col-center-x;
   justify-content: center;
 }
 
 .mobile-nav-list {
-  @extend %flex-col-center-x;
+  @include flex-col-center-x;
   justify-content: space-between;
 }
 
 .form-inputs {
-  @extend %flex-col-center-y;
+  @include flex-col-center-y;
 }
