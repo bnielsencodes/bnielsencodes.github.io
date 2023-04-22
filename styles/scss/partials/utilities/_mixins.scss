@@ -1,38 +1,47 @@
-@mixin center-text {
-  text-align: center;
+// FLEXBOX --------------------------
+// justify-center
 @mixin flex-center-x {
   display: flex;
   justify-content: center;
 }
 
-// PSEUDO, BEFORE AND AFTER
+// align-center
 @mixin flex-center-y {
   display: flex;
   align-items: center;
 }
 
+// align-center
+// justify-center
 @mixin flex-center {
   @include flex-center-y;
   justify-content: center;
 }
 
+// column
+// align-center
 @mixin flex-col-center-x {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+// column
+// justify-center
 @mixin flex-col-center-y {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+// END OF FLEXBOX ----------------------
+
+// PSEUDO, BEFORE AND AFTER ---------------
 @mixin pseudo($content: "", $pos: absolute) {
   content: $content;
   position: $pos;
 }
 
-// ADD VENDOR PREFIXES TO ANY CSS PROPERTY
+// ADD VENDOR PREFIXES TO ANY CSS PROPERTY -------------
 @mixin vendor-prefixs($prop, $value) {
   -webkit-#{$prop}: #{$value};
   -moz-#{$prop}: #{$value};
@@ -41,7 +50,7 @@
   #{$prop}: #{$value};
 }
 
-// KEYFRAME ANIMATIONS
+// KEYFRAME ANIMATIONS --------------------
 @mixin keyframes($name) {
   @-webkit-keyframes #{$name} {
     @content;
@@ -54,7 +63,7 @@
   }
 }
 
-// MEDIA QUERIES
+// MEDIA QUERIES ---------------------
 @mixin breakpoint($point) {
   @if $point == xl {
     @media only screen and (min-width: 1920px) {
