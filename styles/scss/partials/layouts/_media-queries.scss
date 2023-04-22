@@ -48,12 +48,46 @@
       }
     }
     &__link {
+      position: relative;
       color: $color-neutral-300;
       font-size: 1.1rem;
       &:hover {
-        border-bottom: 2px solid $color-primary;
         color: $color-secondary;
       }
+      &::before,
+      &::after {
+        box-sizing: border-box;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: $color-primary;
+        pointer-events: none;
+      }
+      &::before {
+        content: "";
+      }
+    }
+  }
+
+  // make hover underline effect fit the Home link's width
+  .nav-list__link--home {
+    &::before,
+    &::after {
+      width: 90%;
+    }
+  }
+
+  .underline-animation {
+    &:hover::before {
+      transform-origin: 0% 50%;
+      transform: scale3d(1, 1, 1);
+    }
+    &::before {
+      transform-origin: 100% 50%;
+      transform: scale3d(0, 1, 1);
+      transition: transform 0.3s;
     }
   }
 
