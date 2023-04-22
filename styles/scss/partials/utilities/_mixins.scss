@@ -1,8 +1,32 @@
 @mixin center-text {
   text-align: center;
+@mixin flex-center-x {
+  display: flex;
+  justify-content: center;
 }
 
 // PSEUDO, BEFORE AND AFTER
+@mixin flex-center-y {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-center {
+  @include flex-center-y;
+  justify-content: center;
+}
+
+@mixin flex-col-center-x {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin flex-col-center-y {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 @mixin pseudo($content: "", $pos: absolute) {
   content: $content;
   position: $pos;
