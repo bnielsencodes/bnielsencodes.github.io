@@ -1182,7 +1182,7 @@ RETURN HOME BUTTON
   }
 }
 /* END OF RETURN HOME BUTTON BOB EFFECT FROM HOVER.CSS */
-.projects-list--project-page, .project__links, .hex,
+.hex,
 .hex-border,
 .project__heading,
 .project__icon-container,
@@ -1191,16 +1191,21 @@ RETURN HOME BUTTON
   justify-content: center;
 }
 
-.nav,
-.skills-container,
-.project__tech,
-.project__tech--wide,
-.form-error-submit,
-.footer__links, .nav__logo,
+.project__links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.projects-list--project-page {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.nav__logo,
 .bio__location-icon,
-.project__links, #header,
-.bio__location-container-inner,
-.return-home__link {
+.project__links {
   display: flex;
   align-items: center;
 }
@@ -1208,13 +1213,23 @@ RETURN HOME BUTTON
 #header,
 .bio__location-container-inner,
 .return-home__link {
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
-.mobile-nav-list, .header__text-container,
-.projects-list,
-.project,
-.project-bottom-container, .bio,
+.nav,
+.skills-container,
+.project__tech,
+.project__tech--wide,
+.form-error-submit,
+.footer__links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bio,
 .about-content-container,
 .skills,
 .hex-group--left,
@@ -1226,38 +1241,27 @@ RETURN HOME BUTTON
   align-items: center;
 }
 
-.form-inputs {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.project__links {
-  gap: 20px;
-}
-
-.projects-list--project-page {
-  gap: 40px;
-}
-
-.nav,
-.skills-container,
-.project__tech,
-.project__tech--wide,
-.form-error-submit,
-.footer__links {
-  justify-content: space-between;
-}
-
 .header__text-container,
 .projects-list,
 .project,
 .project-bottom-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
 .mobile-nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #header {
@@ -2437,12 +2441,37 @@ RETURN HOME BUTTON
     padding-right: 22px;
   }
   .nav-list__link {
+    position: relative;
     color: #fafafa;
     font-size: 1.1rem;
   }
   .nav-list__link:hover {
-    border-bottom: 2px solid #785af0;
     color: #2cb67d;
+  }
+  .nav-list__link::before, .nav-list__link::after {
+    box-sizing: border-box;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #785af0;
+    pointer-events: none;
+  }
+  .nav-list__link::before {
+    content: "";
+  }
+  .nav-list__link--home::before, .nav-list__link--home::after {
+    width: 90%;
+  }
+  .underline-animation:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+  }
+  .underline-animation::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
   }
   #about-section .section-heading {
     padding: 100px 0 30px;
