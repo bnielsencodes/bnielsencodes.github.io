@@ -2708,7 +2708,6 @@ RETURN HOME BUTTON
 ------------------------------------ */
 @media only screen and (min-width: 1920px) {
   .project {
-    min-width: 920px;
     max-width: 966px;
   }
 }
