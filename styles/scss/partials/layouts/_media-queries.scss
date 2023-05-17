@@ -29,9 +29,6 @@
   .nav {
     &__logo {
       padding-left: 34px;
-      &--projects-page {
-        padding-left: 28px;
-      }
     }
     &__name {
       font-size: 1.15rem;
@@ -45,9 +42,6 @@
     display: flex;
     justify-content: space-between;
     margin-right: 34px;
-    &--projects-page {
-      margin-right: 28px;
-    }
     &__item {
       &:not(:last-of-type) {
         padding-right: 22px;

@@ -2427,9 +2427,6 @@ RETURN HOME BUTTON
   .nav__logo {
     padding-left: 34px;
   }
-  .nav__logo--projects-page {
-    padding-left: 28px;
-  }
   .nav__name {
     font-size: 1.15rem;
   }
@@ -2440,9 +2437,6 @@ RETURN HOME BUTTON
     display: flex;
     justify-content: space-between;
     margin-right: 34px;
-  }
-  .nav-list--projects-page {
-    margin-right: 28px;
   }
   .nav-list__item:not(:last-of-type) {
     padding-right: 22px;
