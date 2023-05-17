@@ -755,7 +755,7 @@ a:active {
 .mobile-nav-list__link {
   position: relative;
   z-index: 1;
-  padding: 9px 12px 0;
+  padding: 9px 0 0;
   border-bottom: 3px solid #785af0;
 }
 .mobile-nav-list__link::after {
