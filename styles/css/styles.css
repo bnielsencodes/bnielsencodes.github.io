@@ -2442,7 +2442,7 @@ RETURN HOME BUTTON
     margin-right: 34px;
   }
   .nav-list--projects-page {
-    padding-left: 28px;
+    margin-right: 28px;
   }
   .nav-list__item:not(:last-of-type) {
     padding-right: 22px;
