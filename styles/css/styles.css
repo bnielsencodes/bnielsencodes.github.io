@@ -2197,6 +2197,7 @@ RETURN HOME BUTTON
 }
 #projects-section {
   background: #fafafa;
+  padding-bottom: 15px;
 }
 #projects-section .section-heading {
   margin: 0 0 90px 0;
