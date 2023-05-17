@@ -2290,6 +2290,7 @@ RETURN HOME BUTTON
   min-height: 165px;
   height: auto;
   margin-top: -1px;
+  background: #fafafa;
 }
 
 #bottom-divider {
