@@ -193,6 +193,11 @@ body::-webkit-scrollbar {
   width: 0 !important;
 }
 
+.mobile-nav--active {
+  height: 100%;
+  overflow-y: hidden;
+}
+
 #hidden--sm {
   display: none;
 }
