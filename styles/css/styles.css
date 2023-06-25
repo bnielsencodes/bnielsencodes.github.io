@@ -1612,7 +1612,7 @@ RETURN HOME BUTTON
   z-index: -1;
   pointer-events: none;
 }
-.hex--html, .hex--nextjs, .hex--sass {
+.hex--html, .hex--sass {
   left: -36.5px;
 }
 .hex--css {
@@ -1626,6 +1626,9 @@ RETURN HOME BUTTON
 }
 .hex--js {
   left: -22px;
+}
+.hex--nextjs {
+  left: -35.5px;
 }
 .hex--react {
   left: -37px;
@@ -1664,7 +1667,7 @@ RETURN HOME BUTTON
   top: -14px;
   pointer-events: none;
 }
-.hex-border--html, .hex-border--sass, .hex-border--nextjs {
+.hex-border--html, .hex-border--sass {
   left: -38.5px;
 }
 .hex-border--css {
@@ -1678,6 +1681,9 @@ RETURN HOME BUTTON
 }
 .hex-border--js {
   left: -24px;
+}
+.hex-border--nextjs {
+  left: -37.5px;
 }
 .hex-border--react {
   left: -39px;

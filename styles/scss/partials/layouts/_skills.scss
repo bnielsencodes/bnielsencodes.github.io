@@ -34,7 +34,6 @@
   z-index: -1;
   pointer-events: none;
   &--html,
-  &--nextjs,
   &--sass {
     left: -36.5px;
   }
@@ -49,6 +48,9 @@
   }
   &--js {
     left: -22px;
+  }
+  &--nextjs {
+    left: -35.5px;
   }
   &--react {
     left: -37px;
@@ -94,8 +96,7 @@
   top: -14px;
   pointer-events: none;
   &--html,
-  &--sass,
-  &--nextjs {
+  &--sass {
     left: -38.5px;
   }
   &--css {
@@ -109,6 +110,9 @@
   }
   &--js {
     left: -24px;
+  }
+  &--nextjs {
+    left: -37.5px;
   }
   &--react {
     left: -39px;
